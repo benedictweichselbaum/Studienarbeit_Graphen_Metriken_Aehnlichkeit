@@ -1,0 +1,195 @@
+% !TEX root = /home/benedict/Documents/Studium/Studienarbeit/Studienarbeit_Graphen_Metriken_Aehnlichkeit/Arbeit/T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
+
+\documentclass[a4paper,12pt,ngerman,chapterprefix=false,listof=totoc,bibliography=totoc]{scrreprt}
+
+\usepackage[a4paper,left=2.5cm, right=2.5cm, top=2cm, bottom=2.5cm]{geometry}
+\usepackage[ngerman, english]{babel}
+\usepackage{blindtext}
+\usepackage{helvet}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{index}
+\usepackage{csquotes}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{listings}
+\usepackage{changepage}
+\usepackage{acronym}
+\usepackage{listings}
+\usepackage{abstract}
+\usepackage{scrhack}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{hyperref}
+\usepackage{svg}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage[bottom]{footmisc}
+
+% Biblatex includes
+\usepackage[style=alphabetic,backend=bibtex]{biblatex}
+\addbibresource{literatur.bib}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Custom environments
+\newenvironment{myitemize}{\begin{itemize}\itemsep -4pt}{\end{itemize}}
+\newenvironment{myenumerate}{\begin{enumerate}\itemsep -4pt}{\end{enumerate}}
+\newenvironment{myalphaenum}{\begin{enumerate}[label={\alph*)}]\itemsep -4pt}{\end{enumerate}}
+
+% Custom commands
+\newcommand{\absatz}{{\vspace{5mm}\newline}}
+\newcommand{\zitat}[2]{
+	\begin{quote}
+		\textit{#1} \cite{#2}
+	\end{quote}
+}	
+	
+\newcommand{\geintrag}[2]{
+	\textbf{#1}\begin{adjustwidth}{.5cm}{0cm}#2
+	\end{adjustwidth}\vspace{3.5mm}
+}
+\newcommand{\singleenum}[2]{
+	\begin{myenumerate}
+		\setcounter{enumi}{#1}
+		\item #2
+	\end{myenumerate}
+}
+
+\newcommand{\specialcell}[2][l]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+% Settings for bibliography from BibLaTeX
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+
+\AfterTOCHead{\thispagestyle{empty}}
+
+\begin{document}
+\title{\Large{Graphen: Metriken und Ähnlichkeit
+}}
+\author{Benedict Martin Weichselbaum}
+\date{\today}
+\selectlanguage{ngerman}
+\begin{titlepage}
+	\centering\hspace{8mm}
+	%\begin{figure}
+	%	\centering
+	%	\begin{subfigure}{.5\textwidth}
+	%		\centering
+	%		\includegraphics[width=.5\linewidth]{./Abbildungen/datevlogo.png}
+	%	\end{subfigure}%
+	%	\begin{subfigure}{.5\textwidth}
+	%		\centering
+	%		\includegraphics[width=1\linewidth]{./Abbildungen/dhbwlogo.png}
+	%	\end{subfigure}
+	%\end{figure}
+	
+	\vspace{5mm}	
+	{\fontsize{26}{40}\selectfont
+	Graphen: Metriken und Ähnlichkeit
+	}
+	\\
+	\vspace{2cm}
+	\textbf{\Large{Studienarbeit}} \par
+	\vspace{1cm}
+	im Studiengang Informatik \par
+	\vspace{0.3cm}
+	an der Dualen Hochschule Baden-Württemberg Stuttgart, Campus Horb am Neckar \par
+	\vspace{1.2cm}
+	von \par
+	\vspace{0.5cm}
+	\textbf{\large{Benedict Weichselbaum}} \par
+	\vspace{1.5cm}
+	{\today}\par
+	\vfill
+	\begin{table}[ht]
+		\hspace{1,5cm}
+		\begin{tabular}{p{7cm}p{7cm}}
+			\textbf{Bearbeitungszeitraum} & 28.09.2020 - 01.06.2021\\
+			\textbf{Matrikelnummer, Kurs} & 6275457, TINF2018\\
+			\textbf{Betreuer} & Prof. Dr. ing. Olaf Herden\\
+		\end{tabular}
+	\end{table}
+\end{titlepage}
+
+\section*{Erklärung}
+\thispagestyle{empty}
+Ich versichere hiermit, dass ich meine Studienarbeit mit dem Thema \textit{Graphen: Metriken und Ähnlichkeit} selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.
+\newline
+Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruckten Fassung übereinstimmt.\vspace{1.6cm}\newline
+{Nürnberg, \today\vspace{1.2cm}\par\vspace{1.5cm}}
+{\noindent\rule{6cm}{.4pt}\newline Benedict Martin Weichselbaum}
+
+\selectlanguage{english}
+\begin{abstract}
+\end{abstract}
+
+\selectlanguage{ngerman}
+\setcounter{tocdepth}{3}
+
+{\tableofcontents \thispagestyle{empty}}
+
+
+\listoffigures\thispagestyle{plain}
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
+\listoftables\thispagestyle{plain}
+
+\chapter*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+\begin{acronym}
+
+\end{acronym}
+
+
+\chapter{Einleitung}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+\chapter*{Glossar}
+\addcontentsline{toc}{chapter}{Glossar}
+{
+}
+\printbibliography
+\end{document}

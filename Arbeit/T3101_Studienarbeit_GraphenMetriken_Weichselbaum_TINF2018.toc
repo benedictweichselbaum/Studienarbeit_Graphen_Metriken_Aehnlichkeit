@@ -4,12 +4,44 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{I}{chapter*.4}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{I}{chapter*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{II}{chapter*.5}%
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{II}{chapter*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abkürzungsverzeichnis}{III}{chapter*.6}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{III}{chapter*.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{2}{chapter*.7}%
+\contentsline {section}{\numberline {1.1}Motivation für die Studienarbeit}{1}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Fragestellungen}{1}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Graphmetriken und die Ähnlichkeit von Graphen}{2}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Verfügbare Graphmetriken}{2}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Verbreitung der vorgestellten Metriken}{2}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Bewertung der Metriken}{2}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Der Ähnlichkeitsbegriff bei Graphen}{2}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Untersuchung und Implementierung von Graphmetriken}{3}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Implementierung in verschiedenen Graphdatenbanken}{3}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Vergleich der Implementierungen}{3}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Graphmetriken und Ähnlichkeit in Anwendung}{4}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Fazit und Zusammenfassung}{5}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Zusammenfassung der Ergebnisse}{5}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Fazit}{5}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossar}{6}{chapter*.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literatur}{7}{chapter*.9}%
+\defcounter {refsection}{0}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -38,7 +38,7 @@
 \usepackage[bottom]{footmisc}
 
 % Biblatex includes
-\usepackage[style=alphabetic,backend=bibtex]{biblatex}
+\usepackage[style=alphabetic,backend=biber]{biblatex}
 \addbibresource{literatur.bib}
 
 \usepackage{listings}
@@ -104,28 +104,21 @@
 \AfterTOCHead{\thispagestyle{empty}}
 
 \begin{document}
-\title{\Large{Graphen: Metriken und Ähnlichkeit
+\title{\Large{Untersuchung, Implementierungen und Bewertung von Graph-Metriken– und Ähnlichkeiten
 }}
 \author{Benedict Martin Weichselbaum}
 \date{\today}
 \selectlanguage{ngerman}
 \begin{titlepage}
 	\centering\hspace{8mm}
-	%\begin{figure}
-	%	\centering
-	%	\begin{subfigure}{.5\textwidth}
-	%		\centering
-	%		\includegraphics[width=.5\linewidth]{./Abbildungen/datevlogo.png}
-	%	\end{subfigure}%
-	%	\begin{subfigure}{.5\textwidth}
-	%		\centering
-	%		\includegraphics[width=1\linewidth]{./Abbildungen/dhbwlogo.png}
-	%	\end{subfigure}
-	%\end{figure}
+	\begin{figure}
+		\centering
+			\includegraphics[scale=1.3]{./Abbildungen/dhbwlogo.png}
+	\end{figure}
 	
 	\vspace{5mm}	
 	{\fontsize{26}{40}\selectfont
-	Graphen: Metriken und Ähnlichkeit
+	Untersuchung, Implementierungen und Bewertung von Graph-Metriken– und Ähnlichkeiten
 	}
 	\\
 	\vspace{2cm}
@@ -144,9 +137,9 @@
 	\begin{table}[ht]
 		\hspace{1,5cm}
 		\begin{tabular}{p{7cm}p{7cm}}
-			\textbf{Bearbeitungszeitraum} & 28.09.2020 - 01.06.2021\\
+			\textbf{Bearbeitungszeitraum} & 28.09.2020 - 31.05.2021\\
 			\textbf{Matrikelnummer, Kurs} & 6275457, TINF2018\\
-			\textbf{Betreuer} & Prof. Dr. ing. Olaf Herden\\
+			\textbf{Betreuer \& Gutachter} & Prof. Dr. ing. Olaf Herden\\
 		\end{tabular}
 	\end{table}
 \end{titlepage}
@@ -161,6 +154,7 @@ Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruc
 
 \selectlanguage{english}
 \begin{abstract}
+	\cite{wills_metrics_2019}
 \end{abstract}
 
 \selectlanguage{ngerman}
@@ -185,7 +179,33 @@ Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruc
 \chapter{Einleitung}
 \pagenumbering{arabic}
 \setcounter{page}{1}
+\section{Motivation für die Studienarbeit}
 
+\section{Fragestellungen}
+
+\chapter{Graphmetriken und die Ähnlichkeit von Graphen}
+
+\section{Verfügbare Graphmetriken}
+
+\section{Verbreitung der vorgestellten Metriken}
+
+\section{Bewertung der Metriken}
+
+\section{Der Ähnlichkeitsbegriff bei Graphen}
+
+\chapter{Untersuchung und Implementierung von Graphmetriken}
+
+\section{Implementierung in verschiedenen Graphdatenbanken}
+
+\section{Vergleich der Implementierungen}
+
+\chapter{Graphmetriken und Ähnlichkeit in Anwendung}
+
+\chapter{Fazit und Zusammenfassung}
+
+\section{Zusammenfassung der Ergebnisse}
+
+\section{Fazit}
 
 \chapter*{Glossar}
 \addcontentsline{toc}{chapter}{Glossar}

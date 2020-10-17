@@ -1,0 +1,5 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018..blg'
+[61] biber:330> INFO - === Sa Okt 17, 2020, 15:40:09
+[75] Utils.pm:411> ERROR - Cannot find 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018..bcf'!
+[75] Biber.pm:132> INFO - ERRORS: 1

@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,5 +16,39 @@
   {}
 \endgroup
 
-\datalist[entry]{anyt/global//global/global}\enddatalist
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{wills_metrics_2019}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cfe728bfa8fd7a398828a606170bd284}{%
+           family={Wills},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c2913820ab2958e10395c24d62d02dac}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Francois\bibnamedelima G.},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b9fe8648008529b77909c96223f6fcc}
+      \strng{fullhash}{4b9fe8648008529b77909c96223f6fcc}
+      \strng{bibnamehash}{4b9fe8648008529b77909c96223f6fcc}
+      \strng{authorbibnamehash}{4b9fe8648008529b77909c96223f6fcc}
+      \strng{authornamehash}{4b9fe8648008529b77909c96223f6fcc}
+      \strng{authorfullhash}{4b9fe8648008529b77909c96223f6fcc}
+      \field{labelalpha}{WM19}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\_eprint: 1904.07414}
+      \field{title}{Metrics for Graph Comparison: A Practitioner's Guide}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
+

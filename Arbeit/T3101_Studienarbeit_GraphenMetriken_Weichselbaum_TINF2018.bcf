@@ -2350,11 +2350,12 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">wills_metrics_2019</bcf:citekey>
-    <bcf:citekey order="2">turau_algorithmische_2004</bcf:citekey>
-    <bcf:citekey order="3">tittmann_graphentheorie_2019</bcf:citekey>
-    <bcf:citekey order="4">lovasz_large_2012</bcf:citekey>
-    <bcf:citekey order="5">ellens_graph_2013</bcf:citekey>
+    <bcf:citekey order="1">turau_algorithmische_2004</bcf:citekey>
+    <bcf:citekey order="2">tittmann_graphentheorie_2019</bcf:citekey>
+    <bcf:citekey order="3">lovasz_large_2012</bcf:citekey>
+    <bcf:citekey order="4">ellens_graph_2013</bcf:citekey>
+    <bcf:citekey order="5">wills_metrics_2019</bcf:citekey>
+    <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

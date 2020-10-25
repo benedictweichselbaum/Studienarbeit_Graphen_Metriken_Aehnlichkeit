@@ -104,7 +104,7 @@
 \AfterTOCHead{\thispagestyle{empty}}
 
 \begin{document}
-\title{\Large{Untersuchung, Implementierungen und Bewertung von Graph-Metriken– und Ähnlichkeiten
+\title{\Large{Untersuchung, Implementierungen und Bewertung von Graph-Metriken
 }}
 \author{Benedict Martin Weichselbaum}
 \date{\today}
@@ -118,7 +118,7 @@
 	
 	\vspace{5mm}	
 	{\fontsize{26}{40}\selectfont
-	Untersuchung, Implementierungen und Bewertung von Graph-Metriken– und Ähnlichkeiten
+	Untersuchung, Implementierungen und Bewertung von Graph-Metriken
 	}
 	\\
 	\vspace{2cm}
@@ -179,21 +179,42 @@ Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruc
 \chapter{Einleitung}
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\section{Motivation für die Studienarbeit}
+\section{Motivation für die Studienarbeit}{
+Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sämtliche Systeme, die aus Objekten und Beziehungen zwischen diesen bestehen, lassen sich durch Graphen abstrahieren. \cite{turau_algorithmische_2004} Diese netzartigen Strukturen können dabei die verschiedensten Konstrukte repräsentieren. Dazu zählen Straßennetze, Computernetzwerke, elektrische Schaltungen aber auch zum Beispiel chemische Moleküle. \cite{tittmann_graphentheorie_2019}
 
+Um Graphen zu beschreiben und charakterisieren, haben sich über die Zeit zahlreiche Metriken, bzw. Eigenschaften für diese herausgebildet ("`graph properties"' \cite{lovasz_large_2012}). Das heißt einem Graphen können gewisse Kennzahlen zugeordnet werden, die ihn auszeichnen. Auch diese Metriken sind, wie die Graphen selbst, meist praktisch anwendbar. Zum Beispiel in der Untersuchung von Netzwerken \cite{ellens_graph_2013}.
+
+Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedenste Metriken vorzustellen und zu erläutern. Dabei ist es auch wichtig herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen zu bewerten sind. Des Weiteren soll auf Basis der Metriken auch der Begriff der Ähnlichkeit von Graphen aufgegriffen werden.
+
+Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Implementierung stattfinden. Es ist dabei das Ziel, mithilfe von Graphdatenbanken die jeweiligen Metriken umzusetzen und diese miteinander zu Vergleichen.
+
+In einem Weiteren Teil ist außerdem noch darauf einzugehen, welche Anwendung die gezeigten Metriken haben, um den praktischen Nutzen der Thematik aufzuzeigen.
+}
 \section{Fragestellungen}
+{
 
-\chapter{Graphmetriken und die Ähnlichkeit von Graphen}
+}
+\chapter{Graph-Metriken}
 
-\section{Verfügbare Graphmetriken}
+\section{Grundlegende Metriken}
 
-\section{Verbreitung der vorgestellten Metriken}
+\section{Distanz-Metriken}
+
+\section{Zusammenhangsmetriken (Connectivity)}
+
+\section{Chromatische Zahl und chromatischer Index}
+
+\section{Weitere Metriken}
+
+\chapter{Untersuchung der Metriken und Ähnlichkeit von Graphen}
 
 \section{Bewertung der Metriken}
 
+\section{Verbreitung der Metriken}
+
 \section{Der Ähnlichkeitsbegriff bei Graphen}
 
-\chapter{Untersuchung und Implementierung von Graphmetriken}
+\chapter{Implementierung und Umsetzung der Metriken}
 
 \section{Implementierung in verschiedenen Graphdatenbanken}
 

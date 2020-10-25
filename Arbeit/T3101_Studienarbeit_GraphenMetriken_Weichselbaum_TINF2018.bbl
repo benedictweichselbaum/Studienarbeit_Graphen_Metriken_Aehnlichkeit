@@ -19,6 +19,144 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{ellens_graph_2013}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f5124a4016527ee02cb98c039df569c4}{%
+           family={Ellens},
+           familyi={E\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=46f4e3ed6ded428f4962e3d38ad26eda}{%
+           family={Kooij},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{20ee70208e680bbf6b6aebfef15269c4}
+      \strng{fullhash}{20ee70208e680bbf6b6aebfef15269c4}
+      \strng{bibnamehash}{20ee70208e680bbf6b6aebfef15269c4}
+      \strng{authorbibnamehash}{20ee70208e680bbf6b6aebfef15269c4}
+      \strng{authornamehash}{20ee70208e680bbf6b6aebfef15269c4}
+      \strng{authorfullhash}{20ee70208e680bbf6b6aebfef15269c4}
+      \field{labelalpha}{EK13}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\_eprint: 1311.5064}
+      \field{title}{Graph measures and network robustness}
+      \field{year}{2013}
+      \field{dateera}{ce}
+    \endentry
+    \entry{lovasz_large_2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0d1784a2f9a807b1da8d15d5b1029c08}{%
+           family={Lovász},
+           familyi={L\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Providence, Rhode Island}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{0d1784a2f9a807b1da8d15d5b1029c08}
+      \strng{fullhash}{0d1784a2f9a807b1da8d15d5b1029c08}
+      \strng{bibnamehash}{0d1784a2f9a807b1da8d15d5b1029c08}
+      \strng{authorbibnamehash}{0d1784a2f9a807b1da8d15d5b1029c08}
+      \strng{authornamehash}{0d1784a2f9a807b1da8d15d5b1029c08}
+      \strng{authorfullhash}{0d1784a2f9a807b1da8d15d5b1029c08}
+      \field{labelalpha}{Lov12}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-8218-9085-1}
+      \field{number}{volume 60}
+      \field{pagetotal}{475}
+      \field{series}{American Mathematical Society colloquium publications}
+      \field{title}{Large networks and graph limits}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \keyw{Algebra,Abstract,Combinatorics -- Graph theory -- Extremal problems,Combinatorics -- Graph theory -- Graph algorithms,Combinatorics -- Graph theory -- Graphs and abstract algebra (groups,rings,fields,etc.),Combinatorics -- Graph theory -- None of the above,but in this section,Combinatorics -- Graph theory -- Random graphs,Combinatorics -- Graph theory -- Small world graphs,complex networks,Graph theory,Operations research,mathematical programming -- Operations research and management science -- Network models,stochastic}
+    \endentry
+    \entry{tittmann_graphentheorie_2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=10afebe382e3dcea7a3e463c31573265}{%
+           family={Tittmann},
+           familyi={T\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {München}%
+      }
+      \list{publisher}{1}{%
+        {Hanser, Carl}%
+      }
+      \strng{namehash}{10afebe382e3dcea7a3e463c31573265}
+      \strng{fullhash}{10afebe382e3dcea7a3e463c31573265}
+      \strng{bibnamehash}{10afebe382e3dcea7a3e463c31573265}
+      \strng{authorbibnamehash}{10afebe382e3dcea7a3e463c31573265}
+      \strng{authornamehash}{10afebe382e3dcea7a3e463c31573265}
+      \strng{authorfullhash}{10afebe382e3dcea7a3e463c31573265}
+      \field{labelalpha}{Tit19}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{3., aktualisierte Auflage}
+      \field{isbn}{978-3-446-46052-2 978-3-446-46503-9}
+      \field{pagetotal}{168}
+      \field{shorttitle}{Graphentheorie}
+      \field{title}{Graphentheorie: Eine anwendungsorientierte Einführung}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{turau_algorithmische_2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=70a4c2b47917430d6d57f0cd2c774a46}{%
+           family={Turau},
+           familyi={T\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oldenbourg Wissenschaftsverlag}%
+      }
+      \strng{namehash}{70a4c2b47917430d6d57f0cd2c774a46}
+      \strng{fullhash}{70a4c2b47917430d6d57f0cd2c774a46}
+      \strng{bibnamehash}{70a4c2b47917430d6d57f0cd2c774a46}
+      \strng{authorbibnamehash}{70a4c2b47917430d6d57f0cd2c774a46}
+      \strng{authornamehash}{70a4c2b47917430d6d57f0cd2c774a46}
+      \strng{authorfullhash}{70a4c2b47917430d6d57f0cd2c774a46}
+      \field{labelalpha}{Tur04}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{isbn}{978-3-486-59377-8}
+      \field{month}{1}
+      \field{title}{Algorithmische Graphentheorie}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1524/9783486593778
+      \endverb
+      \verb{urlraw}
+      \verb https://www.degruyter.com/view/title/310250
+      \endverb
+      \verb{url}
+      \verb https://www.degruyter.com/view/title/310250
+      \endverb
+    \endentry
     \entry{wills_metrics_2019}{book}{}
       \name{author}{2}{}{%
         {{hash=cfe728bfa8fd7a398828a606170bd284}{%

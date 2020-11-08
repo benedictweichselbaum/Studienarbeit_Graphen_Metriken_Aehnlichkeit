@@ -198,7 +198,7 @@ Auf Basis dieser Motivation können nun auch die konkreten Fragestellungen formu
 
 \singleenum{0}{Welche Graph-Metriken gibt es und wie sind diese zu ermitteln und zu kategorisieren?}
 
-Hierzu gehört, wie bereits erwähnt die Vorstellung der einzelnen Metriken. Aber auch eine Kategorisierung in Rubriken, um Metriken besser voneinander abzugrenzen, da diverse Metriken höchst unterschiedliche Aussagen über einen Graphen treffen. Bei der Beantwortung dieser Frage wird außerdem auch darauf eingegangen, inwieweit die beschriebene Metrik in bestimmten Mathematikbibliotheken wie "`Sage Math"' oder "`Wolfram"' vorkommen.
+Hierzu gehört, wie bereits erwähnt die Vorstellung der einzelnen Metriken, aber auch eine Kategorisierung in Rubriken, um Metriken besser voneinander abzugrenzen, da diverse Metriken höchst unterschiedliche Aussagen über einen Graphen treffen. Es wird auch darauf eingegangen welche Motivation hinter den jeweiligen Metriken steht.  Bei der Beantwortung dieser Frage soll außerdem auch darauf eingegangen werden, inwieweit die beschriebene Metrik in bestimmten Mathematikbibliotheken wie "`Sage Math"' oder "`Wolfram"' vorkommen.
 
 \singleenum{1}{Wie sind die vorgestellten Metriken zu bewerten?}
 
@@ -206,11 +206,11 @@ In diesem Abschnitt soll es vor allem darum gehen, die vorgestellten Metriken da
 
 \singleenum{2}{Was beschreibt der Ähnlichkeitsbegriff bei Graphen?}
 
-Basierend auf Graph-Metriken lässt sich auch ermitteln, ob zwei Graphen Ähnlichkeiten aufweißen \cite{wills_metrics_2019}. Auch auf diesen Aspekt soll die Arbeit bezug nehmen.
+Basierend auf Graph-Metriken lässt sich auch ermitteln, ob zwei Graphen Ähnlichkeiten aufweißen \cite{wills_metrics_2019}. Auch auf diesen Aspekt soll die Arbeit bezug nehmen und dabei ein Anwendungs-Beispiel konstruieren.
 
 \singleenum{3}{Wie können die vorgestellten Metriken in Graphdatenbanken verwendet werden, bzw. implementiert werden?}
 
-Auf die theoretische Betrachtung der Graph-Metriken folgt dann ein praktischer Teil, der behandeln soll, wie sich die Metriken in bekannten Graphdatenbanken umsetzen lassen, bzw. umgesetzt wurden.
+Auf die theoretische Betrachtung der Graph-Metriken folgt dann ein praktischer Teil, der behandeln soll, wie sich die Metriken in bekannten Graphdatenbanken umsetzen lassen, bzw. umgesetzt wurden. Dabei ist es wichtig herauszufinden welche Graphkennzahlen bereits teil der Graphdatenbank-Lösungen sind, bzw. welche Metriken selbst umgesetzt werden müssen.
 
 \singleenum{4}{Wie sind die jeweiligen Implementierungen zwischen und innerhalb der Graphdatenbanken zu bewerten?}
 
@@ -221,9 +221,28 @@ Folgend auf die Implementierung, ist es noch wichtig zu verstehen, wie diese Ums
 Als letztes soll sich die Studienarbeit mit praktischen Beispielen beschäftigen. Es ist dabei wichtig zu verstehen, welchen konkreten Nutzen die gezeigten Kennzahlen für Graphen in modernen Anwendungsszenarien haben.
 }
 \chapter{Graph-Metriken}
+{
+Dieser erste Teil der Arbeit wird sich nun ausführlich mit einer weiten Reihe an Graph-Metriken beschäftigen. Hierbei sollen die ersten zwei Fragestellungen der Arbeit genau beantwortet werden. Zur jeweiligen Vorstellung einer Graph-Metrik sollen dabei die folgengen Punkte erläutert werden:
+\begin{myitemize}
+	\item Was drückt die Metrik aus (Definition)?
+	\item Welche Motivation hat die Metrik?
+	\item In welchen bekannten Mathematikbibliotheken oder Graph-Datenbanken lässt sich die Metrik finden?
+	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
+	\item Welche Verbreitung hat die Metrik?
+\end{myitemize}
+Es ist noch zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in Kategorien eingeteilt sind.
 
+Darüber hinaus sind noch eine grundsätzliche Notationen während der Arbeit zu klären: Ein \textbf{Graph G} ist ein Paar bestehend aus \textbf{Knoten V} und \textbf{Kanten E}.
+\begin{align*}
+	G = (V, E),\ wobei\ E \subseteq V \times V
+\end{align*}
+\cite{diestel_graphentheorie_2000}
+}
 \section{Grundlegende Metriken}
-
+{
+Test
+}
+\paragraph{Ordung eines Graphen}
 \section{Distanz-Metriken}
 
 \section{Zusammenhangsmetriken (Connectivity)}
@@ -234,13 +253,9 @@ Als letztes soll sich die Studienarbeit mit praktischen Beispielen beschäftigen
 
 \section{Weitere Metriken}
 
-\chapter{Untersuchung der Metriken und Ähnlichkeit von Graphen}
+\section{Übersicht der vorgestellten Graphmetriken}
 
-\section{Bewertung der Metriken}
-
-\section{Verbreitung der Metriken}
-
-\section{Der Ähnlichkeitsbegriff bei Graphen}
+\chapter{Ähnlichkeit von Graphen}
 
 \chapter{Implementierung und Umsetzung der Metriken}
 

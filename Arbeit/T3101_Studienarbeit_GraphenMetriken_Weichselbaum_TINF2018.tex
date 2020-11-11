@@ -226,23 +226,39 @@ Dieser erste Teil der Arbeit wird sich nun ausführlich mit einer weiten Reihe a
 \begin{myitemize}
 	\item Was drückt die Metrik aus (Definition)?
 	\item Welche Motivation hat die Metrik?
-	\item In welchen bekannten Mathematikbibliotheken oder Graph-Datenbanken lässt sich die Metrik finden?
+	\item Inwieweit ist die Metrik verbreitet? Zum Beispiel in der Literatur oder in Mathematikbibliotheken.
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
-	\item Welche Verbreitung hat die Metrik?
 \end{myitemize}
 Es ist noch zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in Kategorien eingeteilt sind.
 
-Darüber hinaus sind noch eine grundsätzliche Notationen während der Arbeit zu klären: Ein \textbf{Graph G} ist ein Paar bestehend aus \textbf{Knoten V} und \textbf{Kanten E}.
+Darüber hinaus ist noch eine grundsätzliche Notationen während der Arbeit zu klären: Ein \textbf{Graph G} ist ein Paar bestehend aus \textbf{Knoten V} und \textbf{Kanten E}.
 \begin{align*}
 	G = (V, E),\ wobei\ E \subseteq V \times V
 \end{align*}
-\cite{diestel_graphentheorie_2000}
+Für V können wir auch V(G) schreiben, für E auch E(G). \cite{diestel_graphentheorie_2000} V ist dabei Englisch und bedeutet "`Vertices"', E steht für "`Edges"'. Wenn es um die Datenstrukturen von Graphen geht, kommen im Rahmen dieser Arbeit hauptsächlich Adjazenzmatrizen und Adjazenzlisten zum Einsatz. Allerdings können bei Bedarf auch Inzidenzen (Beziehung zwischen Knoten und Kanten) im Graphen eine Rolle spielen, wie Inzidenzmatrizen und Inzidenzlisten. \cite{knebl_algorithmen_2019,diestel_graphentheorie_2000}
 }
 \section{Grundlegende Metriken}
 {
-Test
+Ein einem ersten Teil sollen grundlegende Graph-Kennzahlen vorgestellt werden. Diese beschreiben einen Graphen auf rudimentäre Art und Weise und zeigen die am einfachsten zu berechnenden Eigenschaften des Graphen.
 }
-\paragraph{Ordung eines Graphen}
+\subsubsection*{Ordnung und Größe eines Graphen}
+{
+Die Frage danach, wie viele Knoten ein Graph hat lässt sich mit der \textbf{"`Ordnung"'} eines Graphen beantworten. Die "Ordnung" beschreibt dabei einfach die Anzahl der Elemente in der Menge V. Man schreibt: \(\vert V\vert\ oder\ \vert V(G)\vert\ oder\ auch\ \vert G\vert\). \cite{diestel_graphentheorie_2000} Diese Eigenschaft ist essentiell zur allgemeinen Beschreibung und z.B. graphischen Darstellung eines Graphen. Sie lässt sich dabei in sämtlichen mathematischen Bibliotheken finden, wie SageMath, Matlab und Wolfram \cite{sagemath_graph_2020,matlab_directed_2020,wolfram_graph_2020}. Die Komplexität zur Erfassung der Metrik gestaltet sich dabei äußerst einfach. Bei einer Adjazenzmatrix lässt sich die Anzahl der Knoten dadurch herausfinden, wie "`lang"' eine Dimension des zweidimensionalen Arrays bzw. der zweidimensionalen Liste. Dies kann man je nach Implementierung der jeweiligen Datenstruktur in einer Komplexität von \(O(n)\) oder \(O(1)\) herausfinden.
+
+Eine weitere grundlegende Kennzahl von Graphen ist dessen \textbf{"`Größe"'}. Die Größe beschreibt dabei die Anzahl der Kanten, die im Graphen vorkommen, also die Anzahl der Elemente in der Menge E. Man schreibt analog zur Größe des Graphen: \(\vert E\vert\ oder\ \vert E(G)\vert\ oder\ auch\ \vert\vert G \vert\vert\). \cite{balakrishnan_schaums_1997,diestel_graphentheorie_2000} Auch diese Metrik ist weit verbreitet. So lässt sie sich in vielen Büchern zur Graphentheorie finden, aber auch in den genannten Mathematikbibliotheken \cite{sagemath_graph_2020,matlab_directed_2020,wolfram_graph_2020}. Die Anzahl der Kanten innerhalb eines Graphen herauszufinden, erweist sich nicht ganz so trivial wie das Herausfinden der Ordnung. Ist ein Graph nicht gerichtet, d.h. seine Kanten haben keine feste Richtung \cite{diestel_graphentheorie_2000} so ist seine Adjazenzmatrix symmetrisch. Man kann also zählen wie viele Einträge es innerhalb der Matrix auf der Hauptdiagonalen und einer der Hälften gibt. Das ergäbe immer \(\frac{1}{2}n^2\) Schritte, wenn \(n\) die Ordnung des Graphen ist. Die Komplexität beträge also \(O(n^2)\). Bei der Darstellung durch eine Inzidenzliste wäre das anders. Hier könnte einfach die Größe der Liste gesucht werden und man wüsste die Größe des Graphen. Die Komplexität wäre hier, wie schon erwähnt, je nach Implementierung \(O(n)\) oder \(O(1)\).
+}
+\subsubsection*{Der Grad eines Knotens}
+{
+Während die zwei ersten vorgestellten Metriken vor allem den Graphen als ganzes beschreiben, ist es auch noch wichtig zu wissen, was einen einzelnen Knoten auszeichnet, um einen Graphen besser zu beschreiben. Hierzu gibt es die grundlegende Metrik des \textbf{Grad} eines Knotens. Der Grad eines Knotens beschreibt die Anzahl der mit einem Knoten inzidenten Kanten \cite{diestel_graphentheorie_2000}. D.h. es drückt aus, wie viele Kanten mit einem Knoten verbunden sind. Man kann dies z.B. durch eine Funktion ausdrücken, die einen Knoten v auf eine natürliche Zahl abbildet: \(d(v)\).
+
+Auf Basis dieser Metrik lässt sich auch andere verwandte Metriken ableiten. Hierzu gehört der \textbf{"`Minimalgrad"'} und der \textbf{"`Maximalgrad"'}. Der Minimalgrad ist der kleinste Knoten-Grad eines Graphen G: \(\delta (G):=min\{d(v)\ \vert\ v\ \in\ V\}\). Parallel dazu ist der Maximalgrad der größte Knoten-Grad eines Graphen G: \(\Delta (G)\ :=\ max\{d(v)\ \vert\ v\ \in\ V\}\). Darüber hinaus kann man noch den \textbf{"`Durchschnittsgrad"'} eines Graphen bestimmen. Dieser bildet den Durchschnitt aller Knotengrade ab: \(d(G):=\sum_{v\in V}d(v)/\vert V\vert\). \cite{diestel_graphentheorie_2000}
+
+Des Weiteren gibt es bei der Betrachtung eines gerichteten Graphen zusätzliche Abwandlungen der Metrik. Da hier die Kanten immer zu einem Knoten gerichtet sind unterscheidet man speziell zwischen dem \textbf{"`Eingangsgrad"'} und dem \textbf{"`Ausgangsgrad"'}. Der Eingangsgrad eines Knoten beschreibt dabei die Anzahl der Kanten, die auf einen Knoten "`zeigen"'. Der Ausgangsgrad zeigt wie viele Kanten von einem Knoten "`weggehen"'. \cite{balakrishnan_schaums_1997}
+
+Auch der Grad eines Knotens und die meisten seiner verwandten Metriken sind weit verbreitet. So sind der allgemeine Grad, der Eingangsgrad, der Ausgangsgrad in allen drei betrachteten Mathematikbibliotheken vorhanden. SageMath unterstützt sogar nativ die Metrik "`Durchschnittsgrad"'. \cite{sagemath_graph_2020,matlab_directed_2020,wolfram_graph_2020}
+
+Die Berechnung eines Grades über eine Adjazenzmatrix oder eine Adjazenzliste ist in linearer Zeit lösbar (\(O(n)\)). Bei der Adjazenzmatrix muss einfach nur die jeweilige Reihe des zugehörigen Knotens durchlaufen werden und gezählt werden, wie häufig ein Eintrag für eine Kante enthalten. Mit Hilfe der Adjazenzliste kann einfach die Größe der Liste als Grad genommen werden, die dem Knoten zugehörig ist.
+}
 \section{Distanz-Metriken}
 
 \section{Zusammenhangsmetriken (Connectivity)}

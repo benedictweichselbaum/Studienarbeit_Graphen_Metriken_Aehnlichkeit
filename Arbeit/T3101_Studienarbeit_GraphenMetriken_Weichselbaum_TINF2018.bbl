@@ -152,6 +152,39 @@
       \verb http://www.mscand.dk/article/view/11685
       \endverb
     \endentry
+    \entry{balakrishnan_schaums_1997}{book}{}
+      \name{author}{1}{}{%
+        {{hash=672fab29cb072802b491d35ac41dc271}{%
+           family={Balakrishnan},
+           familyi={B\bibinitperiod},
+           given={V.\bibnamedelimi K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {{McGraw}-Hill}%
+      }
+      \strng{namehash}{672fab29cb072802b491d35ac41dc271}
+      \strng{fullhash}{672fab29cb072802b491d35ac41dc271}
+      \strng{bibnamehash}{672fab29cb072802b491d35ac41dc271}
+      \strng{authorbibnamehash}{672fab29cb072802b491d35ac41dc271}
+      \strng{authornamehash}{672fab29cb072802b491d35ac41dc271}
+      \strng{authorfullhash}{672fab29cb072802b491d35ac41dc271}
+      \field{labelalpha}{Bal97}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-07-005489-9}
+      \field{pagetotal}{293}
+      \field{series}{Schaum's outline series}
+      \field{title}{Schaum's outline of theory and problems of graph theory}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \keyw{Graph theory,Outlines,syllabi,etc,Problems,exercises,etc}
+    \endentry
     \entry{berge_theory_2001}{book}{}
       \name{author}{1}{}{%
         {{hash=af56d551a01b0eb0f4598578b9b13272}{%
@@ -559,6 +592,32 @@
       \verb https://docs.janusgraph.org/
       \endverb
     \endentry
+    \entry{knebl_algorithmen_2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3b59f0e63f078d48b1e050c572b5d7fe}{%
+           family={Knebl},
+           familyi={K\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b59f0e63f078d48b1e050c572b5d7fe}
+      \strng{fullhash}{3b59f0e63f078d48b1e050c572b5d7fe}
+      \strng{bibnamehash}{3b59f0e63f078d48b1e050c572b5d7fe}
+      \strng{authorbibnamehash}{3b59f0e63f078d48b1e050c572b5d7fe}
+      \strng{authornamehash}{3b59f0e63f078d48b1e050c572b5d7fe}
+      \strng{authorfullhash}{3b59f0e63f078d48b1e050c572b5d7fe}
+      \field{labelalpha}{Kne19}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-3-658-26511-3}
+      \field{note}{{OCLC}: 1123167896}
+      \field{shorttitle}{Algorithmen und Datenstrukturen}
+      \field{title}{Algorithmen und Datenstrukturen: Grundlagen und probabilistische Methoden für den Entwurf und die Analyse}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
     \entry{lovasz_large_2012}{book}{}
       \name{author}{1}{}{%
         {{hash=0d1784a2f9a807b1da8d15d5b1029c08}{%
@@ -592,6 +651,41 @@
       \field{year}{2012}
       \field{dateera}{ce}
       \keyw{Graph theory,Algebra,Abstract,Combinatorics -- Graph theory -- Extremal problems,Combinatorics -- Graph theory -- Graph algorithms,Combinatorics -- Graph theory -- Graphs and abstract algebra (groups,rings,fields,etc.),Combinatorics -- Graph theory -- None of the above,but in this section,Combinatorics -- Graph theory -- Random graphs,Combinatorics -- Graph theory -- Small world graphs,complex networks,Operations research,mathematical programming -- Operations research and management science -- Network models,stochastic}
+    \endentry
+    \entry{matlab_directed_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a5cd8a07b40f6449056939c13140ae19}{%
+           family={Matlab},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{fullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{bibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorbibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authornamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorfullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \field{labelalpha}{Mat20}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Directed and Undirected Graphs - {MATLAB} \& Simulink - {MathWorks} Deutschland}
+      \field{titleaddon}{Directed and Undirected Graphs}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Directed and Undirected Graphs - MATLAB & Simulink - MathWorks Deutschland:/home/benedict/snap/zotero-snap/common/Zotero/storage/3EGPC26K/directed-and-undirected-graphs.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://de.mathworks.com/help/matlab/math/directed-and-undirected-graphs.html
+      \endverb
+      \verb{url}
+      \verb https://de.mathworks.com/help/matlab/math/directed-and-undirected-graphs.html
+      \endverb
     \endentry
     \entry{mohar_isoperimetric_1989}{article}{}
       \name{author}{1}{}{%
@@ -737,6 +831,41 @@
       \verb https://neo4j.com/graph-databases-book/?ref=home
       \endverb
     \endentry
+    \entry{sagemath_generic_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fe35b7fe7ae5c4d992398b8159d20c54}{%
+           family={{SageMath}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{fullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{bibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authorbibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authornamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authorfullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \field{extraname}{1}
+      \field{labelalpha}{Sag}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Generic graphs (common to directed/undirected) — Sage 9.2 Reference Manual: Graph Theory}
+      \field{titleaddon}{Sage Math Reference Manual}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb Generic graphs (common to directed/undirected) — Sage 9.2 Reference Manual\: Graph Theory:/home/benedict/snap/zotero-snap/common/Zotero/storage/V3AZJJVS/generic_graph.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generic_graph.html
+      \endverb
+      \verb{url}
+      \verb https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generic_graph.html
+      \endverb
+    \endentry
     \entry{sagemath_graph_2020}{online}{}
       \name{author}{1}{}{%
         {{hash=fe35b7fe7ae5c4d992398b8159d20c54}{%
@@ -749,6 +878,7 @@
       \strng{authorbibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \strng{authornamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \strng{authorfullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \field{extraname}{2}
       \field{labelalpha}{Sag20}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
@@ -763,7 +893,6 @@
       \field{year}{2020}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \true{nocite}
       \verb{file}
       \verb Graph Theory — Sage 9.1 Reference Manual\: Graph Theory:/home/benedict/snap/zotero-snap/common/Zotero/storage/IB6QTAB4/index.html:text/html
       \endverb
@@ -982,7 +1111,6 @@
       \field{year}{2020}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \true{nocite}
       \verb{file}
       \verb Graph Measures & Metrics—Wolfram Language Documentation:/home/benedict/snap/zotero-snap/common/Zotero/storage/DFI3MEKA/GraphMeasures.html:text/html
       \endverb

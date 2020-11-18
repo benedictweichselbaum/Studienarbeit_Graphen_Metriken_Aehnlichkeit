@@ -2374,6 +2374,27 @@
     <bcf:citekey order="16">sagemath_graph_2020</bcf:citekey>
     <bcf:citekey order="16">matlab_directed_2020</bcf:citekey>
     <bcf:citekey order="16">wolfram_graph_2020</bcf:citekey>
+    <bcf:citekey order="17">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="18">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="19">sagemath_graph_2020</bcf:citekey>
+    <bcf:citekey order="19">matlab_shortest_2020</bcf:citekey>
+    <bcf:citekey order="19">wolfram_graph_2020</bcf:citekey>
+    <bcf:citekey order="20">sagemath_graph_2020</bcf:citekey>
+    <bcf:citekey order="21">jungnickel_graphs_2013</bcf:citekey>
+    <bcf:citekey order="22">harary_graph_2001</bcf:citekey>
+    <bcf:citekey order="23">sagemath_graph_2020</bcf:citekey>
+    <bcf:citekey order="23">matlab_shortest_2020</bcf:citekey>
+    <bcf:citekey order="23">wolfram_graph_2020</bcf:citekey>
+    <bcf:citekey order="24">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="25">sagemath_graph_2020</bcf:citekey>
+    <bcf:citekey order="25">matlab_shortest_2020</bcf:citekey>
+    <bcf:citekey order="25">wolfram_graph_2020</bcf:citekey>
+    <bcf:citekey order="26">sagemath_graph_2020</bcf:citekey>
+    <bcf:citekey order="26">gitta_durchmesser_2014</bcf:citekey>
+    <bcf:citekey order="27">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="28">sagemath_graph_2020</bcf:citekey>
+    <bcf:citekey order="28">wolfram_graph_2020</bcf:citekey>
+    <bcf:citekey order="28">matlab_shortest_2020</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

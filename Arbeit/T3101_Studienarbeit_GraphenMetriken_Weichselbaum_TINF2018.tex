@@ -225,7 +225,7 @@ Als letztes soll sich die Studienarbeit mit praktischen Beispielen beschäftigen
 Dieser erste Teil der Arbeit wird sich nun ausführlich mit einer weiten Reihe an Graph-Metriken beschäftigen. Hierbei sollen die ersten zwei Fragestellungen der Arbeit genau beantwortet werden. Zur jeweiligen Vorstellung einer Graph-Metrik sollen dabei die folgengen Punkte erläutert werden:
 \begin{myitemize}
 	\item Was drückt die Metrik aus (Definition)?
-	\item Welche Motivation hat die Metrik?
+	\item Was ist die konkrete Motivation für die Metrik, falls diese auszumachen ist?
 	\item Inwieweit ist die Metrik verbreitet? Zum Beispiel in der Literatur oder in Mathematikbibliotheken.
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
 \end{myitemize}
@@ -251,7 +251,7 @@ Eine weitere grundlegende Kennzahl von Graphen ist dessen \textbf{"`Größe"'}. 
 {
 Während die zwei ersten vorgestellten Metriken vor allem den Graphen als ganzes beschreiben, ist es auch noch wichtig zu wissen, was einen einzelnen Knoten auszeichnet, um einen Graphen besser zu beschreiben. Hierzu gibt es die grundlegende Metrik des \textbf{Grad} eines Knotens. Der Grad eines Knotens beschreibt die Anzahl der mit einem Knoten inzidenten Kanten \cite{diestel_graphentheorie_2000}. D.h. es drückt aus, wie viele Kanten mit einem Knoten verbunden sind. Man kann dies z.B. durch eine Funktion ausdrücken, die einen Knoten v auf eine natürliche Zahl abbildet: \(d(v)\).
 
-Auf Basis dieser Metrik lässt sich auch andere verwandte Metriken ableiten. Hierzu gehört der \textbf{"`Minimalgrad"'} und der \textbf{"`Maximalgrad"'}. Der Minimalgrad ist der kleinste Knoten-Grad eines Graphen G: \(\delta (G):=min\{d(v)\ \vert\ v\ \in\ V\}\). Parallel dazu ist der Maximalgrad der größte Knoten-Grad eines Graphen G: \(\Delta (G)\ :=\ max\{d(v)\ \vert\ v\ \in\ V\}\). Darüber hinaus kann man noch den \textbf{"`Durchschnittsgrad"'} eines Graphen bestimmen. Dieser bildet den Durchschnitt aller Knotengrade ab: \(d(G):=\sum_{v\in V}d(v)/\vert V\vert\). \cite{diestel_graphentheorie_2000}
+Auf Basis dieser Metrik lässt sich auch andere verwandte Metriken ableiten. Hierzu gehört der \textbf{"`Minimalgrad"'} und der \textbf{"`Maximalgrad"'}. Der Minimalgrad ist der kleinste Knoten-Grad eines Graphen G: \(\delta (G):=min\{d(v)\ \vert\ v\ \in\ V(G)\}\). Parallel dazu ist der Maximalgrad der größte Knoten-Grad eines Graphen G: \(\Delta (G)\ :=\ max\{d(v)\ \vert\ v\ \in\ V(G)\}\). Darüber hinaus kann man noch den \textbf{"`Durchschnittsgrad"'} eines Graphen bestimmen. Dieser bildet den Durchschnitt aller Knotengrade ab: \(d(G):=\sum_{v\in V(G)}d(v)/\vert V\vert\). \cite{diestel_graphentheorie_2000}
 
 Des Weiteren gibt es bei der Betrachtung eines gerichteten Graphen zusätzliche Abwandlungen der Metrik. Da hier die Kanten immer zu einem Knoten gerichtet sind unterscheidet man speziell zwischen dem \textbf{"`Eingangsgrad"'} und dem \textbf{"`Ausgangsgrad"'}. Der Eingangsgrad eines Knoten beschreibt dabei die Anzahl der Kanten, die auf einen Knoten "`zeigen"'. Der Ausgangsgrad zeigt wie viele Kanten von einem Knoten "`weggehen"'. \cite{balakrishnan_schaums_1997}
 
@@ -259,11 +259,33 @@ Auch der Grad eines Knotens und die meisten seiner verwandten Metriken sind weit
 
 Die Berechnung eines Grades über eine Adjazenzmatrix oder eine Adjazenzliste ist in linearer Zeit lösbar (\(O(n)\)). Bei der Adjazenzmatrix muss einfach nur die jeweilige Reihe des zugehörigen Knotens durchlaufen werden und gezählt werden, wie häufig ein Eintrag für eine Kante enthalten. Mit Hilfe der Adjazenzliste kann einfach die Größe der Liste als Grad genommen werden, die dem Knoten zugehörig ist.
 }
-\section{Distanz-Metriken}
+\section{Distanzmetriken}
+{
+Innerhalb der Graphentheorie gibt es den Begriff des Wegs. Ein Weg beschreibt dabei einen Graphen, der Knoten in einer Reihe hinterander Verbindet. Somit hat der Anfangs- und End-Knoten den Grad 1 und alle "`mittleren"' Knoten den Grad 2. Meist sucht man aber einen bestimmten Weg innerhalb eines bestehenden Graphen. Der Weg ist hier dann ein Teilgraph des ursprünglichen Graphen. Anschaulicher lässt sich ein Weg also als eine Folge von Kanten beschreiben, in der kein Knoten zweimal besucht wird. Die Länge eines Weges ist dabei die Anzahl der Kanten, die in einem Weg vorhanden sind. \cite{diestel_graphentheorie_2000} Auf Basis des Weges und seiner Längen-Eigenschaft lassen sich nun eine Reihe von Metriken definiert werden.
+\subsubsection*{Abstand/Distanz}
+{
+Der "`Abstand"' ist eine Metrik, die auf Basis von zwei Knoten innerhalb eines Graphen definiert wird. Sie beschreibt die Länge des kürzesten Weges zwischen den zwei Knoten, von denen man den Abstand wissen will. Aufgeschrieben werden kann die Metrik mittels einer Funktion, die für den Graph G zwei Knoten x und y auf eine natürliche Zahl abbildet: \(d_G (x,y)\) \cite{diestel_graphentheorie_2000} Diese Metrik ist wichtig als Basis für andere Metriken. Wie die bisherigen Metriken ist auch diese in den jeweiligen Bibliotheken vertreten \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020}. Zur Berechnung der Metrik kann auf verschiedene bekannte, graphtraversierende Algorithmen zurückgegriffen werden. Dazu zählen die Breitensuche, der Djikstra-Algorithmus oder der Bellman-Ford-Algorithmus \cite{sagemath_graph_2020}. Somit ist auch die Komplexität zum Herausfinden der Metrik gleich mit der der Algorithmen. So wäre bei einer Breitensuche eine Komplexität von \(O(\vert E\vert)\) zu erwarten, da jede Kante abgegangen wird. Der Djikstra-Algorithmus hingegen hat eine Komplexität von \(O(\vert V\vert ^2)\) \cite{jungnickel_graphs_2013}.
+}
+\subsubsection*{Extrenzität eines Knotens}
+{
+Mit Hilfe des Abstandes lässt sich nun u.a. die \textbf{"`Extrenzität"'}eines Knotens bestimmen. Die "`Extrenzität"' ist dabei der maximale Abstand den ein Knoten von einem anderen Knoten in einem Graphen G haben kann. Eine einfache formale Notierung für den Knoten x wäre: \(ecc(x, G)=max_{x,y}\{d_G(x,y)\}\), wobei x der gegebene Knoten ist. \cite{harary_graph_2001} Herauszufinden ist diese Kennzahl beispielsweise über den Djikstra-Algorithmus, der den kürzesten Abstand zu jedem anderen Knoten sucht und dann einfach der größte zu wählen ist. D.h. das die Metrik auch die Komplexität hat wie bei der Metrik "`Abstand"' erläutert wurde. Die Extrenzität eines Knotens ist anschließend noch für andere Metriken eine wichtige Basis und allgemein weit verbreitet in den genannten Bibliotheken \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020}.
+}
+\subsubsection*{Durchmesser}
+{
+Wie schon erwähnt, ist es nun möglich auf Basis des Abstands weitere Metriken zu definieren. Hierzu zählt unter anderem der \textbf{"`Durchmesser"'} eines Graphen. Der Durchmesser beschreibt dabei den größten Abstand zweier Knoten im Graphen G. \cite{diestel_graphentheorie_2000} D.h. es ist der Abstand von allen Knoten zu allen Knoten zu berechnen und davon die größte Zahl auszuwählen. Formal notiert lässt sich die Metrik folgendermaßen beschreiben: \(Durchmesser(G)=max_{x,y}\{ d_G (x,y)\}\). Nimmt man zur Ermittlung der Abstände dabei den Djikstra-Algorithmus und wendet diesen dann jeweils auf jeden einzelnen Knoten an, kann eine Komplexität von \(O(\vert V\vert ^3)\) angenommen werden, um die Metrik zu extrahieren. Auch diese Metrik lässt sich z.B. in SageMath oder Wolfram finden. In Matlab kann der Durchmesser über die Distanzmatrix ermittelt werden, die Matlab erstellen kann. \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020} Die Anwendung für diese Metrik kann z.B. sein, rein topologische Eigenschaften des Graphen herausfinden zu wollen. Allerdings kann auch in realen Problemen der Durchmesser als Metrik auftauchen. So ist z.B. der Abstand und damit der Durchmesser auch mit gewichteteten Kanten berechenbar. \cite{sagemath_graph_2020,gitta_durchmesser_2014} In einem Navigationssystem wäre der Durchmesser dann die längste fahrbare Strecke.
+}
+\subsubsection*{Radius}
+{
+Parallel zum Durchmesser eines Graphen kann man auch dessen \textbf{"`Radius"'} bestimmten. Hierfür wird die Metrik der Extrenzität wichtig und der Begriff der Zentralität. Eine Kante ist dann \textit{zentral} bzw. im Zentrum eines Graphen, wenn dessen Extrenzität minimal ist. Dies kann nur einen Knoten, aber auch mehrere Knoten betreffen. Die minimale Extrenzität in einem Graphen, die die Knoten des Zentrums haben, nennt man dann auch den \textbf{"`Radius"'} des Graphen. Geschrieben wird \(rad\ G = min_{x\in V(G)}max_{y\in V(G)}d_G(x,y)\). \cite{diestel_graphentheorie_2000} Der Radius lässt sich grundsätzlich auf die gleiche Weise herausfinden, wie der Durchmesser und hat dementsprechend die gleiche Komplexität. Des Weiteren ist diese Metrik auch weit verbreitet und lässt sich in allen untersuchten Bibliotheken finden \cite{sagemath_graph_2020,wolfram_graph_2020,matlab_shortest_2020}
+}
+}
+\section{Kreis-basierte Metriken}
 
 \section{Zusammenhangsmetriken (Connectivity)}
 
 \section{Zentralitätsmetriken}
+
+\section{Arborizität}
 
 \section{Chromatische Zahl und chromatischer Index}
 

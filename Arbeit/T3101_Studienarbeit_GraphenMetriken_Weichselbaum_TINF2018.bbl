@@ -364,6 +364,77 @@
       \verb https://arxiv.org/abs/math/0701647v2
       \endverb
     \endentry
+    \entry{deepa_dijkstra_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a368e7c3b946d9efbf3fa45b15f21e0c}{%
+           family={Deepa},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=434f9e0abe5ed119e4dbd29acb6d94be}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Priyank},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d0ca10c793664e588b497cba8d99707c}{%
+           family={Manimaran},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a740a95a88e04c0715f5bb6d1701a765}{%
+           family={Rajakumar},
+           familyi={R\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=492b4d50bef3099cab71301e41d1cf03}{%
+           family={Krishnamoorthy},
+           familyi={K\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{402c7e256a9581479239dfe5013a6788}
+      \strng{fullhash}{3100d40ccab980160112b6e6314b3e73}
+      \strng{bibnamehash}{402c7e256a9581479239dfe5013a6788}
+      \strng{authorbibnamehash}{402c7e256a9581479239dfe5013a6788}
+      \strng{authornamehash}{402c7e256a9581479239dfe5013a6788}
+      \strng{authorfullhash}{3100d40ccab980160112b6e6314b3e73}
+      \field{labelalpha}{Dee+18}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The shortest path algorithm is one of the best choices for implementation of data structures. The shortest path ({SP}) problem involves the problem of finding a suitable path between “two vertices or nodes in a graph” in such a way that the sum of the weights of its component edges is minimal. There are many theories for solving this problem one of the widely used way solution for solving this problem is Dijkstra’s algorithm ({DA}) which is also widely used in many engineering calculation works also. There are two types of {DA} one is the basic one and other one is optimized. This paper is focused on the basics one which provides a shortest route between source node and the destination node. Main focus has been kept on keeping the work simple and easy to understand with some basic concepts .Storage space and operational efficiency improvement has been tried to improve.}
+      \field{day}{2}
+      \field{issn}{2227-524X}
+      \field{journaltitle}{International Journal of Engineering \& Technology}
+      \field{month}{10}
+      \field{number}{4}
+      \field{shortjournal}{{IJET}}
+      \field{shorttitle}{Dijkstra Algorithm Application}
+      \field{title}{Dijkstra Algorithm Application: Shortest Distance between Buildings}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{volume}{7}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{974}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.14419/ijet.v7i4.10.26638
+      \endverb
+      \verb{file}
+      \verb Volltext:/home/benedict/snap/zotero-snap/common/Zotero/storage/N2CKDW4F/Deepa et al. - 2018 - Dijkstra Algorithm Application Shortest Distance .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencepubco.com/index.php/ijet/article/view/26638
+      \endverb
+      \verb{url}
+      \verb https://www.sciencepubco.com/index.php/ijet/article/view/26638
+      \endverb
+    \endentry
     \entry{diestel_graphentheorie_2000}{book}{}
       \name{author}{1}{}{%
         {{hash=d7750765c1eb004bdcdce07ed2272ba7}{%
@@ -430,6 +501,41 @@
       \field{year}{2013}
       \field{dateera}{ce}
     \endentry
+    \entry{gitta_durchmesser_2014}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c8e6d48b98ca3a1f76bb4925315ac648}{%
+           family={{GITTA}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8e6d48b98ca3a1f76bb4925315ac648}
+      \strng{fullhash}{c8e6d48b98ca3a1f76bb4925315ac648}
+      \strng{bibnamehash}{c8e6d48b98ca3a1f76bb4925315ac648}
+      \strng{authorbibnamehash}{c8e6d48b98ca3a1f76bb4925315ac648}
+      \strng{authornamehash}{c8e6d48b98ca3a1f76bb4925315ac648}
+      \strng{authorfullhash}{c8e6d48b98ca3a1f76bb4925315ac648}
+      \field{labelalpha}{GIT14}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Durchmesser eines Graphen}
+      \field{titleaddon}{Durchmesser eines Graphen}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Durchmesser eines Graphen:/home/benedict/snap/zotero-snap/common/Zotero/storage/6R2FF638/StructPropNetw_learningObject2.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.gitta.info/Accessibiliti/de/html/StructPropNetw_learningObject2.html
+      \endverb
+      \verb{url}
+      \verb https://www.gitta.info/Accessibiliti/de/html/StructPropNetw_learningObject2.html
+      \endverb
+    \endentry
     \entry{gusfield_connectivity_1983}{article}{}
       \name{author}{1}{}{%
         {{hash=68de6b5b0039868e480ad77af042b983}{%
@@ -475,6 +581,39 @@
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/0020019083900315
       \endverb
+    \endentry
+    \entry{harary_graph_2001}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e3160b3da4830dc2704b52726168a61f}{%
+           family={Harary},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Mass}%
+      }
+      \list{publisher}{1}{%
+        {Perseus Books}%
+      }
+      \strng{namehash}{e3160b3da4830dc2704b52726168a61f}
+      \strng{fullhash}{e3160b3da4830dc2704b52726168a61f}
+      \strng{bibnamehash}{e3160b3da4830dc2704b52726168a61f}
+      \strng{authorbibnamehash}{e3160b3da4830dc2704b52726168a61f}
+      \strng{authornamehash}{e3160b3da4830dc2704b52726168a61f}
+      \strng{authorfullhash}{e3160b3da4830dc2704b52726168a61f}
+      \field{labelalpha}{Har01}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{15. print.}
+      \field{isbn}{978-0-201-41033-4}
+      \field{note}{{OCLC}: 248770458}
+      \field{pagetotal}{274}
+      \field{title}{Graph theory}
+      \field{year}{2001}
+      \field{dateera}{ce}
     \endentry
     \entry{hernandez_classication_2011}{misc}{}
       \name{author}{2}{}{%
@@ -592,6 +731,44 @@
       \verb https://docs.janusgraph.org/
       \endverb
     \endentry
+    \entry{jungnickel_graphs_2013}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3482b7c2a7f147d4245d8061b745fc16}{%
+           family={Jungnickel},
+           familyi={J\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3482b7c2a7f147d4245d8061b745fc16}
+      \strng{fullhash}{3482b7c2a7f147d4245d8061b745fc16}
+      \strng{bibnamehash}{3482b7c2a7f147d4245d8061b745fc16}
+      \strng{authorbibnamehash}{3482b7c2a7f147d4245d8061b745fc16}
+      \strng{authornamehash}{3482b7c2a7f147d4245d8061b745fc16}
+      \strng{authorfullhash}{3482b7c2a7f147d4245d8061b745fc16}
+      \field{labelalpha}{Jun13}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4th ed}
+      \field{isbn}{978-3-642-32278-5 978-3-642-32277-8}
+      \field{note}{{OCLC}: 821566132}
+      \field{number}{5}
+      \field{pagetotal}{675}
+      \field{series}{Algorithms and computation in mathematics}
+      \field{title}{Graphs, networks and algorithms}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/WGMU9ZLL/Jungnickel - 2013 - Graphs, networks and algorithms.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{knebl_algorithmen_2019}{book}{}
       \name{author}{1}{}{%
         {{hash=3b59f0e63f078d48b1e050c572b5d7fe}{%
@@ -664,9 +841,11 @@
       \strng{authorbibnamehash}{a5cd8a07b40f6449056939c13140ae19}
       \strng{authornamehash}{a5cd8a07b40f6449056939c13140ae19}
       \strng{authorfullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \field{extraname}{1}
       \field{labelalpha}{Mat20}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Directed and Undirected Graphs - {MATLAB} \& Simulink - {MathWorks} Deutschland}
@@ -685,6 +864,43 @@
       \endverb
       \verb{url}
       \verb https://de.mathworks.com/help/matlab/math/directed-and-undirected-graphs.html
+      \endverb
+    \endentry
+    \entry{matlab_shortest_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a5cd8a07b40f6449056939c13140ae19}{%
+           family={Matlab},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{fullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{bibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorbibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authornamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorfullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \field{extraname}{2}
+      \field{labelalpha}{Mat20}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Shortest path distances of all node pairs}
+      \field{titleaddon}{Distances}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Shortest path distances of all node pairs - MATLAB distances - MathWorks Deutschland:/home/benedict/snap/zotero-snap/common/Zotero/storage/XW4XQF2K/graph.distances.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://de.mathworks.com/help/matlab/ref/graph.distances.html
+      \endverb
+      \verb{url}
+      \verb https://de.mathworks.com/help/matlab/ref/graph.distances.html
       \endverb
     \endentry
     \entry{mohar_isoperimetric_1989}{article}{}

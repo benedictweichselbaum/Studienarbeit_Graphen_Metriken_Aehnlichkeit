@@ -2395,6 +2395,13 @@
     <bcf:citekey order="28">sagemath_graph_2020</bcf:citekey>
     <bcf:citekey order="28">wolfram_graph_2020</bcf:citekey>
     <bcf:citekey order="28">matlab_shortest_2020</bcf:citekey>
+    <bcf:citekey order="29">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="30">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="31">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="32">knebl_algorithmen_2019</bcf:citekey>
+    <bcf:citekey order="32">vocking_taschenbuch_2008</bcf:citekey>
+    <bcf:citekey order="33">sagemath_graph_2020</bcf:citekey>
+    <bcf:citekey order="33">wolfram_wolfram_2020</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

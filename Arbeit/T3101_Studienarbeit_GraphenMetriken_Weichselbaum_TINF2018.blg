@@ -1,20 +1,21 @@
 [0] Config.pm:312> INFO - This is Biber 2.15
 [0] Config.pm:315> INFO - Logfile is 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.blg'
-[63] biber:330> INFO - === Mi Nov 18, 2020, 16:33:19
-[75] Biber.pm:415> INFO - Reading 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bcf'
-[143] Biber.pm:949> INFO - Using all citekeys in bib section 0
-[155] Biber.pm:4334> INFO - Processing section 0
-[165] Biber.pm:4523> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[167] bibtex.pm:1682> INFO - LaTeX decoding ...
-[206] bibtex.pm:1494> INFO - Found BibTeX data source 'literatur.bib'
-[239] Utils.pm:395> WARN - ISBN '978-3-642-32278-5 978-3-642-32277-8' in entry 'jungnickel_graphs_2013' is invalid - run biber with '--validate_datamodel' for details.
-[274] Utils.pm:395> WARN - ISBN '978-3-658-10322-4 978-3-658-10323-1' in entry 'aigner_graphentheorie_2015' is invalid - run biber with '--validate_datamodel' for details.
-[300] Utils.pm:395> WARN - ISBN '978-3-86802-315-2 978-3-86802-654-2' in entry 'hunger_neo4j_2014' is invalid - run biber with '--validate_datamodel' for details.
-[343] Utils.pm:395> WARN - ISBN '978-3-446-46052-2 978-3-446-46503-9' in entry 'tittmann_graphentheorie_2019' is invalid - run biber with '--validate_datamodel' for details.
-[388] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[388] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[389] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[389] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[417] bbl.pm:651> INFO - Writing 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl' with encoding 'UTF-8'
-[431] bbl.pm:754> INFO - Output to T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl
-[431] Biber.pm:128> INFO - WARNINGS: 4
+[62] biber:330> INFO - === So Dez  6, 2020, 19:04:54
+[73] Biber.pm:415> INFO - Reading 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bcf'
+[138] Biber.pm:949> INFO - Using all citekeys in bib section 0
+[150] Biber.pm:4334> INFO - Processing section 0
+[160] Biber.pm:4523> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[162] bibtex.pm:1682> INFO - LaTeX decoding ...
+[200] bibtex.pm:1494> INFO - Found BibTeX data source 'literatur.bib'
+[250] Utils.pm:395> WARN - ISBN '978-3-642-32278-5 978-3-642-32277-8' in entry 'jungnickel_graphs_2013' is invalid - run biber with '--validate_datamodel' for details.
+[291] Utils.pm:395> WARN - ISBN '978-3-540-76393-2 978-3-540-76394-9' in entry 'vocking_taschenbuch_2008' is invalid - run biber with '--validate_datamodel' for details.
+[303] Utils.pm:395> WARN - ISBN '978-3-446-46052-2 978-3-446-46503-9' in entry 'tittmann_graphentheorie_2019' is invalid - run biber with '--validate_datamodel' for details.
+[327] Utils.pm:395> WARN - ISBN '978-3-658-10322-4 978-3-658-10323-1' in entry 'aigner_graphentheorie_2015' is invalid - run biber with '--validate_datamodel' for details.
+[331] Utils.pm:395> WARN - ISBN '978-3-86802-315-2 978-3-86802-654-2' in entry 'hunger_neo4j_2014' is invalid - run biber with '--validate_datamodel' for details.
+[399] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[399] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[399] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[399] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[428] bbl.pm:651> INFO - Writing 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl' with encoding 'UTF-8'
+[442] bbl.pm:754> INFO - Output to T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl
+[442] Biber.pm:128> INFO - WARNINGS: 5

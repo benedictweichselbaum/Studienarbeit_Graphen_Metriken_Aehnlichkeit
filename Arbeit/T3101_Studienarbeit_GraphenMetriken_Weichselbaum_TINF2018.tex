@@ -280,9 +280,29 @@ Parallel zum Durchmesser eines Graphen kann man auch dessen \textbf{"`Radius"'} 
 }
 }
 \section{Kreis-basierte Metriken}
+{
+Ausgehend von einem Weg innerhalb eines Graphen können wir auch den Begriff des Kreises definieren. Ein Kreis ist dabei einfach ein Weg, der eine zyklische Eckenfolge hat. Sei \(x_i\) ein Knoten, so hat ein Kreis folgende typische Eckenfolge: \(x_0...x_{k-1},\ x_0\). \cite{diestel_graphentheorie_2000} Auch auf Basis solcher Kreise lassen sich verschiedene Graph-Metriken definieren.
+}
+\subsubsection*{Länge eines Kreises}
+{
+Ist ein solcher Kreis, wie vorhin beschrieben, gegeben, kann unter anderen an diesem seine Länge abgelesen werden. Die Länge beschreibt dabei die Anzahl der Kanten, die ein Kreis enthält. Ist erst einmal ein Kreis gegeben lässt sich die Länge leicht berechnen, denn die Länge eines Kreises ist gleich mit der Anzahl der Knoten innerhalb eines Kreises. Somit lässt sich die Länge in konstanter Zeit berechnen. \cite{diestel_graphentheorie_2000} Diese Metrik ist allerdings nicht direkt in referenzierten Mathematikbibliotheken vertreten, da grundsätzlich nur Graphen allgemein verarbeitet werden. Allerdings wäre es möglich, auf Basis des Wissens einen zyklischen Graphen zu erstellen und beispielsweise sich die Kantenanzahl zurückgeben zu lassen.
+}
+\subsubsection*{Taillenweite und Umfang}
+{
+Nimmt man die Länge eines Kreises als Basis, können weitere Kennzahlen für den gesamten Graphen ermittelt werden. Eine davon ist die "`Taillenweite"' des Graphen. Die "`Taillenweite"' ist so definiert, dass sie den Wert der Länge des kürzesten Kreises innerhalb des Graphen annimmt. Umgekehrt lässt sich auch der "`Umfang"' des Graphen bestimmen. Der Umfang ist dabei so groß wie die Länge des größtmöglichen Kreises innerhalb eines Graphen. Hat ein Graph keinen Kreis, so ist es nicht möglich für beide Kennzahlen einen Wert zu ermitteln. Allerdings haben diese dann einen festen Wert. So beträgt die "`Taillenweite"' in diesem Fall \(\infty\) und der Umfang null. \cite{diestel_graphentheorie_2000}
 
+Um die Taillenweite und den Umfang eines Graphen herauszufinden, ist es grundsätzlich notwendig die jeweiligen Zyklen innerhalb des Graphen herauszufinden. Hierfür lässt sich unter anderem eine modifizierte Tiefensuche nutzen, die mittels Markierung der Knoten erkennt, ob sie bereits schon einmal bei einem Knoten war und infolgedessen einen Zyklus erkennt. Hierbei wird unterschieden, ob ein Knoten noch nicht bearbeitet wurde, in Bearbeitung ist oder bereits der Algorithmus auf ihm vollständig abgeschlossen wurde. Wird der Algorithmus auf einem Knoten aufgerufen, der sich noch in Bearbeitung befindet, ist ein Zyklus gefunden. Mit einer richtigen Ausgabe kann dieser dann auch benannt werden. Daraus folgt auch, dass die Ermittlung der Taillenweite und des Umfangs entspricht, denn nach der Tiefensuche, muss einfach der größte bzw. der kleinste Zyklus gewählt werden, um die Metriken zu ermitteln. Die Komplexität beträgt damit \(O(\vert V\vert +\vert E\vert)\). \cite{knebl_algorithmen_2019,vocking_taschenbuch_2008}
+
+Zur Metrik "`Umfang"' lassen sich in den genannten Bibliotheken, außer bei Wolfram, keine direkten Implementierungen finden. Allerdings ist es möglich in SageMath und in Wolfram die "`Taillenweite"' direkt zu evaluieren. \cite{sagemath_graph_2020,wolfram_wolfram_2020}
+}
 \section{Zusammenhangsmetriken (Connectivity)}
+{
 
+}
+\subsubsection*{Dichte}
+{
+Bei der Vorstellung grundlegender Graphmetriken wurden u.a. die Größe und die Ordnung eines Graphen erklärt. Darauf aufbauend kann eine Kennzahl ermittelt werden, die aussagt, wie stark vernetzt ein Graph ist. Die "`Dichte"' eines Graphen gibt an, inwiefern der Graph so viele Kanten hat wie es ihm theoretisch möglich ist. Die "`Dichte"' setzt also tatsächliche Kantenanzahl (Größe) und die mögliche Kantenanzahl in ein Verhältnis. Die Metrik kann darauffolgend einen Wert zischen 0 und 1 annehmen. Ist der Wert 0 hat der Graph keine Kanten. Ist der Wert hingegen 1 so hat man einen vollständigen Graphen vor sich liegen. Möchte man die Dichte eines Graphen ermitteln ist es nötig die Größe des Graphen durch die potenzielle Größe zu teilen. Dies ist mit folgender Gleichung möglich: \(\)
+}
 \section{Zentralitätsmetriken}
 
 \section{Arborizität}

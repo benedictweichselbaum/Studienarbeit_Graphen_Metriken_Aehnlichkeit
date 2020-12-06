@@ -84,13 +84,9 @@
       \field{number}{3}
       \field{shortjournal}{Israel J. Math.}
       \field{title}{The linear arboricity of graphs}
-      \field{urlday}{24}
-      \field{urlmonth}{10}
-      \field{urlyear}{2020}
       \field{volume}{62}
       \field{year}{1988}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
       \true{nocite}
       \field{pages}{311\bibrangedash 325}
       \range{pages}{15}
@@ -1272,6 +1268,81 @@
       \verb https://www.degruyter.com/view/title/310250
       \endverb
     \endentry
+    \entry{vocking_taschenbuch_2008}{collection}{}
+      \name{editor}{7}{}{%
+        {{hash=2ed11d6960deb8c7dfaae29ab5ff5a00}{%
+           family={Vöcking},
+           familyi={V\bibinitperiod},
+           given={Berthold},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dfa170a08197e06d8e21a960c8a18a0e}{%
+           family={Alt},
+           familyi={A\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b3729237385542cc130552f38ee83186}{%
+           family={Dietzfelbinger},
+           familyi={D\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=800135f3e086e96b7484485725605771}{%
+           family={Reischuk},
+           familyi={R\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=001eb68115ee3ba68d51ad0bf6de6891}{%
+           family={Scheideler},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8739276df4b53203bffb44c00218a6d2}{%
+           family={Vollmer},
+           familyi={V\bibinitperiod},
+           given={Heribert},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f2f741491852a3b5c3ad17d40825e753}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Dorothea},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{ec35eff6a388c782556236beb4a53640}
+      \strng{fullhash}{7ef1779f3bd100293234cd8b932c7e6c}
+      \strng{bibnamehash}{ec35eff6a388c782556236beb4a53640}
+      \strng{editorbibnamehash}{ec35eff6a388c782556236beb4a53640}
+      \strng{editornamehash}{ec35eff6a388c782556236beb4a53640}
+      \strng{editorfullhash}{7ef1779f3bd100293234cd8b932c7e6c}
+      \field{labelalpha}{Vöc+08}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-540-76393-2 978-3-540-76394-9}
+      \field{langid}{german}
+      \field{series}{{eXamen}.press}
+      \field{title}{Taschenbuch der Algorithmen}
+      \field{urlday}{6}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-3-540-76394-9
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-540-76394-9
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-540-76394-9
+      \endverb
+    \endentry
     \entry{wills_metrics_2019}{book}{}
       \name{author}{2}{}{%
         {{hash=cfe728bfa8fd7a398828a606170bd284}{%
@@ -1313,9 +1384,11 @@
       \strng{authorbibnamehash}{ab5e97ed23587138329ff60a8dd8ad95}
       \strng{authornamehash}{ab5e97ed23587138329ff60a8dd8ad95}
       \strng{authorfullhash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \field{extraname}{1}
       \field{labelalpha}{Wol20}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Wolfram Language Documentation}
@@ -1335,6 +1408,43 @@
       \endverb
       \verb{url}
       \verb https://reference.wolfram.com/language/guide/GraphMeasures.html
+      \endverb
+    \endentry
+    \entry{wolfram_wolfram_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ab5e97ed23587138329ff60a8dd8ad95}{%
+           family={Wolfram},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{fullhash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{bibnamehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{authorbibnamehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{authornamehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{authorfullhash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \field{extraname}{2}
+      \field{labelalpha}{Wol20}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wolfram Language \& System Documentation Center}
+      \field{titleaddon}{Documentation Center}
+      \field{urlday}{6}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Wolfram Language & System Documentation Center:/home/benedict/snap/zotero-snap/common/Zotero/storage/GM7ZQDSD/language.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://reference.wolfram.com/language/
+      \endverb
+      \verb{url}
+      \verb https://reference.wolfram.com/language/
       \endverb
     \endentry
   \enddatalist

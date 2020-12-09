@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.20)  6 DEC 2020 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.20)  9 DEC 2020 01:26
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1092,7 +1092,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
-06.
+17.
 
 (/root/.miktex/texmfs/install/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
@@ -1100,25 +1100,25 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
 \openout1 = `T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-Package scrbase Info: activating english \contentsname on input line 106.
-Package scrbase Info: activating english \listfigurename on input line 106.
-Package scrbase Info: activating english \listtablename on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+Package scrbase Info: activating english \contentsname on input line 117.
+Package scrbase Info: activating english \listfigurename on input line 117.
+Package scrbase Info: activating english \listtablename on input line 117.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1162,14 +1162,14 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 106.
+LaTeX Info: Redefining \microtypecontext on input line 117.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 106.
+LaTeX Info: Redefining \showhyphens on input line 117.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1204,8 +1204,8 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 )
 \c@lstlisting=\count470
-Package scrhack Info: undefining \float@addtolists on input line 106.
-Package hyperref Info: Link coloring ON on input line 106.
+Package scrhack Info: undefining \float@addtolists on input line 117.
+Package hyperref Info: Link coloring ON on input line 117.
 
 (/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1218,9 +1218,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count471
 )
-LaTeX Info: Redefining \ref on input line 106.
-LaTeX Info: Redefining \pageref on input line 106.
-LaTeX Info: Redefining \nameref on input line 106.
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
 
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.out)
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.out)
@@ -1234,7 +1234,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 106.
+(scrreprt)           before \begin{document} on input line 117.
 
 (/root/.miktex/texmfs/install/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -1279,19 +1279,19 @@ Package biblatex Info: ... file 'T3101_Studienarbeit_GraphenMetriken_Weichselba
 um_TINF2018.bbl' found.
 
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl)
-Package biblatex Info: Reference section=0 on input line 106.
-Package biblatex Info: Reference segment=0 on input line 106.
+Package biblatex Info: Reference section=0 on input line 117.
+Package biblatex Info: Reference segment=0 on input line 117.
 <./Abbildungen/dhbwlogo.png, id=6, 192.72pt x 98.2872pt>
 File: ./Abbildungen/dhbwlogo.png Graphic file (type png)
 <use ./Abbildungen/dhbwlogo.png>
-Package pdftex.def Info: ./Abbildungen/dhbwlogo.png  used on input line 116.
+Package pdftex.def Info: ./Abbildungen/dhbwlogo.png  used on input line 127.
 (pdftex.def)             Requested size: 250.53595pt x 127.77332pt.
 
 (/root/.miktex/texmfs/install/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Overfull \hbox (12.31757pt too wide) in paragraph at lines 138--144
+Overfull \hbox (12.31757pt too wide) in paragraph at lines 149--155
 []  [] 
  []
 
@@ -1302,13 +1302,13 @@ Overfull \hbox (12.31757pt too wide) in paragraph at lines 138--144
 {/root/.miktex/texmfs/data/pdftex/config/pdftex.map} <./Abbildungen/dhbwlogo.pn
 g>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 149.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 160.
  [2] [3
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 16
-3.
+Package tocbasic Info: character protrusion at toc deactivated on input line 17
+4.
  (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.toc)
 \tf@toc=\write6
 \openout6 = `T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.toc'.
@@ -1317,8 +1317,8 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 16
 [4
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 16
-6.
+Package tocbasic Info: character protrusion at lof deactivated on input line 17
+7.
  (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.lof)
 \tf@lof=\write7
 \openout7 = `T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.lof'.
@@ -1326,8 +1326,8 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 16
  [1
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 17
-0.
+Package tocbasic Info: character protrusion at lot deactivated on input line 18
+1.
 
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.lot)
 \tf@lot=\write8
@@ -1340,7 +1340,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 17
 ]
 chapter 1.
 
-Overfull \hbox (9.25545pt too wide) in paragraph at lines 185--186
+Overfull \hbox (9.25545pt too wide) in paragraph at lines 196--197
 \OT1/phv/m/n/12 (-20) Diese netz-ar-ti-gen Struk-tu-ren k[]onnen da-bei die ver
 -schie-dens-ten Kon-struk-te re-pr[]asentieren.
  []
@@ -1349,11 +1349,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.199 ...iese zu ermitteln und zu kategorisieren?}
+l.210 ...iese zu ermitteln und zu kategorisieren?}
                                                    [1
 
 ]
-Overfull \hbox (4.03934pt too wide) in paragraph at lines 209--210
+Overfull \hbox (4.03934pt too wide) in paragraph at lines 220--221
 []\OT1/phv/m/n/12 (-20) Basierend auf Graph-Metriken l[]asst sich auch er-mit-t
 eln, ob zwei Gra-phen []Ahnlichkeiten
  []
@@ -1362,11 +1362,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.223 \chapter
+l.234 \chapter
               {Graph-Metriken} [2]
 chapter 2.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-27.
+38.
 (/root/.miktex/texmfs/install/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -1378,37 +1378,42 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.247 
+l.258 
        [3
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.257 
+l.268 
        [4] [5] [6]
-Overfull \hbox (10.0886pt too wide) in paragraph at lines 298--299
+Overfull \hbox (10.0886pt too wide) in paragraph at lines 309--310
 []\OT1/phv/m/n/12 (-20) Um die Tail-len-wei-te und den Um-fang ei-nes Gra-phen 
 her-aus-zu-fin-den, ist es grunds[]atzlich
  []
 
-[7] [8]
+[7] [8] [9]
+Overfull \hbox (11.1821pt too wide) in paragraph at lines 353--353
+[][]| 
+ []
+
+[10]
 chapter 3.
-[9
-
-]
-chapter 4.
-[10
-
-]
-chapter 5.
 [11
 
 ]
-chapter 6.
+chapter 4.
 [12
 
-] [13
+]
+chapter 5.
+[13
+
+]
+chapter 6.
+[14
+
+] [15
 
 ]
 chapter without number
@@ -1416,17 +1421,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[14
+[16
 
-] [15]
-Overfull \hbox (3.28954pt too wide) in paragraph at lines 336--336
+] [17] [18]
+Overfull \hbox (3.28954pt too wide) in paragraph at lines 377--377
 \OT1/phv/m/n/12 (-20) ver-lag, 1. Jan. 2004. \OT1/phv/m/sc/12 (-20) isbn\OT1/ph
 v/m/n/12 (-20) : 978-3-486-59377-8. \OT1/phv/m/sc/12 (-20) doi\OT1/phv/m/n/12 (
 -20) : [][]$\OT1/cmtt/m/n/12 10 . 1524 / 9783486593778$[][]\OT1/phv/m/n/12 (-20
 ) .
  []
 
-[16] [17] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
+[19] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
 Package rerunfilecheck Info: File `T3101_Studienarbeit_GraphenMetriken_Weichsel
 baum_TINF2018.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1437,28 +1442,31 @@ eichselbaum_TINF2018.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26332 strings out of 480232
- 483196 string characters out of 2887634
- 1472980 words of memory out of 3000000
- 42089 multiletter control sequences out of 15000+200000
- 564526 words of font info for 221 fonts, out of 3000000 for 9000
+ 26350 strings out of 480232
+ 483678 string characters out of 2887634
+ 1473313 words of memory out of 3000000
+ 42096 multiletter control sequences out of 15000+200000
+ 564575 words of font info for 222 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 94i,10n,99p,10654b,2229s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 94i,15n,99p,10654b,2229s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc}</usr/local/share/
 miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex
 -texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/share/miktex-texmf
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/share/miktex-texmf/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmt
-t12.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></us
-r/local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/shar
-e/miktex-texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/share/miktex-texmf/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/local/share/miktex-texmf/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+/usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
+cal/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/sh
+are/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-t
+exmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/t
+ype1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (24 pages, 250140 bytes).
+ (26 pages, 289499 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 500000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
  19170 words of extra memory for PDF output out of 20736 (max. 10000000)
 

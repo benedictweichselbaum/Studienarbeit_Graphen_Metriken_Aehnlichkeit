@@ -97,6 +97,17 @@
 \newcommand{\specialcell}[2][l]{%
   \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
 
+\newcommand{\metric}[3]{
+	\textbf{#1}
+	\vspace{1mm}
+	\begin{adjustwidth}{.5cm}{0cm}
+		\begin{tabular}{p{28mm} p{115mm}}
+			Definition: & \specialcell{#2} \\
+			Komplexität: & \specialcell{#3}
+		\end{tabular}
+	\end{adjustwidth}\hrulefill\\\vspace{2mm}
+}
+
 % Settings for bibliography from BibLaTeX
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
@@ -225,9 +236,9 @@ Als letztes soll sich die Studienarbeit mit praktischen Beispielen beschäftigen
 Dieser erste Teil der Arbeit wird sich nun ausführlich mit einer weiten Reihe an Graph-Metriken beschäftigen. Hierbei sollen die ersten zwei Fragestellungen der Arbeit genau beantwortet werden. Zur jeweiligen Vorstellung einer Graph-Metrik sollen dabei die folgengen Punkte erläutert werden:
 \begin{myitemize}
 	\item Was drückt die Metrik aus (Definition)?
-	\item Was ist die konkrete Motivation für die Metrik, falls diese auszumachen ist?
-	\item Inwieweit ist die Metrik verbreitet? Zum Beispiel in der Literatur oder in Mathematikbibliotheken.
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
+	\item Inwieweit ist die Metrik verbreitet? Zum Beispiel in der Literatur oder in Mathematikbibliotheken.
+	\item Was ist die konkrete Motivation für die Metrik, falls diese auszumachen ist?
 \end{myitemize}
 Es ist noch zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in Kategorien eingeteilt sind.
 
@@ -258,6 +269,10 @@ Des Weiteren gibt es bei der Betrachtung eines gerichteten Graphen zusätzliche 
 Auch der Grad eines Knotens und die meisten seiner verwandten Metriken sind weit verbreitet. So sind der allgemeine Grad, der Eingangsgrad, der Ausgangsgrad in allen drei betrachteten Mathematikbibliotheken vorhanden. SageMath unterstützt sogar nativ die Metrik "`Durchschnittsgrad"'. \cite{sagemath_graph_2020,matlab_directed_2020,wolfram_graph_2020}
 
 Die Berechnung eines Grades über eine Adjazenzmatrix oder eine Adjazenzliste ist in linearer Zeit lösbar (\(O(n)\)). Bei der Adjazenzmatrix muss einfach nur die jeweilige Reihe des zugehörigen Knotens durchlaufen werden und gezählt werden, wie häufig ein Eintrag für eine Kante enthalten. Mit Hilfe der Adjazenzliste kann einfach die Größe der Liste als Grad genommen werden, die dem Knoten zugehörig ist.
+}
+\subsubsection*{Anzahl der Zusammenhangskomponenten}
+{
+
 }
 \section{Distanzmetriken}
 {
@@ -301,7 +316,27 @@ Zur Metrik "`Umfang"' lassen sich in den genannten Bibliotheken, außer bei Wolf
 }
 \subsubsection*{Dichte}
 {
-Bei der Vorstellung grundlegender Graphmetriken wurden u.a. die Größe und die Ordnung eines Graphen erklärt. Darauf aufbauend kann eine Kennzahl ermittelt werden, die aussagt, wie stark vernetzt ein Graph ist. Die "`Dichte"' eines Graphen gibt an, inwiefern der Graph so viele Kanten hat wie es ihm theoretisch möglich ist. Die "`Dichte"' setzt also tatsächliche Kantenanzahl (Größe) und die mögliche Kantenanzahl in ein Verhältnis. Die Metrik kann darauffolgend einen Wert zischen 0 und 1 annehmen. Ist der Wert 0 hat der Graph keine Kanten. Ist der Wert hingegen 1 so hat man einen vollständigen Graphen vor sich liegen. Möchte man die Dichte eines Graphen ermitteln ist es nötig die Größe des Graphen durch die potenzielle Größe zu teilen. Dies ist mit folgender Gleichung möglich: \(\)
+Bei der Vorstellung grundlegender Graphmetriken wurden u.a. die Größe und die Ordnung eines Graphen erklärt. Darauf aufbauend kann eine Kennzahl ermittelt werden, die aussagt, wie stark vernetzt ein Graph ist. Die "`Dichte"' eines Graphen gibt an, inwiefern der Graph so viele Kanten hat wie es ihm theoretisch möglich ist. Die "`Dichte"' setzt also tatsächliche Kantenanzahl (Größe) und die mögliche Kantenanzahl in ein Verhältnis. Die Metrik kann darauffolgend einen Wert zischen 0 und 1 annehmen. Ist der Wert 0 hat der Graph keine Kanten. Ist der Wert hingegen 1 so hat man einen vollständigen Graphen vor sich liegen. Möchte man die Dichte eines Graphen ermitteln ist es nötig die Größe des Graphen durch die potenzielle Größe zu teilen. Dies ist mit folgender Gleichung möglich: \(\frac{\vert E\vert}{\binom{\vert V\vert}{2}}\). Hat man statt einem ungerichteten Graphen einen gerichteten muss die Formel leicht abgewandelt werden, da für einen vollständigen Graphen nun doppelt so viele Kanten nötig sind: \(\frac{\vert E\vert}{2\binom{\vert V\vert}{2}}\). \cite{sagemath_graph_2020}
+
+Zur Implementierung der Metrik ist es infolgedessen nur nötig die Größe und die Ordnung des Graphen herauszufinden. Die Komplexität zur Berechnung der "`Dichte"' ist deshalb gleich der Komplexität zur Berechnung von Größe und Ordnung addiert. Die Berechnung der "`Dichte"' selbst erfolgt in konstanter Zeit. Durch die Ableitung der Metrik aus zwei grundlegenden Kennzahlen ist die Berechnung auch problemlos möglich, ohne dass es eine explizite Implementierung in einer Bibliothek gibt. Allerdings bieten Wolfram und SageMath spezielle Funktionen für die "`Dichte"' eines Graphen. \cite{sagemath_graph_2020,wolfram_wolfram_2020,matlab_directed_2020}
+}
+\subsubsection*{Stärke}
+{
+Oft repräsentieren Graphen ein Netzwerk. Im Rahmen von Netzwerken wird unter anderem von deren "`Stärke"' gesprochen. Die "`Stärke"' gibt dabei das minimale Verhältnis zwischen entfernten Kanten und dadurch erstellter Zusammenhangskomponenten an. Es muss dabei allerdings die Anzahl der Zusammenhangskomponenten insgesamt erhöht werden. Ist die "`Stärke"' eines Netzwerks, bzw. eines Graphen, hoch, ist es u.a. schwieriger für einen Angreifer das Netzwerk stark zu beschädigen, greift dieser die Verbindungen, bzw. Kanten, des Netzwerks an. Zur Berechnung der Stärke \(\sigma(G)\) seien folgende Annahmen gegeben: Sei \(\Pi\) die Menge aller möglichen Partitionierungen der Knoten V und \(\partial\pi\) die Menge an Kanten, die entfernt werden müssten, um die Partitionierung \(\pi\) zu erreichen, gilt folgende Formel zur Errechnung der Stärke:
+\[\sigma(G)=\min_{\pi\in\Pi}\frac{\vert\partial\pi\vert}{\vert\pi\vert -1}\]
+Es wird also jede mögliche Partitionierung der Knoten V betrachtet und ermittelt welche Kanten man entfernen müsste, um diese Partitionierung der Knoten zu erhalten. Die Anzahl der Elemente in der jeweiligen Menge werden dann in ein Verhältnis gesetzt. Dabei wird eine Zusammenhangskomponenten aus \(\pi\) subtrahiert, da ein Graph immer zumindest aus einer Komponente besteht. Aus all diesen erstellten Verhältnissen ist nun das Minimum das Ergebnis. \cite{trubin_strenght_1993,cunningham_optimal_1985}
+
+Die Berechnung der "`Stärke"' und die Verbesserung der Komplexität des Algorithmus war Thema mehrerer wissenschaftlicher Arbeiten. Die beste erreichte Komplexität erzielte dabei V. A. Trubin mit einer Komplexität von \(O(\min(\sqrt{m},n^{2/3})mn\log(n^2/m+2))\). \(m\) ist hierbei die Anzahl an Kanten im Graphen, \(n\) die Anzahl an Knoten. \cite{trubin_strenght_1993}
+
+In SageMath, Wolfram oder MatLab ist die "`Stärke"' von Graphen nicht implementiert. Darüber hinaus ist es auch möglich statt über die Entfernung von Kanten die Metrik über die Entfernung von Knoten definieren. In diesem Fall spricht man über die "`Härte"' oder "`Zähigkeit"' (engl. "`Toughness"') des Graphen. \cite{chvatal_tough_2006}
+}
+\subsubsection*{"`Vertex connectivity"'}
+{
+
+}
+\subsubsection*{"`Edge connectivity"'}
+{
+
 }
 \section{Zentralitätsmetriken}
 
@@ -312,7 +347,11 @@ Bei der Vorstellung grundlegender Graphmetriken wurden u.a. die Größe und die 
 \section{Weitere Metriken}
 
 \section{Übersicht der vorgestellten Graphmetriken}
-
+{
+Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese mit Hilfe einer Aufzählung zusammengefasst werden. Aufgelistet werden jeweils der Name, bzw die Bezeichnung, der Metrik, ihre Definition und die Komplexität zur Berechnung der Kennzahl. Bei der Definition wird dabei eine Mathematische oder eine wörtliche Beschreibung angegeben. Gegebenenfalls auch beides, falls es für das Verständnis förderlich ist.\\
+\metric{Ordnung}{Anzahl der Knoten eines Graphen}{\(O(1)\ oder\ O(n)\)}
+\metric{Größe}{Anzahl der Kanten eines Graphen}{Adjazenzmatrix/liste: \(O(n^2)\); Inzidenzmatrix/liste: \(O(1)\ oder\ O(n)\)}
+}
 \chapter{Ähnlichkeit von Graphen}
 
 \chapter{Implementierung und Umsetzung der Metriken}

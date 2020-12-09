@@ -360,6 +360,92 @@
       \verb https://arxiv.org/abs/math/0701647v2
       \endverb
     \endentry
+    \entry{chvatal_tough_2006}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ce0039288011d6fb178612b0a6f7b47e}{%
+           family={Chvátal},
+           familyi={C\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce0039288011d6fb178612b0a6f7b47e}
+      \strng{fullhash}{ce0039288011d6fb178612b0a6f7b47e}
+      \strng{bibnamehash}{ce0039288011d6fb178612b0a6f7b47e}
+      \strng{authorbibnamehash}{ce0039288011d6fb178612b0a6f7b47e}
+      \strng{authornamehash}{ce0039288011d6fb178612b0a6f7b47e}
+      \strng{authorfullhash}{ce0039288011d6fb178612b0a6f7b47e}
+      \field{labelalpha}{Chv06}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0012365X}
+      \field{journaltitle}{Discrete Mathematics}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{10}
+      \field{shortjournal}{Discrete Mathematics}
+      \field{title}{Tough graphs and hamiltonian circuits}
+      \field{urlday}{9}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{volume}{306}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{910\bibrangedash 917}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.disc.2006.03.011
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0012365X06001397
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0012365X06001397
+      \endverb
+    \endentry
+    \entry{cunningham_optimal_1985}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7e3e34b3daf216059e82b76fa6551756}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e3e34b3daf216059e82b76fa6551756}
+      \strng{fullhash}{7e3e34b3daf216059e82b76fa6551756}
+      \strng{bibnamehash}{7e3e34b3daf216059e82b76fa6551756}
+      \strng{authorbibnamehash}{7e3e34b3daf216059e82b76fa6551756}
+      \strng{authornamehash}{7e3e34b3daf216059e82b76fa6551756}
+      \strng{authorfullhash}{7e3e34b3daf216059e82b76fa6551756}
+      \field{labelalpha}{Cun85}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In a nonnegative edge-weighted network, the weight of an edge represents the effort required by an attacker to destroy the edge, and the attacker derives a benefit for each new component created by destroying edges. The attacker may want to minimize over subsets of edges the difference between (or the ratio of) the effort incurred and the benefit received. This idea leads to the definition of the “strength” of the network, a measure of the resistance of the network to such attacks. Efficient algorithms for the optimal attack problem, the problem of computing the strength, and the problem of finding a minimum cost “reinforcement” to achieve a desired strength are given. These problems are also solved for a different model, in which the attacker wants to separate vertices from a fixed central vertex.}
+      \field{issn}{0004-5411}
+      \field{journaltitle}{J. {ACM}}
+      \field{month}{7}
+      \field{note}{Place: New York, {NY}, {USA} Publisher: Association for Computing Machinery}
+      \field{number}{3}
+      \field{title}{Optimal Attack and Reinforcement of a Network}
+      \field{volume}{32}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{pages}{549\bibrangedash 561}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3828.3829
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3828.3829
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3828.3829
+      \endverb
+    \endentry
     \entry{deepa_dijkstra_2018}{article}{}
       \name{author}{5}{}{%
         {{hash=a368e7c3b946d9efbf3fa45b15f21e0c}{%
@@ -1224,6 +1310,30 @@
       \field{shorttitle}{Graphentheorie}
       \field{title}{Graphentheorie: Eine anwendungsorientierte Einführung}
       \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{trubin_strenght_1993}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ae6528fe59dfdd9d6a11f6e8ac88bb28}{%
+           family={Trubin},
+           familyi={T\bibinitperiod},
+           given={V.\bibnamedelimi A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae6528fe59dfdd9d6a11f6e8ac88bb28}
+      \strng{fullhash}{ae6528fe59dfdd9d6a11f6e8ac88bb28}
+      \strng{bibnamehash}{ae6528fe59dfdd9d6a11f6e8ac88bb28}
+      \strng{authorbibnamehash}{ae6528fe59dfdd9d6a11f6e8ac88bb28}
+      \strng{authornamehash}{ae6528fe59dfdd9d6a11f6e8ac88bb28}
+      \strng{authorfullhash}{ae6528fe59dfdd9d6a11f6e8ac88bb28}
+      \field{labelalpha}{Tru93}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cybernetics and Systems Analysis}
+      \field{title}{Strenght of a graph and packing of trees and branchings}
+      \field{year}{1993}
       \field{dateera}{ce}
     \endentry
     \entry{turau_algorithmische_2004}{book}{}

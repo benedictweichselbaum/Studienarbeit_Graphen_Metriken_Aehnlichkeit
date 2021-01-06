@@ -312,7 +312,9 @@ Zur Metrik "`Umfang"' lassen sich in den genannten Bibliotheken, außer bei Wolf
 }
 \section{Zusammenhangsmetriken (Connectivity)}
 {
+Neben der Definition von Metriken auf Basis von Distanzen ist es auch möglich, Kennzahlen zu ermitteln, die den Zusammenhang eines Graphen betrachten. Hierfür ist es wichtig für einige Metriken zu verstehen, wann ein Graph als "`zusammenhängend"' gilt und was unter einer Zusammenhangskomponente eines Graphen zu verstehen ist.
 
+Ein Graph gilt dann als zusammenhängend, wenn gilt: \(\forall a, b(a\in V \land b\in V \land a\neq b \implies Weg\_existiert(a, b))\). Anschaulich bedeutet das, dass es zwischen zwei beliebigen Knoten immer einen Weg geben muss, der die beiden Knoten miteinander verbindet. Graphisch erscheint ein zusammenhängender Graph so, dass sich keine verschiedenen, klar voneinander trennbaren Komponenten erkennen lassen. Diese einzelnen Komponenten oder Partitionen eines nicht-zusammenhängenden Graphen werden "`Zusammenhangskomponenten"' genannt. \cite{diestel_graphentheorie_2000}
 }
 \subsubsection*{Dichte}
 {
@@ -324,17 +326,21 @@ Zur Implementierung der Metrik ist es infolgedessen nur nötig die Größe und d
 {
 Oft repräsentieren Graphen ein Netzwerk. Im Rahmen von Netzwerken wird unter anderem von deren "`Stärke"' gesprochen. Die "`Stärke"' gibt dabei das minimale Verhältnis zwischen entfernten Kanten und dadurch erstellter Zusammenhangskomponenten an. Es muss dabei allerdings die Anzahl der Zusammenhangskomponenten insgesamt erhöht werden. Ist die "`Stärke"' eines Netzwerks, bzw. eines Graphen, hoch, ist es u.a. schwieriger für einen Angreifer das Netzwerk stark zu beschädigen, greift dieser die Verbindungen, bzw. Kanten, des Netzwerks an. Zur Berechnung der Stärke \(\sigma(G)\) seien folgende Annahmen gegeben: Sei \(\Pi\) die Menge aller möglichen Partitionierungen der Knoten V und \(\partial\pi\) die Menge an Kanten, die entfernt werden müssten, um die Partitionierung \(\pi\) zu erreichen, gilt folgende Formel zur Errechnung der Stärke:
 \[\sigma(G)=\min_{\pi\in\Pi}\frac{\vert\partial\pi\vert}{\vert\pi\vert -1}\]
-Es wird also jede mögliche Partitionierung der Knoten V betrachtet und ermittelt welche Kanten man entfernen müsste, um diese Partitionierung der Knoten zu erhalten. Die Anzahl der Elemente in der jeweiligen Menge werden dann in ein Verhältnis gesetzt. Dabei wird eine Zusammenhangskomponenten aus \(\pi\) subtrahiert, da ein Graph immer zumindest aus einer Komponente besteht. Aus all diesen erstellten Verhältnissen ist nun das Minimum das Ergebnis. \cite{trubin_strenght_1993,cunningham_optimal_1985}
+Es wird also jede mögliche Partitionierung der Knoten V betrachtet und ermittelt welche Kanten man entfernen müsste, um diese Partitionierung der Knoten zu erhalten. Die Anzahl der Elemente in der jeweiligen Menge werden dann in ein Verhältnis gesetzt. Dabei wird eine Zusammenhangskomponenten aus \(\pi\) subtrahiert, da ein Graph immer zumindest aus einer Komponente besteht. Aus all diesen erstellten Verhältnissen ist nun das Minimum das Ergebnis. \cite{trubin_strenght_1993,cunningham_optimal_1985} Es kann auch anders gesagt werden, dass ein Graph bei dem die Entfernung weniger Kanten zu vergleichsweise vielen Zusammenhangskomponenten führt, ein sehr "`schwacher"' Graph ist. Umgekehrt ist es bei einem "`starken"' Graphen nicht möglich, selbst durch die Entfernung vieler Kanten (Zähler), eine vergleichsweise hohe Anzahl an Zusammenhangskomponenten (Nenner) zu erreichen.
 
 Die Berechnung der "`Stärke"' und die Verbesserung der Komplexität des Algorithmus war Thema mehrerer wissenschaftlicher Arbeiten. Die beste erreichte Komplexität erzielte dabei V. A. Trubin mit einer Komplexität von \(O(\min(\sqrt{m},n^{2/3})mn\log(n^2/m+2))\). \(m\) ist hierbei die Anzahl an Kanten im Graphen, \(n\) die Anzahl an Knoten. \cite{trubin_strenght_1993}
 
 In SageMath, Wolfram oder MatLab ist die "`Stärke"' von Graphen nicht implementiert. Darüber hinaus ist es auch möglich statt über die Entfernung von Kanten die Metrik über die Entfernung von Knoten definieren. In diesem Fall spricht man über die "`Härte"' oder "`Zähigkeit"' (engl. "`Toughness"') des Graphen. \cite{chvatal_tough_2006}
 }
-\subsubsection*{"`Vertex connectivity"'}
+\subsubsection*{"`Vertex Connectivity"'/Zusammenhang}
 {
+Die Stärke eines Graphen ist eine nicht ganzzahlige Metrik zur Beschreibung des allgemeinen Zusammenhangs innerhalb eines Graphen. Wie bei der Stärke schon erwähnt, ist diese Metrik in den einschlägigen Bibliotheken nicht zu finden. Die nächsten zwei Metriken sind sowohl in SageMath als auch in Wolfram zu finden und beschreiben die stärke des Zusammenhangs des Graphen mittels einer ganzen Zahl \cite{sagemath_graph_2020,wolfram_graph_2020}
 
+Die erste dieser Metriken ist die "`Vertex Connectivity"' oder "`Zusammenhang"'. Hierbei wird ein zusammenhängender oder auch nicht zusammenhängender Graph betrachtet und ermittelt wie viele Knoten aus dem Graphen mindestens entfernt werden müssen, sodass der Graph nicht mehr zusammehängend ist. \textit{k} entspricht dieser minimalen Anzahl an Knoten. Formal lässt sich sagen, dass ein Graph \textit{k-zusammenhängend} ist, wenn \(\vert G\vert > k\) und der Graph für jede mögliche Knotenmenge X mit der Mächtigkeit \(< k\) zusammenhängend bleibt, sobald man alle Knoten \(X\subseteq V\) aus V entfernt (\(G - X\)). Da ein Graph der \textit{3-zusammenhängend} ist auch \textit{4/5/...-zusammenhängend} ist, ist die absolute "`Vertex Connectivity"' bzw.  der "`Zusammenhang"' das \textit{k}, das für den Graph minimal ist. Der Zusammenhang ist dann 0, wenn der Graph von Anfang an nicht zusammenhängend ist oder der Graph nur aus einem Knoten besteht. \cite{diestel_graphentheorie_2000} Auch bei dieser Metrik gilt wie bei der Stärke, dass der Graph schwerer zu "`trennen"' ist, je höher die jeweilige Kennzahl ist. Daraus ist auch zu folgen, dass bei hohem Zusammenhang beispielweise ein Netzwerk weniger Anfällig für Angriffe ist.
+
+Um den Zusammenhang eines Graphen algorithmisch herauszufinden, können zunächst zwei triviale Fälle abgedeckt werden. Ist ein Graph leer oder trivial (nur ein Knoten) ist der Zusammenhang, wie bereits erwähnt, 0. Ist hingegen der Graph vollständig, beträgt der Zusammenhang \(\vert V\vert\). Allerdings lässt sich auch ein allgemeiner Algorithmus definieren, der die "`Vertex Connectivity"' berechnet.  Für den Algorithmus wird eine zusätzliche Funktion benötigt. \(N(a,b)\) nimmt zwei Knoten entgegen. Eine Menge an Knoten, die bei Entfernung dafür sorgt, dass zwischen a und b kein Weg mehr existiert, wird "`Knoten-Separator"' genannt. N gibt nun die Kardinalität des minimalsten "`Knoten-Separators"' von a und b zurück.
 }
-\subsubsection*{"`Edge connectivity"'}
+\subsubsection*{"`Edge Connectivity"'}
 {
 
 }
@@ -372,6 +378,5 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 \addcontentsline{toc}{chapter}{Glossar}
 {
 }
-\nocite{*}
 \printbibliography
 \end{document}

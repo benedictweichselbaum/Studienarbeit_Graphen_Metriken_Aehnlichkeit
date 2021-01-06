@@ -26,34 +26,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{8}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{10}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{11}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Arborizität}{10}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Arborizität}{11}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Chromatische Zahl und chromatischer Index}{10}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Chromatische Zahl und chromatischer Index}{11}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Weitere Metriken}{10}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Weitere Metriken}{11}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{10}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{11}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{12}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Implementierung und Umsetzung der Metriken}{12}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Implementierung und Umsetzung der Metriken}{13}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung in verschiedenen Graphdatenbanken}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Implementierung in verschiedenen Graphdatenbanken}{13}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Vergleich der Implementierungen}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Vergleich der Implementierungen}{13}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Graphmetriken und Ähnlichkeit in Anwendung}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Graphmetriken und Ähnlichkeit in Anwendung}{14}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{14}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{15}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{14}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{15}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{14}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Fazit}{15}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{15}{chapter*.21}%
+\contentsline {chapter}{Glossar}{16}{chapter*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{16}{chapter*.22}%
+\contentsline {chapter}{\nonumberline Literatur}{17}{chapter*.22}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

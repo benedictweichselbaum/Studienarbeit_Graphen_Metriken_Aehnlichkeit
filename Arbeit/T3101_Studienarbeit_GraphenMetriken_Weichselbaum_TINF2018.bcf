@@ -2414,6 +2414,7 @@
     <bcf:citekey order="40">sagemath_graph_2020</bcf:citekey>
     <bcf:citekey order="40">wolfram_graph_2020</bcf:citekey>
     <bcf:citekey order="41">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="42">even_graph_2012</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

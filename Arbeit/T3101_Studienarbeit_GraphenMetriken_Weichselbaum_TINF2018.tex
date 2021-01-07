@@ -338,7 +338,18 @@ Die Stärke eines Graphen ist eine nicht ganzzahlige Metrik zur Beschreibung des
 
 Die erste dieser Metriken ist die "`Vertex Connectivity"' oder "`Zusammenhang"'. Hierbei wird ein zusammenhängender oder auch nicht zusammenhängender Graph betrachtet und ermittelt wie viele Knoten aus dem Graphen mindestens entfernt werden müssen, sodass der Graph nicht mehr zusammehängend ist. \textit{k} entspricht dieser minimalen Anzahl an Knoten. Formal lässt sich sagen, dass ein Graph \textit{k-zusammenhängend} ist, wenn \(\vert G\vert > k\) und der Graph für jede mögliche Knotenmenge X mit der Mächtigkeit \(< k\) zusammenhängend bleibt, sobald man alle Knoten \(X\subseteq V\) aus V entfernt (\(G - X\)). Da ein Graph der \textit{3-zusammenhängend} ist auch \textit{4/5/...-zusammenhängend} ist, ist die absolute "`Vertex Connectivity"' bzw.  der "`Zusammenhang"' das \textit{k}, das für den Graph minimal ist. Der Zusammenhang ist dann 0, wenn der Graph von Anfang an nicht zusammenhängend ist oder der Graph nur aus einem Knoten besteht. \cite{diestel_graphentheorie_2000} Auch bei dieser Metrik gilt wie bei der Stärke, dass der Graph schwerer zu "`trennen"' ist, je höher die jeweilige Kennzahl ist. Daraus ist auch zu folgen, dass bei hohem Zusammenhang beispielweise ein Netzwerk weniger Anfällig für Angriffe ist.
 
-Um den Zusammenhang eines Graphen algorithmisch herauszufinden, können zunächst zwei triviale Fälle abgedeckt werden. Ist ein Graph leer oder trivial (nur ein Knoten) ist der Zusammenhang, wie bereits erwähnt, 0. Ist hingegen der Graph vollständig, beträgt der Zusammenhang \(\vert V\vert\). Allerdings lässt sich auch ein allgemeiner Algorithmus definieren, der die "`Vertex Connectivity"' berechnet.  Für den Algorithmus wird eine zusätzliche Funktion benötigt. \(N(a,b)\) nimmt zwei Knoten entgegen. Eine Menge an Knoten, die bei Entfernung dafür sorgt, dass zwischen a und b kein Weg mehr existiert, wird "`Knoten-Separator"' genannt. N gibt nun die Kardinalität des minimalsten "`Knoten-Separators"' von a und b zurück.
+Um den Zusammenhang eines Graphen algorithmisch herauszufinden, können zunächst zwei triviale Fälle abgedeckt werden. Ist ein Graph leer oder trivial (nur ein Knoten) ist der Zusammenhang, wie bereits erwähnt, 0. Ist hingegen der Graph vollständig, beträgt der Zusammenhang \(\vert V\vert\). Allerdings lässt sich auch ein allgemeiner Algorithmus definieren, der die "`Vertex Connectivity"' berechnet.  Für den Algorithmus wird eine zusätzliche Funktion benötigt. \(N(a,b)\) nimmt zwei Knoten entgegen. Eine Menge an Knoten, die bei Entfernung dafür sorgt, dass zwischen a und b kein Weg mehr existiert, wird "`Knoten-Separator"' genannt. N gibt nun die Kardinalität des minimalen "`Knoten-Separators"' von a und b zurück. Sind a und b direkt mit einer Kante verbunden, gibt es keinen "`Knoten-Separator"'. Sich diese Knotenpaare bei der Berechnung der "`Vertex Connectivity"' anzusehen, ist unnötig und muss nicht betrachtet werden. Schlussendlich ist nämlich die Kardinalität des kleinsten minimalen "`Knoten-Separators"' die gesuchte Kennzahl. Zur Berechnung gibt Shimon Even in seinem Buch "`Graph Algorithms"' folgenden Algorithmus an \cite{even_graph_2012}:
+\begin{lstlisting}
+	Vertex-Connectivity(V, E)
+		Sortiere Knoten v_1, v_2, ..., v_|V| so, dass es von v_1 keine Kante zu irgendeinem v gibt
+		gamma = unendlich
+		i = 1
+		while i <= gamma
+			for each v, sodass v_i keine Kante zu irgendeinem v gibt
+				gamma = min{gamma, N(v_i, v)}
+		return gamma
+\end{lstlisting}
+Der gezeigte Algorithmus terminiert mit \(\gamma\) gleich dem Zusammenhang. In seinen Ausführungen erläutert Even zudem, dass der Algorithmus eine Zeitkomplexität von \(O(\vert V\vert^{1/2} \cdot \vert E\vert^2)\) aufweist.
 }
 \subsubsection*{"`Edge Connectivity"'}
 {
@@ -354,7 +365,8 @@ Um den Zusammenhang eines Graphen algorithmisch herauszufinden, können zunächs
 
 \section{Übersicht der vorgestellten Graphmetriken}
 {
-Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese mit Hilfe einer Aufzählung zusammengefasst werden. Aufgelistet werden jeweils der Name, bzw die Bezeichnung, der Metrik, ihre Definition und die Komplexität zur Berechnung der Kennzahl. Bei der Definition wird dabei eine Mathematische oder eine wörtliche Beschreibung angegeben. Gegebenenfalls auch beides, falls es für das Verständnis förderlich ist.\\
+Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese mit Hilfe einer Aufzählung zusammengefasst werden. Aufgelistet werden jeweils der Name, bzw die Bezeichnung, der Metrik, ihre Definition und die Komplexität zur Berechnung der Kennzahl. Bei der Definition wird dabei eine Mathematische oder eine wörtliche Beschreibung angegeben. Gegebenenfalls auch beides, falls es für das Verständnis förderlich ist.
+
 \metric{Ordnung}{Anzahl der Knoten eines Graphen}{\(O(1)\ oder\ O(n)\)}
 \metric{Größe}{Anzahl der Kanten eines Graphen}{Adjazenzmatrix/liste: \(O(n^2)\); Inzidenzmatrix/liste: \(O(1)\ oder\ O(n)\)}
 }

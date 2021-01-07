@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.11.20)  6 JAN 2021 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.11.20)  7 JAN 2021 22:44
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1393,37 +1393,38 @@ her-aus-zu-fin-den, ist es grunds[]atzlich
  []
 
 [7] [8] [9] [10]
-Overfull \hbox (11.1821pt too wide) in paragraph at lines 359--359
-[][]| 
- []
-
-[11]
-chapter 3.
-[12
-
-]
-chapter 4.
-[13
-
-]
-chapter 5.
-[14
-
-]
-chapter 6.
-[15
-
-] [16
-
-]
-chapter without number
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[17
 
-] [18] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
+Overfull \hbox (11.1821pt too wide) in paragraph at lines 371--371
+[][]| 
+ []
+
+[11] [12]
+chapter 3.
+[13
+
+]
+chapter 4.
+[14
+
+]
+chapter 5.
+[15
+
+]
+chapter 6.
+[16
+
+] [17
+
+]
+chapter without number
+[18
+
+] [19] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
 Package rerunfilecheck Info: File `T3101_Studienarbeit_GraphenMetriken_Weichsel
 baum_TINF2018.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1434,11 +1435,11 @@ eichselbaum_TINF2018.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26260 strings out of 480232
- 480875 string characters out of 2887634
- 1467859 words of memory out of 3000000
- 42061 multiletter control sequences out of 15000+200000
- 563595 words of font info for 198 fonts, out of 3000000 for 9000
+ 26549 strings out of 480232
+ 483397 string characters out of 2887634
+ 1518919 words of memory out of 3000000
+ 42333 multiletter control sequences out of 15000+200000
+ 565623 words of font info for 203 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  94i,15n,99p,10654b,2229s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc}</usr/local/share/
@@ -1451,14 +1452,15 @@ msfonts/cm/cmr6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/
 cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
 /usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
-cal/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/sh
-are/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-t
-exmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/t
-ype1/urw/helvetic/uhvro8a.pfb>
+cal/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/sh
+are/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/share/mi
+ktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-texmf/f
+onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/u
+rw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (25 pages, 277432 bytes).
+ (26 pages, 297328 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 20194 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 469 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 22754 words of extra memory for PDF output out of 24883 (max. 10000000)
 

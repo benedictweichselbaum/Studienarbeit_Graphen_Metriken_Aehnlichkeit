@@ -204,6 +204,51 @@
       \field{year}{2013}
       \field{dateera}{ce}
     \endentry
+    \entry{even_graph_2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1df6d440bdcf5ce3d3ad82d370770f54}{%
+           family={Even},
+           familyi={E\bibinitperiod},
+           given={Shimon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editora}{1}{}{%
+        {{hash=a8d63b639c709160e2d187348a5c4ae5}{%
+           family={Even},
+           familyi={E\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, {NY}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{1df6d440bdcf5ce3d3ad82d370770f54}
+      \strng{fullhash}{1df6d440bdcf5ce3d3ad82d370770f54}
+      \strng{bibnamehash}{1df6d440bdcf5ce3d3ad82d370770f54}
+      \strng{authorbibnamehash}{1df6d440bdcf5ce3d3ad82d370770f54}
+      \strng{authornamehash}{1df6d440bdcf5ce3d3ad82d370770f54}
+      \strng{authorfullhash}{1df6d440bdcf5ce3d3ad82d370770f54}
+      \strng{editorabibnamehash}{a8d63b639c709160e2d187348a5c4ae5}
+      \strng{editoranamehash}{a8d63b639c709160e2d187348a5c4ae5}
+      \strng{editorafullhash}{a8d63b639c709160e2d187348a5c4ae5}
+      \field{labelalpha}{Eve12}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{"Shimon Even's Graph Algorithms, published in 1979, was a seminal introductory book on algorithms read by everyone engaged in the field. This thoroughly revised second edition, with a foreword by Richard M. Karp and notes by Andrew V. Goldberg, continues the exceptional presentation from the first edition and explains algorithms in a formal but simple language with a direct and intuitive presentation. The book begins by covering basic material, including graphs and shortest paths, trees, depth-first-search, and breadth-first search. The main part of the book is devoted to network flows and applications of network flows, and it ends with chapters on planar graphs and testing graph planarity"--}
+      \field{edition}{2nd ed}
+      \field{editoratype}{collaborator}
+      \field{isbn}{978-0-521-51718-8 978-0-521-73653-4}
+      \field{pagetotal}{189}
+      \field{title}{Graph algorithms}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \keyw{{COMPUTERS} / Programming / Algorithms,Graph algorithms}
+    \endentry
     \entry{gitta_durchmesser_2014}{online}{}
       \name{author}{1}{}{%
         {{hash=c8e6d48b98ca3a1f76bb4925315ac648}{%

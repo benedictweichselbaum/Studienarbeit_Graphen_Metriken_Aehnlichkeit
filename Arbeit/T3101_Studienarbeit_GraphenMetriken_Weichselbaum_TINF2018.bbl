@@ -452,7 +452,7 @@
       \verb https://de.mathworks.com/help/matlab/math/directed-and-undirected-graphs.html
       \endverb
     \endentry
-    \entry{matlab_shortest_2020}{online}{}
+    \entry{matlab_graph_2020}{online}{}
       \name{author}{1}{}{%
         {{hash=a5cd8a07b40f6449056939c13140ae19}{%
            family={Matlab},
@@ -469,6 +469,43 @@
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Graph and Network Algorithms}
+      \field{titleaddon}{Graph and Network Algorithms}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Graph and Network Algorithms - MATLAB & Simulink - MathWorks Deutschland:/home/benedict/snap/zotero-snap/common/Zotero/storage/9GF6G6SR/graph-and-network-algorithms.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://de.mathworks.com/help/matlab/graph-and-network-algorithms.html?searchHighlight=graph&s_tid=srchtitle
+      \endverb
+      \verb{url}
+      \verb https://de.mathworks.com/help/matlab/graph-and-network-algorithms.html?searchHighlight=graph&s_tid=srchtitle
+      \endverb
+    \endentry
+    \entry{matlab_shortest_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a5cd8a07b40f6449056939c13140ae19}{%
+           family={Matlab},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{fullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{bibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorbibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authornamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorfullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \field{extraname}{3}
+      \field{labelalpha}{Mat20}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extraalpha}{3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Shortest path distances of all node pairs}

@@ -272,14 +272,28 @@ Die Berechnung eines Grades über eine Adjazenzmatrix oder eine Adjazenzliste is
 }
 \subsubsection*{Anzahl der Zusammenhangskomponenten}
 {
+Eine weitere Variante einen Graphen grundlegend zu beschreiben, besteht darin seine Zusammenhangskomponenten zu zählen. Hierfür ist es zunächst wichtig zu verstehen, was Zusammenhang bei Graphen bedeutet.
 
+Ein Graph gilt dann als zusammenhängend, wenn gilt: \(\forall a, b(a\in V \land b\in V \land a\neq b \implies Weg\_existiert(a, b))\). Anschaulich bedeutet das, dass es zwischen zwei beliebigen Knoten immer einen Weg geben muss, der die beiden Knoten miteinander verbindet. Graphisch erscheint ein zusammenhängender Graph so, dass sich keine verschiedenen, klar voneinander trennbaren Komponenten erkennen lassen. Diese einzelnen Komponenten oder Partitionen eines nicht-zusammenhängenden Graphen werden "`Zusammenhangskomponenten"' genannt. Innerhalb der Zusammenhangskomponenten gilt natürlich wieder die Eigenschaft des Zusammenhangs. \cite{diestel_graphentheorie_2000}
+
+Die Anzahl der Zusammenhangskomponenten gibt nun an, wie viele Komponenten innerhalb eines Graphen vorhanden sind. Die Metrik ist sowohl in MatLab als auch in SageMath vertreten \cite{sagemath_graph_2020,matlab_graph_2020}. Zur Ermittlung der Anzahl wird sich eines einfachen Algorithmus bedient, der die Tiefen- oder Breitensuche nutzt, die jeweils jeden Knoten als "`besucht"' markiert, den sie traversiert. Folgender Pseudocode beschreibt diesen Algorithmus:
+\begin{lstlisting}
+	Integer zaehleKomponenten (graph)
+		int komponentenanzahl = 0
+		for (knoten in graph)
+			if (knoten ist nicht besucht)
+				tiefen_oder_breitensuche(graph, knoten)
+			komponentenanzahl++
+		return komponentenanzahl
+\end{lstlisting}
+Da der Algorithmus von einem der Suchalgorithmen abhängig ist, bestimmt dieser die Komplexität zur Ermittlung der Kennzahl. Jeder Knoten wird genau einmal in dieser Prozedur besucht. Zudem wird über alle Knoten in der äußeren Zählschleife iteriert. Es ergibt sich dadurch eine Komplexität von \(O(\vert V\vert +\vert E\vert)\).
 }
 \section{Distanzmetriken}
 {
 Innerhalb der Graphentheorie gibt es den Begriff des Wegs. Ein Weg beschreibt dabei einen Graphen, der Knoten in einer Reihe hinterander Verbindet. Somit hat der Anfangs- und End-Knoten den Grad 1 und alle "`mittleren"' Knoten den Grad 2. Meist sucht man aber einen bestimmten Weg innerhalb eines bestehenden Graphen. Der Weg ist hier dann ein Teilgraph des ursprünglichen Graphen. Anschaulicher lässt sich ein Weg also als eine Folge von Kanten beschreiben, in der kein Knoten zweimal besucht wird. Die Länge eines Weges ist dabei die Anzahl der Kanten, die in einem Weg vorhanden sind. \cite{diestel_graphentheorie_2000} Auf Basis des Weges und seiner Längen-Eigenschaft lassen sich nun eine Reihe von Metriken definiert werden.
 \subsubsection*{Abstand/Distanz}
 {
-Der "`Abstand"' ist eine Metrik, die auf Basis von zwei Knoten innerhalb eines Graphen definiert wird. Sie beschreibt die Länge des kürzesten Weges zwischen den zwei Knoten, von denen man den Abstand wissen will. Aufgeschrieben werden kann die Metrik mittels einer Funktion, die für den Graph G zwei Knoten x und y auf eine natürliche Zahl abbildet: \(d_G (x,y)\) \cite{diestel_graphentheorie_2000} Diese Metrik ist wichtig als Basis für andere Metriken. Wie die bisherigen Metriken ist auch diese in den jeweiligen Bibliotheken vertreten \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020}. Zur Berechnung der Metrik kann auf verschiedene bekannte, graphtraversierende Algorithmen zurückgegriffen werden. Dazu zählen die Breitensuche, der Djikstra-Algorithmus oder der Bellman-Ford-Algorithmus \cite{sagemath_graph_2020}. Somit ist auch die Komplexität zum Herausfinden der Metrik gleich mit der der Algorithmen. So wäre bei einer Breitensuche eine Komplexität von \(O(\vert E\vert)\) zu erwarten, da jede Kante abgegangen wird. Der Djikstra-Algorithmus hingegen hat eine Komplexität von \(O(\vert V\vert ^2)\) \cite{jungnickel_graphs_2013}.
+Der "`Abstand"' ist eine Metrik, die auf Basis von zwei Knoten innerhalb eines Graphen definiert wird. Sie beschreibt die Länge des kürzesten Weges zwischen den zwei Knoten, von denen man den Abstand wissen will. Aufgeschrieben werden kann die Metrik mittels einer Funktion, die für den Graph G zwei Knoten x und y auf eine natürliche Zahl abbildet: \(d_G (x,y)\) \cite{diestel_graphentheorie_2000} Diese Metrik ist wichtig als Basis für andere Metriken. Wie die bisherigen Metriken ist auch diese in den jeweiligen Bibliotheken vertreten \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020}. Zur Berechnung der Metrik kann auf verschiedene bekannte, graphtraversierende Algorithmen zurückgegriffen werden. Dazu zählen die Breitensuche, der Djikstra-Algorithmus oder der Bellman-Ford-Algorithmus \cite{sagemath_graph_2020}. Somit ist auch die Komplexität zum Herausfinden der Metrik gleich mit der der Algorithmen. So wäre bei einer Breitensuche eine Komplexität von \(O(\vert V\vert +\vert E\vert)\) zu erwarten, da jede Kante abgegangen wird. Der Djikstra-Algorithmus hingegen hat eine Komplexität von \(O(\vert V\vert ^2)\) \cite{jungnickel_graphs_2013}.
 }
 \subsubsection*{Extrenzität eines Knotens}
 {
@@ -312,9 +326,7 @@ Zur Metrik "`Umfang"' lassen sich in den genannten Bibliotheken, außer bei Wolf
 }
 \section{Zusammenhangsmetriken (Connectivity)}
 {
-Neben der Definition von Metriken auf Basis von Distanzen ist es auch möglich, Kennzahlen zu ermitteln, die den Zusammenhang eines Graphen betrachten. Hierfür ist es wichtig für einige Metriken zu verstehen, wann ein Graph als "`zusammenhängend"' gilt und was unter einer Zusammenhangskomponente eines Graphen zu verstehen ist.
-
-Ein Graph gilt dann als zusammenhängend, wenn gilt: \(\forall a, b(a\in V \land b\in V \land a\neq b \implies Weg\_existiert(a, b))\). Anschaulich bedeutet das, dass es zwischen zwei beliebigen Knoten immer einen Weg geben muss, der die beiden Knoten miteinander verbindet. Graphisch erscheint ein zusammenhängender Graph so, dass sich keine verschiedenen, klar voneinander trennbaren Komponenten erkennen lassen. Diese einzelnen Komponenten oder Partitionen eines nicht-zusammenhängenden Graphen werden "`Zusammenhangskomponenten"' genannt. \cite{diestel_graphentheorie_2000}
+Neben der Definition von Metriken auf Basis von Distanzen ist es auch möglich, Kennzahlen zu ermitteln, die den Zusammenhang eines Graphen betrachten. Hierfür ist es wichtig zu verstehen, wann ein Graph als zusammehängend gilt und was eine Zusammenhangskomponente bzw. Partition eines Graphen ist. Dies wurde bei der Metrik "`Anzahl der Zusammenhangskomponenten"' erläutert.
 }
 \subsubsection*{Dichte}
 {

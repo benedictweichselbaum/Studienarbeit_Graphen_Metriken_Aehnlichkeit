@@ -20,21 +20,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Grundlegende Metriken}{3}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Distanzmetriken}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Distanzmetriken}{6}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Kreis-basierte Metriken}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Kreis-basierte Metriken}{8}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{9}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{11}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{12}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Arborizität}{11}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Arborizität}{12}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Chromatische Zahl und chromatischer Index}{11}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Chromatische Zahl und chromatischer Index}{12}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Weitere Metriken}{11}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Weitere Metriken}{12}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{11}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{12}{section.2.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{13}{chapter.3}%
 \defcounter {refsection}{0}\relax 

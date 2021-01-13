@@ -365,7 +365,9 @@ Der gezeigte Algorithmus terminiert mit \(\gamma\) gleich dem Zusammenhang. In s
 }
 \subsubsection*{"`Edge Connectivity"'}
 {
+Ähnlich zur "`Vertex Connectivity"' ist auch die "`Edge Connectivity"' ein ganzzahliges Zusammenhangsmaß für einen Graphen und ist auch ähnlich definiert. Wie die "`Vertex Connectivity"' ist diese in SageMath und Wolfram enthalten \cite{sagemath_graph_2020,wolfram_graph_2020}. Die "`Edge Connectivity"' ist nur definiert, wenn der Graph mindestens 2 Knoten hat. Hat ein Graph nur einen Knoten oder ist von Anfang an nicht zusammenhängend, so ist der auch sogenannte "`Kantenzusammenhang"' von G \(\lambda (G)\) gleich null. Ansonsten wird der Kantenzusammenhang so definiert, dass es die minimale Zahl an Kanten ist, die aus einem Graphen entnommen werden kann, sodass dieser nicht mehr zusammenhängend ist. Präziser kann es folgendermaßen definiert werden: Ein Graph hat einen Kantenzusammenhang von \(\lambda (G)\), wenn \(G - F\) für alle Kantenmengen \(F\subseteq E\) der Mächtigkeit \(< \lambda (G)\) zusammehängend ist. \cite{diestel_graphentheorie_2000} Die "`Vertex Connectivity"' bildet also das genau Pendant zur "`Vertex Connectivity"' und arbeitet komplett analog zu dieser Metrik.
 
+%% Füge noch Algorithmus und Komplexität dessen ein!
 }
 \section{Zentralitätsmetriken}
 

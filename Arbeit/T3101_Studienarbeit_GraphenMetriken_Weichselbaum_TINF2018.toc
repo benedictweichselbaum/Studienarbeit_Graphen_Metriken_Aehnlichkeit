@@ -32,9 +32,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.7}Chromatische Zahl und chromatischer Index}{12}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Weitere Metriken}{12}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Weitere Metriken}{13}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{12}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{13}{section.2.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{14}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -52,8 +52,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Fazit}{17}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{18}{chapter*.21}%
+\contentsline {chapter}{Glossar}{18}{chapter*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{19}{chapter*.22}%
+\contentsline {chapter}{\nonumberline Literatur}{19}{chapter*.25}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

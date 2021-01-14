@@ -19,6 +19,44 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
+    \entry{aigner_graphentheorie_2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ef95611aaa6551f2a39bf2efea6ee471}{%
+           family={Aigner},
+           familyi={A\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Springer Spektrum}%
+      }
+      \strng{namehash}{ef95611aaa6551f2a39bf2efea6ee471}
+      \strng{fullhash}{ef95611aaa6551f2a39bf2efea6ee471}
+      \strng{bibnamehash}{ef95611aaa6551f2a39bf2efea6ee471}
+      \strng{authorbibnamehash}{ef95611aaa6551f2a39bf2efea6ee471}
+      \strng{authornamehash}{ef95611aaa6551f2a39bf2efea6ee471}
+      \strng{authorfullhash}{ef95611aaa6551f2a39bf2efea6ee471}
+      \field{labelalpha}{Aig15}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{2., überarbeitete Auflage}
+      \field{isbn}{978-3-658-10322-4 978-3-658-10323-1}
+      \field{note}{{OCLC}: 927721160}
+      \field{pagetotal}{196}
+      \field{series}{Springer Studium Mathematik Bachelor}
+      \field{shorttitle}{Graphentheorie}
+      \field{title}{Graphentheorie: eine Einführung aus dem 4-Farben Problem}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/ZF443BDR/Aigner - 2015 - Graphentheorie eine Einführung aus dem 4-Farben P.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{balakrishnan_schaums_1997}{book}{}
       \name{author}{1}{}{%
         {{hash=672fab29cb072802b491d35ac41dc271}{%
@@ -526,6 +564,42 @@
       \verb https://de.mathworks.com/help/matlab/ref/graph.distances.html
       \endverb
     \endentry
+    \entry{sagemath_graph_2020-1}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fe35b7fe7ae5c4d992398b8159d20c54}{%
+           family={{SageMath}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{fullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{bibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authorbibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authornamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authorfullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \field{extraname}{1}
+      \field{labelalpha}{Sag20}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Graph coloring}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Graph coloring — Sage 9.2 Reference Manual\: Graph Theory:/home/benedict/snap/zotero-snap/common/Zotero/storage/TCX2LMUR/graph_coloring.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph_coloring.html
+      \endverb
+      \verb{url}
+      \verb https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph_coloring.html
+      \endverb
+    \endentry
     \entry{sagemath_graph_2020}{online}{}
       \name{author}{1}{}{%
         {{hash=fe35b7fe7ae5c4d992398b8159d20c54}{%
@@ -538,9 +612,11 @@
       \strng{authorbibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \strng{authornamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \strng{authorfullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \field{extraname}{2}
       \field{labelalpha}{Sag20}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Sage Math Reference Manual}
@@ -803,7 +879,7 @@
       \verb https://reference.wolfram.com/language/guide/GraphMeasures.html
       \endverb
     \endentry
-    \entry{wolfram_wolfram_2020}{online}{}
+    \entry{wolfram_wolfram_2020-1}{online}{}
       \name{author}{1}{}{%
         {{hash=ab5e97ed23587138329ff60a8dd8ad95}{%
            family={Wolfram},
@@ -820,6 +896,42 @@
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wolfram Function Repository}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Wolfram Function Repository:/home/benedict/snap/zotero-snap/common/Zotero/storage/9EVWIWL9/FunctionRepository.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://resources.wolframcloud.com/FunctionRepository/
+      \endverb
+      \verb{url}
+      \verb https://resources.wolframcloud.com/FunctionRepository/
+      \endverb
+    \endentry
+    \entry{wolfram_wolfram_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ab5e97ed23587138329ff60a8dd8ad95}{%
+           family={Wolfram},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{fullhash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{bibnamehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{authorbibnamehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{authornamehash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \strng{authorfullhash}{ab5e97ed23587138329ff60a8dd8ad95}
+      \field{extraname}{3}
+      \field{labelalpha}{Wol20}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Wolfram Language \& System Documentation Center}

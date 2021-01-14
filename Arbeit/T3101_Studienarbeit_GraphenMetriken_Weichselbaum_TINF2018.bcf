@@ -2420,6 +2420,11 @@
     <bcf:citekey order="44">sagemath_graph_2020</bcf:citekey>
     <bcf:citekey order="44">wolfram_graph_2020</bcf:citekey>
     <bcf:citekey order="45">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="46">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="46">aigner_graphentheorie_2015</bcf:citekey>
+    <bcf:citekey order="47">diestel_graphentheorie_2000</bcf:citekey>
+    <bcf:citekey order="48">sagemath_graph_2020-1</bcf:citekey>
+    <bcf:citekey order="48">wolfram_wolfram_2020-1</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

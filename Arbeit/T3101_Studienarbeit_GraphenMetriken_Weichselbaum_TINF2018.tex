@@ -374,6 +374,16 @@ Der gezeigte Algorithmus terminiert mit \(\gamma\) gleich dem Zusammenhang. In s
 \section{Arborizität}
 
 \section{Chromatische Zahl und chromatischer Index}
+{
+Ein bekanntes Problem der Informatik ist das Färbeproblem. Es geht dabei darum einen Graphen so zu färben, sodass zwei benachbarte Knoten nicht die selbe Farbe haben. Anwendungen dafür kann man in vielen Problemen finden. Klassischerweise nimmt man das Beispiel der Karteneinfärbung bei der jedes Land ein Knoten ist und die Karte so eingefärbt werden soll, dass zwei benachbarte Länder nicht die gleiche Farbe haben. Allerdings lässt sich das Färbeproblem auch auf andere relevantere Probleme anwenden. Man kann z.B. so auch einen konfliktfreien Stundenplan erstellen oder andere ähnliche Konflikt-Probleme lösen. Die Eckenfärbung eines Graphen selbst ist eine Abbildung \(c: V\mapsto S\), wobei S die Menge an möglichen Färbungen ist. \cite{diestel_graphentheorie_2000,aigner_graphentheorie_2015} 
+}
+\subsubsection*{Chromatische Zahl}
+{
+Auf Basis der Färbeproblems können nun eine Reihe an Metriken definiert werden. Betrachtet man das Problem mithilfe der Abbildungsfunktion \(c\), so ist der Graph korrekt gefärbt, wenn gilt: \(\forall v, w (v\neq w \Rightarrow c(v)\neq c(w))\). Die "`chromatische Zahl"' beschreibt nun die Mächtigkeit der minimalen Menge \(S\) für die diese Bedingung zutrifft. Man bezeichnet die chromatische Zahl auch als \(X(G)\). \cite{diestel_graphentheorie_2000} Die chromatische Zahl kann sowohl von SageMath als auch von Wolfram berechnet werden \cite{sagemath_graph_2020-1,wolfram_wolfram_2020-1}
+}
+\subsubsection*{Chromatischer Index}
+
+\subsubsection*{Fraktionierte chromatische Zahl}
 
 \section{Weitere Metriken}
 

@@ -2425,6 +2425,8 @@
     <bcf:citekey order="47">diestel_graphentheorie_2000</bcf:citekey>
     <bcf:citekey order="48">sagemath_graph_2020-1</bcf:citekey>
     <bcf:citekey order="48">wolfram_wolfram_2020-1</bcf:citekey>
+    <bcf:citekey order="49">weisstein_chromatic_nodate</bcf:citekey>
+    <bcf:citekey order="49">karp_reducibility_1996</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

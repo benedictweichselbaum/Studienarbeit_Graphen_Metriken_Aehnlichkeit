@@ -393,6 +393,34 @@
       \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/WGMU9ZLL/Jungnickel - 2013 - Graphs, networks and algorithms.pdf:application/pdf
       \endverb
     \endentry
+    \entry{karp_reducibility_1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5290385c419686f6312edeb3578dc9cf}{%
+           family={Karp},
+           familyi={K\bibinitperiod},
+           given={Richard\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5290385c419686f6312edeb3578dc9cf}
+      \strng{fullhash}{5290385c419686f6312edeb3578dc9cf}
+      \strng{bibnamehash}{5290385c419686f6312edeb3578dc9cf}
+      \strng{authorbibnamehash}{5290385c419686f6312edeb3578dc9cf}
+      \strng{authornamehash}{5290385c419686f6312edeb3578dc9cf}
+      \strng{authorfullhash}{5290385c419686f6312edeb3578dc9cf}
+      \field{labelalpha}{Kar96}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{INFORMS} Jounal on Computing}
+      \field{number}{4}
+      \field{title}{Reducibility among combinatorial problems}
+      \field{volume}{8}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{344\bibrangedash 354}
+      \range{pages}{11}
+    \endentry
     \entry{knebl_algorithmen_2019}{book}{}
       \name{author}{1}{}{%
         {{hash=3b59f0e63f078d48b1e050c572b5d7fe}{%
@@ -810,6 +838,44 @@
       \endverb
       \verb{url}
       \verb http://link.springer.com/10.1007/978-3-540-76394-9
+      \endverb
+    \endentry
+    \entry{weisstein_chromatic_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{fullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{bibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \field{labelalpha}{Wei}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The chromatic number of a graph G is the smallest number of colors needed to color the vertices of G so that no two adjacent vertices share the same color (Skiena 1990, p. 210), i.e., the smallest value of k possible to obtain a k-coloring. Minimal colorings and chromatic numbers for a sample of graphs are illustrated above. The chromatic number of a graph G is most commonly denoted chi(G) (e.g., Skiena 1990, West 2000, Godsil and Royle 2001, Pemmaraju and Skiena 2003), but occasionally also...}
+      \field{langid}{english}
+      \field{note}{Publisher: Wolfram Research, Inc.}
+      \field{title}{Chromatic Number}
+      \field{type}{Text}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/TIRF34GR/ChromaticNumber.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://mathworld.wolfram.com/ChromaticNumber.html
+      \endverb
+      \verb{url}
+      \verb https://mathworld.wolfram.com/ChromaticNumber.html
       \endverb
     \endentry
     \entry{wills_metrics_2019}{book}{}

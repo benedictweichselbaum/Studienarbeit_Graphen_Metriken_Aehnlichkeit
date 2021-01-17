@@ -2427,6 +2427,11 @@
     <bcf:citekey order="48">wolfram_wolfram_2020-1</bcf:citekey>
     <bcf:citekey order="49">weisstein_chromatic_nodate</bcf:citekey>
     <bcf:citekey order="49">karp_reducibility_1996</bcf:citekey>
+    <bcf:citekey order="50">andersen_edge-colorings_1977</bcf:citekey>
+    <bcf:citekey order="50">sagemath_graph_2020-1</bcf:citekey>
+    <bcf:citekey order="50">wolfram_wolfram_2020-1</bcf:citekey>
+    <bcf:citekey order="51">plantholt_chromatic_1983</bcf:citekey>
+    <bcf:citekey order="52">gross_handbook_2004</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

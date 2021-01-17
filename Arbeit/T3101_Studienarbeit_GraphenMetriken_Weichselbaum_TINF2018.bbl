@@ -57,6 +57,50 @@
       \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/ZF443BDR/Aigner - 2015 - Graphentheorie eine Einführung aus dem 4-Farben P.pdf:application/pdf
       \endverb
     \endentry
+    \entry{andersen_edge-colorings_1977}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3a75470a2446fb7f73ea5670ea00c091}{%
+           family={Andersen},
+           familyi={A\bibinitperiod},
+           given={Lars\bibnamedelima Dovling},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a75470a2446fb7f73ea5670ea00c091}
+      \strng{fullhash}{3a75470a2446fb7f73ea5670ea00c091}
+      \strng{bibnamehash}{3a75470a2446fb7f73ea5670ea00c091}
+      \strng{authorbibnamehash}{3a75470a2446fb7f73ea5670ea00c091}
+      \strng{authornamehash}{3a75470a2446fb7f73ea5670ea00c091}
+      \strng{authorfullhash}{3a75470a2446fb7f73ea5670ea00c091}
+      \field{labelalpha}{And77}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1903-1807, 0025-5521}
+      \field{journaltitle}{{MATHEMATICA} {SCANDINAVICA}}
+      \field{month}{12}
+      \field{shortjournal}{{MATH}. {SCAND}.}
+      \field{title}{On edge-colorings of graphs.}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{40}
+      \field{year}{1977}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{161}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.7146/math.scand.a-11685
+      \endverb
+      \verb{urlraw}
+      \verb http://www.mscand.dk/article/view/11685
+      \endverb
+      \verb{url}
+      \verb http://www.mscand.dk/article/view/11685
+      \endverb
+    \endentry
     \entry{balakrishnan_schaums_1997}{book}{}
       \name{author}{1}{}{%
         {{hash=672fab29cb072802b491d35ac41dc271}{%
@@ -321,6 +365,44 @@
       \verb{url}
       \verb https://www.gitta.info/Accessibiliti/de/html/StructPropNetw_learningObject2.html
       \endverb
+    \endentry
+    \entry{gross_handbook_2004}{collection}{}
+      \name{editor}{2}{}{%
+        {{hash=262a8003dfe3a21fdbc9d111fe8ed2c6}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Jonathan\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b3aeb580253145eb2d36db90a7fb18d4}{%
+           family={Yellen},
+           familyi={Y\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {{CRC} Press}%
+      }
+      \strng{namehash}{c9c28aedb7bb59fe5ddbfbc9418456d6}
+      \strng{fullhash}{c9c28aedb7bb59fe5ddbfbc9418456d6}
+      \strng{bibnamehash}{c9c28aedb7bb59fe5ddbfbc9418456d6}
+      \strng{editorbibnamehash}{c9c28aedb7bb59fe5ddbfbc9418456d6}
+      \strng{editornamehash}{c9c28aedb7bb59fe5ddbfbc9418456d6}
+      \strng{editorfullhash}{c9c28aedb7bb59fe5ddbfbc9418456d6}
+      \field{labelalpha}{GY04}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-58488-090-5}
+      \field{pagetotal}{1167}
+      \field{series}{Discrete mathematics and its applications}
+      \field{title}{Handbook of graph theory}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \keyw{Graph theory,Handbooks,manuals,etc}
     \endentry
     \entry{harary_graph_2001}{book}{}
       \name{author}{1}{}{%
@@ -590,6 +672,52 @@
       \endverb
       \verb{url}
       \verb https://de.mathworks.com/help/matlab/ref/graph.distances.html
+      \endverb
+    \endentry
+    \entry{plantholt_chromatic_1983}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b6482ed89f57551b3d649dbc389b7b71}{%
+           family={Plantholt},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6482ed89f57551b3d649dbc389b7b71}
+      \strng{fullhash}{b6482ed89f57551b3d649dbc389b7b71}
+      \strng{bibnamehash}{b6482ed89f57551b3d649dbc389b7b71}
+      \strng{authorbibnamehash}{b6482ed89f57551b3d649dbc389b7b71}
+      \strng{authornamehash}{b6482ed89f57551b3d649dbc389b7b71}
+      \strng{authorfullhash}{b6482ed89f57551b3d649dbc389b7b71}
+      \field{labelalpha}{Pla83}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0012365X}
+      \field{journaltitle}{Discrete Mathematics}
+      \field{langid}{english}
+      \field{shortjournal}{Discrete Mathematics}
+      \field{title}{The chromatic index of graphs with large maximum degree}
+      \field{urlday}{17}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{47}
+      \field{year}{1983}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{91\bibrangedash 96}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/0012-365X(83)90074-2
+      \endverb
+      \verb{file}
+      \verb Plantholt - 1983 - The chromatic index of graphs with large maximum d.pdf:/home/benedict/snap/zotero-snap/common/Zotero/storage/WJTP3JRS/Plantholt - 1983 - The chromatic index of graphs with large maximum d.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0012365X83900742
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0012365X83900742
       \endverb
     \endentry
     \entry{sagemath_graph_2020-1}{online}{}

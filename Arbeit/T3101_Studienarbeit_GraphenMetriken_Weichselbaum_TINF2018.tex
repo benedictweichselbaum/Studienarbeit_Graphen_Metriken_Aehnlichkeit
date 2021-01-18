@@ -195,7 +195,7 @@ Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Warum kann ma
 \zitat{Graphen sind die in der Informatik am häufigsten verwendete Abstraktion. Jedes System, welches aus diskreten Zuständen oder Objekten und Beziehungen zwischen diesen besteht, kann als Graph modelliert werden.}{turau_algorithmische_2004}
 Diese netzartigen Strukturen können dabei die verschiedensten Konstrukte repräsentieren. Dazu zählen Straßennetze, Computernetzwerke, elektrische Schaltungen aber auch zum Beispiel chemische Moleküle. \cite{tittmann_graphentheorie_2019}
 
-Um Graphen zu beschreiben und zu charakterisieren, haben sich über die Zeit zahlreiche Metriken, bzw. Eigenschaften für diese herausgebildet ("`graph properties"' \cite{lovasz_large_2012}). Das heißt, einem Graphen können gewisse Kennzahlen zugeordnet werden, die ihn auszeichnen. Auch diese Metriken sind, wie die Graphen selbst, meist praktisch anwendbar. Zum Beispiel in der Untersuchung von Netzwerken \cite{ellens_graph_2013}.
+Um Graphen zu beschreiben und zu charakterisieren, haben sich über die Zeit zahlreiche Metriken, bzw. Eigenschaften für diese herausgebildet ("`graph properties"' \cite{lovasz_large_2012}). Das heißt, einem Graphen können gewisse Kennzahlen zugeordnet werden, die ihn auszeichnen. Auch diese Metriken sind, wie die Graphen selbst, oft praktisch anwendbar. Zum Beispiel in der Untersuchung von Netzwerken \cite{ellens_graph_2013}.
 
 Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedenste Metriken vorzustellen und zu erläutern. Dabei ist es auch wichtig herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen zu bewerten sind. Des Weiteren soll auf Basis der Metriken auch der Begriff der Ähnlichkeit von Graphen aufgegriffen werden.
 
@@ -207,13 +207,13 @@ In einem Weiteren Teil ist außerdem noch darauf einzugehen, welche Anwendung di
 {
 Auf Basis dieser Motivation können nun auch die konkreten Fragestellungen formuliert werden, die diese Arbeit betrachten soll. Insgesamt sollen vier wissenschaftliche Fragen beantwortet werden.
 
-\singleenum{0}{Welche Graph-Metriken gibt es und wie sind diese zu ermitteln und zu kategorisieren?}
+\singleenum{0}{Welche Graph-Metriken gibt es und wie sind diese definiert und zu kategorisieren?}
 
 Hierzu gehört, wie bereits erwähnt die Vorstellung der einzelnen Metriken, aber auch eine Kategorisierung in Rubriken, um Metriken besser voneinander abzugrenzen, da diverse Metriken höchst unterschiedliche Aussagen über einen Graphen treffen. Es wird auch darauf eingegangen welche Motivation hinter den jeweiligen Metriken steht.  Bei der Beantwortung dieser Frage soll außerdem auch darauf eingegangen werden, inwieweit die beschriebene Metrik in bestimmten Mathematikbibliotheken wie "`Sage Math"' oder "`Wolfram"' vorkommen.
 
 \singleenum{1}{Wie sind die vorgestellten Metriken zu bewerten?}
 
-In diesem Abschnitt soll es vor allem darum gehen, die vorgestellten Metriken dahingehend zu bewerten, wie "`schwer"' es ist, sie zu ermitteln. Außerdem soll bei der Bewertung auch auf die Verbreitung eingegangen werden. 
+Bei dieser Frage soll es vor allem darum gehen, die vorgestellten Metriken dahingehend zu bewerten, wie "`schwer"' es ist, sie zu ermitteln. Außerdem wird bei der Bewertung auch auf die Verbreitung eingegangen. Speziell soll erwähnt werden, ob die jeweilige Metrik in bekannten Mathematikbibliotheken vertreten ist oder nicht.
 
 \singleenum{2}{Was beschreibt der Ähnlichkeitsbegriff bei Graphen?}
 
@@ -238,7 +238,7 @@ Dieser erste Teil der Arbeit wird sich nun ausführlich mit einer weiten Reihe a
 	\item Was drückt die Metrik aus (Definition)?
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
 	\item Inwieweit ist die Metrik verbreitet? Zum Beispiel in der Literatur oder in Mathematikbibliotheken.
-	\item Was ist die konkrete Motivation für die Metrik, falls diese auszumachen ist?
+	\item Was ist eine konkrete Motivation für die Metrik, falls diese auszumachen ist?
 \end{myitemize}
 Es ist noch zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in Kategorien eingeteilt sind.
 
@@ -365,13 +365,11 @@ Der gezeigte Algorithmus terminiert mit \(\gamma\) gleich dem Zusammenhang. In s
 }
 \subsubsection*{"`Edge Connectivity"'}
 {
-Ähnlich zur "`Vertex Connectivity"' ist auch die "`Edge Connectivity"' ein ganzzahliges Zusammenhangsmaß für einen Graphen und ist auch ähnlich definiert. Wie die "`Vertex Connectivity"' ist diese in SageMath und Wolfram enthalten \cite{sagemath_graph_2020,wolfram_graph_2020}. Die "`Edge Connectivity"' ist nur definiert, wenn der Graph mindestens 2 Knoten hat. Hat ein Graph nur einen Knoten oder ist von Anfang an nicht zusammenhängend, so ist der auch sogenannte "`Kantenzusammenhang"' von G \(\lambda (G)\) gleich null. Ansonsten wird der Kantenzusammenhang so definiert, dass es die minimale Zahl an Kanten ist, die aus einem Graphen entnommen werden kann, sodass dieser nicht mehr zusammenhängend ist. Präziser kann es folgendermaßen definiert werden: Ein Graph hat einen Kantenzusammenhang von \(\lambda (G)\), wenn \(G - F\) für alle Kantenmengen \(F\subseteq E\) der Mächtigkeit \(< \lambda (G)\) zusammehängend ist. \cite{diestel_graphentheorie_2000} Die "`Vertex Connectivity"' bildet also das genau Pendant zur "`Vertex Connectivity"' und arbeitet komplett analog zu dieser Metrik.
+Ähnlich zur "`Vertex Connectivity"' ist auch die "`Edge Connectivity"' ein ganzzahliges Zusammenhangsmaß für einen Graphen und ist auch ähnlich definiert. Wie die "`Vertex Connectivity"' ist diese in SageMath und Wolfram enthalten \cite{sagemath_graph_2020,wolfram_graph_2020}. Die "`Edge Connectivity"' ist nur definiert, wenn der Graph mindestens 2 Knoten hat. Hat ein Graph nur einen Knoten oder ist von Anfang an nicht zusammenhängend, so ist der auch sogenannte "`Kantenzusammenhang"' von G \(\lambda (G)\) gleich null. Ansonsten wird der Kantenzusammenhang so definiert, dass es die minimale Zahl an Kanten ist, die aus einem Graphen entnommen werden kann, sodass dieser nicht mehr zusammenhängend ist. Präziser kann es folgendermaßen definiert werden: Ein Graph hat einen Kantenzusammenhang von \(\lambda (G)\), wenn \(G - F\) für alle Kantenmengen \(F\subseteq E\) der Mächtigkeit \(< \lambda (G)\) zusammehängend ist. Speziell ist damit das kleinstmögliche \(\lambda (G)\) gemeint, das für den jeweiligen Graphen möglich ist. \cite{diestel_graphentheorie_2000} Die "`Edge Connectivity"' bildet also das genau Pendant zur "`Vertex Connectivity"' und arbeitet komplett analog zu dieser Metrik.
 
 %% Füge noch Algorithmus und Komplexität dessen ein!
 }
 \section{Zentralitätsmetriken}
-
-\section{Arborizität}
 
 \section{Chromatische Zahl und chromatischer Index}
 {
@@ -404,9 +402,17 @@ Anwendung findet die Kantenfärbung in verschiedenen praktischen Problemen. Beis
 }
 \subsubsection*{Fraktionierte chromatische Zahl}
 {
-Neben der klassischen Art und Weise einen Graphen zu färben gibt es auch weitere Methoden. In der fraktionierten Graphentheorie ist es auch möglich in einem Graphen seinen Knoten mehrere Farben zuzuweisen. Auf Basis dessen lassen wich weitere Metriken definieren, die die Graphenfärbung als Grundlage haben. Hierzu zählt die "`fraktionierte chromatische Zahl"'. Um diese Zahl zu definierten, ist zunächst zu klären, wie fraktionierte Färbung formal definiert werden kann. Eine \(b\)-fache Färbung eines Graphen weist jedem Knoten eine Menge an \(b\) Farben zu. Auch dies kann durch eine Abbildung dargestellt werden, indem ein Knoten auf eine Menge an Färbungen abgebildet wird. Bei der Färbung muss nun darauf geachtet werden, dass zwei adjazente Knoten mit ihren zugewiesenen Farben keine Schnittmenge bilden. Besser kann dies durch eine Abbildung dargestellt werden. Sei \(A\) die Menge an verfügbaren Farben, so kann die Färbung mit folgender Abbildung dargestellt werden: \(c: V\mapsto A^b\). Für die Graphen-Färbung muss nun gelten: \(\forall v,w(v\in V\land w\in V\land adjazent(v,w)\Rightarrow c(v)\cap c(w)=\emptyset)\). Für eine \(b\)-Färbung wird eine bestimmte Anzahl \(a\) an Farben benötigt. Zu einer solchen Färbung wird dann auch gesagt, dass es eine \(a:b\)-Färbung ist. Das niedrigste \(a\) für das ein Graph eine \(b\)-Färbung hat, nennt man die \(b\)-fache chromatische Zahl (\(\chi _b(G)\)). Dabei ist logischerweise \(\chi _1(G) = \chi (G)\). Die fraktionierte chromatische Zahl ist dabei im Gegensatz folgendermaßen definiert:
+Neben der klassischen Art und Weise einen Graphen zu färben gibt es auch weitere Methoden. In der fraktionierten Graphentheorie ist es auch möglich in einem Graphen seinen Knoten mehrere Farben zuzuweisen. Auf Basis dessen lassen wich weitere Metriken definieren, die die Graphenfärbung als Grundlage haben. Hierzu zählt die "`fraktionierte chromatische Zahl"'. Um diese Zahl zu definierten, ist zunächst zu klären, wie fraktionierte Färbung formal definiert werden kann. Eine \(b\)-fache Färbung eines Graphen weist jedem Knoten eine Menge an \(b\) Farben zu. Auch dies kann durch eine Abbildung dargestellt werden, indem ein Knoten auf eine Menge an Färbungen abgebildet wird. Bei der Färbung muss nun darauf geachtet werden, dass zwei adjazente Knoten mit ihren zugewiesenen Farben keine Schnittmenge bilden. Besser kann dies durch eine Abbildung dargestellt werden. Sei \(A\) die Menge an verfügbaren Farben, so kann die Färbung mit folgender Abbildung dargestellt werden: \(c: V\mapsto A^b\). Für die Graphen-Färbung muss nun gelten: \(\forall v,w(v\in V\land w\in V\land adjazent(v,w)\Rightarrow c(v)\cap c(w)=\emptyset)\). Für eine \(b\)-Färbung wird eine bestimmte Anzahl \(a\) an Farben benötigt. Zu einer solchen Färbung wird dann auch gesagt, dass es eine \(a:b\)-Färbung ist. Das niedrigste \(a\) für das ein Graph eine \(b\)-Färbung hat, nennt man die \(b\)-fache chromatische Zahl (\(\chi _b(G)\)). Dabei ist logischerweise \(\chi_1(G) = \chi (G)\). Die fraktionierte chromatische Zahl ist dabei im Gegensatz folgendermaßen definiert \cite{scheinerman_fractional_2011}:
+\[\chi_f(G)=\lim_{b\to\infty}\frac{\chi_b(G)}{b}\]
+Die fraktionierte chromatische Zahl ist also der Grenzwert für die \(b\)-fache chromatische Zahl geteilt durch \(b\), wenn \(b\) gegen unendlich geht. Im Gegensatz zur "`normalen"' chromatischen Zahl ist die fraktionierte chromatische Zahl eine rationale und keine natürliche Zahl. Die Berechnung der Metrik ist ein NP-vollständiges Problem. Allerdings gibt es für einige Graphen vorgefertigte Werte, die genutzt werden können. So ist die fraktionierte chromatische Zahl eines zyklischen Graphen \(C_{2n+1}\) z.B. \(2+(\frac{1}{n})\). Der Algorithmus zur Berechnung der Kennzahl bedient sich einem linearem Programm und ist äußerst schwer zu berechnen. Die Komplexität steigt exponentiell zur Ordnung des Graphen. Eine native Implementierung dazu findet sich in SageMath. Wie bei der normalen Färbung kann auch die fraktionierte Färbung für diverse konfliktfreie Planungen und dergleichen verwendet werden. \cite{weisstein_chromatic_nodate,sagemath_graph_2020-1,scheinerman_fractional_2011}
+}
+\subsubsection*{Fraktionierter chromatischer Index}
+{
 
 }
+
+\section{Arborizität}
+
 \section{Weitere Metriken}
 
 \section{Übersicht der vorgestellten Graphmetriken}

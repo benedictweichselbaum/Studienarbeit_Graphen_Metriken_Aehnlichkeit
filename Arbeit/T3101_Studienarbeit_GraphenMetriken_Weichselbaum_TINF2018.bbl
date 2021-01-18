@@ -794,6 +794,47 @@
       \verb https://doc.sagemath.org/html/en/reference/graphs/index.html
       \endverb
     \endentry
+    \entry{scheinerman_fractional_2011}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1d59e0c42f01305faedebd810799f1fc}{%
+           family={Scheinerman},
+           familyi={S\bibinitperiod},
+           given={Edward\bibnamedelima R.},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=dbd7e73b6dfde6354c049a498a09acf3}{%
+           family={Ullman},
+           familyi={U\bibinitperiod},
+           given={Daniel\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Minola, N.Y}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{277883b59b5132b2496ac5fc3d3c675c}
+      \strng{fullhash}{277883b59b5132b2496ac5fc3d3c675c}
+      \strng{bibnamehash}{277883b59b5132b2496ac5fc3d3c675c}
+      \strng{authorbibnamehash}{277883b59b5132b2496ac5fc3d3c675c}
+      \strng{authornamehash}{277883b59b5132b2496ac5fc3d3c675c}
+      \strng{authorfullhash}{277883b59b5132b2496ac5fc3d3c675c}
+      \field{labelalpha}{SU11}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{"This volume explores the various ways in which integer-valued graph theory concepts can be modified to derive nonintegral values. It explains the general theory of hypergraphs and presents in-depth coverage of fundamental and advanced topics, including fractional matching, fractional coloring, fractional edge coloring, fractional arboricity via matroid methods, fractional isomorphism, and additional subjects. 1997 edition"--Provided by publisher}
+      \field{isbn}{978-0-486-48593-5}
+      \field{note}{{OCLC}: ocn721885660}
+      \field{pagetotal}{211}
+      \field{series}{Dover books on matehmatics}
+      \field{shorttitle}{Fractional graph theory}
+      \field{title}{Fractional graph theory: a rational approach to the theory of graphs}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \keyw{Graph theory}
+    \endentry
     \entry{tittmann_graphentheorie_2019}{book}{}
       \name{author}{1}{}{%
         {{hash=10afebe382e3dcea7a3e463c31573265}{%

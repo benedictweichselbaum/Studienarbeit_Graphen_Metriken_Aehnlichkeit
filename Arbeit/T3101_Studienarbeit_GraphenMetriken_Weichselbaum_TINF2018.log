@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.11.20)  17 JAN 2021 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.11.20)  18 JAN 2021 22:19
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1349,7 +1349,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 ...iese zu ermitteln und zu kategorisieren?}
+l.210 ...d diese definiert und zu kategorisieren?}
                                                    [1
 
 ]
@@ -1398,7 +1398,7 @@ her-aus-zu-fin-den, ist es grunds[]atzlich
  []
 
 [8] [9] [10] [11] [12] [13] [14]
-Overfull \hbox (11.1821pt too wide) in paragraph at lines 417--417
+Overfull \hbox (11.1821pt too wide) in paragraph at lines 423--423
 [][]| 
  []
 
@@ -1435,11 +1435,11 @@ eichselbaum_TINF2018.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26632 strings out of 480232
- 485253 string characters out of 2887634
- 1522599 words of memory out of 3000000
- 42353 multiletter control sequences out of 15000+200000
- 566682 words of font info for 221 fonts, out of 3000000 for 9000
+ 26643 strings out of 480232
+ 485482 string characters out of 2887634
+ 1522683 words of memory out of 3000000
+ 42355 multiletter control sequences out of 15000+200000
+ 567127 words of font info for 226 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  94i,15n,99p,10654b,2229s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc}</usr/local/share/
@@ -1458,9 +1458,9 @@ ktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/miktex-texmf/f
 onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/u
 rw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (30 pages, 332637 bytes).
+ (30 pages, 336792 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
  22754 words of extra memory for PDF output out of 24883 (max. 10000000)
 

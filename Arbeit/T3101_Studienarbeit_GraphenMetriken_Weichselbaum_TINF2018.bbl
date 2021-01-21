@@ -366,6 +366,57 @@
       \verb https://www.gitta.info/Accessibiliti/de/html/StructPropNetw_learningObject2.html
       \endverb
     \endentry
+    \entry{gabow_forests_1992}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e4b8e86ad817fe889b7e8969f83da863}{%
+           family={Gabow},
+           familyi={G\bibinitperiod},
+           given={Harold\bibnamedelima N.},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=c69f1d648c063b0c4c9e3ed9c8321a7a}{%
+           family={Westermann},
+           familyi={W\bibinitperiod},
+           given={Herbert\bibnamedelima H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{87f6fc8c39206c68ca682f5a5645c017}
+      \strng{fullhash}{87f6fc8c39206c68ca682f5a5645c017}
+      \strng{bibnamehash}{87f6fc8c39206c68ca682f5a5645c017}
+      \strng{authorbibnamehash}{87f6fc8c39206c68ca682f5a5645c017}
+      \strng{authornamehash}{87f6fc8c39206c68ca682f5a5645c017}
+      \strng{authorfullhash}{87f6fc8c39206c68ca682f5a5645c017}
+      \field{labelalpha}{GW92}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0178-4617, 1432-0541}
+      \field{journaltitle}{Algorithmica}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{1}
+      \field{shortjournal}{Algorithmica}
+      \field{shorttitle}{Forests, frames, and games}
+      \field{title}{Forests, frames, and games: Algorithms for matroid sums and applications}
+      \field{urlday}{21}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{7}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{465\bibrangedash 497}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1007/BF01758774
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF01758774
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF01758774
+      \endverb
+    \endentry
     \entry{gross_handbook_2004}{collection}{}
       \name{editor}{2}{}{%
         {{hash=262a8003dfe3a21fdbc9d111fe8ed2c6}{%
@@ -672,6 +723,50 @@
       \endverb
       \verb{url}
       \verb https://de.mathworks.com/help/matlab/ref/graph.distances.html
+      \endverb
+    \endentry
+    \entry{nash-williams_edge-disjoint_1961}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3338b8da9fc914598cad24823ec228c5}{%
+           family={Nash-Williams},
+           familyi={N\bibinithyphendelim W\bibinitperiod},
+           given={C.\bibnamedelimi St.J.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3338b8da9fc914598cad24823ec228c5}
+      \strng{fullhash}{3338b8da9fc914598cad24823ec228c5}
+      \strng{bibnamehash}{3338b8da9fc914598cad24823ec228c5}
+      \strng{authorbibnamehash}{3338b8da9fc914598cad24823ec228c5}
+      \strng{authornamehash}{3338b8da9fc914598cad24823ec228c5}
+      \strng{authorfullhash}{3338b8da9fc914598cad24823ec228c5}
+      \field{labelalpha}{Nas61}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00246107}
+      \field{journaltitle}{Journal of the London Mathematical Society}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shortjournal}{Journal of the London Mathematical Society}
+      \field{title}{Edge-Disjoint Spanning Trees of Finite Graphs}
+      \field{urlday}{21}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{s1-36}
+      \field{year}{1961}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{445\bibrangedash 450}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1112/jlms/s1-36.1.445
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1112/jlms/s1-36.1.445
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1112/jlms/s1-36.1.445
       \endverb
     \endentry
     \entry{plantholt_chromatic_1983}{article}{}
@@ -1009,6 +1104,46 @@
       \verb http://link.springer.com/10.1007/978-3-540-76394-9
       \endverb
     \endentry
+    \entry{weisstein_arboricity_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{fullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{bibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \field{extraname}{1}
+      \field{labelalpha}{Wei}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Given a graph G, the arboricity Upsilon(G) is the minimum number of edge-disjoint acyclic subgraphs (i.e., spanning forests) whose union is G. An acyclic graph therefore has Upsilon(G)=1. It appears that a regular graph G of vertex degree d has arboricity Upsilon(G)={|}\_n/2\_{|}+1. (1) Let G be a nonempty graph on n vertices and m edges and let m\_p be the maximum number of edges in any subgraph of G having p vertices. Then Upsilon(G)=max\_(p{>}1)[(m\_p)/(p-1)] (2) (Nash-Williams 1961;...}
+      \field{langid}{english}
+      \field{note}{Publisher: Wolfram Research, Inc.}
+      \field{title}{Arboricity}
+      \field{type}{Text}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/J8ZRF49X/Arboricity.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://mathworld.wolfram.com/Arboricity.html
+      \endverb
+      \verb{url}
+      \verb https://mathworld.wolfram.com/Arboricity.html
+      \endverb
+    \endentry
     \entry{weisstein_chromatic_nodate}{online}{}
       \name{author}{1}{}{%
         {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
@@ -1023,9 +1158,11 @@
       \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
       \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
       \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \field{extraname}{2}
       \field{labelalpha}{Wei}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The chromatic number of a graph G is the smallest number of colors needed to color the vertices of G so that no two adjacent vertices share the same color (Skiena 1990, p. 210), i.e., the smallest value of k possible to obtain a k-coloring. Minimal colorings and chromatic numbers for a sample of graphs are illustrated above. The chromatic number of a graph G is most commonly denoted chi(G) (e.g., Skiena 1990, West 2000, Godsil and Royle 2001, Pemmaraju and Skiena 2003), but occasionally also...}

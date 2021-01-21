@@ -2436,6 +2436,11 @@
     <bcf:citekey order="54">weisstein_chromatic_nodate</bcf:citekey>
     <bcf:citekey order="54">sagemath_graph_2020-1</bcf:citekey>
     <bcf:citekey order="54">scheinerman_fractional_2011</bcf:citekey>
+    <bcf:citekey order="55">weisstein_arboricity_nodate</bcf:citekey>
+    <bcf:citekey order="56">weisstein_arboricity_nodate</bcf:citekey>
+    <bcf:citekey order="56">nash-williams_edge-disjoint_1961</bcf:citekey>
+    <bcf:citekey order="57">gabow_forests_1992</bcf:citekey>
+    <bcf:citekey order="57">sagemath_graph_2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

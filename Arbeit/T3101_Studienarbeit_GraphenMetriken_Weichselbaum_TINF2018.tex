@@ -28,6 +28,7 @@
 \usepackage{pdflscape}
 \usepackage{hyperref}
 \usepackage{svg}
+\usepackage{mathtools}
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -43,6 +44,8 @@
 
 \usepackage{listings}
 \usepackage{xcolor}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -238,7 +241,7 @@ Dieser erste Teil der Arbeit wird sich nun ausführlich mit einer weiten Reihe a
 	\item Was drückt die Metrik aus (Definition)?
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
 	\item Inwieweit ist die Metrik verbreitet? Zum Beispiel in der Literatur oder in Mathematikbibliotheken.
-	\item Was ist eine konkrete Motivation für die Metrik, falls diese auszumachen ist?
+	\item Was ist eine konkrete Motivation bzw. Anwendung für die Metrik, falls diese auszumachen ist?
 \end{myitemize}
 Es ist noch zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in Kategorien eingeteilt sind.
 
@@ -412,7 +415,15 @@ Die fraktionierte chromatische Zahl ist also der Grenzwert für die \(b\)-fache 
 }
 
 \section{Arborizität}
+{
+Ein wichtiger Teil der Graphentheorie ist die Betrachtung von Bäumen. Ein Baum ist dabei eine Zusammenhangskomponente eines Waldes. Ein Wald wiederum ist ein Graph, der keine Zyklen aufweist. Mithilfe dieses Wissens kann eine weitere Metrik definiert werden. Betrachtet man einen Graphen, zusammenhängend oder nicht, kann man sich die Frage stellen, wie es möglich ist, diesen Graphen aus einer Menge an Wäldern zu erstellen. Wichtiger noch ist es herauszufinden, aus welcher minimalen Anzahl an Wäldern es möglich ist, den vorliegenden Graphen aufzubauen. Diese minimale Anzahl ist die "`Arborizität"'. Präziser ausgedrückt, ist die "`Arborizität"' von \(G\) (\(Y(G)\)) die minimale Anzahl an azyklischen Subgraphen (Wäldern), dessen Vereinigung \(G\) ergibt. Hierbei teilen sich die Subgraphen keine gemeinsamen Kanten. \cite{weisstein_arboricity_nodate}
 
+Zur Berechnung der Arborizität lassen sich sowohl Spezialfälle ausmachen, aber auch eine allgemeine Berechnungsvorschrift finden. So ist es zunächst ersichtlich, dass ein bereits azyklischer Graph eine Arborizität von \(Y(G)=1\) hat. Ein vollständiger Graph \(K_n\) hat wiederum eine Arborizität von \(Y(K_n)=\ceil[\big]{n:2}\) und ein vollständiger bipartiter Graph \(K_{m,n}\) weißt den Wert \(Y(K_{m,n})=\ceil[\big]{(mn):(m+n-1)}\) auf. Möchte man die Arborizität allgemein berechnen, ist ein bestimmter Parameter des Graphen zu berechnen. \(m_p\) gibt die maximale Anzahl an Kanten eines Subgraphen von \(G\) an, der \(p\) Knoten hat. Dieser Wert \(m_p\) muss nun für alle \(|G|>p>1\) berechnet werden. Mit dieser Berechnung lässt sich die Arborizität mit folgender Formel für jeden \(G\) ermitteln. \cite{weisstein_arboricity_nodate,nash-williams_edge-disjoint_1961}
+\[Y(G)=\max_{p>1}\ceil[\Bigg]{\frac{m_p}{p-1}}\]
+Die Berechnung der Arborizität ist in polynomialer Laufzeit möglich und kann in verschiedesten Szenarien angewandt werden. Einerseits kann es als Graph-Dichte-Maß herangezogen werden, da ein dichter, mit vielen Kanten durchzogener Graph, logischerweise eine höhere Arborizität aufweisen muss. Wie bereits in vorigen Kapiteln erwähnt, kann die Dichte für die Zuverlässigkeit bzw. Angriffssicherheit eines Netzwerks herangezogen werden. Weiterhin kann die Arborizität aber auch z.B. Aussagen über die Steifigkeit von Strukturen machen oder bei der Analyse von elektrischen Netzwerken helfen. Die Metrik ist in SageMath fest eingebaut. \cite{gabow_forests_1992,sagemath_graph_2020}
+
+Die Spezialisierung der Arborizität ist die "`lineare Arborizität"'. % TBC
+}
 \section{Weitere Metriken}
 
 \section{Übersicht der vorgestellten Graphmetriken}

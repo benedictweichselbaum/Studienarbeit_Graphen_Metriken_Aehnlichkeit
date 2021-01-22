@@ -57,6 +57,50 @@
       \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/ZF443BDR/Aigner - 2015 - Graphentheorie eine Einführung aus dem 4-Farben P.pdf:application/pdf
       \endverb
     \endentry
+    \entry{alon_linear_1988}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3edac4372c25a87046c920ed898db8f6}{%
+           family={Alon},
+           familyi={A\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{3edac4372c25a87046c920ed898db8f6}
+      \strng{fullhash}{3edac4372c25a87046c920ed898db8f6}
+      \strng{bibnamehash}{3edac4372c25a87046c920ed898db8f6}
+      \strng{authorbibnamehash}{3edac4372c25a87046c920ed898db8f6}
+      \strng{authornamehash}{3edac4372c25a87046c920ed898db8f6}
+      \strng{authorfullhash}{3edac4372c25a87046c920ed898db8f6}
+      \field{labelalpha}{Alo88}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-2172, 1565-8511}
+      \field{journaltitle}{Israel Journal of Mathematics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{3}
+      \field{shortjournal}{Israel J. Math.}
+      \field{title}{The linear arboricity of graphs}
+      \field{volume}{62}
+      \field{year}{1988}
+      \field{dateera}{ce}
+      \field{pages}{311\bibrangedash 325}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/BF02783300
+      \endverb
+      \verb{file}
+      \verb Eingereichte Version:/home/benedict/snap/zotero-snap/common/Zotero/storage/J3WYJUAL/Alon - 1988 - The linear arboricity of graphs.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF02783300
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF02783300
+      \endverb
+    \endentry
     \entry{andersen_edge-colorings_1977}{article}{}
       \name{author}{1}{}{%
         {{hash=3a75470a2446fb7f73ea5670ea00c091}{%
@@ -177,6 +221,82 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0012365X06001397
+      \endverb
+    \endentry
+    \entry{calamoneri_planar_2010}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=fc00f5045e289bdc649a0e1fa023fede}{%
+           family={Cygan},
+           familyi={C\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dee7568c109553bdf170c20c09eb7fb2}{%
+           family={Kowalik},
+           familyi={K\bibinitperiod},
+           given={Łukasz},
+           giveni={Ł\bibinitperiod}}}%
+        {{hash=dea9936dc5717aa4e8eda83bbd774a23}{%
+           family={Lužar},
+           familyi={L\bibinitperiod},
+           given={Borut},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=6b4f199025aa12dd7ee82374d7d49241}{%
+           family={Calamoneri},
+           familyi={C\bibinitperiod},
+           given={Tiziana},
+           giveni={T\bibinitperiod}}}%
+        {{hash=514c16882419b354cfbf968b25e6a4f0}{%
+           family={Diaz},
+           familyi={D\bibinitperiod},
+           given={Josep},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{4a6e43e6b4c547e6433d669f829faa25}
+      \strng{fullhash}{4a6e43e6b4c547e6433d669f829faa25}
+      \strng{bibnamehash}{4a6e43e6b4c547e6433d669f829faa25}
+      \strng{authorbibnamehash}{4a6e43e6b4c547e6433d669f829faa25}
+      \strng{authornamehash}{4a6e43e6b4c547e6433d669f829faa25}
+      \strng{authorfullhash}{4a6e43e6b4c547e6433d669f829faa25}
+      \strng{editorbibnamehash}{d4f04b9c5cede259616008a90a1b4450}
+      \strng{editornamehash}{d4f04b9c5cede259616008a90a1b4450}
+      \strng{editorfullhash}{d4f04b9c5cede259616008a90a1b4450}
+      \field{labelalpha}{CKL10}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Algorithms and Complexity}
+      \field{isbn}{978-3-642-13072-4 978-3-642-13073-1}
+      \field{note}{Series Title: Lecture Notes in Computer Science}
+      \field{title}{A Planar Linear Arboricity Conjecture}
+      \field{urlday}{22}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{6078}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{204\bibrangedash 216}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/978-3-642-13073-1_19
+      \endverb
+      \verb{file}
+      \verb Eingereichte Version:/home/benedict/snap/zotero-snap/common/Zotero/storage/Y3ARER3N/Cygan et al. - 2010 - A Planar Linear Arboricity Conjecture.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-642-13073-1_19
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-642-13073-1_19
       \endverb
     \endentry
     \entry{cunningham_optimal_1985}{article}{}
@@ -767,6 +887,51 @@
       \endverb
       \verb{url}
       \verb http://doi.wiley.com/10.1112/jlms/s1-36.1.445
+      \endverb
+    \endentry
+    \entry{peroche_np-completeness_1984}{article}{}
+      \name{author}{1}{}{%
+        {{hash=01d1c8c461a299bff494a9139e39d940}{%
+           family={Péroche},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{01d1c8c461a299bff494a9139e39d940}
+      \strng{fullhash}{01d1c8c461a299bff494a9139e39d940}
+      \strng{bibnamehash}{01d1c8c461a299bff494a9139e39d940}
+      \strng{authorbibnamehash}{01d1c8c461a299bff494a9139e39d940}
+      \strng{authornamehash}{01d1c8c461a299bff494a9139e39d940}
+      \strng{authorfullhash}{01d1c8c461a299bff494a9139e39d940}
+      \field{labelalpha}{Pér84}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0166218X}
+      \field{journaltitle}{Discrete Applied Mathematics}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{2}
+      \field{shortjournal}{Discrete Applied Mathematics}
+      \field{title}{{NP}-completeness of some problems of partitioning and covering in graphs}
+      \field{urlday}{22}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{8}
+      \field{year}{1984}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{195\bibrangedash 208}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/0166-218X(84)90101-X
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0166218X8490101X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0166218X8490101X
       \endverb
     \endentry
     \entry{plantholt_chromatic_1983}{article}{}

@@ -178,6 +178,55 @@
       \field{dateera}{ce}
       \keyw{Graph theory,Outlines,syllabi,etc,Problems,exercises,etc}
     \endentry
+    \entry{brandes_faster_2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=392b457d9bac1ed69366176e7857d7e9}{%
+           family={Brandes},
+           familyi={B\bibinitperiod},
+           given={Ulrik},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{392b457d9bac1ed69366176e7857d7e9}
+      \strng{fullhash}{392b457d9bac1ed69366176e7857d7e9}
+      \strng{bibnamehash}{392b457d9bac1ed69366176e7857d7e9}
+      \strng{authorbibnamehash}{392b457d9bac1ed69366176e7857d7e9}
+      \strng{authornamehash}{392b457d9bac1ed69366176e7857d7e9}
+      \strng{authorfullhash}{392b457d9bac1ed69366176e7857d7e9}
+      \field{labelalpha}{Bra01}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The betweenness centrality index is essential in the analysis of social networks, but costly to compute. Currently, the fastest known algorithms require Θ(n3) time and Θ(n2) space, where n is the number of actors in the network.}
+      \field{issn}{0022-250X, 1545-5874}
+      \field{journaltitle}{The Journal of Mathematical Sociology}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{The Journal of Mathematical Sociology}
+      \field{title}{A faster algorithm for betweenness centrality*}
+      \field{urlday}{26}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{25}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{163\bibrangedash 177}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1080/0022250X.2001.9990249
+      \endverb
+      \verb{file}
+      \verb Brandes - 2001 - A faster algorithm for betweenness centrality.pdf:/home/benedict/snap/zotero-snap/common/Zotero/storage/D8GP2DPN/Brandes - 2001 - A faster algorithm for betweenness centrality.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.tandfonline.com/doi/abs/10.1080/0022250X.2001.9990249
+      \endverb
+      \verb{url}
+      \verb http://www.tandfonline.com/doi/abs/10.1080/0022250X.2001.9990249
+      \endverb
+    \endentry
     \entry{chvatal_tough_2006}{article}{}
       \name{author}{1}{}{%
         {{hash=ce0039288011d6fb178612b0a6f7b47e}{%
@@ -450,6 +499,45 @@
       \field{year}{2012}
       \field{dateera}{ce}
       \keyw{{COMPUTERS} / Programming / Algorithms,Graph algorithms}
+    \endentry
+    \entry{freeman_centrality_1978}{article}{}
+      \name{author}{1}{}{%
+        {{hash=012eafed0334767d87ec2b33bacb3367}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={Linton\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{012eafed0334767d87ec2b33bacb3367}
+      \strng{fullhash}{012eafed0334767d87ec2b33bacb3367}
+      \strng{bibnamehash}{012eafed0334767d87ec2b33bacb3367}
+      \strng{authorbibnamehash}{012eafed0334767d87ec2b33bacb3367}
+      \strng{authornamehash}{012eafed0334767d87ec2b33bacb3367}
+      \strng{authorfullhash}{012eafed0334767d87ec2b33bacb3367}
+      \field{labelalpha}{Fre78}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The intuitive background for measures of structural centrality in social networks is reviewed and existing measures are evaluated in terms of their consistency with intuitions and their interpretability. Three distinct intuitive conceptions of centrality are uncovered and existing measures are refined to embody these conceptions. Three measures are developed for each concept, one absolute and one relative measure of the centrality of positions in a network, and one reflecting the degree of centralization of the entire network. The implications of these measures for the experimental study of small groups is examined.}
+      \field{issn}{0378-8733}
+      \field{journaltitle}{Social Networks}
+      \field{number}{3}
+      \field{title}{Centrality in social networks conceptual clarification}
+      \field{volume}{1}
+      \field{year}{1978}
+      \field{dateera}{ce}
+      \field{pages}{215\bibrangedash 239}
+      \range{pages}{25}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0378-8733(78)90021-7
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/0378873378900217
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/0378873378900217
+      \endverb
     \endentry
     \entry{gitta_durchmesser_2014}{online}{}
       \name{author}{1}{}{%
@@ -808,7 +896,7 @@
       \verb https://de.mathworks.com/help/matlab/graph-and-network-algorithms.html?searchHighlight=graph&s_tid=srchtitle
       \endverb
     \endentry
-    \entry{matlab_shortest_2020}{online}{}
+    \entry{matlab_measure_2020}{online}{}
       \name{author}{1}{}{%
         {{hash=a5cd8a07b40f6449056939c13140ae19}{%
            family={Matlab},
@@ -825,6 +913,43 @@
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Measure node importance}
+      \field{titleaddon}{centrality}
+      \field{urlday}{26}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Measure node importance - MATLAB centrality - MathWorks Deutschland:/home/benedict/snap/zotero-snap/common/Zotero/storage/TCE9NFZU/graph.centrality.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://de.mathworks.com/help/matlab/ref/graph.centrality.html#bu86660
+      \endverb
+      \verb{url}
+      \verb https://de.mathworks.com/help/matlab/ref/graph.centrality.html#bu86660
+      \endverb
+    \endentry
+    \entry{matlab_shortest_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a5cd8a07b40f6449056939c13140ae19}{%
+           family={Matlab},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{fullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{bibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorbibnamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authornamehash}{a5cd8a07b40f6449056939c13140ae19}
+      \strng{authorfullhash}{a5cd8a07b40f6449056939c13140ae19}
+      \field{extraname}{4}
+      \field{labelalpha}{Mat20}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extraalpha}{4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Shortest path distances of all node pairs}
@@ -980,7 +1105,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/0012365X83900742
       \endverb
     \endentry
-    \entry{sagemath_graph_2020-1}{online}{}
+    \entry{sagemath_generic_nodate}{online}{}
       \name{author}{1}{}{%
         {{hash=fe35b7fe7ae5c4d992398b8159d20c54}{%
            family={{SageMath}},
@@ -993,6 +1118,40 @@
       \strng{authornamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \strng{authorfullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \field{extraname}{1}
+      \field{labelalpha}{Sag}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Generic graphs (common to directed/undirected) — Sage 9.2 Reference Manual: Graph Theory}
+      \field{titleaddon}{Sage Math Reference Manual}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Generic graphs (common to directed/undirected) — Sage 9.2 Reference Manual\: Graph Theory:/home/benedict/snap/zotero-snap/common/Zotero/storage/V3AZJJVS/generic_graph.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generic_graph.html
+      \endverb
+      \verb{url}
+      \verb https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/generic_graph.html
+      \endverb
+    \endentry
+    \entry{sagemath_graph_2020-1}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fe35b7fe7ae5c4d992398b8159d20c54}{%
+           family={{SageMath}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{fullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{bibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authorbibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authornamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \strng{authorfullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
+      \field{extraname}{2}
       \field{labelalpha}{Sag20}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
@@ -1028,7 +1187,7 @@
       \strng{authorbibnamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \strng{authornamehash}{fe35b7fe7ae5c4d992398b8159d20c54}
       \strng{authorfullhash}{fe35b7fe7ae5c4d992398b8159d20c54}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{labelalpha}{Sag20}
       \field{sortinit}{S}
       \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}

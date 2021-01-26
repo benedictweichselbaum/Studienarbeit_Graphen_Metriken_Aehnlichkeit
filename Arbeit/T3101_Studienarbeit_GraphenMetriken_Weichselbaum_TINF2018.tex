@@ -373,7 +373,35 @@ Der gezeigte Algorithmus terminiert mit \(\gamma\) gleich dem Zusammenhang. In s
 %% Füge noch Algorithmus und Komplexität dessen ein!
 }
 \section{Zentralitätsmetriken}
+{
+Eine weitere wichtige Eigenschaft eines Graphen ist dessen Zentralität, bzw. dessen Zentralitäten. Bei der Untersuchung dieser Eigenschaften eines Graphen, möchte man herausfinden, welche Knoten oder allgemeiner Regionen eines Graphen besonders wichtig sind. Die Anwendungen für die Verwendung von Zentralitäts-Informationen ist dabei äußerst vielfältig. Vor allem die Analyse von realen sozialen Netzwerken wahr häufig der Ausgangspunkt für etwaige Untersuchungen. Aber auch bei Themengebieten wie Geographie, Stadtentwicklung und Organisationsaufbau wurde Zentralität zur Informationgewinnung herangezogen. Allgemeiner lässt sich sagen, dass diese Thematik bei allen möglichen Anwendungen interessant sein kann, die Graph-Daten sammeln. Infolgedessen soll nun eine Reihe an Zentralitäts-Metriken vorgestellt werden, die einen Graphen auf diese Eigenschaft auf unterschiedliche Art und Weise untersuchen. \cite{freeman_centrality_1978}
+}
+\subsubsection*{Degree Centrality}
+{
+Die erste Metrik, die vorgestellt werden soll, ist zugleich die einfachste. Die "`Degree Centrality"' wird für einen Knoten eines Graphen definiert und basiert bzw. ist gleich zu einer schon vorgestellten Metrik. Die "`Degree Centrality"' oder "`Grad-Zentralität"' eines Knotens gleicht dessen Grad. D.h. \(Degree\_centrality(v) = d(v); v \in V\). Die Berechnung der Zentralität erfolgt meist für jeden Knoten und kann im Fall der "`Degree Centrality"' recht simpel berechnet werden. Liegt der Graph als Adjazenzmatrix dar, so muss nur über diese vollständig iteriert werden und für jeden Knoten mitgezählt werden, wie viele Nachbarn er hat. Die Komplexität beläuft sich damit auf \(O(|V(G)|^2)\). Die Metrik selbst ist damit auch, wie der Knotengrad in den angeführten Bibliotheken zu finden, bzw. implizit nativ berechenbar.  Auch wenn die Metrik auf den ersten Blick recht rudimentär wirkt, so ist sie aber äußerst aussagekräftig z.B. bei der Analyse im Social-Media-Bereich. Geht man davon aus, dass jeder Knoten ein Nutzer oder eine Nutzerin ist und eine Kante eine Beziehung wie "`Freund von"' oder "`folgt"' gleichkommt, so gibt die "`Degree Centrality"' an, wie wichtig der jeweilige User ist. Dies ist vor allem dann interessant, wenn man wissen möchte, ob eine Person besonders einflussreich ist oder nicht. Solche Informationen sind beispielsweise für Werbetreibene von Bedeutung.
+}
+\subsubsection*{Betweenness Centrality}
+{
+Eine weitere Möglichkeit die Wichtigkeit eines Knoten in einem Graphen zu ermitteln ist über die sogenannte "`Betweenness Centrality"'. Auch diese Metrik wird häufig für die Analyse von sozialen Netzwerken genutzt.
 
+Zur Berechnung der Metrik ist zunächst wichtig zu verstehen, was unter dem Wert \(\sigma_{st}\) und der Funktion \(\sigma_{st}(v)\) zu verstehen ist, wobei gilt \(s,t,c \in V(G)\). \(\sigma_{st}\) gibt an, wie viele kürzeste Wege es zwischen den beiden Knoten \(s\ \text{und}\ t\) gibt. Die Funktion \(\sigma_{st}(v)\) bildet wiederum einen Knoten \(v\) aus \(G\) auf die Anzahl der kürzesten Wege zwischen \(s\ \text{und}\ t\) ab, die durch \(v\) gehen. Die Funktion ist dabei folgendermaßen definiert, bzw. kann so berechnet werden. \cite{brandes_faster_2001}
+\[
+	\sigma_{st}(v)=
+	\begin{cases}
+		0,	& \text{wenn }d_G(s,t)<d_G(s,v)+d_G(v,t)\\
+		\sigma_{sv}\cdot\sigma_{vt},	& sonst
+	\end{cases}
+\]
+Die erste Bedingung für \(\sigma_{st}(v)\) gilt deshalb, weil \(v\) nur dann auf einem der kürzesten Wege zwischen \(s\ \text{und}\ t\) sein kann, wenn die kürzeste Distanz zischen \(s\ \text{und}\ t\) gleich der kürzesten Distanz zischen \(s\ \text{und}\ v\) addiert mit der kürzesten Distanz zwischen \(v\ \text{und}\ t\) ist: \(d_G(s,t)=d_G(s,v)+d_G(v,t)\).
+
+Die "`Betweenness Centrality"' \(C_B(v)\) ist nun so definiert, dass sie die Aufsummierung der Fraktion zwischen \(\sigma_{st}(v)\) und \(\sigma_{st}\) für alle möglichen Paare \(s,t\) angibt, wobei \(s\ \text{und}\ t\) nie gleich sind und auch nicht gleich \(v\) sind:
+\[
+	C_B(v)=\sum_{s\neq v\neq t\in V}\frac{\sigma_{st}(v)}{\sigma_{st}}
+\]
+Die Berechnung dieser Metrik ist in polynomialer Laufzeit möglich und kann mit einem Algorithmus berechnet werden, der eine Komplexität von \(O(|V|^3)\) aufweist. Grundsätzlich ist es für die Berechnung zunächst notwendig zwischen allen Knotenpaaren die Anzahl und die Länge der kürzesten Wege zu berechnen. Auf Basis dieser Daten kann dann mit den obigen Funktionen die Kennzahl berechnet werden. In seinem Artikel "`A Faster Algorithm for Betweenness Centrality"' zeigt Ulrik Brandes zudem einen Algorithmus, der die Metrik mit einer Zeitkomplexität von \(O(|V|\cdot |E|)\) berechnen kann. Es ist zudem erwähnenswert, dass diese Metrik auch explizit für gewichtete Graphen berechenbar ist. \cite{brandes_faster_2001} Zudem ist sie in Wolfram, SageMath und auch Matlab nativ vertreten und verfügbar. \cite{wolfram_graph_2020,sagemath_generic_nodate,matlab_measure_2020}
+}
+\subsubsection*{Closeness Centrality}
+\subsubsection*{Eigenvektor Centrality}
 \section{Chromatische Zahl und chromatischer Index}
 {
 Ein bekanntes Problem der Informatik ist das Färbeproblem. Es geht dabei darum einen Graphen so zu färben, sodass zwei benachbarte Knoten nicht die selbe Farbe haben. Anwendungen dafür kann man in vielen Problemen finden. Klassischerweise nimmt man das Beispiel der Karteneinfärbung bei der jedes Land ein Knoten ist und die Karte so eingefärbt werden soll, dass zwei benachbarte Länder nicht die gleiche Farbe haben. Allerdings lässt sich das Färbeproblem auch auf andere relevantere Probleme anwenden. Man kann z.B. so auch einen konfliktfreien Stundenplan erstellen oder andere ähnliche Konflikt-Probleme lösen. Die Eckenfärbung eines Graphen selbst ist eine Abbildung \(c: V\mapsto S\), wobei S die Menge an möglichen Färbungen ist. \cite{diestel_graphentheorie_2000,aigner_graphentheorie_2015} 
@@ -409,11 +437,10 @@ Neben der klassischen Art und Weise einen Graphen zu färben gibt es auch weiter
 \[\chi_f(G)=\lim_{b\to\infty}\frac{\chi_b(G)}{b}\]
 Die fraktionierte chromatische Zahl ist also der Grenzwert für die \(b\)-fache chromatische Zahl geteilt durch \(b\), wenn \(b\) gegen unendlich geht. Im Gegensatz zur "`normalen"' chromatischen Zahl ist die fraktionierte chromatische Zahl eine rationale und keine natürliche Zahl. Die Berechnung der Metrik ist ein NP-vollständiges Problem. Allerdings gibt es für einige Graphen vorgefertigte Werte, die genutzt werden können. So ist die fraktionierte chromatische Zahl eines zyklischen Graphen \(C_{2n+1}\) z.B. \(2+(\frac{1}{n})\). Der Algorithmus zur Berechnung der Kennzahl bedient sich einem linearem Programm und ist äußerst schwer zu berechnen. Die Komplexität steigt exponentiell zur Ordnung des Graphen. Eine native Implementierung dazu findet sich in SageMath. Wie bei der normalen Färbung kann auch die fraktionierte Färbung für diverse konfliktfreie Planungen und dergleichen verwendet werden. \cite{weisstein_chromatic_nodate,sagemath_graph_2020-1,scheinerman_fractional_2011}
 }
-\subsubsection*{Fraktionierter chromatischer Index}
-{
-
-}
-
+%\subsubsection*{Fraktionierter chromatischer Index}
+%{
+%
+%}
 \section{Arborizität}
 {
 Ein wichtiger Teil der Graphentheorie ist die Betrachtung von Bäumen. Ein Baum ist dabei eine Zusammenhangskomponente eines Waldes. Ein Wald wiederum ist ein Graph, der keine Zyklen aufweist. Mithilfe dieses Wissens kann eine weitere Metrik definiert werden. Betrachtet man einen Graphen, zusammenhängend oder nicht, kann man sich die Frage stellen, wie es möglich ist, diesen Graphen aus einer Menge an Wäldern zu erstellen. Wichtiger noch ist es herauszufinden, aus welcher minimalen Anzahl an Wäldern es möglich ist, den vorliegenden Graphen aufzubauen. Diese minimale Anzahl ist die "`Arborizität"'. Präziser ausgedrückt, ist die "`Arborizität"' von \(G\) (\(Y(G)\)) die minimale Anzahl an azyklischen Subgraphen (Wäldern), dessen Vereinigung \(G\) ergibt. Hierbei teilen sich die Subgraphen keine gemeinsamen Kanten. \cite{weisstein_arboricity_nodate}

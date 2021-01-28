@@ -382,7 +382,7 @@ Die erste Metrik, die vorgestellt werden soll, ist zugleich die einfachste. Die 
 }
 \subsubsection*{Betweenness Centrality}
 {
-Eine weitere Möglichkeit die Wichtigkeit eines Knoten in einem Graphen zu ermitteln ist über die sogenannte "`Betweenness Centrality"'. Auch diese Metrik wird häufig für die Analyse von sozialen Netzwerken genutzt.
+Eine weitere Möglichkeit die Wichtigkeit eines Knoten in einem Graphen zu ermitteln ist über die sogenannte "`Betweenness Centrality"'. Auch diese Metrik wird häufig für die Analyse von sozialen Netzwerken genutzt. Besonders gibt die Kennzahl für einen Knoten an, wie viel Einfluss dieser hat für den Fluss der Information. Besonders wird es genutzt, um Knoten zu finden, die als Brücke von einem Graph-Teil zum anderen fungieren. \cite{neo4j_betweenness_2020}
 
 Zur Berechnung der Metrik ist zunächst wichtig zu verstehen, was unter dem Wert \(\sigma_{st}\) und der Funktion \(\sigma_{st}(v)\) zu verstehen ist, wobei gilt \(s,t,c \in V(G)\). \(\sigma_{st}\) gibt an, wie viele kürzeste Wege es zwischen den beiden Knoten \(s\ \text{und}\ t\) gibt. Die Funktion \(\sigma_{st}(v)\) bildet wiederum einen Knoten \(v\) aus \(G\) auf die Anzahl der kürzesten Wege zwischen \(s\ \text{und}\ t\) ab, die durch \(v\) gehen. Die Funktion ist dabei folgendermaßen definiert, bzw. kann so berechnet werden. \cite{brandes_faster_2001}
 \[
@@ -401,7 +401,53 @@ Die "`Betweenness Centrality"' \(C_B(v)\) ist nun so definiert, dass sie die Auf
 Die Berechnung dieser Metrik ist in polynomialer Laufzeit möglich und kann mit einem Algorithmus berechnet werden, der eine Komplexität von \(O(|V|^3)\) aufweist. Grundsätzlich ist es für die Berechnung zunächst notwendig zwischen allen Knotenpaaren die Anzahl und die Länge der kürzesten Wege zu berechnen. Auf Basis dieser Daten kann dann mit den obigen Funktionen die Kennzahl berechnet werden. In seinem Artikel "`A Faster Algorithm for Betweenness Centrality"' zeigt Ulrik Brandes zudem einen Algorithmus, der die Metrik mit einer Zeitkomplexität von \(O(|V|\cdot |E|)\) berechnen kann. Es ist zudem erwähnenswert, dass diese Metrik auch explizit für gewichtete Graphen berechenbar ist. \cite{brandes_faster_2001} Zudem ist sie in Wolfram, SageMath und auch Matlab nativ vertreten und verfügbar. \cite{wolfram_graph_2020,sagemath_generic_nodate,matlab_measure_2020}
 }
 \subsubsection*{Closeness Centrality}
+{
+Eine weitere Zentralitätsmetrik ist die "`Closeness Centrality"'. Auch diese Metrik beschreibt die Wichtigkeit eines Knotens. Dabei kann mit der Kennzahl vor allem ausgesagt werden, inwieweit ein Knoten effizient Informationen innerhalb eines Graphen verteilen kann, vorausgesetzt der Graph stellt eine Struktur dar, die diese Interpretation zulässt. \cite{neo4j_closeness_2020}
+
+Die "`Closeness Centrality"' misst die durchschnittliche invertierte Distanz zu allen anderen Knoten. Erzielt ein Knoten dabei einen hohen Wert, so hat dieser im Schnitt die kleinste Distanz zu allen anderen Knoten. Bei einer Interpretation der Metrik geht man also meist davon aus, dass ein Knoten der eine kurze Distanz zu allen anderen Knoten hat, auch wichtig sein muss. Für die Berechnung der Metrik ist es vor allem wichtig zu wissen, wie hoch die Distanz ist von dem zu untersuchenden Knoten \(v\) zu allen anderen. Auf Basis dessen lässt sich die Kennzahl folgendermaßen berechnen: \cite{cohen_computing_2014}
+\[
+	C_C(v)=\frac{|V|-1}{\sum_{u\in V}d_G(v,u)}	
+\]
+Die Berechnung dieser Metrik lässt sich in polynomialer Zeit unternehmen. Grundsätzlich sind die Distanzen für den Knoten \(v\) auszurechnen und anschließend die obige Funktion anzuwenden. Zur Berechnung der Distanzen kann man z.B., wie schon in 2.2 erwähnt, die Breitensuche verwenden. Als Pseudocode könne die Berechnung der "`Closeness Centrality"' dann folgendermaßen aussehen:
+\begin{lstlisting}
+	Closeness_Centrality(G(V, E), v)
+		distanz_gesamt = 0
+		for each a in V\v
+			distanz_gesamt += d(v, a)
+		return (G.order - 1)/distanz_gesamt
+\end{lstlisting}
+Bedenkt man, dass die Breitensuche eine Zeit-Komplexität von \(O(|V|+|E|)\) hat und die \(|V|\)-mal gemacht wird lässt sich leicht die Gesamtkomplexität der "`Closeness Centrality"' für einen Knoten ermitteln: \(O(|V|)\cdot O(|V|+|E|)=O(|V|\cdot(|V|+|E|))\). \cite{sariyuce_incremental_2013}
+
+Diese Zentralitätsmetrik ist weit verbreitet und lässt sich in den MatLab-, SageMath- und Wolfram-Bibliotheken finden. \cite{matlab_measure_2020,sagemath_generic_nodate,wolfram_graph_2020}
+}
 \subsubsection*{Eigenvektor Centrality}
+{
+Die "`Eigenvektor Centrality"' ist auch eine Metrik für einen Graph-Knoten. Hierbei soll nicht nur darauf geachtet werden, inwieweit ein Knoten direkten Einfluss auf eine Netzstruktur hat, sondern auch seine transitive Wichtigkeit betrachtet werden. Anwendungen können z.B. Ranking-Systeme sein, die einem Daten-Knoten eine bestimmte Wichtigkeit zuordnen. \cite{neo4j_eigenvector_2020} Die grundlegende Idee der Metrik ist es durch die Transitivität nicht nur zu betrachten, wie wichtig der betrachtete Knoten selbst ist, sondern auch mit einzubeziehen, wie wichtig seine Benachbarten Knoten sind. So ist ein Knoten, der wichtig ist und dazu noch wichtige Nachbarn hat, unter Umständen wichtiger als ein Knoten, der zwar selbst als wichtig eingeschätzt wird, aber keine wichtigen Nachbarn hat.
+
+Die Berechnung der "`Eigenvektor Centrality"' basiert auf der Adjazenzmatrix des Graphen. Hierbei ist beim jeweiligen Eintrag \(a_{v,t}\) eine Eins eingetragen, falls eine Kante zwischen \(v\) und \(t\) vorhanden ist, anderen Falls ist eine Null eingetragen. Die "`Eigenvektor Centrality"' \(x\) von Knoten \(v\) ist nun folgendermaßen definiert (\(M(v)\) ist die Menge an adjazenten Knoten von \(v\)): \cite{bihari_eigenvector_2015}
+\[
+	x_v=\frac{1}{\lambda}\sum_{t\in M(v)}x_t=\frac{1}{\lambda}\sum_{t\in G}a_{v,t}x_t
+\]
+Übersetzt ist die "`Eigenvektor Centrality"' also die Aufsummierung der "`Eigenvektor Centrality"' aller Nachbarknoten geteilt durch \(\lambda\). Formuliert man die Formel um und betrachtet sie im Kontext der gesamten Adjazenzmatrix, so kann man auch schreiben: \(Ax=\lambda x\), wobei \(A\) die quadratische Adjazenzmatrix ist und \(x\) der Vektor mit den jeweiligen "`Eigenvektor Centrality"'-Werten. Hierbei fällt auf, dass dies gleichzeitig auch die Formel für den Eigenvektor und Eigenwert einer Martix ist. Aufgrund dessen erklärt sich auch der Name der Metrik. Stellt man nämlich die Eigenvektor-Formel um, so ergibt sich \((Ax/\lambda)=x\). Betrachtet man in dieser Rechnung nur einen Knoten so ergibt sich durch die Konsequenz der Matrix-Multiplikation die erstgenannte Funktion für \(x_v\). Laut dieser Ausführungen ist \(\lambda\) ein Eigenwert der Adjazenzmatrix. Allerdings wird \(\lambda\) ausdrücklich als Konstante innerhalb dieser Metrik aufgefasst. Warum ist \(\lambda\) konstant? Es ist definiert, dass der dann Eigenvektor \(x\) nicht negativ ist. Nach dem Perron-Frobenius-Theorem kann mit dieser Einschränkung \(\lambda\) nur der größtmögliche Eigenwert für \(A\) und damit auch konstant sein.
+
+Zur Berechnung der Kennzahl für jeden Knoten kann man sich beispielsweise der sogenannten "`Power-iteration method"' bedienen. Diese Methode dient dazu, für eine gegebene Matrix möglichst genau einen Eigenvektor und einen Eigenwert zu finden. D.h. über Iterationen wird sich einem Ergebnis angenähert. Für das Verfahren im Falle der "`Eigenvektor Centrality"' wird im ersten Schritt die Adjazenzmatrix mit \(n\) Zeilen und \(n\) Spalten mit einem \(n\) großen Spalten-Vektor multipliziert, die vollständig mit Einsen gefüllt ist. Der entstehende Spalten-Vektor wird normiert und für die nächste Iteration zur Multiplikation mit \(A\) verwendet. Dies macht man so lange bis der Spaltenvektor konvergiert, bzw. eine feste Anzahl an Iterationen durchlaufen wurde. Dieser Vektor ist dann idealerweise ein Eigenvektor von \(A\) und der berechnete Normalisierungswert ist der korrespondierende Eigenwert \(\lambda\). Als Beispiel und zum besseren Verständnis sei die Abbildung 2.1 gegeben, bei der ein Beispiel durchgerechnet wurde. \cite{meghanathan_use_2015}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=.32]{Abbildungen/eigenvektor_centrality_example.png}
+	\caption[Eigenvektor Centrality: Power-iteration Method \cite{meghanathan_use_2015}]{Eigenvektor Centrality: Power-iteration Method \cite{meghanathan_use_2015}}
+\end{figure}
+Der limitierende Faktor dieser Methode zur Berechnung der "`Eigenvektor Centrality"' ist die Matrix-Multiplikation. Implementiert man diese naiv so ergibt sich eine Komplexität von \(O(n^3)\). Die Normierung lässt sich in linearer Laufzeit realisieren. Somit ist die Berechnung mit der "`Power-iteration method"' in polynominaler Laufzeit möglich. Die Metrik selbst lässt sich nativ in Wolfram und in Matlab finden. \cite{wolfram_graph_2020,matlab_measure_2020}
+}
+\subsubsection*{Page Rank}
+{
+Zum Abschluss der Zentralitätsmetriken soll eine Metrik dieser Kategorie vorgestellt werden, die einen hohen praktischen Nutzen findet. Der "`Page Rank"' oder die "`Page Rank Centrality"' beschreibt die Wichtigkeit eines Knotens auf Basis seines Ausgangsgrads, bzw. seiner Verbindungen zu anderen Knoten und des "`Page Ranks"' seiner benachbarten Knoten. Hierbei ähneln sich "`Page Rank"' und "`Eigenvektor Centrality"'. Die Metrik wurde erstmals in einem Google-Paper von Page und Brin veröffentlicht und soll Webseiten im World Wide Web bewerten. \cite{brin_anatomy_1998}
+
+Es sei \(A\) eine Seite, bzw. ein Knoten und dieser Knoten hat Einwegkanten (Links) zu den Seiten \(T_1\dots T_n\). \(d\) sei ein frei wählbarer "`Dämpfungs"'-Faktor, der meist auf 0,85 gesetzt wird. Zudem ist \(C(A)\) als der Ausgangsgrad für eine Seite (Knoten) definiert. Der "`Page Rank"' ist dann folgendermaßen definiert.
+\[
+	PR(A) = (1-d)+d(\frac{PR(T_1)}{C(T_1)}+\dots +\frac{PR(T_n)}{C(T_n)})
+\]
+Die Berechnung des "`Page Ranks"' erfolgt durch einen iterativen Algorithmus, bie dem zunächst jedem Knoten der "`Page Rank"' \(1/|V|\) gegeben wird. Darauf aufbauend kann dann die obige Funktion zur weiteren Berechnung und die weiteren Iterationen herangenommen werden, bis die Metrik konvergiert. Der Algorithmus weißt dabei eine Zeit-Komplexität von \(O(k\cdot |E|)\) auf, wobei \(k\) für die Anzahl der Iterationen steht. \cite{oracle_pagerank_2017} "`Page Rank"' ist in allen angeführten Mathematikbibliotheken vertreten. \cite{sagemath_generic_nodate,wolfram_graph_2020,matlab_measure_2020}
+}
 \section{Chromatische Zahl und chromatischer Index}
 {
 Ein bekanntes Problem der Informatik ist das Färbeproblem. Es geht dabei darum einen Graphen so zu färben, sodass zwei benachbarte Knoten nicht die selbe Farbe haben. Anwendungen dafür kann man in vielen Problemen finden. Klassischerweise nimmt man das Beispiel der Karteneinfärbung bei der jedes Land ein Knoten ist und die Karte so eingefärbt werden soll, dass zwei benachbarte Länder nicht die gleiche Farbe haben. Allerdings lässt sich das Färbeproblem auch auf andere relevantere Probleme anwenden. Man kann z.B. so auch einen konfliktfreien Stundenplan erstellen oder andere ähnliche Konflikt-Probleme lösen. Die Eckenfärbung eines Graphen selbst ist eine Abbildung \(c: V\mapsto S\), wobei S die Menge an möglichen Färbungen ist. \cite{diestel_graphentheorie_2000,aigner_graphentheorie_2015} 

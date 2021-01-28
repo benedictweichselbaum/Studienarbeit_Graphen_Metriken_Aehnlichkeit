@@ -178,6 +178,79 @@
       \field{dateera}{ce}
       \keyw{Graph theory,Outlines,syllabi,etc,Problems,exercises,etc}
     \endentry
+    \entry{bihari_eigenvector_2015}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1628d49fd6ea4ec738f088d1835aca3c}{%
+           family={Bihari},
+           familyi={B\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2d80838755e7cebe487196b2649c40b2}{%
+           family={Pandia},
+           familyi={P\bibinitperiod},
+           given={Manoj},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5f68c29067d64553f6e8b069a99f04e}
+      \strng{fullhash}{f5f68c29067d64553f6e8b069a99f04e}
+      \strng{bibnamehash}{f5f68c29067d64553f6e8b069a99f04e}
+      \strng{authorbibnamehash}{f5f68c29067d64553f6e8b069a99f04e}
+      \strng{authornamehash}{f5f68c29067d64553f6e8b069a99f04e}
+      \strng{authorfullhash}{f5f68c29067d64553f6e8b069a99f04e}
+      \field{labelalpha}{BP15}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 1st International Conference on Futuristic Trends in Computational Analysis and Knowledge Management, {ABLAZE} 2015}
+      \field{title}{Eigenvector centrality and its application in research professionals' relationship network}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1109/ABLAZE.2015.7154915
+      \endverb
+    \endentry
+    \entry{brin_anatomy_1998}{online}{}
+      \name{author}{2}{}{%
+        {{hash=ade8269d287e9c1531e4a1cbad0b4b82}{%
+           family={Brin},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5ca20489809aaab392f875d6bc785086}{%
+           family={Page},
+           familyi={P\bibinitperiod},
+           given={Lawrence},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{67f006a7ae882b83a187215c4e9bdf2f}
+      \strng{fullhash}{67f006a7ae882b83a187215c4e9bdf2f}
+      \strng{bibnamehash}{67f006a7ae882b83a187215c4e9bdf2f}
+      \strng{authorbibnamehash}{67f006a7ae882b83a187215c4e9bdf2f}
+      \strng{authornamehash}{67f006a7ae882b83a187215c4e9bdf2f}
+      \strng{authorfullhash}{67f006a7ae882b83a187215c4e9bdf2f}
+      \field{labelalpha}{BP98}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Anatomy of a Large-Scale Hypertextual Web Search Engine}
+      \field{urlday}{28}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb The Anatomy of a Search Engine:/home/benedict/snap/zotero-snap/common/Zotero/storage/YK2HL2MB/google.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://infolab.stanford.edu/~backrub/google.html
+      \endverb
+      \verb{url}
+      \verb http://infolab.stanford.edu/~backrub/google.html
+      \endverb
+    \endentry
     \entry{brandes_faster_2001}{article}{}
       \name{author}{1}{}{%
         {{hash=392b457d9bac1ed69366176e7857d7e9}{%
@@ -347,6 +420,67 @@
       \verb{url}
       \verb http://link.springer.com/10.1007/978-3-642-13073-1_19
       \endverb
+    \endentry
+    \entry{cohen_computing_2014}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=537da394ff661487bc4120d6cab00ec5}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Edith},
+           giveni={E\bibinitperiod}}}%
+        {{hash=bc775b0bfe2f5eba2c0d55106a052b55}{%
+           family={Delling},
+           familyi={D\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=58fb32d0e500e97fc503f4e75953eaaf}{%
+           family={Pajor},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8839683a16ad350312493c2e29f35b86}{%
+           family={Werneck},
+           familyi={W\bibinitperiod},
+           given={Renato\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, {NY}, {USA}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{e54a30678cf5342b7cee8818a69b2b84}
+      \strng{fullhash}{8da425f48cd7549daa31455b0b0e50bb}
+      \strng{bibnamehash}{e54a30678cf5342b7cee8818a69b2b84}
+      \strng{authorbibnamehash}{e54a30678cf5342b7cee8818a69b2b84}
+      \strng{authornamehash}{e54a30678cf5342b7cee8818a69b2b84}
+      \strng{authorfullhash}{8da425f48cd7549daa31455b0b0e50bb}
+      \field{labelalpha}{Coh+14}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Closeness centrality, first considered by Bavelas (1948), is an importance measure of a node in a network which is based on the distances from the node to all other nodes. The classic definition, proposed by Bavelas (1950), Beauchamp (1965), and Sabidussi (1966), is (the inverse of) the average distance to all other nodes.We propose the first highly scalable (near linear-time processing and linear space overhead) algorithm for estimating, within a small relative error, the classic closeness centralities of all nodes in the graph. Our algorithm applies to undirected graphs, as well as for centrality computed with respect to round-trip distances in directed graphs.For directed graphs, we also propose an efficient algorithm that approximates generalizations of classic closeness centrality to outbound and inbound centralities. Although it does not provide worst-case theoretical approximation guarantees, it is designed to perform well on real networks.We perform extensive experiments on large networks, demonstrating high scalability and accuracy.}
+      \field{booktitle}{Proceedings of the Second {ACM} Conference on Online Social Networks}
+      \field{isbn}{978-1-4503-3198-2}
+      \field{note}{event-place: Dublin, Ireland}
+      \field{series}{{COSN} '14}
+      \field{title}{Computing Classic Closeness Centrality, at Scale}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{37\bibrangedash 50}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/2660460.2660465
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2660460.2660465
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2660460.2660465
+      \endverb
+      \keyw{centrality,estimation,pivoting,sampling}
     \endentry
     \entry{cunningham_optimal_1985}{article}{}
       \name{author}{1}{}{%
@@ -970,6 +1104,34 @@
       \verb https://de.mathworks.com/help/matlab/ref/graph.distances.html
       \endverb
     \endentry
+    \entry{meghanathan_use_2015}{article}{}
+      \name{author}{1}{}{%
+        {{hash=904fd0158bacf0c6dd922d025d41c79f}{%
+           family={Meghanathan},
+           familyi={M\bibinitperiod},
+           given={Natarajan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{904fd0158bacf0c6dd922d025d41c79f}
+      \strng{fullhash}{904fd0158bacf0c6dd922d025d41c79f}
+      \strng{bibnamehash}{904fd0158bacf0c6dd922d025d41c79f}
+      \strng{authorbibnamehash}{904fd0158bacf0c6dd922d025d41c79f}
+      \strng{authornamehash}{904fd0158bacf0c6dd922d025d41c79f}
+      \strng{authorfullhash}{904fd0158bacf0c6dd922d025d41c79f}
+      \field{labelalpha}{Meg15}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Science \& Information Technology}
+      \field{title}{Use of Eigenvector Centrality to Detect Graph Isomorphism}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.5121/csit.2015.51501
+      \endverb
+    \endentry
     \entry{nash-williams_edge-disjoint_1961}{article}{}
       \name{author}{1}{}{%
         {{hash=3338b8da9fc914598cad24823ec228c5}{%
@@ -1012,6 +1174,152 @@
       \endverb
       \verb{url}
       \verb http://doi.wiley.com/10.1112/jlms/s1-36.1.445
+      \endverb
+    \endentry
+    \entry{neo4j_betweenness_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=767ec6342382e4f6e61eb6b309a77ee7}{%
+           family={neo4j},
+           familyi={n\bibinitperiod}}}%
+      }
+      \strng{namehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{fullhash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{bibnamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authorbibnamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authornamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authorfullhash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \field{extraname}{1}
+      \field{labelalpha}{neo20}
+      \field{sortinit}{n}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Betweenness Centrality - Centrality algorithms}
+      \field{titleaddon}{Graph Data Science}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb 6.2.2. Betweenness Centrality - 6.2. Centrality algorithms:/home/benedict/snap/zotero-snap/common/Zotero/storage/V5NUDFNJ/betweenness-centrality.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://neo4j.com/docs/graph-data-science/current/algorithms/betweenness-centrality/
+      \endverb
+      \verb{url}
+      \verb https://neo4j.com/docs/graph-data-science/current/algorithms/betweenness-centrality/
+      \endverb
+    \endentry
+    \entry{neo4j_closeness_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=767ec6342382e4f6e61eb6b309a77ee7}{%
+           family={neo4j},
+           familyi={n\bibinitperiod}}}%
+      }
+      \strng{namehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{fullhash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{bibnamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authorbibnamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authornamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authorfullhash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \field{extraname}{2}
+      \field{labelalpha}{neo20}
+      \field{sortinit}{n}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Closeness Centrality - Centrality algorithms}
+      \field{titleaddon}{Graph Data Science}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb 6.2.4. Closeness Centrality - 6.2. Centrality algorithms:/home/benedict/snap/zotero-snap/common/Zotero/storage/L3UMG4L4/closeness-centrality.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://neo4j.com/docs/graph-data-science/current/algorithms/closeness-centrality/
+      \endverb
+      \verb{url}
+      \verb https://neo4j.com/docs/graph-data-science/current/algorithms/closeness-centrality/
+      \endverb
+    \endentry
+    \entry{neo4j_eigenvector_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=767ec6342382e4f6e61eb6b309a77ee7}{%
+           family={neo4j},
+           familyi={n\bibinitperiod}}}%
+      }
+      \strng{namehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{fullhash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{bibnamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authorbibnamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authornamehash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \strng{authorfullhash}{767ec6342382e4f6e61eb6b309a77ee7}
+      \field{extraname}{3}
+      \field{labelalpha}{neo20}
+      \field{sortinit}{n}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Eigenvector Centrality - Centrality algorithms}
+      \field{titleaddon}{Graph Data Science}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb 6.2.7. Eigenvector Centrality - 6.2. Centrality algorithms:/home/benedict/snap/zotero-snap/common/Zotero/storage/LWDTTYWT/eigenvector-centrality.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://neo4j.com/docs/graph-data-science/current/algorithms/eigenvector-centrality/
+      \endverb
+      \verb{url}
+      \verb https://neo4j.com/docs/graph-data-science/current/algorithms/eigenvector-centrality/
+      \endverb
+    \endentry
+    \entry{oracle_pagerank_2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={Oracle},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{labelalpha}{Ora17}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{PageRank} and variants}
+      \field{titleaddon}{Oracle {PGX} 2.4.0 Documentation}
+      \field{urlday}{28}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Oracle PGX 2.4.0 Documentation - PageRank and variants:/home/benedict/snap/zotero-snap/common/Zotero/storage/AZBHWQND/pagerank.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.oracle.com/cd/E56133_01/2.4.0/reference/algorithms/pagerank.html
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/cd/E56133_01/2.4.0/reference/algorithms/pagerank.html
       \endverb
     \endentry
     \entry{peroche_np-completeness_1984}{article}{}
@@ -1211,6 +1519,49 @@
       \endverb
       \verb{url}
       \verb https://doc.sagemath.org/html/en/reference/graphs/index.html
+      \endverb
+    \endentry
+    \entry{sariyuce_incremental_2013}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bf4bbc5cde55b97c233d3ac8ebd774a2}{%
+           family={Sariyuce},
+           familyi={S\bibinitperiod},
+           given={Ahmet\bibnamedelima Erdem},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=df849f7b29d194c3c028a1272b3b50c1}{%
+           family={Kaya},
+           familyi={K\bibinitperiod},
+           given={Kamer},
+           giveni={K\bibinitperiod}}}%
+        {{hash=97d7640db1038cb73d21235c1278d57a}{%
+           family={Saule},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=018173421f7055b98c4be896a1a62441}{%
+           family={Catalyurek},
+           familyi={C\bibinitperiod},
+           given={Umit},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff9521b02dd6210508fd14768f27c436}
+      \strng{fullhash}{35191783f5209380e0bb61ccdbd63e1d}
+      \strng{bibnamehash}{ff9521b02dd6210508fd14768f27c436}
+      \strng{authorbibnamehash}{ff9521b02dd6210508fd14768f27c436}
+      \strng{authornamehash}{ff9521b02dd6210508fd14768f27c436}
+      \strng{authorfullhash}{35191783f5209380e0bb61ccdbd63e1d}
+      \field{labelalpha}{Sar+13}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Incremental algorithms for closeness centrality}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{487\bibrangedash 492}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/BigData.2013.6691611
       \endverb
     \endentry
     \entry{scheinerman_fractional_2011}{book}{}

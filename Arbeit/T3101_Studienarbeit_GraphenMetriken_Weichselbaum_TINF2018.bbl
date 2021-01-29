@@ -178,6 +178,89 @@
       \field{dateera}{ce}
       \keyw{Graph theory,Outlines,syllabi,etc,Problems,exercises,etc}
     \endentry
+    \entry{bernhart_book_1979}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5617bb7cf33784fab9242c4f0ee78a07}{%
+           family={Bernhart},
+           familyi={B\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7fec6a264ce45ed4b155a226a5eed598}{%
+           family={Kainen},
+           familyi={K\bibinitperiod},
+           given={Paul\bibnamedelima C},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b796c7b6e63e5ff023f675eaa8f23d4e}
+      \strng{fullhash}{b796c7b6e63e5ff023f675eaa8f23d4e}
+      \strng{bibnamehash}{b796c7b6e63e5ff023f675eaa8f23d4e}
+      \strng{authorbibnamehash}{b796c7b6e63e5ff023f675eaa8f23d4e}
+      \strng{authornamehash}{b796c7b6e63e5ff023f675eaa8f23d4e}
+      \strng{authorfullhash}{b796c7b6e63e5ff023f675eaa8f23d4e}
+      \field{labelalpha}{BK79}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00958956}
+      \field{journaltitle}{Journal of Combinatorial Theory, Series B}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Combinatorial Theory, Series B}
+      \field{title}{The book thickness of a graph}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{27}
+      \field{year}{1979}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{320\bibrangedash 331}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/0095-8956(79)90021-2
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0095895679900212
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0095895679900212
+      \endverb
+    \endentry
+    \entry{blankenship_book_2003}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=bfbe8c9d1b81b4cb254a639429fb3d61}{%
+           family={Blankenship},
+           familyi={B\bibinitperiod},
+           given={Robin\bibnamedelima Leigh},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Louisiana State University}%
+      }
+      \strng{namehash}{bfbe8c9d1b81b4cb254a639429fb3d61}
+      \strng{fullhash}{bfbe8c9d1b81b4cb254a639429fb3d61}
+      \strng{bibnamehash}{bfbe8c9d1b81b4cb254a639429fb3d61}
+      \strng{authorbibnamehash}{bfbe8c9d1b81b4cb254a639429fb3d61}
+      \strng{authornamehash}{bfbe8c9d1b81b4cb254a639429fb3d61}
+      \strng{authorfullhash}{bfbe8c9d1b81b4cb254a639429fb3d61}
+      \field{labelalpha}{Bla03}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Book embeddings of graphs}
+      \field{type}{phdthesis}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://digitalcommons.lsu.edu/gradschool_dissertations/3734?utm_source=digitalcommons.lsu.edu%2Fgradschool_dissertations%2F3734&utm_medium=PDF&https://digitalcommons.lsu.edu/gradschool_dissertations/3734/utm_campaign=PDFCoverPages
+      \endverb
+      \verb{url}
+      \verb https://digitalcommons.lsu.edu/gradschool_dissertations/3734?utm_source=digitalcommons.lsu.edu%2Fgradschool_dissertations%2F3734&utm_medium=PDF&https://digitalcommons.lsu.edu/gradschool_dissertations/3734/utm_campaign=PDFCoverPages
+      \endverb
+    \endentry
     \entry{bihari_eigenvector_2015}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=1628d49fd6ea4ec738f088d1835aca3c}{%
@@ -419,6 +502,65 @@
       \endverb
       \verb{url}
       \verb http://link.springer.com/10.1007/978-3-642-13073-1_19
+      \endverb
+    \endentry
+    \entry{chung_embedding_1987}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ce1756c17f1256e62cd8740ce5e05805}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Fan\bibnamedelimb R.\bibnamedelimi K.},
+           giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=59d773646aa1ade953033b13464ebdc6}{%
+           family={Leighton},
+           familyi={L\bibinitperiod},
+           given={Frank\bibnamedelima Thomson},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=6159fcab9589251171a0ecf6d1e250da}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={Arnold\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bc22c03a5c5653b3c991100177e27c9}
+      \strng{fullhash}{3bc22c03a5c5653b3c991100177e27c9}
+      \strng{bibnamehash}{3bc22c03a5c5653b3c991100177e27c9}
+      \strng{authorbibnamehash}{3bc22c03a5c5653b3c991100177e27c9}
+      \strng{authornamehash}{3bc22c03a5c5653b3c991100177e27c9}
+      \strng{authorfullhash}{3bc22c03a5c5653b3c991100177e27c9}
+      \field{labelalpha}{CLR87}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0196-5212, 2168-345X}
+      \field{journaltitle}{{SIAM} Journal on Algebraic Discrete Methods}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{{SIAM}. J. on Algebraic and Discrete Methods}
+      \field{shorttitle}{Embedding Graphs in Books}
+      \field{title}{Embedding Graphs in Books: A Layout Problem with Applications to {VLSI} Design}
+      \field{urlday}{29}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{8}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{33\bibrangedash 58}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1137/0608002
+      \endverb
+      \verb{file}
+      \verb Volltext:/home/benedict/snap/zotero-snap/common/Zotero/storage/Z6YEET9T/Chung et al. - 1987 - Embedding Graphs in Books A Layout Problem with A.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://epubs.siam.org/doi/10.1137/0608002
+      \endverb
+      \verb{url}
+      \verb https://epubs.siam.org/doi/10.1137/0608002
       \endverb
     \endentry
     \entry{cohen_computing_2014}{inproceedings}{}
@@ -868,6 +1010,33 @@
       \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/WGMU9ZLL/Jungnickel - 2013 - Graphs, networks and algorithms.pdf:application/pdf
       \endverb
     \endentry
+    \entry{kainen_book_1990}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7c34bc0969aa5e196e30144ed086f312}{%
+           family={Kainen},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c34bc0969aa5e196e30144ed086f312}
+      \strng{fullhash}{7c34bc0969aa5e196e30144ed086f312}
+      \strng{bibnamehash}{7c34bc0969aa5e196e30144ed086f312}
+      \strng{authorbibnamehash}{7c34bc0969aa5e196e30144ed086f312}
+      \strng{authornamehash}{7c34bc0969aa5e196e30144ed086f312}
+      \strng{authorfullhash}{7c34bc0969aa5e196e30144ed086f312}
+      \field{labelalpha}{Kai90}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Congressus Numerantium}
+      \field{title}{The book thickness of a graph, {II}}
+      \field{volume}{71}
+      \field{year}{1990}
+      \field{dateera}{ce}
+      \field{pages}{127\bibrangedash 132}
+      \range{pages}{6}
+    \endentry
     \entry{karp_reducibility_1996}{article}{}
       \name{author}{1}{}{%
         {{hash=5290385c419686f6312edeb3578dc9cf}{%
@@ -1103,6 +1272,39 @@
       \verb{url}
       \verb https://de.mathworks.com/help/matlab/ref/graph.distances.html
       \endverb
+    \endentry
+    \entry{matula_determining_1987}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=9ee0d07af64122f2c92bb63c4228b384}{%
+           family={Matula},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ee0d07af64122f2c92bb63c4228b384}
+      \strng{fullhash}{9ee0d07af64122f2c92bb63c4228b384}
+      \strng{bibnamehash}{9ee0d07af64122f2c92bb63c4228b384}
+      \strng{authorbibnamehash}{9ee0d07af64122f2c92bb63c4228b384}
+      \strng{authornamehash}{9ee0d07af64122f2c92bb63c4228b384}
+      \strng{authorfullhash}{9ee0d07af64122f2c92bb63c4228b384}
+      \field{labelalpha}{Mat87}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe an algorithm that determines the edge connectivity of an n-vertex m-edge graph G in O(nm) time. A refinement shows that the question as to whether a graph is k-edge connected can be determined in O(kn2). For dense graphs characterized by m = Ω(n2), the latter result implies that determination of whether a graph is k-edge connected for any fixed k can be accomplished in time linear in input size.}
+      \field{booktitle}{28th Annual Symposium on Foundations of Computer Science (sfcs 1987)}
+      \field{month}{10}
+      \field{note}{{ISSN}: 0272-5428}
+      \field{title}{Determining edge connectivity in 0(nm)}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \field{pages}{249\bibrangedash 251}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/SFCS.1987.19
+      \endverb
+      \keyw{Algorithm design and analysis,Chip scale packaging,Circuits,Communication networks,Computer science,Costs,Graph theory,Partitioning algorithms,Reliability theory,Telecommunication network reliability}
     \endentry
     \entry{meghanathan_use_2015}{article}{}
       \name{author}{1}{}{%
@@ -1411,6 +1613,40 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/0012365X83900742
+      \endverb
+    \endentry
+    \entry{wolfram_research_findclique_2015}{online}{}
+      \name{author}{1}{}{%
+        {{hash=978e0454ca8238eadea80a91bfa74332}{%
+           family={Research},
+           familyi={R\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{978e0454ca8238eadea80a91bfa74332}
+      \strng{fullhash}{978e0454ca8238eadea80a91bfa74332}
+      \strng{bibnamehash}{978e0454ca8238eadea80a91bfa74332}
+      \strng{authorbibnamehash}{978e0454ca8238eadea80a91bfa74332}
+      \strng{authornamehash}{978e0454ca8238eadea80a91bfa74332}
+      \strng{authorfullhash}{978e0454ca8238eadea80a91bfa74332}
+      \field{labelalpha}{Res15}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Publisher: Wolfram Research}
+      \field{title}{{FindClique}}
+      \field{urlday}{29}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reference.wolfram.com/language/ref/FindClique.html
+      \endverb
+      \verb{url}
+      \verb https://reference.wolfram.com/language/ref/FindClique.html
       \endverb
     \endentry
     \entry{sagemath_generic_nodate}{online}{}
@@ -1859,6 +2095,86 @@
       \verb https://mathworld.wolfram.com/ChromaticNumber.html
       \endverb
     \endentry
+    \entry{weisstein_independence_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{fullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{bibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \field{extraname}{3}
+      \field{labelalpha}{Wei}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The (upper) vertex independence number of a graph, often called simply "the" independence number, is the cardinality of the largest independent vertex set, i.e., the size of a maximum independent vertex set (which is the same as the size of a largest maximal independent vertex set). The independence number is most commonly denoted alpha(G), but may also be written beta(G) (e.g., Burger et al. 1997) or beta\_0(G) (e.g., Bollobás 1981). The independence number of a graph is...}
+      \field{langid}{english}
+      \field{note}{Publisher: Wolfram Research, Inc.}
+      \field{title}{Independence Number}
+      \field{type}{Text}
+      \field{urlday}{29}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/75LN2KBG/IndependenceNumber.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://mathworld.wolfram.com/IndependenceNumber.html
+      \endverb
+      \verb{url}
+      \verb https://mathworld.wolfram.com/IndependenceNumber.html
+      \endverb
+    \endentry
+    \entry{weisstein_maximum_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{fullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{bibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \field{extraname}{4}
+      \field{labelalpha}{Wei}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An independent vertex set of a graph G is a subset of the vertices such that no two vertices in the subset represent an edge of G. Given a vertex cover of a graph, all vertices not in the cover define a independent vertex set (Skiena 1990, p. 218). A maximum independent vertex set is an independent vertex set containing the largest possible number of vertices for a given graph. A maximum independent vertex set is not equivalent to a maximal independent vertex set, which is simply an...}
+      \field{langid}{english}
+      \field{note}{Publisher: Wolfram Research, Inc.}
+      \field{title}{Maximum Independent Vertex Set}
+      \field{type}{Text}
+      \field{urlday}{29}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/NPUJLJ4B/MaximumIndependentVertexSet.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://mathworld.wolfram.com/MaximumIndependentVertexSet.html
+      \endverb
+      \verb{url}
+      \verb https://mathworld.wolfram.com/MaximumIndependentVertexSet.html
+      \endverb
+    \endentry
     \entry{wills_metrics_2019}{book}{}
       \name{author}{2}{}{%
         {{hash=cfe728bfa8fd7a398828a606170bd284}{%
@@ -1998,6 +2314,50 @@
       \verb{url}
       \verb https://reference.wolfram.com/language/
       \endverb
+    \endentry
+    \entry{xiao_exact_2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b9e68c1a088662431817db305fc5cd7d}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Mingyu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6742bd7004b561e286e6981a93f37deb}{%
+           family={Nagamochi},
+           familyi={N\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{89c9ac7fe6b700854ac2132aa511b937}
+      \strng{fullhash}{89c9ac7fe6b700854ac2132aa511b937}
+      \strng{bibnamehash}{89c9ac7fe6b700854ac2132aa511b937}
+      \strng{authorbibnamehash}{89c9ac7fe6b700854ac2132aa511b937}
+      \strng{authornamehash}{89c9ac7fe6b700854ac2132aa511b937}
+      \strng{authorfullhash}{89c9ac7fe6b700854ac2132aa511b937}
+      \field{labelalpha}{XN17}
+      \field{sortinit}{X}
+      \field{sortinithash}{e90038f30fa4b9ce59606fc8347e3cc7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We show that the maximum independent set problem on an n-vertex graph can be solved in 1.1996nnO(1) time and polynomial space, which even is faster than Robson's 1.2109nnO(1)-time exponential-space algorithm published in 1986. We also obtain improved algorithms for {MIS} in graphs with maximum degree 6 and 7, which run in time of 1.1893nnO(1) and 1.1970nnO(1), respectively. Our algorithms are obtained by using fast algorithms for {MIS} in low-degree graphs in a hierarchical way and making a careful analysis on the structure of bounded-degree graphs.}
+      \field{issn}{0890-5401}
+      \field{journaltitle}{Information and Computation}
+      \field{title}{Exact algorithms for maximum independent set}
+      \field{volume}{255}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{126\bibrangedash 146}
+      \range{pages}{21}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ic.2017.06.001
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0890540117300950
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0890540117300950
+      \endverb
+      \keyw{Amortized analysis,Branch-and-reduce,Exact algorithm,Graph,Independent set,Measure-and-conquer,Polynomial-space}
     \endentry
   \enddatalist
 \endrefsection

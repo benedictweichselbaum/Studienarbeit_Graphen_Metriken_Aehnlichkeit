@@ -36,24 +36,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{24}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{25}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{26}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Implementierung und Umsetzung der Metriken}{26}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Implementierung und Umsetzung der Metriken}{27}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung in verschiedenen Graphdatenbanken}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Implementierung in verschiedenen Graphdatenbanken}{27}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Vergleich der Implementierungen}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Vergleich der Implementierungen}{27}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Graphmetriken und Ähnlichkeit in Anwendung}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Graphmetriken und Ähnlichkeit in Anwendung}{28}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{28}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{29}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{28}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{29}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{28}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Fazit}{29}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{29}{chapter*.34}%
+\contentsline {chapter}{Glossar}{30}{chapter*.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{30}{chapter*.35}%
+\contentsline {chapter}{\nonumberline Literatur}{31}{chapter*.35}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -100,14 +100,14 @@
 \newcommand{\specialcell}[2][l]{%
   \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
 
-\newcommand{\metric}[3]{
+\newcommand{\metric}[2]{
 	\textbf{#1}
-	\vspace{1mm}
 	\begin{adjustwidth}{.5cm}{0cm}
-		\begin{tabular}{p{28mm} p{115mm}}
-			Definition: & \specialcell{#2} \\
-			Komplexität: & \specialcell{#3}
-		\end{tabular}
+		%\begin{tabular}{p{28mm} p{115mm}}
+		%	Definition: & \specialcell{#2} \\
+		%	Komplexität: & \specialcell{#3}
+		%\end{tabular}
+		#2
 	\end{adjustwidth}\hrulefill\\\vspace{2mm}
 }
 
@@ -265,7 +265,7 @@ Eine weitere grundlegende Kennzahl von Graphen ist dessen \textbf{"`Größe"'}. 
 {
 Während die zwei ersten vorgestellten Metriken vor allem den Graphen als ganzes beschreiben, ist es auch noch wichtig zu wissen, was einen einzelnen Knoten auszeichnet, um einen Graphen besser zu beschreiben. Hierzu gibt es die grundlegende Metrik des \textbf{Grad} eines Knotens. Der Grad eines Knotens beschreibt die Anzahl der mit einem Knoten inzidenten Kanten \cite{diestel_graphentheorie_2000}. D.h. es drückt aus, wie viele Kanten mit einem Knoten verbunden sind. Man kann dies z.B. durch eine Funktion ausdrücken, die einen Knoten v auf eine natürliche Zahl abbildet: \(d(v)\).
 
-Auf Basis dieser Metrik lässt sich auch andere verwandte Metriken ableiten. Hierzu gehört der \textbf{"`Minimalgrad"'} und der \textbf{"`Maximalgrad"'}. Der Minimalgrad ist der kleinste Knoten-Grad eines Graphen G: \(\delta (G):=min\{d(v)\ \vert\ v\ \in\ V(G)\}\). Parallel dazu ist der Maximalgrad der größte Knoten-Grad eines Graphen G: \(\Delta (G)\ :=\ max\{d(v)\ \vert\ v\ \in\ V(G)\}\). Darüber hinaus kann man noch den \textbf{"`Durchschnittsgrad"'} eines Graphen bestimmen. Dieser bildet den Durchschnitt aller Knotengrade ab: \(d(G):=\sum_{v\in V(G)}d(v)/\vert V\vert\). \cite{diestel_graphentheorie_2000}
+Auf Basis dieser Metrik lässt sich auch andere verwandte Metriken ableiten. Hierzu gehört der \textbf{"`Minimalgrad"'} und der \textbf{"`Maximalgrad"'}. Der Minimalgrad ist der kleinste Knoten-Grad eines Graphen G: \(\delta (G):=min\{d(v)\ \vert\ v\ \in\ V(G)\}\). Parallel dazu ist der Maximalgrad der größte Knoten-Grad eines Graphen G: \(\Delta (G)\ :=\ max\{d(v)\ \vert\ v\ \in\ V(G)\}\). Darüber hinaus kann man noch den \textbf{"`Durchschnittsgrad"'} eines Graphen bestimmen. Dieser bildet den Durchschnitt aller Knotengrade ab: \(d(G):=(\sum_{v\in V(G)}d(v))/\vert V\vert\). \cite{diestel_graphentheorie_2000}
 
 Des Weiteren gibt es bei der Betrachtung eines gerichteten Graphen zusätzliche Abwandlungen der Metrik. Da hier die Kanten immer zu einem Knoten gerichtet sind unterscheidet man speziell zwischen dem \textbf{"`Eingangsgrad"'} und dem \textbf{"`Ausgangsgrad"'}. Der Eingangsgrad eines Knoten beschreibt dabei die Anzahl der Kanten, die auf einen Knoten "`zeigen"'. Der Ausgangsgrad zeigt wie viele Kanten von einem Knoten "`weggehen"'. \cite{balakrishnan_schaums_1997}
 
@@ -300,15 +300,15 @@ Der "`Abstand"' ist eine Metrik, die auf Basis von zwei Knoten innerhalb eines G
 }
 \subsubsection*{Extrenzität eines Knotens}
 {
-Mit Hilfe des Abstandes lässt sich nun u.a. die \textbf{"`Extrenzität"'}eines Knotens bestimmen. Die "`Extrenzität"' ist dabei der maximale Abstand den ein Knoten von einem anderen Knoten in einem Graphen G haben kann. Eine einfache formale Notierung für den Knoten x wäre: \(ecc(x, G)=max_{x,y}\{d_G(x,y)\}\), wobei x der gegebene Knoten ist. \cite{harary_graph_2001} Herauszufinden ist diese Kennzahl beispielsweise über den Djikstra-Algorithmus, der den kürzesten Abstand zu jedem anderen Knoten sucht und dann einfach der größte zu wählen ist. D.h. das die Metrik auch die Komplexität hat wie bei der Metrik "`Abstand"' erläutert wurde. Die Extrenzität eines Knotens ist anschließend noch für andere Metriken eine wichtige Basis und allgemein weit verbreitet in den genannten Bibliotheken \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020}.
+Mit Hilfe des Abstandes lässt sich nun u.a. die \textbf{"`Extrenzität"'}eines Knotens bestimmen. Die "`Extrenzität"' ist der maximale Abstand den ein Knoten von einem anderen Knoten in einem Graphen G haben kann. Eine einfache formale Notierung für den Knoten x wäre: \(ecc(x, G)=\max_{y\in V(G)}\{d_G(x,y)\}\), wobei x der gegebene Knoten ist. \cite{harary_graph_2001} Herauszufinden ist diese Kennzahl beispielsweise über den Djikstra-Algorithmus, der den kürzesten Abstand zu jedem anderen Knoten sucht und dann einfach der größte zu wählen ist. D.h. das die Metrik auch die Komplexität hat wie bei der Metrik "`Abstand"' erläutert wurde. Die Extrenzität eines Knotens ist anschließend noch für andere Metriken eine wichtige Basis und allgemein weit verbreitet in den genannten Bibliotheken \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020}.
 }
 \subsubsection*{Durchmesser}
 {
-Wie schon erwähnt, ist es nun möglich auf Basis des Abstands weitere Metriken zu definieren. Hierzu zählt unter anderem der \textbf{"`Durchmesser"'} eines Graphen. Der Durchmesser beschreibt dabei den größten Abstand zweier Knoten im Graphen G. \cite{diestel_graphentheorie_2000} D.h. es ist der Abstand von allen Knoten zu allen Knoten zu berechnen und davon die größte Zahl auszuwählen. Formal notiert lässt sich die Metrik folgendermaßen beschreiben: \(Durchmesser(G)=max_{x,y}\{ d_G (x,y)\}\). Nimmt man zur Ermittlung der Abstände dabei den Djikstra-Algorithmus und wendet diesen dann jeweils auf jeden einzelnen Knoten an, kann eine Komplexität von \(O(\vert V\vert ^3)\) angenommen werden, um die Metrik zu extrahieren. Auch diese Metrik lässt sich z.B. in SageMath oder Wolfram finden. In Matlab kann der Durchmesser über die Distanzmatrix ermittelt werden, die Matlab erstellen kann. \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020} Die Anwendung für diese Metrik kann z.B. sein, rein topologische Eigenschaften des Graphen herausfinden zu wollen. Allerdings kann auch in realen Problemen der Durchmesser als Metrik auftauchen. So ist z.B. der Abstand und damit der Durchmesser auch mit gewichteteten Kanten berechenbar. \cite{sagemath_graph_2020,gitta_durchmesser_2014} In einem Navigationssystem wäre der Durchmesser dann die längste fahrbare Strecke.
+Wie schon erwähnt, ist es nun möglich auf Basis des Abstands weitere Metriken zu definieren. Hierzu zählt unter anderem der \textbf{"`Durchmesser"'} eines Graphen. Der Durchmesser beschreibt dabei den größten Abstand zweier Knoten im Graphen G. \cite{diestel_graphentheorie_2000} D.h. es ist der Abstand von allen Knoten zu allen Knoten zu berechnen und davon die größte Zahl auszuwählen. Formal notiert lässt sich die Metrik folgendermaßen beschreiben: \(Durchmesser(G)=\max_{x,y}\{ d_G (x,y)\}\). Nimmt man zur Ermittlung der Abstände dabei den Djikstra-Algorithmus und wendet diesen dann jeweils auf jeden einzelnen Knoten an, kann eine Komplexität von \(O(\vert V\vert ^3)\) angenommen werden, um die Metrik zu extrahieren. Auch diese Metrik lässt sich z.B. in SageMath oder Wolfram finden. In Matlab kann der Durchmesser über die Distanzmatrix ermittelt werden, die Matlab erstellen kann. \cite{sagemath_graph_2020,matlab_shortest_2020,wolfram_graph_2020} Die Anwendung für diese Metrik kann z.B. sein, rein topologische Eigenschaften des Graphen herausfinden zu wollen. Allerdings kann auch in realen Problemen der Durchmesser als Metrik auftauchen. So ist z.B. der Abstand und damit der Durchmesser auch mit gewichteteten Kanten berechenbar. \cite{sagemath_graph_2020,gitta_durchmesser_2014} In einem Navigationssystem wäre der Durchmesser dann die längste fahrbare Strecke.
 }
 \subsubsection*{Radius}
 {
-Parallel zum Durchmesser eines Graphen kann man auch dessen \textbf{"`Radius"'} bestimmten. Hierfür wird die Metrik der Extrenzität wichtig und der Begriff der Zentralität. Eine Kante ist dann \textit{zentral} bzw. im Zentrum eines Graphen, wenn dessen Extrenzität minimal ist. Dies kann nur einen Knoten, aber auch mehrere Knoten betreffen. Die minimale Extrenzität in einem Graphen, die die Knoten des Zentrums haben, nennt man dann auch den \textbf{"`Radius"'} des Graphen. Geschrieben wird \(rad\ G = min_{x\in V(G)}max_{y\in V(G)}d_G(x,y)\). \cite{diestel_graphentheorie_2000} Der Radius lässt sich grundsätzlich auf die gleiche Weise herausfinden, wie der Durchmesser und hat dementsprechend die gleiche Komplexität. Des Weiteren ist diese Metrik auch weit verbreitet und lässt sich in allen untersuchten Bibliotheken finden \cite{sagemath_graph_2020,wolfram_graph_2020,matlab_shortest_2020}
+Parallel zum Durchmesser eines Graphen kann man auch dessen \textbf{"`Radius"'} bestimmten. Hierfür wird die Metrik der Extrenzität wichtig und der Begriff der Zentralität. Ein Knoten ist dann \textit{zentral} bzw. im Zentrum eines Graphen, wenn dessen Extrenzität minimal ist. Dies kann nur einen Knoten, aber auch mehrere Knoten betreffen. Die minimale Extrenzität in einem Graphen, die die Knoten des Zentrums haben, nennt man dann auch den \textbf{"`Radius"'} des Graphen. Geschrieben wird \(rad(G) = \min_{x\in V(G)}\max_{y\in V(G)}d_G(x,y)\). \cite{diestel_graphentheorie_2000} Der Radius lässt sich grundsätzlich auf die gleiche Weise herausfinden, wie der Durchmesser und hat dementsprechend die gleiche Komplexität. Des Weiteren ist diese Metrik auch weit verbreitet und lässt sich in allen untersuchten Bibliotheken finden \cite{sagemath_graph_2020,wolfram_graph_2020,matlab_shortest_2020}
 }
 }
 \section{Kreis-basierte Metriken}
@@ -528,8 +528,15 @@ Die "`Buchdicke"' und das Einbetten von Graphen in ein "`Buch"' hat mehrere Anwe
 {
 Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese mit Hilfe einer Aufzählung zusammengefasst werden. Aufgelistet werden jeweils der Name, bzw die Bezeichnung, der Metrik und ihre Definition. Zudem soll klar werden in welche der Kategorien die Metrik gehört Bei der Definition wird dabei eine mathematische oder eine wörtliche Beschreibung angegeben. Gegebenenfalls auch beides, falls es für das Verständnis förderlich ist.
 
-\metric{Ordnung}{Anzahl der Knoten eines Graphen}{\(O(1)\ oder\ O(n)\)}
-\metric{Größe}{Anzahl der Kanten eines Graphen}{Adjazenzmatrix/liste: \(O(n^2)\); Inzidenzmatrix/liste: \(O(1)\ oder\ O(n)\)}
+\metric{Ordnung \(|V(G)|\)}{Anzahl der Knoten eines Graphen}
+\metric{Größe \(|V(E)|\)}{Anzahl der Kanten eines Graphen}
+\metric{Knotengrad \(d(v)\)}{Anzahl der inzidenten Kanten des Knotens \(v\)}
+\metric{Minimal- (\(\delta(G)\)) und Maximalgrad (\(\Delta(G)\))}{Der kleinste bzw. größte Knotengrads des Graphen \(G\); \(\delta (G):=min\{d(v)\ \vert\ v\ \in\ V(G)\}\), \(\Delta (G)\ :=\ max\{d(v)\ \vert\ v\ \in\ V(G)\}\)}
+\metric{Anzahl der Zusammenhangskomponenten}{Anazahl der Komponenten/Subgraphen eines Graphen, die selbst zusammenhängend sind. Ein Graph (eine Komponente) ist dann zusammehängend, wenn sich zwischen zwei beliebigen seiner Knoten immer ein Weg finden lässt.}
+\metric{Abstand/Distanz \(d_G(x,y)\)}{Die Länge des kürzesten Weges zwischen den beiden Knoten \(x\) und \(y\).}
+\metric{Extrenzität eines Knotens \(ecc(x,G)\)}{Der Maximale Abstand, den ein Knoten zu einem anderen Knoten im Graphen \(G\) haben kann. \(ecc(x, G)=\max_{y\in V(G)}\{d_G(x,y)\}\)}
+\metric{Durchmesser}{Der größte Abstand zweier Knoten innerhalb des Graphen \(G\). \(Durchmesser(G)=\max_{x,y}\{ d_G (x,y)\}\).}
+\metric{Radius}{Kleinste Extrenzität innerhalb des Graphen. Extrenzität der Knoten des Zentrums. \(rad(G) = \min_{x\in V(G)}\max_{y\in V(G)}d_G(x,y)\).}
 }
 \chapter{Ähnlichkeit von Graphen}
 

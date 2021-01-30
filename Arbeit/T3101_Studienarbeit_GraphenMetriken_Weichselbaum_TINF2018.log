@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  30 JAN 2021 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  30 JAN 2021 23:48
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1454,41 +1454,42 @@ File: Abbildungen/graph_book.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/graph_book.png  used on input line 520.
 (pdftex.def)             Requested size: 403.90184pt x 168.627pt.
  [23 <./Abbildungen/graph_book.png>]
-Overfull \hbox (11.1821pt too wide) in paragraph at lines 532--532
-[][]| 
+Overfull \hbox (2.79909pt too wide) in paragraph at lines 535--535
+[]\OT1/phv/m/n/12 (-20) Anazahl der Kom-po-nen-ten/-Sub-gra-phen ei-nes Gra-phe
+n, die selbst zu-sam-menh[]angend
  []
 
-[24]
+[24] [25]
 chapter 3.
-[25
-
-]
-chapter 4.
 [26
 
 ]
-chapter 5.
+chapter 4.
 [27
 
 ]
-chapter 6.
+chapter 5.
 [28
 
-] [29
+]
+chapter 6.
+[29
+
+] [30
 
 ]
 chapter without number
-[30
+[31
 
-] [31] [32] [33]
-Overfull \hbox (3.28954pt too wide) in paragraph at lines 555--555
+] [32] [33] [34]
+Overfull \hbox (3.28954pt too wide) in paragraph at lines 562--562
 \OT1/phv/m/n/12 (-20) ver-lag, 1. Jan. 2004. \OT1/phv/m/sc/12 (-20) isbn\OT1/ph
 v/m/n/12 (-20) : 978-3-486-59377-8. \OT1/phv/m/sc/12 (-20) doi\OT1/phv/m/n/12 (
 -20) : [][]$\OT1/cmtt/m/n/12 10 . 1524 / 9783486593778$[][]\OT1/phv/m/n/12 (-20
 ) .
  []
 
-[34] [35] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
+[35] [36] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
 Package rerunfilecheck Info: File `T3101_Studienarbeit_GraphenMetriken_Weichsel
 baum_TINF2018.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1503,13 +1504,13 @@ eichselbaum_TINF2018.run.xml'.
 ### simple group (level 1) entered at line 501 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27413 strings out of 480232
- 501410 string characters out of 2887634
- 1536786 words of memory out of 3000000
+ 27414 strings out of 480232
+ 501419 string characters out of 2887634
+ 1536698 words of memory out of 3000000
  43011 multiletter control sequences out of 15000+200000
  569794 words of font info for 255 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 94i,15n,99p,10654b,3197s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 94i,10n,99p,10654b,3197s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc}</us
 r/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loca
 l/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/shar
@@ -1526,9 +1527,9 @@ local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (42 pages, 858910 bytes).
+ (43 pages, 861555 bytes).
 PDF statistics:
- 781 PDF objects out of 1000 (max. 8388607)
- 192 named destinations out of 1000 (max. 500000)
+ 787 PDF objects out of 1000 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
  22764 words of extra memory for PDF output out of 24883 (max. 10000000)
 

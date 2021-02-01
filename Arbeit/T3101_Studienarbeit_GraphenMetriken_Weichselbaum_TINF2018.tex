@@ -118,7 +118,7 @@
 \AfterTOCHead{\thispagestyle{empty}}
 
 \begin{document}
-\title{\Large{Untersuchung, Implementierungen und Bewertung von Graph-Metriken
+\title{\Large{Untersuchung und Implementierung von Graph-Metriken und deren Anwendung auf Graph-Isomorphie
 }}
 \author{Benedict Martin Weichselbaum}
 \date{\today}
@@ -132,7 +132,7 @@
 	
 	\vspace{5mm}	
 	{\fontsize{26}{40}\selectfont
-	Untersuchung, Implementierungen und Bewertung von Graph-Metriken
+	Untersuchung und Implementierung von Graph-Metriken und deren Anwendung auf Graph-Isomorphie
 	}
 	\\
 	\vspace{2cm}
@@ -200,7 +200,7 @@ Diese netzartigen Strukturen können dabei die verschiedensten Konstrukte reprä
 
 Um Graphen zu beschreiben und zu charakterisieren, haben sich über die Zeit zahlreiche Metriken, bzw. Eigenschaften für diese herausgebildet ("`graph properties"' \cite{lovasz_large_2012}). Das heißt, einem Graphen können gewisse Kennzahlen zugeordnet werden, die ihn auszeichnen. Auch diese Metriken sind, wie die Graphen selbst, oft praktisch anwendbar. Zum Beispiel in der Untersuchung von Netzwerken \cite{ellens_graph_2013}.
 
-Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedenste Metriken vorzustellen und zu erläutern. Dabei ist es auch wichtig herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen zu bewerten sind. Des Weiteren soll auf Basis der Metriken auch der Begriff der Ähnlichkeit von Graphen aufgegriffen werden.
+Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedenste Metriken vorzustellen und zu erläutern. Dabei ist es auch wichtig herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen zu bewerten sind. Des Weiteren soll auf Basis der Metriken auch der Begriff der Isomorphie bzw. Ähnlichkeit von Graphen aufgegriffen werden.
 
 Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Implementierung stattfinden. Es ist dabei das Ziel, mithilfe von Graphdatenbanken die jeweiligen Metriken umzusetzen und diese miteinander zu Vergleichen.
 
@@ -218,9 +218,9 @@ Hierzu gehört, wie bereits erwähnt die Vorstellung der einzelnen Metriken, abe
 
 Bei dieser Frage soll es vor allem darum gehen, die vorgestellten Metriken dahingehend zu bewerten, wie "`schwer"' es ist, sie zu ermitteln. Außerdem wird bei der Bewertung auch auf die Verbreitung eingegangen. Speziell soll erwähnt werden, ob die jeweilige Metrik in bekannten Mathematikbibliotheken vertreten ist oder nicht.
 
-\singleenum{2}{Was beschreibt der Ähnlichkeitsbegriff bei Graphen?}
+\singleenum{2}{Inwiefern lassen sich Graph-Metriken dafür verwenden, die Isomorphie zweier Graphen zu ermitteln und wie lässt sich das an einem Anwendungsbeispiel verdeutlichen?}
 
-Basierend auf Graph-Metriken lässt sich auch ermitteln, ob zwei Graphen Ähnlichkeiten aufweißen \cite{wills_metrics_2019}. Auch auf diesen Aspekt soll die Arbeit bezug nehmen und dabei ein Anwendungs-Beispiel konstruieren.
+Basierend auf Graph-Metriken lässt sich auch ermitteln, ob zwei Graphen Ähnlichkeiten aufweißen bzw. isomorph sind \cite{wills_metrics_2019}. Auch auf diesen Aspekt soll die Arbeit bezug nehmen und dabei ein Anwendungs-Beispiel konstruieren.
 
 \singleenum{3}{Wie können die vorgestellten Metriken in Graphdatenbanken verwendet werden, bzw. implementiert werden?}
 
@@ -230,7 +230,7 @@ Auf die theoretische Betrachtung der Graph-Metriken folgt dann ein praktischer T
 
 Folgend auf die Implementierung, ist es noch wichtig zu verstehen, wie diese Umsetzungen zu betrachten sind. Dabei wird vor allem ein Fokus auf das Thema Performance und Skalierung gelegt.
 
-\singleenum{5}{Welche Anwendungen gibt es für Graph-Metriken und den Vergleich von Graphen (Ähnlichkeit)?}
+\singleenum{5}{Welche realen Anwendungen gibt es für Graph-Metriken und den Vergleich von Graphen (Ähnlichkeit)?}
 
 Als letztes soll sich die Studienarbeit mit praktischen Beispielen beschäftigen. Es ist dabei wichtig zu verstehen, welchen konkreten Nutzen die gezeigten Kennzahlen für Graphen in modernen Anwendungsszenarien haben.
 }
@@ -240,10 +240,10 @@ Dieser erste Teil der Arbeit wird sich nun ausführlich mit einer weiten Reihe a
 \begin{myitemize}
 	\item Was drückt die Metrik aus (Definition)?
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
-	\item Inwieweit ist die Metrik verbreitet? Zum Beispiel in der Literatur oder in Mathematikbibliotheken.
+	\item Inwieweit ist die Metrik in einschlägigen Mathematikbibliotheken vertreten (Wolfram, SageMath, MatLab)?
 	\item Was ist eine konkrete Motivation bzw. Anwendung für die Metrik, falls diese auszumachen ist?
 \end{myitemize}
-Es ist noch zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in ihre Kategorien eingeteilt sind. Als Synonym für Metrik werden innerhalb dieser Arbeit die Begriffe Kennzahl und Invariante gebraucht. Eine Invariante ist dabei speziell eine Funktion, die zwei isomorphen Graphen den gleichen Wert zuordnet. Dies ist gleichwertig mit dem Begriff Metrik, da eine Metrik auch einen Graphen auf eine Zahl bzw. einen Wert abbildet. \cite{diestel_graphentheorie_2000}
+Es ist noch zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in ihre Kategorien eingeteilt sind. Als Synonym für Metrik werden innerhalb dieser Arbeit die Begriffe Kennzahl und Invariante gebraucht. Eine Invariante ist dabei speziell eine Funktion, die zwei isomorphen Graphen den gleichen Wert zuordnet. Dies ist gleichwertig mit dem Begriff Metrik, da eine Metrik auch einen Graphen auf eine Zahl bzw. einen Wert abbildet. \cite{diestel_graphentheorie_2000} Neben Kennzahlen, die nur auf einen ganzen Graphen angewendet werden, werden auch Metriken vorgestellt, die sich auf einzelne Knoten eines Graphen beziehen.
 
 Darüber hinaus ist noch eine grundsätzliche Notationen während der Arbeit zu klären: Ein \textbf{Graph G} ist ein Paar bestehend aus \textbf{Knoten V} und \textbf{Kanten E}.
 \begin{align*}
@@ -467,11 +467,11 @@ Dieser Algorithmus hat allerdings den Nachteil, dass es nur eine Annäherung an 
 }
 \subsubsection*{Chromatischer Index}
 {
-Neben der Markierung bzw. Färbung von Knoten, ist es auch möglich in einem Graphen Kanten zu färben. Hierbei ist ähnlich wie bei der Knotenfärbung gemeint, dass eine Kante aus der Menge \(E(G)\) auf eine Zahl, bzw. Farbe abgebildet wird: \(k: E\mapsto S\). Im Rahmen der Kantenfärbung ist es nun wichtig, dass zwei indizente Kanten nicht die selbe Farbe zugewiesen bekommen. Das bedeutet, dass die Farben aller Kanten, die mit dem gleichen Knoten verbunden sind, alle eine unterschiedliche Farbe haben müssen. Formal lässt sich das so ausdrücken: \(\forall v,w(v\in E \land w\in E \land inzident(v,w)\Rightarrow k(v)\neq k(w))\). Findet man eine Abbildung, für die diese Bedingung zutrifft, so nennt man den Graphen \(k\)-Kanten-färbbar. \(k\) ist dabei die Mächtigkeit der Menge S, der gefundenen Abbildung. Das niedrigst mögliche \(k\) für einen Graphen ist dann dessen "`chromatischer Index"'. Man schreibt für dafür auch \(X'(G)\) Der "`chromatischer Index"' ist sowohl in Wolfram, als auch in SageMath verfügbar. \cite{andersen_edge-colorings_1977,sagemath_graph_2020-1,wolfram_wolfram_2020-1}
+Neben der Markierung bzw. Färbung von Knoten, ist es auch möglich in einem Graphen Kanten zu färben. Hierbei ist ähnlich wie bei der Knotenfärbung gemeint, dass eine Kante aus der Menge \(E(G)\) auf eine Zahl, bzw. Farbe abgebildet wird: \(k: E\mapsto S\). Im Rahmen der Kantenfärbung ist es nun wichtig, dass zwei indizente Kanten nicht die selbe Farbe zugewiesen bekommen. Das bedeutet, dass die Farben aller Kanten, die mit dem gleichen Knoten verbunden sind, alle eine unterschiedliche Farbe haben müssen. Formal lässt sich das so ausdrücken: \(\forall v,w(v\in E \land w\in E \land inzident(v,w)\Rightarrow k(v)\neq k(w))\). Findet man eine Abbildung, für die diese Bedingung zutrifft, so nennt man den Graphen \(k\)-Kanten-färbbar. \(k\) ist dabei die Mächtigkeit der Menge S, der gefundenen Abbildung. Das niedrigst mögliche \(k\) für einen Graphen ist dann dessen "`chromatischer Index"'. Man schreibt für dafür auch \(\chi '(G)\) Der "`chromatischer Index"' ist sowohl in Wolfram, als auch in SageMath verfügbar. \cite{andersen_edge-colorings_1977,sagemath_graph_2020-1,wolfram_wolfram_2020-1}
 
-Jeder Graph fällt bei Betrachtung seines chromatisches Indexes in eine von zwei Klassen. Bei der ersten Klasse ist der chromatische Index \(X'(G)=\Delta(G)\), wobei \(\Delta(G)\) der Maximalgrad des Graphen ist. Fällt der Graph nicht in diese Klasse, so ist sein chromatischer Index \(X'(G)=\Delta(G)+1\). Obwohl dabei der chromatische Index sich pro Graph in einem extrem engen Korridor aufhält, ist die exakte Ermittlung des Indexes ein NP-vollständiges Problem und somit vermutlich nicht effizient, also in polynomialer Laufzeit, zu berechnen. Allerdings gibt es Spezialfälle, bei denen die Zuordnung des Graphen in einer der beiden Klassen einfach ist. So ist \(X'(G)=\Delta(G)\), wenn der Graph bipartit ist. Ist der Graph vollständig und die Anzahl der Knoten ist gerade, ist dies ebenfalls der Fall. Ein kompletter Graph mit ungerader Knotenanzahl hat dann logischerweise den chromatischen Index \(X'(G)=\Delta(G)+1\). \cite{plantholt_chromatic_1983}
+Jeder Graph fällt bei Betrachtung seines chromatisches Indexes in eine von zwei Klassen. Bei der ersten Klasse ist der chromatische Index \(\chi '(G)=\Delta(G)\), wobei \(\Delta(G)\) der Maximalgrad des Graphen ist. Fällt der Graph nicht in diese Klasse, so ist sein chromatischer Index \(\chi '(G)=\Delta(G)+1\). Obwohl dabei der chromatische Index sich pro Graph in einem extrem engen Korridor aufhält, ist die exakte Ermittlung des Indexes ein NP-vollständiges Problem und somit vermutlich nicht effizient, also in polynomialer Laufzeit, zu berechnen. Allerdings gibt es Spezialfälle, bei denen die Zuordnung des Graphen in einer der beiden Klassen einfach ist. So ist \(\chi '(G)=\Delta(G)\), wenn der Graph bipartit ist. Ist der Graph vollständig und die Anzahl der Knoten ist gerade, ist dies ebenfalls der Fall. Ein kompletter Graph mit ungerader Knotenanzahl hat dann logischerweise den chromatischen Index \(\chi '(G)=\Delta(G)+1\). \cite{plantholt_chromatic_1983}
 
-Anwendung findet die Kantenfärbung in verschiedenen praktischen Problemen. Beispielsweise kann man es nutzen, um ein sogenanntes "`Round-Robin"'-Turnier mit möglichst wenig Runden zu planen. Ein "`Round-Robin"'-Turnier ist ein Turnier, bei dem jeder Teilnehmer auf jeden Teilnehmer einmal trifft. Dieses Problem ist zu lösen, indem jeder Teilnehmer durch einen Knoten repräsentiert wird und jede Begegnung durch eine Kante. Eine Farbe repräsentiert eine Runde. Werden die Kanten nun so gefärbt, dass der Turnier-Graph \(k\)-Kanten-gefärbt ist, hat man einen Turnier-Plan gefunden, der keine Konflikte hat. Ist der Graph zudem \(X'(G)\)-Kanten-gefärbt, so hat man den Plan gefunden, der möglichst wenig Runden erfordert. Der chromatische Index gibt in diesem Zusammenhang also an, wie viele Runden man minimal benötigt, sodass sich alle Teilnehmer einmal begegnen. Da der Graph bei dem sich alle einmal begegnen ein vollständiger Graph sein muss, ist auch schnell ersichtlich, wie viele Runden man braucht, betrachtet man die Ergebnisse des letzten Abschnitts. Neben "`Round-Robin"'-Turnieren lassen sich auch individuelle Turniere so planen. \cite{gross_handbook_2004}
+Anwendung findet die Kantenfärbung in verschiedenen praktischen Problemen. Beispielsweise kann man es nutzen, um ein sogenanntes "`Round-Robin"'-Turnier mit möglichst wenig Runden zu planen. Ein "`Round-Robin"'-Turnier ist ein Turnier, bei dem jeder Teilnehmer auf jeden Teilnehmer einmal trifft. Dieses Problem ist zu lösen, indem jeder Teilnehmer durch einen Knoten repräsentiert wird und jede Begegnung durch eine Kante. Eine Farbe repräsentiert eine Runde. Werden die Kanten nun so gefärbt, dass der Turnier-Graph \(k\)-Kanten-gefärbt ist, hat man einen Turnier-Plan gefunden, der keine Konflikte hat. Ist der Graph zudem \(\chi '(G)\)-Kanten-gefärbt, so hat man den Plan gefunden, der möglichst wenig Runden erfordert. Der chromatische Index gibt in diesem Zusammenhang also an, wie viele Runden man minimal benötigt, sodass sich alle Teilnehmer einmal begegnen. Da der Graph bei dem sich alle einmal begegnen ein vollständiger Graph sein muss, ist auch schnell ersichtlich, wie viele Runden man braucht, betrachtet man die Ergebnisse des letzten Abschnitts. Neben "`Round-Robin"'-Turnieren lassen sich auch individuelle Turniere so planen. \cite{gross_handbook_2004}
 }
 \subsubsection*{Fraktionierte chromatische Zahl}
 {
@@ -530,7 +530,7 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 \metric{Größe \(|V(E)|\)}{Anzahl der Kanten eines Graphen}
 \metric{Knotengrad \(d(v)\)}{Anzahl der inzidenten Kanten des Knotens \(v\)}
 \metric{Minimal- (\(\delta(G)\)) und Maximalgrad (\(\Delta(G)\))}{Der kleinste bzw. größte Knotengrads des Graphen \(G\); \(\delta (G):=min\{d(v)\ \vert\ v\ \in\ V(G)\}\), \(\Delta (G)\ :=\ max\{d(v)\ \vert\ v\ \in\ V(G)\}\)}
-\metric{Anzahl der Zusammenhangskomponenten}{Anazahl der Komponenten/Subgraphen eines Graphen, die selbst zusammenhängend sind. Ein Graph (eine Komponente) ist dann zusammehängend, wenn sich zwischen zwei beliebigen seiner Knoten immer ein Weg finden lässt.}
+\metric{Anzahl der Zusammenhangskomponenten}{Anzahl der Komponenten/Subgraphen eines Graphen, die selbst zusammenhängend sind. Ein Graph (eine Komponente) ist dann zusammehängend, wenn sich zwischen zwei beliebigen seiner Knoten immer ein Weg finden lässt.}
 \metric{Abstand/Distanz \(d_G(x,y)\)}{Die Länge des kürzesten Weges zwischen den beiden Knoten \(x\) und \(y\).}
 \metric{Extrenzität eines Knotens \(ecc(x,G)\)}{Der Maximale Abstand, den ein Knoten zu einem anderen Knoten im Graphen \(G\) haben kann. \(ecc(x, G)=\max_{y\in V(G)}\{d_G(x,y)\}\)}
 \metric{Durchmesser}{Der größte Abstand zweier Knoten innerhalb des Graphen \(G\). \(Durchmesser(G)=\max_{x,y}\{ d_G (x,y)\}\).}
@@ -542,7 +542,7 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 \[\sigma(G)=\min_{\pi\in\Pi}\frac{\vert\partial\pi\vert}{\vert\pi\vert -1}\]}
 \metric{"`Vertex Connectivity"'}{Minimale Anzahl \(k\) Knoten, die aus einem zusammenhängenden Graphen entfernt werden müssen, sodass er nicht mehr zusammenhängend ist.}
 \metric{"`Edge Connectivity"'}{Minimale Anzahl \(k\) Kanten, die aus einem zusammenhängenden Graphen entfernt werden müssen, sodass er nicht mehr zusammenhängend ist.}
-\metric{Degree Centrality}{Der Grad eines Knoten: \(d(v); v\in V\)}
+\metric{Degree Centrality}{Wichtigkeitsmaß für einen Knoten. Bewertet Knoten nach seinem Grad: \(d(v); v\in V\)}
 \metric{Betweenness Centrality \(C_B(v)\)}{Wichtigkeitsmaß für einen Knoten, das angibt inwieweit beliebige kürzeste Wege zwischen zwei anderen Knoten durch ihn verlaufen. Sei \(\sigma_{st}\) Anzahl der kürzesten Wege zwischen Knoten \(s\) und \(t\) und \(\sigma_{st}(v)\) die Anzahl dieser Wege, die durch \(v\) laufen.
 \[
 	C_B(v)=\sum_{s\neq v\neq t\in V}\frac{\sigma_{st}(v)}{\sigma_{st}}
@@ -558,11 +558,23 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 	x_v=\frac{1}{\lambda}\sum_{t\in M(v)}x_t=\frac{1}{\lambda}\sum_{t\in G}a_{v,t}x_t
 \]
 }
-\metric{Page Rank}{Praktisch angewandte Zentralitätsmetrik, die ähnlich wie die Eigenvektor Centrality einen Knoten nach seiner v+Vernetztheit und der Vernetztheit seiner Nachbarn bewertet. Sei \(A\) der zu untersuchende Knoten (Seite) und \(T_1\dots T_n\) die Knoten auf die von \(A\) aus gezeigt wird (Links), dass ist der Page Rank PR(A) so definiert:
+\metric{Page Rank \(PR(A)\)}{Praktisch angewandte Zentralitätsmetrik, die ähnlich wie die Eigenvektor Centrality einen Knoten nach seiner v+Vernetztheit und der Vernetztheit seiner Nachbarn bewertet. Sei \(A\) der zu untersuchende Knoten (Seite) und \(T_1\dots T_n\) die Knoten auf die von \(A\) aus gezeigt wird (Links), dass ist der Page Rank PR(A) so definiert:
 \[
 	PR(A) = (1-d)+d(\frac{PR(T_1)}{C(T_1)}+\dots +\frac{PR(T_n)}{C(T_n)})
 \]
 }
+\metric{Chromatische Zahl \(\chi (G)\)}{Die minimale Anzahl an Farben mit denen es möglich ist die Knoten eines Graphen so zu färben, das keine zwei adjazenten Knoten die gleiche Farbe haben.}
+\metric{Chromatischer Index \(\chi '(G)\)}{Die minimale Anzahl an Farben mit denen es möglich ist die Kanten eines Graphen so zu färben, das keine zwei inzidenten Kanten die gleiche Farbe haben.}
+\metric{Fraktionierte chromatische Zahl}{Statt einem Knoten nur eine Farbe zuzuweisen können ihm auch \(b\) Farben zugewiesen werden. \(\chi_b(G)\) gibt die minimale Zahl an unterschiedlichen Farben an, für die \(G\) so färbbar ist, das zwei adjazente Knoten in ihren Farben keine Schnittmenge haben. Die fraktionierte chromatische Zahl ist auf Basis dessen so formuliert:
+\[\chi_f(G)=\lim_{b\to\infty}\frac{\chi_b(G)}{b}\]
+}
+\metric{Arborizität \(Y(G)\)}{Minimale Anzahl an azyklischen Subgraphen (Wäldern), die zusammen wieder \(G\) ergeben. Sei \(m_p\) die maximale Anzahl an Kanten eines Subgraphen von \(G\) mit \(p\) Knoten, dann kann die Arborizität folgendermaßen berechnet werden:
+\[Y(G)=\max_{p>1}\ceil[\Bigg]{\frac{m_p}{p-1}}\]
+}
+\metric{Lineare Arborizität \(la(G)\)}{Minimale Anzahl an Wäldern, die zusammen wieder \(G\) ergeben. Dabei sind die Zusammenhangskomponenten jedes Waldes ausschließlich Pfade.}
+\metric{Unabhängigkeitszahl \(\alpha(G)\)}{Eine Knotenmenge ist dann unabhängig, wenn alle Knoten in ihr nicht adjazent zueinander sind. Die Mächtigkeit der größtmöglichen unabhängigen Knotenmenge ist die Unabhängigkeitszahl \(\alpha(G)\)}
+\metric{Cliquenzahl \(\omega(G)\)}{Eine Clique ist eine Knoten-Untermenge von \(G\), die einen vollständigen Graphen ergebibt. Die Mächtigkeit der größtmöglichen Knoten-Untermenge von \(G\), die eine Clique ist, ist die Cliquenzahl \(\omega(G)\)}
+\metric{Buchdicke/Seitenzahl \(bt(G)\)}{Ein Graph kann in ein Buch eingebettet werden, wobei die Knoten auf dem Buchrücken \(L\) angebracht sind und die Kanten über anliegende Seiten (Halbebenen) laufen und sich dabei nicht kreuzen dürfen. Die Buchdicke \(bt(G)\) gibt nun an, wie viele Seiten man für einen Graphen \(G\) braucht, um ihn in ein Buch einbetten zu können.}
 }
 \chapter{Ähnlichkeit von Graphen}
 

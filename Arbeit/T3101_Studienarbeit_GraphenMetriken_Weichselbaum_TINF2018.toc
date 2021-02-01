@@ -16,44 +16,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Fragestellungen}{1}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Graph-Metriken}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Graph-Metriken}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Grundlegende Metriken}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Grundlegende Metriken}{5}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Distanzmetriken}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Distanzmetriken}{7}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Kreis-basierte Metriken}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Kreis-basierte Metriken}{9}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{10}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{13}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Chromatische Zahl und chromatischer Index}{17}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Chromatische Zahl und chromatischer Index}{18}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Arborizität}{20}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Arborizität}{21}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Weitere Metriken}{21}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Weitere Metriken}{23}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{23}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{25}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{27}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Ähnlichkeit von Graphen}{30}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Implementierung und Umsetzung der Metriken}{28}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Implementierung und Umsetzung der Metriken}{31}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung in verschiedenen Graphdatenbanken}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Implementierung in verschiedenen Graphdatenbanken}{31}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Vergleich der Implementierungen}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Vergleich der Implementierungen}{31}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Graphmetriken und Ähnlichkeit in Anwendung}{29}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Graphmetriken und Ähnlichkeit in Anwendung}{32}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{30}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{33}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{30}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{33}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{30}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Fazit}{33}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{31}{chapter*.33}%
+\contentsline {chapter}{Glossar}{34}{chapter*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{32}{chapter*.34}%
+\contentsline {chapter}{\nonumberline Literatur}{35}{chapter*.34}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

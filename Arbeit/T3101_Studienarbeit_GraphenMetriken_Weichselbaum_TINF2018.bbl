@@ -178,6 +178,47 @@
       \field{dateera}{ce}
       \keyw{Graph theory,Outlines,syllabi,etc,Problems,exercises,etc}
     \endentry
+    \entry{bhasin_graph_2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=87ec70ee748a75491ebe098f20d363d3}{%
+           family={Bhasin},
+           familyi={B\bibinitperiod},
+           given={Jatin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{87ec70ee748a75491ebe098f20d363d3}
+      \strng{fullhash}{87ec70ee748a75491ebe098f20d363d3}
+      \strng{bibnamehash}{87ec70ee748a75491ebe098f20d363d3}
+      \strng{authorbibnamehash}{87ec70ee748a75491ebe098f20d363d3}
+      \strng{authornamehash}{87ec70ee748a75491ebe098f20d363d3}
+      \strng{authorfullhash}{87ec70ee748a75491ebe098f20d363d3}
+      \field{labelalpha}{Bha19}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The advent of social networks, big data and e-commerce has re-emphasized the importance of analyzing a unique type of data structure- one…}
+      \field{day}{19}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{title}{Graph Analytics — Introduction and Concepts of Centrality}
+      \field{titleaddon}{Medium}
+      \field{urlday}{26}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/E6RSQ7YB/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/graph-analytics-introduction-and-concepts-of-centrality-8f5543b55de3
+      \endverb
+    \endentry
     \entry{bernhart_book_1979}{article}{}
       \name{author}{2}{}{%
         {{hash=5617bb7cf33784fab9242c4f0ee78a07}{%

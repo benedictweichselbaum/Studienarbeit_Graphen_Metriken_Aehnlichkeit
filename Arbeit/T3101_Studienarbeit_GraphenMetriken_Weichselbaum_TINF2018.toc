@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Motivation für die Studienarbeit}{1}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Fragestellungen}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Fragestellungen}{2}{section.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Graph-Metriken}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -28,9 +28,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{13}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Chromatische Zahl und chromatischer Index}{18}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Chromatische Zahl und chromatischer Index}{19}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Arborizität}{21}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Arborizität}{22}{section.2.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.8}Weitere Metriken}{23}{section.2.8}%
 \defcounter {refsection}{0}\relax 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  2 FEB 2021 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  3 FEB 2021 21:40
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1449,49 +1449,49 @@ Package pdftex.def Info: Abbildungen/eigenvektor_centrality_example.png  used o
 n input line 434.
 (pdftex.def)             Requested size: 437.80455pt x 281.69815pt.
  [17] [18 <./Abbildungen/eigenvektor_centrality_example.png>] [19] [20]
-[21] [22] [23]
-<Abbildungen/graph_book.png, id=451, 1009.7725pt x 421.575pt>
+[21] [22] [23] [24]
+<Abbildungen/graph_book.png, id=463, 1009.7725pt x 421.575pt>
 File: Abbildungen/graph_book.png Graphic file (type png)
 <use Abbildungen/graph_book.png>
-Package pdftex.def Info: Abbildungen/graph_book.png  used on input line 521.
+Package pdftex.def Info: Abbildungen/graph_book.png  used on input line 527.
 (pdftex.def)             Requested size: 403.90184pt x 168.627pt.
- [24] [25 <./Abbildungen/graph_book.png>] [26] [27] [28]
-Overfull \hbox (3.02188pt too wide) in paragraph at lines 580--580
+ [25 <./Abbildungen/graph_book.png>] [26] [27] [28] [29]
+Overfull \hbox (3.02188pt too wide) in paragraph at lines 591--591
 []\OT1/phv/m/n/12 (-20) Ein Graph kann in ein Buch ein-ge-bet-tet wer-den, wo-b
 ei die Kno-ten auf dem Buchr[]ucken
  []
 
-[29]
+[30]
 chapter 3.
-[30
-
-]
-chapter 4.
 [31
 
 ]
-chapter 5.
+chapter 4.
 [32
 
 ]
-chapter 6.
+chapter 5.
 [33
 
-] [34
+]
+chapter 6.
+[34
+
+] [35
 
 ]
 chapter without number
-[35
+[36
 
-] [36] [37] [38]
-Overfull \hbox (3.28954pt too wide) in paragraph at lines 603--603
+] [37] [38] [39]
+Overfull \hbox (3.28954pt too wide) in paragraph at lines 614--614
 \OT1/phv/m/n/12 (-20) ver-lag, 1. Jan. 2004. \OT1/phv/m/sc/12 (-20) isbn\OT1/ph
 v/m/n/12 (-20) : 978-3-486-59377-8. \OT1/phv/m/sc/12 (-20) doi\OT1/phv/m/n/12 (
 -20) : [][]$\OT1/cmtt/m/n/12 10 . 1524 / 9783486593778$[][]\OT1/phv/m/n/12 (-20
 ) .
  []
 
-[39] [40] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
+[40] [41] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
 Package rerunfilecheck Info: File `T3101_Studienarbeit_GraphenMetriken_Weichsel
 baum_TINF2018.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1503,13 +1503,13 @@ eichselbaum_TINF2018.run.xml'.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 502 ({)
+### simple group (level 1) entered at line 508 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27413 strings out of 480232
- 501503 string characters out of 2887634
- 1510768 words of memory out of 3000000
- 43013 multiletter control sequences out of 15000+200000
+ 27418 strings out of 480232
+ 501683 string characters out of 2887634
+ 1510850 words of memory out of 3000000
+ 43015 multiletter control sequences out of 15000+200000
  569457 words of font info for 251 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  94i,10n,99p,10654b,3197s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1529,9 +1529,9 @@ local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (47 pages, 875239 bytes).
+ (48 pages, 881516 bytes).
 PDF statistics:
- 805 PDF objects out of 1000 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
+ 817 PDF objects out of 1000 (max. 8388607)
+ 200 named destinations out of 1000 (max. 500000)
  22764 words of extra memory for PDF output out of 24883 (max. 10000000)
 

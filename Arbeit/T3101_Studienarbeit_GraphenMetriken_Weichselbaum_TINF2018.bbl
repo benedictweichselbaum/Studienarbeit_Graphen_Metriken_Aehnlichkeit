@@ -1345,7 +1345,7 @@
       \verb{doi}
       \verb 10.1109/SFCS.1987.19
       \endverb
-      \keyw{Algorithm design and analysis,Chip scale packaging,Circuits,Communication networks,Computer science,Costs,Graph theory,Partitioning algorithms,Reliability theory,Telecommunication network reliability}
+      \keyw{Graph theory,Algorithm design and analysis,Chip scale packaging,Circuits,Communication networks,Computer science,Costs,Partitioning algorithms,Reliability theory,Telecommunication network reliability}
     \endentry
     \entry{meghanathan_use_2015}{article}{}
       \name{author}{1}{}{%
@@ -2136,7 +2136,7 @@
       \verb https://mathworld.wolfram.com/ChromaticNumber.html
       \endverb
     \endentry
-    \entry{weisstein_independence_nodate}{online}{}
+    \entry{weisstein_fractional_nodate-1}{online}{}
       \name{author}{1}{}{%
         {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
            family={Weisstein},
@@ -2155,6 +2155,46 @@
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The fractional edge chromatic number of a graph G is the fractional analog of the edge chromatic number, denoted chi\_f{\textasciicircum}'(G) by Scheinerman and Ullman (2011). It can be defined as chi\_f{\textasciicircum}'(G)=chi\_f(L(G)), (1) where chi\_f(G) is the fractional chromatic number of G and L(G) is the line graph of G. There exists a polynomial-time algorithm for computing the fractional edge chromatic number (Scheinerman and Ullman 2011, pp. 86-87). If the edge chromatic number of a graph equals its maximum...}
+      \field{langid}{english}
+      \field{note}{Publisher: Wolfram Research, Inc.}
+      \field{title}{Fractional Edge Chromatic Number}
+      \field{type}{Text}
+      \field{urlday}{3}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/8PYYUQSZ/FractionalEdgeChromaticNumber.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://mathworld.wolfram.com/FractionalEdgeChromaticNumber.html
+      \endverb
+      \verb{url}
+      \verb https://mathworld.wolfram.com/FractionalEdgeChromaticNumber.html
+      \endverb
+    \endentry
+    \entry{weisstein_independence_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{fullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{bibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \field{extraname}{4}
+      \field{labelalpha}{Wei}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extraalpha}{4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The (upper) vertex independence number of a graph, often called simply "the" independence number, is the cardinality of the largest independent vertex set, i.e., the size of a maximum independent vertex set (which is the same as the size of a largest maximal independent vertex set). The independence number is most commonly denoted alpha(G), but may also be written beta(G) (e.g., Burger et al. 1997) or beta\_0(G) (e.g., Bollobás 1981). The independence number of a graph is...}
@@ -2190,11 +2230,11 @@
       \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
       \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
       \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{labelalpha}{Wei}
       \field{sortinit}{W}
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{extraalpha}{4}
+      \field{extraalpha}{5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{An independent vertex set of a graph G is a subset of the vertices such that no two vertices in the subset represent an edge of G. Given a vertex cover of a graph, all vertices not in the cover define a independent vertex set (Skiena 1990, p. 218). A maximum independent vertex set is an independent vertex set containing the largest possible number of vertices for a given graph. A maximum independent vertex set is not equivalent to a maximal independent vertex set, which is simply an...}

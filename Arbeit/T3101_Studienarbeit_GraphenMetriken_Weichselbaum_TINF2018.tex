@@ -349,14 +349,14 @@ Die Stärke eines Graphen ist eine nicht ganzzahlige Metrik zur Beschreibung des
 
 Die erste dieser Metriken ist die \textbf{"`Vertex Connectivity"'} oder der \textbf{"`Zusammenhang"'}. Hierbei wird ein zusammenhängender Graph betrachtet und ermittelt wie viele Knoten aus dem Graphen mindestens entfernt werden müssen, sodass der Graph nicht mehr zusammehängend ist. \textit{k} entspricht dieser minimalen Anzahl an Knoten. Formal lässt sich sagen, dass ein Graph \textit{k-zusammenhängend} ist, wenn \(k <\vert G\vert\) und der Graph für jede mögliche Knotenmenge X mit der Mächtigkeit \(< k\) zusammenhängend bleibt, sobald man alle Knoten \(X\subseteq V\) aus V entfernt (\(G - X\)). Da ein Graph der \textit{4-zusammenhängend} ist auch \textit{3/2/...-zusammenhängend} ist, ist die finale "`Vertex Connectivity"' bzw.  der "`Zusammenhang"' das größtmögliche \textit{k}, das für den Graphen \(G\) möglich ist. Der Zusammenhang ist dann 0, wenn der Graph von Anfang an nicht zusammenhängend ist oder der Graph nur aus einem Knoten besteht. \cite{diestel_graphentheorie_2000} Auch bei dieser Metrik gilt wie bei der Stärke, dass der Graph schwerer zu "`trennen"' ist, je höher die jeweilige Kennzahl ist. Daraus ist auch zu folgen, dass bei hohem Zusammenhang, beispielweise ein Netzwerk, weniger anfällig für Angriffe ist.
 
-Um den Zusammenhang eines Graphen algorithmisch herauszufinden, können zunächst zwei triviale Fälle abgedeckt werden. Ist ein Graph leer oder trivial (nur ein Knoten) ist der Zusammenhang, wie bereits erwähnt, 0. Ist hingegen der Graph vollständig, beträgt der Zusammenhang \(\vert V\vert\). Allerdings lässt sich auch ein allgemeiner Algorithmus definieren, der die "`Vertex Connectivity"' berechnet.  Für den Algorithmus wird eine zusätzliche Funktion benötigt. \(N(a,b)\) nimmt zwei Knoten entgegen. Eine Menge an Knoten, die bei Entfernung dafür sorgt, dass zwischen a und b kein Weg mehr existiert, wird "`Knoten-Separator"' genannt. N gibt nun die Mächtigkeit des minimalen "`Knoten-Separators"' von a und b zurück. Sind a und b direkt mit einer Kante verbunden, gibt es keinen "`Knoten-Separator"'. Sich diese Knotenpaare bei der Berechnung der "`Vertex Connectivity"' anzusehen, ist unnötig und muss nicht betrachtet werden. Schlussendlich ist die Mächtigkeit des kleinsten minimalen "`Knoten-Separators"' die gesuchte Kennzahl. Zur Berechnung gibt Shimon Even in seinem Buch "`Graph Algorithms"' folgenden Algorithmus an \cite{even_graph_2012}:
+Um den Zusammenhang eines Graphen algorithmisch herauszufinden, können zunächst zwei triviale Fälle abgedeckt werden. Ist ein Graph leer oder trivial (nur ein Knoten) ist der Zusammenhang, wie bereits erwähnt, 0. Ist hingegen der Graph vollständig, beträgt der Zusammenhang \(\vert V\vert\). Allerdings lässt sich auch ein allgemeiner Algorithmus definieren, der die "`Vertex Connectivity"' berechnet.  Für den Algorithmus wird eine zusätzliche Funktion benötigt. \(N(a,b)\) nimmt zwei Knoten entgegen. Eine Menge an Knoten, die bei Entfernung dafür sorgt, dass zwischen a und b kein Weg mehr existiert, wird "`Knoten-Separator"' genannt. N gibt nun die Mächtigkeit des minimalen "`Knoten-Separators"' von a und b zurück. Sind a und b direkt mit einer Kante verbunden, gibt es keinen "`Knoten-Separator"'. Sich diese Knotenpaare bei der Berechnung der "`Vertex Connectivity"' anzusehen, ist unnötig und muss nicht betrachtet werden. Schlussendlich ist die Mächtigkeit des kleinsten minimalen "`Knoten-Separators"' die gesuchte Kennzahl. Zur Berechnung gibt Shimon Even in seinem Buch "`Graph Algorithms"' folgenden Algorithmus an, der für nicht vollständige Graphen funktioniert \cite{even_graph_2012}:
 \begin{lstlisting}
 	Vertex-Connectivity(V, E)
-		Sortiere Knoten v_1, v_2, ..., v_|V| so, dass es von v_1 keine Kante zu irgendeinem v gibt
+		Sortiere Knoten v_1, v_2, ..., v_|V| so, dass es von v_1 keine direkte Kante zu irgendeinem v gibt
 		gamma = unendlich
 		i = 1
 		while i <= gamma
-			for each v, sodass v_i keine Kante zu irgendeinem v gibt
+			for each v, sodass v_i keine direkte Kante zu v hat gibt
 				gamma = min{gamma, N(v_i, v)}
 		return gamma
 \end{lstlisting}
@@ -542,8 +542,8 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 \metric{Anzahl der Zusammenhangskomponenten}{Anzahl der Komponenten/Subgraphen eines Graphen, die selbst zusammenhängend sind. Ein Graph (eine Komponente) ist dann zusammehängend, wenn sich zwischen zwei beliebigen seiner Knoten immer ein Weg finden lässt.}
 \metric{Abstand/Distanz \(d_G(x,y)\)}{Die Länge des kürzesten Weges zwischen den beiden Knoten \(x\) und \(y\).}
 \metric{Extrenzität eines Knotens \(ecc(x,G)\)}{Der Maximale Abstand, den ein Knoten zu einem anderen Knoten im Graphen \(G\) haben kann. \(ecc(x, G)=\max_{y\in V(G)}\{d_G(x,y)\}\)}
-\metric{Durchmesser}{Der größte Abstand zweier Knoten innerhalb des Graphen \(G\). \(Durchmesser(G)=\max_{x,y}\{ d_G (x,y)\}\).}
-\metric{Radius}{Kleinste Extrenzität innerhalb des Graphen. Extrenzität der Knoten des Zentrums. \(rad(G) = \min_{x\in V(G)}\max_{y\in V(G)}d_G(x,y)\).}
+\metric{Durchmesser \(Duchmesser(G)\)}{Der größte Abstand zweier Knoten innerhalb des Graphen \(G\). \(Durchmesser(G)=\max_{x,y}\{ d_G (x,y)\}\).}
+\metric{Radius \(rad(G)\)}{Kleinste Extrenzität innerhalb des Graphen. Extrenzität der Knoten des Zentrums. \(rad(G) = \min_{x\in V(G)}\max_{y\in V(G)}d_G(x,y)\).}
 \metric{Taillenweite}{Länge des kürzesten Kreises innerhalb eines Graphen}
 \metric{Umfang}{Länge des größten Kreises innerhalb eines Graphen}
 \metric{Dichte}{Anzahl der Kanten des Graphen geteilt durch die Anzahl der möglichen Kanten. Ungerichteter Graph: \(\frac{\vert E\vert}{\binom{\vert V\vert}{2}}\). Gerichteter Graph: \(\frac{\vert E\vert}{2\binom{\vert V\vert}{2}}\)}
@@ -590,7 +590,13 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 \metric{Cliquenzahl \(\omega(G)\)}{Eine Clique ist eine Knoten-Untermenge von \(G\), die einen vollständigen Graphen ergebibt. Die Mächtigkeit der größtmöglichen Knoten-Untermenge von \(G\), die eine Clique ist, ist die Cliquenzahl \(\omega(G)\)}
 \metric{Buchdicke/Seitenzahl \(bt(G)\)}{Ein Graph kann in ein Buch eingebettet werden, wobei die Knoten auf dem Buchrücken \(L\) angebracht sind und die Kanten über anliegende Seiten (Halbebenen) laufen und sich dabei nicht kreuzen dürfen. Die Buchdicke \(bt(G)\) gibt nun an, wie viele Seiten man für einen Graphen \(G\) braucht, um ihn in ein Buch einbetten zu können.}
 }
-\chapter{Ähnlichkeit von Graphen}
+\chapter{Isomorphie und Ähnlichkeit von Graphen}
+
+\section{Das Graph-Isomorphieproblem}
+
+\section{Vollständige Graph-Invarianten}
+
+\section{Isomorphie- und Ähnlichkeitserkennung anhand eines Fallbeispiels}
 
 \chapter{Implementierung und Umsetzung der Metriken}
 

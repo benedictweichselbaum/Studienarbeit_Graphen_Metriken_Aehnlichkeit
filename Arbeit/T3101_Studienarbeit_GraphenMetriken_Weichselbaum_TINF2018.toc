@@ -26,40 +26,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{10}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{13}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{14}{section.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.6}Chromatische Zahl und chromatischer Index}{19}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Arborizität}{22}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Arborizität}{23}{section.2.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.8}Weitere Metriken}{24}{section.2.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{26}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Isomorphie und Ähnlichkeit von Graphen}{31}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Implementierung und Umsetzung der Graph-Metriken}{31}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Das Graph-Isomorphieproblem}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Anforderungsanalyse}{31}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Vollständige Graph-Invarianten}{31}{section.3.2}%
+\contentsline {subsection}{\numberline {3.1.1}Ziele der Graphmetriken-Implementierung}{31}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Isomorphie- und Ähnlichkeitserkennung anhand eines Fallbeispiels}{31}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1.2}Rahmenbedingungen}{32}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Implementierung und Umsetzung der Metriken}{32}{chapter.4}%
+\contentsline {subsection}{\numberline {3.1.3}Anforderungen an die Graph-Datenstruktur}{33}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung in verschiedenen Graphdatenbanken}{32}{section.4.1}%
+\contentsline {subsection}{\numberline {3.1.4}Anforderungen an die Metriken-Berechnung}{33}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Vergleich der Implementierungen}{32}{section.4.2}%
+\contentsline {section}{\numberline {3.2}Entwurf der Klassenbibliothek}{33}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Graphmetriken und Ähnlichkeit in Anwendung}{33}{chapter.5}%
+\contentsline {subsection}{\numberline {3.2.1}Entwurfsumgebung}{33}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{34}{chapter.6}%
+\contentsline {subsection}{\numberline {3.2.2}Statischer Entwurf}{33}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{34}{section.6.1}%
+\contentsline {subsection}{\numberline {3.2.3}Dynamische Aspekte}{33}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{34}{section.6.2}%
+\contentsline {section}{\numberline {3.3}Algorithmik und Implementierung der Graph-Metriken}{33}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{35}{chapter*.34}%
+\contentsline {section}{\numberline {3.4}Testung der Klassenbibliothek}{33}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{36}{chapter*.35}%
+\contentsline {chapter}{\numberline {4}Die Ähnlichkeit von Graphen}{34}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Definition von Ähnlichkeitsmaßen}{34}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{34}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Bewertung des Ähnlichkeitsmaßes}{34}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Graphmetriken in Anwendung}{35}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{36}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{36}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Fazit}{36}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossar}{37}{chapter*.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literatur}{38}{chapter*.35}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

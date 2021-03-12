@@ -2354,7 +2354,8 @@
     <bcf:citekey order="4">tittmann_graphentheorie_2019</bcf:citekey>
     <bcf:citekey order="5">lovasz_large_2012</bcf:citekey>
     <bcf:citekey order="6">ellens_graph_2013</bcf:citekey>
-    <bcf:citekey order="7">wills_metrics_2019</bcf:citekey>
+    <bcf:citekey order="7">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="7">balzert_lehrbuch_2011</bcf:citekey>
     <bcf:citekey order="8">diestel_graphentheorie_2000</bcf:citekey>
     <bcf:citekey order="9">diestel_graphentheorie_2000</bcf:citekey>
     <bcf:citekey order="10">knebl_algorithmen_2019</bcf:citekey>
@@ -2488,6 +2489,10 @@
     <bcf:citekey order="91">bernhart_book_1979</bcf:citekey>
     <bcf:citekey order="92">chung_embedding_1987</bcf:citekey>
     <bcf:citekey order="93">kainen_book_1990</bcf:citekey>
+    <bcf:citekey order="94">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="94">balzert_lehrbuch_2011</bcf:citekey>
+    <bcf:citekey order="95">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="96">muller_vorkurs_2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

@@ -145,6 +145,44 @@
       \verb http://www.mscand.dk/article/view/11685
       \endverb
     \endentry
+    \entry{balzert_lehrbuch_2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=98cee9450c433e48f401567881bd52c0}{%
+           family={Balzert},
+           familyi={B\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Spektrum, Akad. Verl}%
+      }
+      \strng{namehash}{98cee9450c433e48f401567881bd52c0}
+      \strng{fullhash}{98cee9450c433e48f401567881bd52c0}
+      \strng{bibnamehash}{98cee9450c433e48f401567881bd52c0}
+      \strng{authorbibnamehash}{98cee9450c433e48f401567881bd52c0}
+      \strng{authornamehash}{98cee9450c433e48f401567881bd52c0}
+      \strng{authorfullhash}{98cee9450c433e48f401567881bd52c0}
+      \field{labelalpha}{Bal09}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{3. Aufl}
+      \field{isbn}{978-3-8274-1705-3}
+      \field{note}{{OCLC}: 488675080}
+      \field{pagetotal}{624}
+      \field{series}{Lehrbücher der Informatik}
+      \field{shorttitle}{Lehrbuch der Softwaretechnik}
+      \field{title}{Lehrbuch der Softwaretechnik: Basiskonzepte und Requirements-Engineering}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/2FT39JAM/Balzert - 2009 - Lehrbuch der Softwaretechnik Basiskonzepte und Re.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{balakrishnan_schaums_1997}{book}{}
       \name{author}{1}{}{%
         {{hash=672fab29cb072802b491d35ac41dc271}{%
@@ -268,6 +306,46 @@
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/0095895679900212
       \endverb
+    \endentry
+    \entry{balzert_lehrbuch_2011}{book}{}
+      \name{author}{2}{}{%
+        {{hash=98cee9450c433e48f401567881bd52c0}{%
+           family={Balzert},
+           familyi={B\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c953f181af8d4e3840e2af9c7059725f}{%
+           family={Liggesmeyer},
+           familyi={L\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Spektrum, Akad. Verl}%
+      }
+      \strng{namehash}{f8c40baea20c94d55d20fec3d82ae3c1}
+      \strng{fullhash}{f8c40baea20c94d55d20fec3d82ae3c1}
+      \strng{bibnamehash}{f8c40baea20c94d55d20fec3d82ae3c1}
+      \strng{authorbibnamehash}{f8c40baea20c94d55d20fec3d82ae3c1}
+      \strng{authornamehash}{f8c40baea20c94d55d20fec3d82ae3c1}
+      \strng{authorfullhash}{f8c40baea20c94d55d20fec3d82ae3c1}
+      \field{labelalpha}{BL11}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{3. Aufl}
+      \field{isbn}{978-3-8274-1706-0}
+      \field{note}{{OCLC}: 750951360}
+      \field{pagetotal}{596}
+      \field{series}{Lehrbücher der Informatik}
+      \field{shorttitle}{Lehrbuch der Softwaretechnik. 2}
+      \field{title}{Lehrbuch der Softwaretechnik. 2: Entwurf, Implementierung, Installation und Betrieb}
+      \field{year}{2011}
+      \field{dateera}{ce}
     \endentry
     \entry{blankenship_book_2003}{thesis}{}
       \name{author}{1}{}{%
@@ -1375,6 +1453,49 @@
       \verb 10.5121/csit.2015.51501
       \endverb
     \endentry
+    \entry{muller_vorkurs_2017}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7602049fa35d804c9616e9bc6c27c671}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e776c75932f3687a061fd53948b02564}{%
+           family={Weichert},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{a628cd55405fe21c01843d63588d3555}
+      \strng{fullhash}{a628cd55405fe21c01843d63588d3555}
+      \strng{bibnamehash}{a628cd55405fe21c01843d63588d3555}
+      \strng{authorbibnamehash}{a628cd55405fe21c01843d63588d3555}
+      \strng{authornamehash}{a628cd55405fe21c01843d63588d3555}
+      \strng{authorfullhash}{a628cd55405fe21c01843d63588d3555}
+      \field{labelalpha}{MW17}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{5., erweiterte und überarbeitete Auflage}
+      \field{isbn}{978-3-658-16140-8 978-3-658-16141-5}
+      \field{note}{{OCLC}: 993704399}
+      \field{pagetotal}{392}
+      \field{series}{Lehrbuch}
+      \field{shorttitle}{Vorkurs Informatik}
+      \field{title}{Vorkurs Informatik: der Einstieg ins Informatikstudium}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/WGYNGF7G/Müller und Weichert - 2017 - Vorkurs Informatik der Einstieg ins Informatikstu.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{nash-williams_edge-disjoint_1961}{article}{}
       \name{author}{1}{}{%
         {{hash=3338b8da9fc914598cad24823ec228c5}{%
@@ -2255,35 +2376,6 @@
       \verb{url}
       \verb https://mathworld.wolfram.com/MaximumIndependentVertexSet.html
       \endverb
-    \endentry
-    \entry{wills_metrics_2019}{book}{}
-      \name{author}{2}{}{%
-        {{hash=cfe728bfa8fd7a398828a606170bd284}{%
-           family={Wills},
-           familyi={W\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=c2913820ab2958e10395c24d62d02dac}{%
-           family={Meyer},
-           familyi={M\bibinitperiod},
-           given={Francois\bibnamedelima G.},
-           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \strng{namehash}{4b9fe8648008529b77909c96223f6fcc}
-      \strng{fullhash}{4b9fe8648008529b77909c96223f6fcc}
-      \strng{bibnamehash}{4b9fe8648008529b77909c96223f6fcc}
-      \strng{authorbibnamehash}{4b9fe8648008529b77909c96223f6fcc}
-      \strng{authornamehash}{4b9fe8648008529b77909c96223f6fcc}
-      \strng{authorfullhash}{4b9fe8648008529b77909c96223f6fcc}
-      \field{labelalpha}{WM19}
-      \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{\_eprint: 1904.07414}
-      \field{title}{Metrics for Graph Comparison: A Practitioner's Guide}
-      \field{year}{2019}
-      \field{dateera}{ce}
     \endentry
     \entry{wolfram_graph_2020}{online}{}
       \name{author}{1}{}{%

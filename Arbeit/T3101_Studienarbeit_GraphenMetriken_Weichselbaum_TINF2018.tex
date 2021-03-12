@@ -200,11 +200,13 @@ Diese netzartigen Strukturen können dabei die verschiedensten Konstrukte reprä
 
 Um Graphen zu beschreiben und zu charakterisieren, haben sich über die Zeit zahlreiche Metriken, bzw. Eigenschaften für diese herausgebildet ("`graph properties"' \cite{lovasz_large_2012}). Das heißt, einem Graphen bzw. auch seinen einzelnen Komponenten können gewisse Kennzahlen zugeordnet werden, die ihn auszeichnen. Auch diese Metriken sind, wie die Graphen selbst, oft praktisch anwendbar. Zum Beispiel in der Untersuchung von Netzwerken \cite{ellens_graph_2013}.
 
-Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedenste Metriken vorzustellen und zu erläutern. Dabei ist es auch relevant herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen im Bezug auf ihre Berechenbarkeit zu bewerten sind. Des Weiteren soll auf Basis der Metriken auch der Begriff der Isomorphie bzw. Ähnlichkeit von Graphen behandelt werden.
+Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedenste Metriken vorzustellen und zu erläutern. Dabei ist es auch relevant herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen im Bezug auf ihre Berechenbarkeit zu bewerten sind. Es soll ein umfassender Überblick über Graphmetriken ermöglicht werden und vor allem klar werden, was eine Metrik ausdrückt und ggf. kurz erläutert werden, welchen Nutzen eine Kennzahl haben kann.
 
-Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Implementierung bzw. Nutzung dieser stattfinden. Es ist dabei das Ziel, mithilfe von Graphdatenbanken die jeweiligen Metriken umzusetzen und diese miteinander zu Vergleichen.
+Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Implementierung bzw. Nutzung dieser Kennzahlen stattfinden. Mithilfe einer selbst erstellten Klassenbibliothek soll aufgezeigt werden, wie die vorgestellten Metriken konkret umgesetzt werden können. Besonders ist dabei interessant ggf. verschiedene algorithmische Ansätze bezüglich ihrer Genauigkeit und Schnelligkeit miteinander zu vergleichen. Die Entwicklung dieser Klassenbibliothek soll ingenieursmäßig unter Zuhilfenahme von Softwareengineeringwerkzeugen erfolgen. Infolgedessen entsteht das finale Softwareprodukt im Rahmen des klassischen Softwarelebenszyklus und umfasst die Analyse der Anforderungen, einen Softwareentwurf und die Implementierung und Testung der Software. \cite{balzert_lehrbuch_2009,balzert_lehrbuch_2011}
 
-In einem Weiteren Teil ist außerdem noch darauf einzugehen, welche Anwendung die gezeigten Metriken haben, um den praktischen Nutzen der Thematik aufzuzeigen. Es soll gezeigt werden, wie die angesprochenen Thematiken an realen Problemen Anwendung finden.
+Auf Basis der Implementierung ist es zudem Ziel der Arbeit den Aspekt der Ähnlichkeit zwischen Graphen zu beleuchten. Ziel ist es zwei Graphen miteinander vergleichbar zu machen. Unter Zuhilfenahme der implementierten Metriken soll ein Art Ähnlichkeitsmaß erarbeitet werden, das es möglich macht zwei Graphen gegenüberzustellen. Dieses Ähnlichkeitsmaß wird daraufhin beispielhaft angewendet und bewertet.
+
+In einem weiteren Teil ist außerdem noch darauf einzugehen, welche Anwendung die gezeigten Metriken haben, um den praktischen Nutzen der Thematik aufzuzeigen. Es soll gezeigt werden, wie die angesprochenen Thematiken an realen Problemen Anwendung finden. Hierbei sollen Beispiele aus dem ersten Teil der Arbeit weiter ausgeführt oder neue Anwendungsszenarien aufgeführt werden.
 }
 \section{Fragestellungen}
 {
@@ -218,19 +220,27 @@ Hierzu gehört, wie bereits erwähnt die Vorstellung der einzelnen Metriken, abe
 
 Bei dieser Frage soll es vor allem darum gehen, die vorgestellten Metriken dahingehend zu bewerten, wie "`schwer"' es ist, sie zu ermitteln. Außerdem wird bei der Bewertung auch auf die Verbreitung eingegangen. Speziell soll erwähnt werden, ob die jeweilige Metrik in bekannten Mathematikbibliotheken vertreten ist oder nicht.
 
-\singleenum{2}{Inwiefern lassen sich Graph-Metriken dafür verwenden, die Isomorphie zweier Graphen zu ermitteln und wie lässt sich das an einem Anwendungsbeispiel verdeutlichen?}
+\singleenum{2}{Wie können die vorgestellten Metriken im Rahmen einer Klassenbibliothek implementiert werden?}
 
-Basierend auf Graph-Metriken lässt sich auch ermitteln, ob zwei Graphen Ähnlichkeiten aufweißen bzw. isomorph sind \cite{wills_metrics_2019}. Auch auf diesen Aspekt soll die Arbeit bezug nehmen und dabei ein Anwendungs-Beispiel konstruieren.
+Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden.
 
-\singleenum{3}{Wie können die vorgestellten Metriken in Graphdatenbanken verwendet werden, bzw. implementiert werden?}
+\singleenum{3}{Wie sind bestimmte Implementierungen von Graphkennzahlen zu bewerten, wenn mehrere Umsetzungen möglich sind?}
 
-Auf die theoretische Betrachtung der Graph-Metriken folgt dann ein praktischer Teil, der behandeln soll, wie sich die Metriken in bekannten Graphdatenbanken umsetzen lassen, bzw. umgesetzt wurden. Dabei ist es wichtig herauszufinden welche Graphkennzahlen bereits teil der Graphdatenbank-Lösungen sind, bzw. welche Metriken selbst umgesetzt werden müssen.
+Im Rahmen der Implementierung und Recherche zur algorithmischen Umsetzung der Graph-Metriken kann es dazu kommen, dass für einzelne einschlägige Kennzahlen mehrere Implementierungen denkbar sind. Ist dies der Fall, ist es Aufgabe der Studienarbeit die angebotenen Implementierungen miteinander zu vergleichen. 
 
-\singleenum{4}{Wie sind die jeweiligen Implementierungen zwischen und innerhalb der Graphdatenbanken zu bewerten?}
+\singleenum{4}{Wie könnte ein Ähnlichkeitsmaß zum Vergleich zweier Graphen konzeptioniert sein?}
 
-Folgend auf die Implementierung, ist es noch wichtig zu verstehen, wie diese Umsetzungen zu betrachten sind. Dabei wird vor allem ein Fokus auf das Thema Performance und Skalierung gelegt.
+Um feststellen zu können, ob zwei Graphen zueinander ähnlich sind, ist es zunächst nötig ein Ähnlichkeitsmaß zu definieren, das es ermöglicht über einen Zahlenwert die Ähnlichkeit zweier Graphen festzustellen. Aufgrunddessen soll im Rahmen der Arbeit ein solches Maß konzeptioniert werden, das mithilfe der erarbeiteten Metriken arbeitet.
 
-\singleenum{5}{Welche realen Anwendungen gibt es für Graph-Metriken und den Vergleich von Graphen (Ähnlichkeit/Isomorphie)?}
+\singleenum{5}{Wie lässt sich das erarbeitete Ähnlichkeitsmaß implementieren und umsetzen?}
+
+Neben der Konzeption stellt sich wie bei den Metriken die Frage, wie das erarbeitete Wissen parktisch umgesetzt werden kann. Das erarbeitete Ähnlichkeitsmaß soll deshalb auch innerhalb der Klassenbibliothek umgesetzt werden.
+
+\singleenum{6}{Wie ist das implementierte Ähnlichkeitsmaß zum Vergleich zweier Graphen im Hinblick auf seine Genauigkeit zu bewerten?}
+
+Anschließend ist es wichtig festzuhalten, wie hoch die Qualität des erstellten Ähnlichkeitsmaßes ist. Hierfür soll die Arbeit unter Einbezug von Beispielen erproben, wie gut die Ähnlichkeit zwischen zwei Graphen erkannt wird.
+
+\singleenum{7}{Welche realen Anwendungen gibt es für Graph-Metriken?}
 
 Als letztes soll sich die Studienarbeit mit praktischen Beispielen beschäftigen. Es ist dabei wichtig zu verstehen, welchen konkreten Nutzen die gezeigten Kennzahlen für Graphen in modernen Anwendungsszenarien haben.
 }
@@ -250,6 +260,8 @@ Darüber hinaus ist noch eine grundsätzliche Notationen während der Arbeit zu 
 	G = (V, E),\ wobei\ E \subseteq V \times V
 \end{align*}
 Für V können wir auch V(G) schreiben, für E auch E(G). \cite{diestel_graphentheorie_2000} V ist dabei Englisch und bedeutet "`Vertices"', E steht für "`Edges"'. Wenn es um die Datenstrukturen von Graphen geht, kommen im Rahmen dieser Arbeit hauptsächlich Adjazenzmatrizen und Adjazenzlisten zum Einsatz. Allerdings können bei Bedarf auch Inzidenzen (Beziehung zwischen Knoten und Kanten) im Graphen eine Rolle spielen, wie Inzidenzmatrizen und Inzidenzlisten. \cite{knebl_algorithmen_2019,diestel_graphentheorie_2000} Zudem wird bei der Betrachtung meist auf ungerichtete, simple Graphen Bezug genommen.
+
+Es sei noch zu erwähnen, dass die nachfolgenden Metriken auf Basis einer umfangreichen Recherche zusammengetragen worden sind. Die vorgestellten Kennzahlen stellen aber bei weitem keine vollständige Liste dar. Beim Zusammentragen der Informationen und der Wahl der Metriken wurde bedacht, wurden vor allem Metriken betrachtet, die entweder grundlegend sind oder im Rahmen der Recherche herausstachen und häufiger auftauchten. Außerdem war ein Kriterium bei der Literaturrecherche die Ergibigkeit der Informationen über die jeweilige Metrik. Infolgedessen sind selten erwähnte oder exotische Graphmetriken in dieser Auflistung nicht zu finden.
 }
 \section{Grundlegende Metriken}
 {
@@ -590,21 +602,50 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 \metric{Cliquenzahl \(\omega(G)\)}{Eine Clique ist eine Knoten-Untermenge von \(G\), die einen vollständigen Graphen ergebibt. Die Mächtigkeit der größtmöglichen Knoten-Untermenge von \(G\), die eine Clique ist, ist die Cliquenzahl \(\omega(G)\)}
 \metric{Buchdicke/Seitenzahl \(bt(G)\)}{Ein Graph kann in ein Buch eingebettet werden, wobei die Knoten auf dem Buchrücken \(L\) angebracht sind und die Kanten über anliegende Seiten (Halbebenen) laufen und sich dabei nicht kreuzen dürfen. Die Buchdicke \(bt(G)\) gibt nun an, wie viele Seiten man für einen Graphen \(G\) braucht, um ihn in ein Buch einbetten zu können.}
 }
-\chapter{Isomorphie und Ähnlichkeit von Graphen}
+\chapter{Implementierung und Umsetzung der Graph-Metriken}
+{
+Nachdem nun eine umfassende Anzahl an Graphmetriken besprochen wurde, ist es Ziel der Studienarbeit einen Teil dieser im Rahmen einer Klassenbibliothek umzusetzen. Die Entwicklung erfolgt dabei im Rahmen des klassischen Softwarelebenszyklus und besteht aus Anforderungsanalyse, Entwurf/Design, Implementierung und Testung. \cite{balzert_lehrbuch_2009,balzert_lehrbuch_2011} Darüber hinaus soll auch die Algorithmik einzelner Metriken betrachtet werden und infolgedessen auf die Betrachtungen aus Kapitel 2 angeschlossen werden.
+}
+\section{Anforderungsanalyse}
+{
+Im ersten Teil der Entwicklung sollen Anforderungen an die verschiedenen Softwareteile definiert werden. Unter Anforderungen (Requirements) werden dabei die Eigenschaften verstanden, die vom jeweiligen Softwaresystem erwartet werden. Zunächst wird definiert welche globalen Ziele die Implementierung der Graphmetriken verfolgt. Anschließend wird beschrieben, in welchen Rahmenbedingungen die Umsetzung stattfinden. Die Definition konkreter Anforderungen erfolgt im Anschluss und trennt sich in Anforderungen an die Graphdatanstruktur, auf der die Berechnungen stattfinden und in Anfordreungen an die eigentliche Berechung der Metriken. Es werden hierbei sowohl funktionale als auch nicht funktionale Anforderungen formuliert. \cite{balzert_lehrbuch_2009}
+}
+\subsection{Ziele der Graphmetriken-Implementierung}
+{
+Finales Ziel der Graphmetrik-Implementierung soll es sein, eine Klassenbibliothek zur Verfügug zu stellen, die es einem Anwender oder einer Anwenderin ermöglicht, mithilfe einer bereitgestellten Graphen-Datenstruktur diverse Graphmetriken zu berechnen. Besonders wichtig und praxisrelevant sind dabei Kennzahlen zur "`Centrality"'. Dieses Hauptziel soll noch einmal in diese Unterziele untergliedert werden:
+\singleenum{0}{Die Klassenbibliothek soll eine Graph-Datenstruktur bereitstellten, die einerseits die grundlegenden Operationen eines Graphen beherrscht und andererseits es ermöglicht die Berechungen der Metriken auf ihr auszuführen. Dies ist nötig, da nur durch die Definition einer eigenen Datenstruktur eine Implementierung der Metriken möglich ist, da hierfür zumindest der Zugriff auf den Graph standardtisiert sein muss.}
+\singleenum{1}{Die Klassenbibliothek soll eine Reihe von Klassen bereitsstellen, die es ermöglichen diverse Metriken für Graphen zu berechen. Die Berechnungen sollen dabei auf der vordefinierten Graph-Datenstruktur stattfinden, die zuvor definiert wurde. Dieses Ziel beschreibt die Hauptmotivation hinter dem Softwareprojekt.}
+\singleenum{2}{Da es sich bei der Software um eine Klassenbibliothek handelt, ist es zudem zwingend notwendigt, dass die Bibliothek in andere Programme einbindbar ist. D.h. für einen anderern Entwicker oder eine Entwicklin muss es möglich sein, die Bibliothek in deren eigenen Programmen einzubinden und zu nutzen. Der letztendliche Sinn der Bibliothek soll es sein, das sie ggf. wiederauftretende Probleme im Zusammenhang mit Graphen lösen kann, ohne das ein Entwickler selbst die Datenstruktur oder die Metrik-Berechnung selbst implementieren muss. \cite{muller_vorkurs_2017}
+}
+\subsection{Rahmenbedingungen}
+{
+Durch die Zielformulieren wurde auf einer abstrakten Ebene klar, was die zu erstellende Software können muss. Im folgenden soll geklärt werden, mit welchen Rahmenbedingungen die Klassenbibliothek erstellt werden soll. Es ist wichtig zu betrachten, welche Anwendungsbereiche das finale Produkt hat, wer die Zielgruppe ist und welche Betriebsbedingungen für die Bibliothek herrschen.
+}
+\subsection{Anforderungen an die Graph-Datenstruktur}
 
-\section{Das Graph-Isomorphieproblem}
+\subsection{Anforderungen an die Metriken-Berechnung}
 
-\section{Vollständige Graph-Invarianten}
+\section{Entwurf der Klassenbibliothek}
 
-\section{Isomorphie- und Ähnlichkeitserkennung anhand eines Fallbeispiels}
+\subsection{Entwurfsumgebung}
 
-\chapter{Implementierung und Umsetzung der Metriken}
+\subsection{Statischer Entwurf}
 
-\section{Implementierung in verschiedenen Graphdatenbanken}
+\subsection{Dynamische Aspekte}
 
-\section{Vergleich der Implementierungen}
+\section{Algorithmik und Implementierung der Graph-Metriken}
 
-\chapter{Graphmetriken und Ähnlichkeit in Anwendung}
+\section{Testung der Klassenbibliothek}
+
+\chapter{Die Ähnlichkeit von Graphen}
+
+\section{Definition von Ähnlichkeitsmaßen}
+
+\section{Beispielhafte Anwendung der Ähnlichkeitsmaße}
+
+\section{Bewertung des Ähnlichkeitsmaßes}
+
+\chapter{Graphmetriken in Anwendung}
 
 \chapter{Fazit und Zusammenfassung}
 

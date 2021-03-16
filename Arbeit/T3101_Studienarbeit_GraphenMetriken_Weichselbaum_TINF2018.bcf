@@ -2492,7 +2492,17 @@
     <bcf:citekey order="94">balzert_lehrbuch_2009</bcf:citekey>
     <bcf:citekey order="94">balzert_lehrbuch_2011</bcf:citekey>
     <bcf:citekey order="95">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="95">ieee_ieee_1998</bcf:citekey>
     <bcf:citekey order="96">muller_vorkurs_2017</bcf:citekey>
+    <bcf:citekey order="97">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="98">turau_algorithmische_2004</bcf:citekey>
+    <bcf:citekey order="99">ullenboom_java_2016</bcf:citekey>
+    <bcf:citekey order="99">srirangan_apache_2011</bcf:citekey>
+    <bcf:citekey order="100">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="101">turau_algorithmische_2004</bcf:citekey>
+    <bcf:citekey order="102">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="103">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="104">nielsen_usability_2010</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

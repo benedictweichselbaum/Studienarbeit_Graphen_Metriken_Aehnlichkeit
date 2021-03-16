@@ -118,7 +118,7 @@
 \AfterTOCHead{\thispagestyle{empty}}
 
 \begin{document}
-\title{\Large{Untersuchung und Implementierung von Graph-Metriken und deren Anwendung auf Graph-Isomorphie
+\title{\Large{Untersuchung und Implementierung von Graph-Metriken und die Erkennung von Graph-Ähnlichkeit
 }}
 \author{Benedict Martin Weichselbaum}
 \date{\today}
@@ -132,7 +132,7 @@
 	
 	\vspace{5mm}	
 	{\fontsize{26}{40}\selectfont
-	Untersuchung und Implementierung von Graph-Metriken und deren Anwendung auf Graph-Isomorphie
+	Untersuchung und Implementierung von Graph-Metriken und die Erkennung von Graph-Ähnlichkeit
 	}
 	\\
 	\vspace{2cm}
@@ -222,7 +222,7 @@ Bei dieser Frage soll es vor allem darum gehen, die vorgestellten Metriken dahin
 
 \singleenum{2}{Wie können die vorgestellten Metriken im Rahmen einer Klassenbibliothek implementiert werden?}
 
-Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden.
+Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden. Hierbei soll die Entwicklung der Bibliothek mithilfe von Softwareengineeringwerkzeugen erfolgen und sich am Softwarelebenszyklus orientiert werden.
 
 \singleenum{3}{Wie sind bestimmte Implementierungen von Graphkennzahlen zu bewerten, wenn mehrere Umsetzungen möglich sind?}
 
@@ -608,7 +608,7 @@ Nachdem nun eine umfassende Anzahl an Graphmetriken besprochen wurde, ist es Zie
 }
 \section{Anforderungsanalyse}
 {
-Im ersten Teil der Entwicklung sollen Anforderungen an die verschiedenen Softwareteile definiert werden. Unter Anforderungen (Requirements) werden dabei die Eigenschaften verstanden, die vom jeweiligen Softwaresystem erwartet werden. Zunächst wird definiert welche globalen Ziele die Implementierung der Graphmetriken verfolgt. Anschließend wird beschrieben, in welchen Rahmenbedingungen die Umsetzung stattfinden. Die Definition konkreter Anforderungen erfolgt im Anschluss und trennt sich in Anforderungen an die Graphdatanstruktur, auf der die Berechnungen stattfinden und in Anfordreungen an die eigentliche Berechung der Metriken. Es werden hierbei sowohl funktionale als auch nicht funktionale Anforderungen formuliert. \cite{balzert_lehrbuch_2009}
+Im ersten Teil der Entwicklung sollen Anforderungen an die verschiedenen Softwareteile definiert werden. Unter Anforderungen (Requirements) werden dabei die Eigenschaften verstanden, die vom jeweiligen Softwaresystem erwartet werden. Zunächst wird definiert welche globalen Ziele die Implementierung der Graphmetriken verfolgt. Anschließend wird beschrieben, in welchen Rahmenbedingungen die Umsetzung stattfinden. Die Definition konkreter Anforderungen erfolgt im Anschluss und trennt sich in Anforderungen an die Graphdatanstruktur, auf der die Berechnungen stattfinden und in Anfordreungen an die eigentliche Berechung der Metriken. Es werden hierbei sowohl funktionale als auch nicht funktionale Anforderungen formuliert. Die hier durchgeführte Anforderungsanalyse orientiert sich bei den meisten Schritten an den aufgeführten Punkten und Schritten aus Helmut Balzerts "`Lehrbuch der Softwaretechnik"' und folgt dabei in vielen Punkten der Anforderungsschablone der IEE 830-1998. \cite{balzert_lehrbuch_2009,ieee_ieee_1998}
 }
 \subsection{Ziele der Graphmetriken-Implementierung}
 {
@@ -619,11 +619,59 @@ Finales Ziel der Graphmetrik-Implementierung soll es sein, eine Klassenbibliothe
 }
 \subsection{Rahmenbedingungen}
 {
-Durch die Zielformulieren wurde auf einer abstrakten Ebene klar, was die zu erstellende Software können muss. Im folgenden soll geklärt werden, mit welchen Rahmenbedingungen die Klassenbibliothek erstellt werden soll. Es ist wichtig zu betrachten, welche Anwendungsbereiche das finale Produkt hat, wer die Zielgruppe ist und welche Betriebsbedingungen für die Bibliothek herrschen.
+Durch die Zielformulieren wurde auf einer abstrakten Ebene klar, was die zu erstellende Software können muss. Im folgenden soll geklärt werden, mit welchen Rahmenbedingungen die Klassenbibliothek erstellt werden soll. Es ist wichtig zu betrachten, welche Anwendungsbereiche das finale Produkt hat, wer die Zielgruppe ist und welche Betriebsbedingungen für die Bibliothek herrschen. Zudem müssen die technische Produktumgebung betrachtet und definiert werden. \cite{balzert_lehrbuch_2009}
+
+Bei der Ausmachung des Anwendungsbereiches der Klassenbibliothek kann keine konkrete Räumlichkeit oder professionelle Arbeitsumgebung (writschaftlich oder akademisch) angegeben werden. Grundsätzlich ist der Anwendungsbereich dort, wo in einem Programm Graphen und Graphmetriken genutzt werden müssen. Wie bereits in Kapitel 1 erwähnt, ist der Graph und damit die zugehören Metriken vielverwendete Abstraktionen für viele Systeme. \cite{turau_algorithmische_2004} Damit ist auch der finale Anwendungsbereich einer solchen zugehörigen Bibliothek beliebig.
+
+Da Anwendungsbereich der Klassenbibliothek weit gefasst ist, besteht auch die potenzielle Zielgruppe aus vielen verschiedenen Personengruppen. Was diese Personen aber eint, ist, dass es sich immer um Softwareentwickler oder -entwicklerinnen handelt, da eine Klassenbibliothek immer im Rahmen einer anderen Software verwendet wird. In diesem Zusammenhang sei aber zu erwähnen, dass die zu entwickelnde Bibliothek vor allem im akademischen Kontext dieser Studienarbeit entsteht. Infolgedessen werden auch die realen Benutzer der Software sich in diesem Kontext bewegen.
+
+Die Betriebsbedingungen der Bibliothek sind grundsätzlich beliebig. Die Ausführung der Programme kann auf jedem Computer geschehen, der die jeweiligen technischen Kriterien erfüllt, die anschließend in der technischen Produktumgebung beschreiben sind.
+
+Die technische Produktumgebung ist folgendermaßen gegeben. Die Klassenbibliothek wird mittels der Programmiersprache \textbf{"`Java"'} umgesetzt. Das Softwareinkrement selbst wird "`gebaut"' mittels des Abhängigkeitsmanagementtools \textbf{"`Maven"'}. Durch Maven wird es auch möglich sein die erstellte Software in andere Projekte einzubinden.  Mit der Wahl von Java und Maven wird vorausgesetzt, dass der Endnutzer der Bibliothek die "`Java Virtual Machine"' installiert und einsatzbereit hat. Weitere Voraussetzungen sind nicht vorhanden. Die Auswahl von "`Java"' ist dadruch begründet, dass die Sprache sehr stark verbreitete und universell ausführbar ist, was u.a. dazu führte, dass es bereits einen großen Satz an Bibliotheken für die Sprache gibt. Das Verwenden von "`Maven"' als Abhängigkeitsmanagement- und Build-Tool ist dahingehend sinnvoll, da es einerseits speziell für Java entwickelt ist, andererseits wichtige Eigenschaften in Sachen Testing und Artefaktbereitstellung aufweist. So kann, wie bereits erläutert, die erstellte Bibliothek in anderen Proejkten mittels Maven eingebunden werden. \cite{ullenboom_java_2016,srirangan_apache_2011}
 }
 \subsection{Anforderungen an die Graph-Datenstruktur}
+{
+Nachdem Ziel und Rahmenbedingungen des Softwareproduktes geklärt sind, müssen nun konkrete Anforderungen formuliert werden, die die Klassenbibliothek erfüllen soll. Im ersten Teil der Anforderungen wird bestimmt, welche Eigenschaften die Graph-Datenstruktur haben muss, die anschließend für die Berechnung der Metriken verwendet wird. Bei der Formulierung der Anforderungen wird natürliche Sprache verwendet. Zunächst werden funktionale Anforderungen beschrieben, anschließend nicht funktionale Anforderungen. \cite{balzert_lehrbuch_2009}
 
+Zunächst ist es wichtig, dass einem potenziellen Verwender der Klassenbibliothek möglich gemacht wird, ein Objekt zur Verfügung zu haben, das einen Graphen repräsentiert. Genauer gesagt, muss die Bibliothek einem Programmierer oder einer Programmiererin, die diese verwendet, eine Möglichkeit geben, eine Datenstruktur zu erstellen, die einen Graphen repräsentiert. D.h. es wird eine Struktur geschaffen, die Knoten und Kanten kennt, wobei die Kanten eine Verbindung bzw. Beziehung zwischen Knoten darstellen. Besonders wichtig ist die Implementierung eines simplen und ungerichteten Graphen. Diese Anforderung korrespondiert dierekt mit dem ersten Produktziel. Die Graph-Datenstruktur stellt den zentralen Einsprungspunkt dar, um mit der Bibliothek zu arbeiten und muss daher über eine leicht zu verstehende Schnittstelle oder Abstraktion zu erreichen sein. Dies bedeutet genau, dass der Zugriff auf das jeweilige Graphen-Objekt über eine einheitliche Schnittstelle erfolgt.
+
+Darüber hinaus ist es wichtig neben der reinen Bereitstellung einer Datenstruktur auch zu definieren, welche Aktionen auf diese möglich sind. D.h. die Bibliothek muss es dem Nutzer oder der Nutzerin ermöglichen die Graphdatanstruktur zu benutzen. Zur Benutzung zählen die folgenden Aktionen bzw. Operationen:
+\begin{myitemize}
+	\item Das Hinzufügen eines Knotens.
+	\item Das Löschen eines Knotens. Hierbei werden auch alle inzidenten Kanten gelöscht.
+	\item Das Hinzufügen einer Kante.
+	\item Das Löschen einer Kante.
+\end{myitemize}
+Auch diese Anforderung ist essentiell für die Erreichung des ersten Projektzieles. Die jeweiligen Operationen sind Teil der Graph-Schnittstelle, wie sie in der ersten Anforderung beschreiben wurde. Jedes Graph-Objekt kann über die Schnittstelle dementsprechend manipuliert werden.
+% Anforderung: Graphen-Markierung und Identifukation von Knoten und implizit Kanten
+Ein Graph dient meist zur Repräsentation und Abstraktion eines bestimmten Sachverhaltes \cite{turau_algorithmische_2004}. Viele Beispiele dazu konnten z.B. in Kapitel 2 gesehen werden, wobei unter anderem Anwendungen für Metriken besprochen und vorgestellt wurden. Auch die Graphdatanstruktur muss es ermöglichen, dass eine gewünschte Abstraktion dargestellt werden. Die Bibliothek muss es also ermöglichen Knoten und Kanten im Graphen zu "`markieren"'. Durch die Markierung muss es zudem möglich werden, die Knoten eindeutig zu identifizieren. Diese eindeutige Identifikation dient anschließend auch zur Durchführung der diversen Aktionen, die auf den Graphen möglich sind. Beispielsweise ist das Einfügen einer Kante über die Angabe der jeweiligen Knotenmarkierungen möglich. Die verwendete Markierung soll dabei beliebig sein. Allerdings ist es notwendig, dass Markierungen untereinander vergleichbar sind, damit die Funktionalität des Graphen gewährleistet werden kann.
+% Anforderung: Möglichkeit der Auslesung für Informationen und Metriken-Berechnung
+Neben dem Graphen selbst ist die Ermittlung diverser Metriken einer der Hauptziele der Klassenbibliothek. Um dies zu erreichen, ist es notwendig, dass ein Graph-Objekt es ermöglicht, Informationen über sich preis zu geben. Die Datenstruktur muss dementsprechend dem Nutzer oder der Nutzerin eine Möglichkeit zur Verfügung stellen, auf Informationen des Graphen zuzugreifen. Hierzu zählt das zurückgeben eines bestimmten Knotens, das Ausgeben von adjazenten Knoten und ähnliche Informationsgewinnungsoperationen. Die Eigenschaft die diese Anforderung dem Softwareprodukt verleiht, ist schlussendlich die Bereitstellung sämtlicher nötigen Informationen, die für die Berechung der Metriken von Bedeutung sind.
+% Anforderung: Möglichkeit verschiedene Graphen zu implementieren über die Schnittstelle
+Die vorerst letzte funktionale Anforderung an die Graphdatenstruktur hat mit der bereits beschriebenen Eigenschaft zu tun, dass die jeweiligen Graph-Objekte über eine einheitliche Schnittstelle erreichbar sind. Die Klassenbibliothek muss es nämlich explizit ermöglichen, dass der Programmierer oder die Programmiererin verschiedenartige Graphen mit der Bibliothek verwenden kann. D.h. die jeweilige Implementierung der Datenstruktur muss frei sein, während der Zugriff genormt ist. Infolgedessen ist es möglich verschiedene Implementierungsarten für den Graphen umzusetzten und zu nutzen. Die Bibliothek muss dabei selbst mindestens eine Implementierung bereitstellten. Sie sollte, wenn das möglich ist, mehrere Graphimplementierungen zur Verfügung stellen. 
+}
 \subsection{Anforderungen an die Metriken-Berechnung}
+
+
+\subsection{Nicht funktionale Anforderungen}
+{
+In den letzten zwei Abschnitten der Studienarbeit wurde erläutert und definiert, welche funktionalen Eigenschaften die Klassenbibliothek haben soll. Im Folgenden wird nun dargelegt, welche nicht funktionalen Eigenschaften die Software haben soll. Hierbei wurde sich an den Merkmalen des Standards ISO/IEC 9126-1 orientiert. \cite{balzert_lehrbuch_2009} Dieser Standard heißt in seiner aktuellsten Fassung ISO/IEC 25010:2011.
+
+Die ersten nicht funktionalen Anforderungen beschäftigen sich mit dem Aspekt der "`Usability"'. Da es sich um kein Softwareprodukt mit einer Benutzeroberfläche handelt, wird der Aspekt der Usability im Bezug auf die Verwendung der Bibliothek durch einen Entwickler oder eine Entwicklering betrachtet. Hierbei sind besonders zwei Eigenschaften wichtig und relevant. Im Rahmen der Usability muss die Bibliothek beim Verwenden der Graphdatanstruktur und der Metriken darauf achten, dass der Nutzer oder die Nutzerin das System leicht versteht und gut bedienen kann \cite{balzert_lehrbuch_2009}. Hierfür ist es besonders wichtig, dass darauf geachtet wird, wie Parameter, Felder und Methoden benannt sind. Aber auch die statische Struktur der Bibliothek muss einem logischen Aufbau folgen und konsistent sein. Sowohl die Verständlichkeit als auch die Bedienbarkeit eines Systems können auch auf die klassischen Usability-Eigenschaften übertragen werden, wie sie Jakob Nielsen in "`Usability Engineering"' beschreibt \cite{nielsen_usability_2010}. So fördert die Verständlichkeit eines Systems die Erlernbarkeit (\textit{Learnability}) und die Befriedigung (\textit{Satisfaction}). Die gute Bedienbarkeit geht wiederum mit einer erhöhten Benutzungs-Effizienz (\textit{Efficiency}) daher. Neben diesen Usability-Zielen ist es für eine Klassenbibliothek zudem unabdingbar, dass sie möglichst fehlerfrei ist (\textit{Errors}). Ohne diese Eigenschaft ist keine gute Usability zu erreichen, da ein Nutzer oder eine Nutzerin einer Klassenbibliothek davon ausgeht, dass die Programmlogik dieser möglichst fehlerfrei, bzw. vollständig fehlerfrei ist.
+
+Auch die Eigenschaft, dass das Produkt die gewünschten Funktionalitäten bereitstellt, ist eine nicht funktionale Eigenschaften und soll selbstverständlich von der Klassenbibliothek erfüllt werden. Besonders die Eigenschaften der Agemessenheit und Genauigkeit sollen beachtet werden. Angemessenheit beschreibt die Fähigkeit einer Software geeignete Funktionen bereitzustellen, um die spezifizierte Aufgabe zu erledigen. Genauigkeit wiederum sagt aus, wie genau und akkurat die Software die Anforderungen erfüllt. Für beide Eigenschaften kann definiert werden, dass die Klassenbibliothek sowohl volle Angemessenheit als auch Genauigkeit für den Nutzer oder die Nutzerin liefern muss. Angemessenheit wird erreicht, wenn die formulierten Anforderungen wie beschrieben erfüllt werden. Die Genauigkeit der Software ist gegeben, wenn die jeweiligen Funktionen vollständig korrekt arbeiten.
+
+Nicht nur müssen Funktionalität genau und angemessen bereitgestellt werden, sie müssen auch effizient ausgeführt werden. Besonders zwei Punkte sind dabei bei Computerprogrammen interessant. Das Zeitverhalten und das Verbrauchsverhalten. Beim Verbrauchsverhalten ist u.a. die Auslastung der Ressource Arbeitsspeicher gemeint. Im Rahmen der Studienarbeit soll die Klassenbibliothek möglichst zeit- und ressourcenschonend sein. Allerdings geniesen beide Eigenschaften nicht höchste Priorität. Vor allem bei der Berechnung einiger Metriken kann es bei großen Graphen zu längeren Antwortzeiten kommen. Vor allem bei NP-vollständigen Problemen ist die Berechnung unvermeidbar langsam.
+
+Darüber hinaus ist auch die Wartbarkeit einen Systems äußerst wichtig, damit Änderungen und Fehlersuche- und Behebung erleichtert werden. Im Zuge der Wartbarkeit soll besonders die Eigenschaft der Testbarkeit hervorgehoben werden. Die Bibliothek muss eine hohe Testbarkeit aufweisen. D.h. speziell, dass besonders Methoden so konzipiert werden müssen, dass sie testbar sind. Nur so kann die Korrektheit der Algorithmen, die in der Klassenbibliothek Verwendung finden sichergestellt werden. Eine Testabdeckung von 80 Prozent ist dabei verpflichtend. Wünschenswert wäre eine Testabdeckung von 100 Prozent.
+
+Eine weitere nicht funktionale Eigenschaft, die die Bibliothek mitbringen soll, ist die der Anpassbarkeit und Installierbarkeit. Beide Eigenschaften fallen unter den Oberbegriff der Portabilität. Darunter ist zu verstehen, dass die Software anpassbar und variabel in dem Sinne sein muss, als das sich das System gut an verschiedene Umgebungen und Anwendungsszenarien anpassen kann, damit die verwendende Person die Funktionen des Softwareprodukt vielfältig einsetzen kann. Eine gute Installierbarkeit wiederum beschreibt, dass im Rahmen der dokumentierten technischen Voraussetzungen die Software leicht installiert und verwendet werden können muss. Ist die Installierbarkeit nämlich nicht ausreichend gut, ist die Hürde zur Verwendung der Bibliothek zu hoch. 
+}
+\subsection{Weitere Anforderungen}
+
+\subsection{Zusammenfassung der Use-Cases}
+
+\section{Analyse zum Entwurf der Graphdatenstruktur}
 
 \section{Entwurf der Klassenbibliothek}
 
@@ -636,6 +684,8 @@ Durch die Zielformulieren wurde auf einer abstrakten Ebene klar, was die zu erst
 \section{Algorithmik und Implementierung der Graph-Metriken}
 
 \section{Testung der Klassenbibliothek}
+
+\section{Überprüfung der nicht funktionalen Anforderungen}
 
 \chapter{Die Ähnlichkeit von Graphen}
 

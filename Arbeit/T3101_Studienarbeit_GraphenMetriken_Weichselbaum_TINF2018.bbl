@@ -1091,6 +1091,33 @@
       \field{year}{2001}
       \field{dateera}{ce}
     \endentry
+    \entry{ieee_ieee_1998}{article}{}
+      \name{author}{1}{}{%
+        {{hash=472abfae8142fdb6f39d081303e8af85}{%
+           family={{IEEE}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
+      \field{labelalpha}{IEE98}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Std 830-1998}
+      \field{title}{{IEEE} Recommended Practice for Software Requirements Specifications}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 40}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1109/IEEESTD.1998.88286
+      \endverb
+    \endentry
     \entry{jungnickel_graphs_2013}{book}{}
       \name{author}{1}{}{%
         {{hash=3482b7c2a7f147d4245d8061b745fc16}{%
@@ -1651,6 +1678,42 @@
       \verb https://neo4j.com/docs/graph-data-science/current/algorithms/eigenvector-centrality/
       \endverb
     \endentry
+    \entry{nielsen_usability_2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=753054f71283d85f82cda8e35daf6bac}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {Kaufmann}%
+      }
+      \strng{namehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{fullhash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{bibnamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authorbibnamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authornamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authorfullhash}{753054f71283d85f82cda8e35daf6bac}
+      \field{labelalpha}{Nie10}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Nachdr.}
+      \field{isbn}{978-0-12-518406-9}
+      \field{note}{{OCLC}: 760142137}
+      \field{pagetotal}{362}
+      \field{title}{Usability engineering}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/YE88HB8D/Nielsen - 2010 - Usability engineering.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{oracle_pagerank_2017}{online}{}
       \name{author}{1}{}{%
         {{hash=30162ed78b6c10f731411f2fc440c24f}{%
@@ -1962,6 +2025,41 @@
       \verb 10.1109/BigData.2013.6691611
       \endverb
     \endentry
+    \entry{srirangan_apache_2011}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8d30bbed674a6e074106f8ce7c7cc1dc}{%
+           family={Srirangan},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Birmingham}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publ}%
+      }
+      \strng{namehash}{8d30bbed674a6e074106f8ce7c7cc1dc}
+      \strng{fullhash}{8d30bbed674a6e074106f8ce7c7cc1dc}
+      \strng{bibnamehash}{8d30bbed674a6e074106f8ce7c7cc1dc}
+      \strng{authorbibnamehash}{8d30bbed674a6e074106f8ce7c7cc1dc}
+      \strng{authornamehash}{8d30bbed674a6e074106f8ce7c7cc1dc}
+      \strng{authorfullhash}{8d30bbed674a6e074106f8ce7c7cc1dc}
+      \field{labelalpha}{Sri11}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-1-84951-244-2 978-1-84951-245-9}
+      \field{note}{{OCLC}: 838117329}
+      \field{pagetotal}{208}
+      \field{series}{Quick answers to common problems}
+      \field{shorttitle}{Apache Maven 3 cookbook}
+      \field{title}{Apache Maven 3 cookbook: over 50 recipes towards optimal Java software engineering with Maven 3}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/3BT5LMC6/Srirangan - 2011 - Apache Maven 3 cookbook over 50 recipes towards o.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{scheinerman_fractional_2011}{book}{}
       \name{author}{2}{}{%
         {{hash=1d59e0c42f01305faedebd810799f1fc}{%
@@ -2100,6 +2198,44 @@
       \endverb
       \verb{url}
       \verb https://www.degruyter.com/view/title/310250
+      \endverb
+    \endentry
+    \entry{ullenboom_java_2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=961b512517a6b772a15931f9be557e95}{%
+           family={Ullenboom},
+           familyi={U\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bonn}%
+      }
+      \list{publisher}{1}{%
+        {Rheinwerk Verlag {GmbH}}%
+      }
+      \strng{namehash}{961b512517a6b772a15931f9be557e95}
+      \strng{fullhash}{961b512517a6b772a15931f9be557e95}
+      \strng{bibnamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authorbibnamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authornamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authorfullhash}{961b512517a6b772a15931f9be557e95}
+      \field{labelalpha}{Ull16}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{12., aktualisierte und überarbeitete Auflage}
+      \field{isbn}{978-3-8362-4119-9 978-3-8362-4121-2}
+      \field{note}{{OCLC}: 934810648}
+      \field{pagetotal}{1312}
+      \field{series}{Rheinwerk Computing Standardwerk}
+      \field{shorttitle}{Java ist auch eine Insel}
+      \field{title}{Java ist auch eine Insel: Einführung, Ausbildung, Praxis}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/CNHXWPNI/Ullenboom - 2016 - Java ist auch eine Insel Einführung, Ausbildung, .pdf:application/pdf
       \endverb
     \endentry
     \entry{vocking_taschenbuch_2008}{collection}{}

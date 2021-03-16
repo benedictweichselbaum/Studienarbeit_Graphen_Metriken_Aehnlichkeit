@@ -1,0 +1,23 @@
+Themenfindung:
+
+Erste engere Auswahl:
+    - Thema 23: Selbstlokalisierung eines Roboters
+        An welche OSS wurde gedacht?
+        Inwieweit ist eigene Implementierung erforderlich?
+        Die Modellfabrik ist ja kein Roboter, wie ich mir das vorstelle. Sollen, dann quasi Komponenten dieser verwendet werden?
+        Inwieweit unterstützt einen die OSS bei der Erkennung? Was soll erkannt werden? --> Was soll Selbstlokalisierung genau bedeuten?
+    - Thema 29: Graphen: Metriken und Ähnlichkeit
+        Welche Gewichtung haben die beiden Arbeitsteile (Recherche, Implementierung)?
+        Ist die Implementierung nach SWE-Prinzipien zu erstellen?
+        Sollen die unterschiedlichen Metriken bewertet werden?
+        Inwieweit gibt es Vorschriften (Programmiersprache etc.)?
+    - Thema 30: Austausch von Graphdaten
+        So viel ich weiß können Datenbanken nicht direkt mit Kafka kommunizieren. Man dürfte ja dann ein darüber liegendes Programm entwerfen müssen, oder?
+        Ist es auch Teil des Themas zu etablieren, auf welche Art und Weise Graphdaten dargestellt werden können?
+    - Thema 31: Beschreibung von Graph Data Sets
+        Was ist genau mit einer "Beschreibung" gemeint?
+        Was genau ist ein "Graph Data Set"?
+    - Thema 32: Data Lake
+        Was soll das Ziel des Prototyps sein? Ist das reine Abspeichern ausreichend oder soll auch eine Analyse der Daten geschehen.
+        Wenn ja, um welche Daten handelt es sich, oder ist das noch nicht festgelegt oder nicht relevant?
+    - (Thema 34: Animated Algorithms)

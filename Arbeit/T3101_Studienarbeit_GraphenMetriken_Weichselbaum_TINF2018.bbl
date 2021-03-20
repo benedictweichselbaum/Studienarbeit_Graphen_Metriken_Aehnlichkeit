@@ -216,6 +216,47 @@
       \field{dateera}{ce}
       \keyw{Graph theory,Outlines,syllabi,etc,Problems,exercises,etc}
     \endentry
+    \entry{bettilyon_implementations_2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e341368ebb49addb780d3218d8306e8f}{%
+           family={Bettilyon},
+           familyi={B\bibinitperiod},
+           given={Tyler\bibnamedelima Elliot},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e341368ebb49addb780d3218d8306e8f}
+      \strng{fullhash}{e341368ebb49addb780d3218d8306e8f}
+      \strng{bibnamehash}{e341368ebb49addb780d3218d8306e8f}
+      \strng{authorbibnamehash}{e341368ebb49addb780d3218d8306e8f}
+      \strng{authornamehash}{e341368ebb49addb780d3218d8306e8f}
+      \strng{authorfullhash}{e341368ebb49addb780d3218d8306e8f}
+      \field{labelalpha}{Bet19}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Any implementation of a graph needs a few essential features. These features comprise the minimal graph {API} that we’re going to implement…}
+      \field{day}{6}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{title}{Implementations of Graphs}
+      \field{titleaddon}{Medium}
+      \field{urlday}{17}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/5JIY3XSS/implementations-of-graphs-92eb7f121793.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://medium.com/tebs-lab/implementations-of-graphs-92eb7f121793
+      \endverb
+      \verb{url}
+      \verb https://medium.com/tebs-lab/implementations-of-graphs-92eb7f121793
+      \endverb
+    \endentry
     \entry{bhasin_graph_2019}{online}{}
       \name{author}{1}{}{%
         {{hash=87ec70ee748a75491ebe098f20d363d3}{%

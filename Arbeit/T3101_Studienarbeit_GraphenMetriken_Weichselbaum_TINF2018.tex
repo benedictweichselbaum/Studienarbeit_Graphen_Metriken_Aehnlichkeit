@@ -660,7 +660,35 @@ Die vorerst letzte funktionale Anforderung an die Graphdatenstruktur hat mit der
 }
 \subsection{Anforderungen an die Metriken-Berechnung}
 {
-Durch die Definition der Eigenschaften der Graphdatenstruktur ist es nun auf Basis dessen möglich, Anforderungen zu definieren, die beschreiben, wie und welche Metriken berechnet werden. 
+Durch die Definition der Eigenschaften der Graphdatenstruktur ist es nun auf Basis dessen möglich, Anforderungen zu definieren, die beschreiben, wie und welche Metriken berechnet werden. Bezug wird dabei auf die vorgestellten Metriken genommen, die in Kapitel 2 vorkamen. Da die Anzahl der Metriken allerdings verhältnismäßig hoch ist, werden im Zuge der Anforderungsformulierung Schwerpunkte gesetzt. Besonders wenig praktisch anwendbare Metriken sollen aus der implementierungstechnischen Betrachtung ausgeschlossen werden. Hohes Augenmerk soll auf die Zentralitätsmetriken gelegt werden (siehe Abschnitt 2.5).
+
+Die erste funktionale Anforderung besteht darin, dass die Klassenbibliothek einen Mechanismus oder eine Struktur zur Verfügug stellen muss, die es dem Nutzer oder der Nutzerin ermöglichen Metrik-Kennzahlen aus einem erstellten Graphen zu extrahieren. Der Graph, der hierfür verwendet werden kann, ist durch die Schnittstelle vorgegeben, die im vorigen Kapitel erwähnt wurde. Mit dieser Anforderung ist nicht die Implementierung einer oder mehrerer konkreter Metriken gemeint, sondern der Entwurf eines Mechanismus, der bestimmt, wie Metriken-Berechnung adressiert werden kann.
+
+Mit Hilfe eines Mechanismus zur Berechnung der Graphmetriken muss definiert werden, welche Metriken die Klassenbibliothek berechnen können soll. Hierbei sind zunächst die grundlegenden Metriken wichtig (siehe Abschnitt 2.1). Die Metriken sind fundamentale Kennzahlen zur Beschreibung eines Graphen. Daher muss es die Bibliothek ermöglichen für einen Graphen diese grundlegenden Metriken zu berechnen. Dazu zählen die folgenden Kennzahlen:
+\begin{myitemize}
+	\item Ordnung (Order) eines Graphen
+	\item Größre (Size) eines Graphen
+	\item Knotengrad und zugehörig Minimal-, Maximal- und Durchschnittsgrad.
+	\item Anzahl der Zusammenhangskomponenten 
+\end{myitemize}
+
+Neben diesen Basis-Metriken sind auch die Distanz-Metriken eine wichtige Menge an Metriken, die für die Implementierung relevant sind. Besonders die kürzeste Distanz zwischen zwei Knoten ist äußerst wichtig, da die Kennzahl Basis für weitere Metriken ist, die auch Teil der Anforderungen sind. Aufgrunddessen muss die Bibliothek eine Berechungslogik bereitstellen, die es ermöglicht folgende Distanzmetriken zu berechnen:
+\begin{myitemize}
+	\item Minimale Distanz zwischen zwei Knoten
+	\item Extrenzität eines Knotens
+	\item Durchmesser
+	\item Radius
+\end{myitemize}
+
+Wie anfangs beschrieben, sollen im Rahmen dieser Betrachtung die Zentralitätsmetriken besondere Betrachtung erfahren. In Kapitel 2 konnte gezeigt werden, dass diese Metriken besondere praktische Relevanz haben. So dienen sie z.B. zur Analyse in sozialen Netzen oder der Bewertung von Internetseiten. Infolgedessen muss die Klassenbibliothek dem Nutzer oder der Nutzerin es ermöglichen für einen Graphen die folgenden Zentralitätsmetriken zu berechnen:
+\begin{myitemize}
+	\item Degree Centrality
+	\item Betweenness Centrality
+	\item Closeness Centrality
+	\item Page Rank
+\end{myitemize}
+
+Praktische Anwendung findet auch die Kennzahl der chromatischen Zahl. Darüber hinaus genießt das Färbeproblem Prominenz in der Informatik. Deshalb muss die Bibliothek die Berechung der chromatischen Zahl zur Verfügug stellen. Zudem soll es auch möglich sein den chromatischen Index zu ermitteln. In Kapitel 2.6 wurde auch gezeigt, dass es für die chromatische Zahl einen approximierenden Algrotihmus gibt, der effizienter arbeitet als der klassiche Algorithmus. Auch dieser Algrotihmus muss im Rahmen der Klassenbibliothek umgesetzt werden, damit der dem Entnutzer der der Endnutzerin zur Verfügug gestellt werden kann. 
 }
 \subsection{Nicht funktionale Anforderungen}
 {
@@ -676,10 +704,18 @@ Darüber hinaus ist auch die Wartbarkeit einen Systems äußerst wichtig, damit 
 
 Eine weitere nicht funktionale Eigenschaft, die die Bibliothek mitbringen soll, ist die der Anpassbarkeit und Installierbarkeit. Beide Eigenschaften fallen unter den Oberbegriff der Portabilität. Darunter ist zu verstehen, dass die Software anpassbar und variabel in dem Sinne sein muss, als das sich das System gut an verschiedene Umgebungen und Anwendungsszenarien anpassen kann, damit die verwendende Person die Funktionen des Softwareprodukt vielfältig einsetzen kann. Eine gute Installierbarkeit wiederum beschreibt, dass im Rahmen der dokumentierten technischen Voraussetzungen die Software leicht installiert und verwendet werden können muss. Ist die Installierbarkeit nämlich nicht ausreichend gut, ist die Hürde zur Verwendung der Bibliothek zu hoch. 
 }
-\subsection{Weitere Anforderungen}
+\subsection{Nutzbarkeit als Klassenbibliothek}
+{
+Neben programmlogischen und nicht funkionalen Anforderungen ist noch eine Anforderung festzuhalten, die mit der Beschaffenheit als Klassenbibliothek der Software einhergeht. Nach dem dritten formulierten Software-Ziel ist festgeschrieben, dass im Sinne einer Bibliothek es möglich sein muss, diese innerhalb anderer Programme einzubinden. Auf Basis dessen lässt sich die Anforderung herausarbeiten, dass die Bibliothek für einen nutzenden Entwickler oder Entwicklerin in ein anderes Softwareprodukt einbinbar sein muss. In den Rahmenbedingungen wurde bereits festgelegt, dass diese Einbindung durch das Abhängigkeitsmanagementtool "`Maven"' geschehen soll. 
+}
+\subsection{Use Cases der Klassenbibliothek}
+{
+Durch die Ermittlung und Formulierung der Anforderungen an die Klassenbibliothek zur Berechung von Graphmetriken, können diese auch in Use Cases überführt werden. Ein Use Case beschreibt und repräsentiert eine Sequenz von Aktionen, die ein Akteur in Interaktion mit dem Softwaresystem ausführen kann, um ein bestimmtes Ziel zu erreichen. Die formulierten Anforderungen werden nun also in Use Cases überführt. So ist es besser möglich zu sehen mit welchen Aktionen die Aktoren auf das System Metriken-Klassenbibliothek zugreifen. Auch wird klar, welche Funktionen die Klassenbibliothek gegenüber dem Aktor bietet. \cite{balzert_lehrbuch_2009}
 
-\subsection{Zusammenfassung der Use-Cases}
+Bei der Bestimmung der Aktoren kann sich diesem Fall nur eine Entität ausmachen lassen: Der Entwickler bzw. die Entwicklerin, die die Bibliothek potenziell nutzen, indem diese beispielweise in andere Softwareprodukte eingegliedert wird. Weitere Akteure gibt es nicht, da eine Bibliothek kein System ist, dass von Endbenutzern direkt verwendet wird.
 
+
+}
 \section{Analyse zur Implementierung der Graphdatenstruktur}
 {
 Neber der Definition der Anforderungen und der Formulierung der Use Cases ist eine kurze Analyse über die Implementierung der Graphdatenstruktur notwendig. Weil es eine Reihe von möglichen Graphimplementierungen gibt, muss recherchiert werden, welche Implementierung für die Klassenbibliothek gewählt werden soll. Hierbei sei zu erwähnen, dass laut den Anforderungen die Klassenbibliothek grundsätzlich unabhängig von der konkreten Graphimplementierung arbeiten soll. Der Graph wird durch eine einheitliche Schnittstelle angesprochen. Allerdings ist aus den Anforderungen aus zu entnehmen, dass die Klassenbibliothek mindestens eine Implementierung liefern muss. Ziel ist es also herauszufinden, welche Implementiungsart als vorgegebene Umsetzung am sinnvollsten, bei der Betrachtung der Anforderungen, ist.
@@ -701,7 +737,7 @@ Inzidenzliste- und Matrix repräsentieren den Graphen durch das aneinanderreihen
 
 Neben den manipulierenden Operationen auf die Datenstrukturen sind auch analysierende Zugriffe wichtig zu betrachten. Hier stellt sich heraus, dass die adjazenz-basierten Datenstrukturen sich besser zur Informationsbeschaffung eignen als die inzidenz-basierten. Besonders die Adjazenzliste ermöglicht es einfach die Nachbarn eines Knotens auszugeben. Soll die Nachbarschaft zweier Knoten nachgewiesen werden, ist die Matrix zwar am schnellsten, die Liste schafft es aber dennoch in linearer Zeit. Bei den inzidenz-basieren Strukturen sind vor allem lesende Operationen günstig, die die Inzidenz aufzeigen wollen. \cite{bettilyon_implementations_2019}
 
-Aufgrund der guten Speicherverbrauchseigenschaften und der relativen Einfachheit der Manipulation soll für die Klassenbibliothek der Graph mittels Adjazenzlisten implementiert werden. Zudem sind die Adjazenzlisten günstig, da sie sich leicht auswerten lassen. Besonders bei Nachbarschaftsbeziehungen ist dies der Fall. Bedenkt man, dass für die Berechnung der Metriken besonders die Auswertung des Graphen wichtig ist, wird die Wahl eindeutiger. 
+Aufgrund der guten Speicherverbrauchseigenschaften und der relativen Einfachheit der Manipulation soll für die Klassenbibliothek der Graph mittels Adjazenzlisten implementiert werden. Zudem sind die Adjazenzlisten günstig, da sie sich leicht auswerten lassen. Besonders bei Nachbarschaftsbeziehungen ist dies der Fall. Bedenkt man, dass für die Berechnung der Metriken besonders die Auswertung des Graphen wichtig ist, wird die Wahl noch einmal untermauert. 
 }
 \section{Entwurf der Klassenbibliothek}
 

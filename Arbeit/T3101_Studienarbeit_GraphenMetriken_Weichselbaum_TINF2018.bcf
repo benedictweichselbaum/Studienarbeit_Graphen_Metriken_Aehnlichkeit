@@ -2504,8 +2504,9 @@
     <bcf:citekey order="103">balzert_lehrbuch_2009</bcf:citekey>
     <bcf:citekey order="104">nielsen_usability_2010</bcf:citekey>
     <bcf:citekey order="105">balzert_lehrbuch_2009</bcf:citekey>
-    <bcf:citekey order="106">knebl_algorithmen_2019</bcf:citekey>
-    <bcf:citekey order="107">bettilyon_implementations_2019</bcf:citekey>
+    <bcf:citekey order="106">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="107">knebl_algorithmen_2019</bcf:citekey>
+    <bcf:citekey order="108">bettilyon_implementations_2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

@@ -111,6 +111,35 @@
 	\end{adjustwidth}\hrulefill\\\vspace{2mm}
 }
 
+% Command for inserting a use case pattern
+\newcommand{\usecase}[9]{
+	\vspace{3mm}
+	\noindent
+	\textbf{Use Case: #1}
+	\begin{table}[ht!]
+		\vspace{-3mm}
+		\hspace{3.5mm}
+		\begin{tabular}{l l}
+			\textbf{Ziel}: & \specialcell{#2} \\
+			\midrule
+			\textbf{Vorbedingung}: & \specialcell{#3} \\
+			\midrule
+			\textbf{Nachbedingung Erfolg}: & \specialcell{#4} \\
+			\midrule
+			\textbf{Nachbedingung Fehler}: & \specialcell{#5} \\
+			\midrule
+			\textbf{Akteure}: & \specialcell{#6} \\
+			\midrule
+			\textbf{Auslösendes Ereignis}: & \specialcell{#7} \\
+			\midrule
+			\textbf{Beschreibung}: & \specialcell{#8} \\
+			\midrule
+			\textbf{Erweiterung}: & \specialcell{#9} \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+}
+
 % Settings for bibliography from BibLaTeX
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
@@ -688,7 +717,7 @@ Wie anfangs beschrieben, sollen im Rahmen dieser Betrachtung die Zentralitätsme
 	\item Page Rank
 \end{myitemize}
 
-Praktische Anwendung findet auch die Kennzahl der chromatischen Zahl. Darüber hinaus genießt das Färbeproblem Prominenz in der Informatik. Deshalb muss die Bibliothek die Berechung der chromatischen Zahl zur Verfügug stellen. Zudem soll es auch möglich sein den chromatischen Index zu ermitteln. In Kapitel 2.6 wurde auch gezeigt, dass es für die chromatische Zahl einen approximierenden Algrotihmus gibt, der effizienter arbeitet als der klassiche Algorithmus. Auch dieser Algrotihmus muss im Rahmen der Klassenbibliothek umgesetzt werden, damit der dem Entnutzer der der Endnutzerin zur Verfügug gestellt werden kann. 
+Praktische Anwendung findet auch die Kennzahl der chromatischen Zahl. Darüber hinaus genießt das Färbeproblem Prominenz in der Informatik. Deshalb muss die Bibliothek die Berechung der chromatischen Zahl zur Verfügug stellen. Zudem soll es auch möglich sein den chromatischen Index zu ermitteln. In Kapitel 2.6 wurde auch gezeigt, dass es für die chromatische Zahl einen approximierenden Algrotihmus gibt, der effizienter arbeitet als der klassiche Algorithmus. Auch dieser Algrotihmus muss im Rahmen der Klassenbibliothek umgesetzt werden, damit der dem Entnutzer der der Endnutzerin zur Verfügug gestellt werden kann.
 }
 \subsection{Nicht funktionale Anforderungen}
 {
@@ -712,9 +741,97 @@ Neben programmlogischen und nicht funkionalen Anforderungen ist noch eine Anford
 {
 Durch die Ermittlung und Formulierung der Anforderungen an die Klassenbibliothek zur Berechung von Graphmetriken, können diese auch in Use Cases überführt werden. Ein Use Case beschreibt und repräsentiert eine Sequenz von Aktionen, die ein Akteur in Interaktion mit dem Softwaresystem ausführen kann, um ein bestimmtes Ziel zu erreichen. Die formulierten Anforderungen werden nun also in Use Cases überführt. So ist es besser möglich zu sehen mit welchen Aktionen die Aktoren auf das System Metriken-Klassenbibliothek zugreifen. Auch wird klar, welche Funktionen die Klassenbibliothek gegenüber dem Aktor bietet. \cite{balzert_lehrbuch_2009}
 
-Bei der Bestimmung der Aktoren kann sich diesem Fall nur eine Entität ausmachen lassen: Der Entwickler bzw. die Entwicklerin, die die Bibliothek potenziell nutzen, indem diese beispielweise in andere Softwareprodukte eingegliedert wird. Weitere Akteure gibt es nicht, da eine Bibliothek kein System ist, dass von Endbenutzern direkt verwendet wird.
+Bei der Bestimmung der Aktoren kann sich diesem Fall nur eine Entität ausmachen lassen: Der Entwickler bzw. die Entwicklerin, die die Bibliothek potenziell nutzt, indem diese beispielweise in andere Softwareprodukte eingegliedert wird. Weitere Akteure gibt es nicht, da eine Bibliothek kein System ist, dass von anderen Endbenutzern direkt verwendet wird.
 
+Bei Bestimmung der Use Cases muss definiert werden welche Aktionen der Aktor mit den System durchführen kann. Die erste Anforderungsbetrachtung erfolgte über die Graphdatenstruktur und was diese leisten können muss. Aus diesen Anforderungen können drei Use Cases ausgemacht werden, die noch weiter konkretisiert oder erweitert werden können.
+\begin{myitemize}
+	\item Graph erzeugen
+	\item Graph manipulieren
+	\item Graph analysieren
+\end{myitemize}
+Der Graph wird laut den Anforderungen über eine einheitliche Schnittstelle erreicht. Das bedeutet wiederum, dass der Use Case darum erweitert werden kann, dass eine bestimmte Graphimplementierung gewählt werden muss. Die Bibliothek erlaubt es auch auf Basis der Schnittstelle eine eigene Implementierung zu stellen, falls das vom Nutzer gewünscht ist. Der Use Case "`Graph manipulieren"' ist abstrakt und wird durch Use Cases konkretisiert, die die Manipulationen beschreiben. Dazu zählt die Löschung von Knoten und Kanten und das Einfügen von Knoten und Kanten. Da Markierungen für Kanten und Knoten ist jeweils als Use Case beim Einfügen inkludiert. Auch die Analyse des Graphen ist ein abstrakter Use Case. Abgeleitet aus den Funktionen, die die Bibliothek diesbezüglich leisten muss, können zwei Use Cases abgeleitet werden. Zum einen kann der Akteur die Existenz eines Graphelements erfragen, andererseits sich bestimmte Graphelemente zurückgeben lassen. Dazu zählen alle Knoten des Graphen, alle adjazenten Knoten eines Knoten und so weiter.
 
+Neben den Use Cases zur Graphdatenstruktur können noch zwei weiterte Use Cases definiert werden. Ein zentraler und wichtiger Use Case ist die Berechung einer Metrik für einen Graphen. Die jeweiligen Metriken, die berechnet werden sollen, wurden bei den Anforderungen erwähnt. Ein weiterer Use Case ist das Einbinden der Klassenbibliothek in ein anderes Softwareprodukt. Die vorgestellten und definierten Use Cases werden im folgenden Use Case-Diagramm zusammengefasst (Abbildung 3.1).
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.4]{Abbildungen/UML/library_use_case_diagram.png}
+	\caption[Use Case-Diagramm: Graphmetriken-Klassenbibliothek]{Use Case-Diagramm: Graphmetriken-Klassenbibliothek}
+\end{figure}
+
+Für die mit dem Entwickler assoziierten Use Cases sollen noch Use Case-Schablonen formuliert werden \cite{balzert_lehrbuch_2009}:
+
+\pagebreak
+\usecase{Graph erzeugen}
+{Ein Graphobjekt wurde innerhalb einer Variable\\oder eines Klassenfelds erzeugt.}
+{-}
+{Neues Graphobjekt in gewünschtem Wertebehälter}
+{Fehlermeldung wird dem Nutzer oder der Nutzer-\\in gemeldet.}
+{Entwickler/in}
+{Entwicker oder Entwicklerin muss einen Graphen\\erstellen, der zur Repräsentation eines Sachver-\\halts dient.}
+{Über einen Konstruktoraufruf wird ein neues Graph-\\objekt innerhalb eines Programms erstellt. Dabei\\muss eine bestimmte Graphimplementierung ge-\\wählt werden.}
+{Ist eine andere Implementierung des Graphen ge-\\wünscht, kann auf Basis der vorgegebenen Schnitt-\\stelle eine eigene Implementierung erstellt werden.}
+
+\usecase{Element aus Graph löschen}
+{Ein Element wurde aus einem Graphobjekt ge-\\löscht.}
+{Das zu löschende Element ist in Graph vor-\\handen.}
+{Element nicht mehr in Graph vorhanden.}
+{Fehlermeldung wird dem Nutzer oder der Nutzer-\\in gemeldet.}
+{Entwickler/in}
+{Entwickler/in will einen Knoten aus Graph\\löschen.}
+{Über einen Zugriff auf das Graphobjekt wird\\ein Element identifiziert und gelöscht.}
+{-}
+
+\usecase{Element in Graph einfügen}
+{Ein Element wurde in ein Graphobjekt ein-\\gefügt.}
+{Das zu löschende Element ist noch nicht im\\Graphen vorhanden.}
+{Element ist im Graphobjekt vorhanden.}
+{Fehlermeldung wird dem Nutzer oder der Nutzer-\\in gemeldet.}
+{Entwickler/in}
+{Entwickler/in will einen Knoten in Graph\\einfügen.}
+{Über einen Zugriff auf das Graphobjekt wird\\ein neues Knotenobjekt eingefügt.}
+{-}
+
+\pagebreak
+\usecase{Bestimmte Graphelemente zurückgeben}
+{Der Nutzer oder die Nutzerin konnte bestimmte\\Knoten und Kanten aus dem Graphen ex-\\trahieren.}
+{-}
+{-}
+{-}
+{Entwickler/in}
+{Entwickler/in möchte Graph analysieren und Knoten\\ und Kanten extrahieren.}
+{Um den Graph zu analysieren muss man auf seine\\Elemente über eine Schnittstelle zugreifen\\können. Hierzu zählt das Ausgeben aller Knoten,\\aller Kanten und eines bestimmten Knotens.}
+{-}
+
+\usecase{Existenz eines Graphelements erfragen}
+{Der Nuter oder die Nutzerin weiß, ob ein be-\\stimmter Knoten oder eine Kante im Graph\\existiert.}
+{-}
+{-}
+{-}
+{Entwickler/in}
+{Die Entwickler/in möchte erfahren, ob ein\\Knoten oder eine Kante im Graph existiert.}
+{Über die Graphschnittstelle ist es möglich\\zu erfragen, ob der Graph einen be-\\stimmten Knoten oder eine bestimmte Kante enthält.}
+{-}
+
+\pagebreak
+\usecase{Metrik für Graph berechnen}
+{Der Nutzer oder die Nutzerin konnte sich vom\\Programm eine Metrik für einen\\bestimmten Graphen berechnen lassen.}
+{-}
+{Die korrekte Kennzahl wurde zurückgegeben.}
+{Fehlermeldung wird dem Nutzer oder der Nutzer-\\in gemeldet.}
+{Entwicker/in}
+{Die Entwickler/in ist an einer Kennzahl für\\einen vorliegenden Graph interessiert.}
+{Über die Berechnungslogik wird für einen\\Graphen eine vorgegebene Metrik berechnet.\\Das Ergebnis wird dem/der Entwickler/in\\zurückgemeldet.}
+{-}
+
+\usecase{Bibliothek in Software einbinden}
+{Der Entwickler bzw. die Entwicklerin, die\\die Bibliothek in eine Software einbin-\\den will, kann dies erfolgreich durchführen.}
+{-}
+{Bibliothek ist in ein anderes Software-\\produkt eingebunden.}
+{-}
+{Entwickler/in}
+{Der/Die Entwickler/in möchte die Bibliothek\\in ein anders Softwareprojekt einbinden.}
+{Durch den Einsatz von Maven ist es möglich\\die Klassenbibliothek in anderen Maven-\\projekten einzubinden und zu verwenden.\\Dafür muss das Artefakt als Abhängigkeit\\eingebunden werden.}
+{-}
 }
 \section{Analyse zur Implementierung der Graphdatenstruktur}
 {

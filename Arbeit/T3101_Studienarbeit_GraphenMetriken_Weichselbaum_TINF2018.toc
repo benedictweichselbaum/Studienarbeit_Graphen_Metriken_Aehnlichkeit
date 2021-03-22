@@ -54,40 +54,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.7}Use Cases der Klassenbibliothek}{38}{subsection.3.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analyse zur Implementierung der Graphdatenstruktur}{39}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Analyse zur Implementierung der Graphdatenstruktur}{44}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Entwurf der Klassenbibliothek}{41}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Entwurf der Klassenbibliothek}{46}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Entwurfsumgebung}{41}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Entwurfsumgebung}{46}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Statischer Entwurf}{41}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Statischer Entwurf}{46}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Dynamische Aspekte}{41}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Dynamische Aspekte}{46}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Algorithmik und Implementierung der Graph-Metriken}{41}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Algorithmik und Implementierung der Graph-Metriken}{46}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Testung der Klassenbibliothek}{41}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Testung der Klassenbibliothek}{46}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Überprüfung der nicht funktionalen Anforderungen}{41}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Überprüfung der nicht funktionalen Anforderungen}{46}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Die Ähnlichkeit von Graphen}{42}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Die Ähnlichkeit von Graphen}{47}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Definition von Ähnlichkeitsmaßen}{42}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Definition von Ähnlichkeitsmaßen}{47}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{47}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Bewertung des Ähnlichkeitsmaßes}{42}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Bewertung des Ähnlichkeitsmaßes}{47}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Graphmetriken in Anwendung}{43}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Graphmetriken in Anwendung}{48}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{44}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{49}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{44}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{49}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{44}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Fazit}{49}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{45}{chapter*.34}%
+\contentsline {chapter}{Glossar}{50}{chapter*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{46}{chapter*.35}%
+\contentsline {chapter}{\nonumberline Literatur}{51}{chapter*.43}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

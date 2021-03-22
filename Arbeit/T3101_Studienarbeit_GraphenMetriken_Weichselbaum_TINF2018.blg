@@ -1,25 +1,25 @@
 [0] Config.pm:312> INFO - This is Biber 2.15
 [0] Config.pm:315> INFO - Logfile is 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.blg'
-[62] biber:330> INFO - === Mo Mär 22, 2021, 00:38:36
-[74] Biber.pm:415> INFO - Reading 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bcf'
+[61] biber:330> INFO - === Mo Mär 22, 2021, 20:13:52
+[75] Biber.pm:415> INFO - Reading 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bcf'
 [150] Biber.pm:952> INFO - Found 68 citekeys in bib section 0
-[163] Biber.pm:4334> INFO - Processing section 0
-[174] Biber.pm:4523> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[178] bibtex.pm:1682> INFO - LaTeX decoding ...
-[276] bibtex.pm:1494> INFO - Found BibTeX data source 'literatur.bib'
-[312] Utils.pm:395> WARN - ISBN '978-3-446-46052-2 978-3-446-46503-9' in entry 'tittmann_graphentheorie_2019' is invalid - run biber with '--validate_datamodel' for details.
-[357] Utils.pm:395> WARN - ISBN '978-3-642-32278-5 978-3-642-32277-8' in entry 'jungnickel_graphs_2013' is invalid - run biber with '--validate_datamodel' for details.
-[365] Utils.pm:395> WARN - ISBN '978-3-540-76393-2 978-3-540-76394-9' in entry 'vocking_taschenbuch_2008' is invalid - run biber with '--validate_datamodel' for details.
-[389] Utils.pm:395> WARN - ISBN '978-0-521-51718-8 978-0-521-73653-4' in entry 'even_graph_2012' is invalid - run biber with '--validate_datamodel' for details.
-[447] Utils.pm:395> WARN - ISBN '978-3-658-10322-4 978-3-658-10323-1' in entry 'aigner_graphentheorie_2015' is invalid - run biber with '--validate_datamodel' for details.
-[497] Utils.pm:395> WARN - ISBN '978-3-642-13072-4 978-3-642-13073-1' in entry 'calamoneri_planar_2010' is invalid - run biber with '--validate_datamodel' for details.
-[537] Utils.pm:395> WARN - ISBN '978-3-658-16140-8 978-3-658-16141-5' in entry 'muller_vorkurs_2017' is invalid - run biber with '--validate_datamodel' for details.
-[541] Utils.pm:395> WARN - ISBN '978-3-8362-4119-9 978-3-8362-4121-2' in entry 'ullenboom_java_2016' is invalid - run biber with '--validate_datamodel' for details.
-[544] Utils.pm:395> WARN - ISBN '978-1-84951-244-2 978-1-84951-245-9' in entry 'srirangan_apache_2011' is invalid - run biber with '--validate_datamodel' for details.
-[625] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[625] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[625] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[625] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[675] bbl.pm:651> INFO - Writing 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl' with encoding 'UTF-8'
-[706] bbl.pm:754> INFO - Output to T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl
-[706] Biber.pm:128> INFO - WARNINGS: 9
+[161] Biber.pm:4334> INFO - Processing section 0
+[170] Biber.pm:4523> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[175] bibtex.pm:1682> INFO - LaTeX decoding ...
+[272] bibtex.pm:1494> INFO - Found BibTeX data source 'literatur.bib'
+[307] Utils.pm:395> WARN - ISBN '978-3-446-46052-2 978-3-446-46503-9' in entry 'tittmann_graphentheorie_2019' is invalid - run biber with '--validate_datamodel' for details.
+[347] Utils.pm:395> WARN - ISBN '978-3-642-32278-5 978-3-642-32277-8' in entry 'jungnickel_graphs_2013' is invalid - run biber with '--validate_datamodel' for details.
+[355] Utils.pm:395> WARN - ISBN '978-3-540-76393-2 978-3-540-76394-9' in entry 'vocking_taschenbuch_2008' is invalid - run biber with '--validate_datamodel' for details.
+[377] Utils.pm:395> WARN - ISBN '978-0-521-51718-8 978-0-521-73653-4' in entry 'even_graph_2012' is invalid - run biber with '--validate_datamodel' for details.
+[435] Utils.pm:395> WARN - ISBN '978-3-658-10322-4 978-3-658-10323-1' in entry 'aigner_graphentheorie_2015' is invalid - run biber with '--validate_datamodel' for details.
+[483] Utils.pm:395> WARN - ISBN '978-3-642-13072-4 978-3-642-13073-1' in entry 'calamoneri_planar_2010' is invalid - run biber with '--validate_datamodel' for details.
+[522] Utils.pm:395> WARN - ISBN '978-3-658-16140-8 978-3-658-16141-5' in entry 'muller_vorkurs_2017' is invalid - run biber with '--validate_datamodel' for details.
+[526] Utils.pm:395> WARN - ISBN '978-3-8362-4119-9 978-3-8362-4121-2' in entry 'ullenboom_java_2016' is invalid - run biber with '--validate_datamodel' for details.
+[529] Utils.pm:395> WARN - ISBN '978-1-84951-244-2 978-1-84951-245-9' in entry 'srirangan_apache_2011' is invalid - run biber with '--validate_datamodel' for details.
+[611] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[611] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[611] Biber.pm:4162> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[611] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[660] bbl.pm:651> INFO - Writing 'T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl' with encoding 'UTF-8'
+[687] bbl.pm:754> INFO - Output to T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl
+[687] Biber.pm:128> INFO - WARNINGS: 9

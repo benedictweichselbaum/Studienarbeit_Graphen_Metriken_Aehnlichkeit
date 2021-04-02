@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  22 MAR 2021 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  23 MAR 2021 23:54
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1476,7 +1476,7 @@ n be-reits-stel-len, die es erm[]oglichen
  []
 
 [32] [33] [34] [35]
-Overfull \hbox (10.52441pt too wide) in paragraph at lines 712--713
+Overfull \hbox (10.52441pt too wide) in paragraph at lines 713--714
 []\OT1/phv/m/n/12 (-20) Wie an-fangs be-schrie-ben, sol-len im Rah-men die-ser 
 Be-trach-tung die Zen-tra-lit[]atsmetriken
  []
@@ -1487,7 +1487,7 @@ t>
 File: Abbildungen/UML/library_use_case_diagram.png Graphic file (type png)
 <use Abbildungen/UML/library_use_case_diagram.png>
 Package pdftex.def Info: Abbildungen/UML/library_use_case_diagram.png  used on 
-input line 757.
+input line 758.
 (pdftex.def)             Requested size: 446.0586pt x 338.057pt.
  [39] [40 <./Abbildungen/UML/library_use_case_diagram.png>]
 [41] [42] [43] [44] [45] [46]
@@ -1507,7 +1507,7 @@ chapter 6.
 ]
 chapter without number
 
-Overfull \hbox (24.75166pt too wide) in paragraph at lines 894--894
+Overfull \hbox (24.75166pt too wide) in paragraph at lines 895--895
 []\OT1/phv/m/n/12 (-20) Helmut Bal-zert. \OT1/phv/m/sl/12 (-20) Lehr-buch der S
 oft-wa-re-tech-nik: Ba-sis-kon-zep-te und Requirements-
  []
@@ -1515,7 +1515,7 @@ oft-wa-re-tech-nik: Ba-sis-kon-zep-te und Requirements-
 [51
 
 ] [52] [53] [54] [55]
-Overfull \hbox (3.28954pt too wide) in paragraph at lines 894--894
+Overfull \hbox (3.28954pt too wide) in paragraph at lines 895--895
 \OT1/phv/m/n/12 (-20) ver-lag, 1. Jan. 2004. \OT1/phv/m/sc/12 (-20) isbn\OT1/ph
 v/m/n/12 (-20) : 978-3-486-59377-8. \OT1/phv/m/sc/12 (-20) doi\OT1/phv/m/n/12 (
 -20) : [][]$\OT1/cmtt/m/n/12 10 . 1524 / 9783486593778$[][]\OT1/phv/m/n/12 (-20
@@ -1561,7 +1561,7 @@ local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (65 pages, 1071999 bytes).
+ (65 pages, 1072022 bytes).
 PDF statistics:
  1031 PDF objects out of 1200 (max. 8388607)
  253 named destinations out of 1000 (max. 500000)

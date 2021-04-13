@@ -231,11 +231,11 @@ Um Graphen zu beschreiben und zu charakterisieren, haben sich über die Zeit zah
 
 Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedenste Metriken vorzustellen und zu erläutern. Dabei ist es auch relevant herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen im Bezug auf ihre Berechenbarkeit zu bewerten sind. Es soll ein umfassender Überblick über Graphmetriken ermöglicht werden und vor allem klar werden, was eine Metrik ausdrückt und ggf. kurz erläutert werden, welchen Nutzen eine Kennzahl haben kann.
 
-Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Implementierung bzw. Nutzung dieser Kennzahlen stattfinden. Mithilfe einer selbst erstellten Klassenbibliothek soll aufgezeigt werden, wie die vorgestellten Metriken konkret umgesetzt werden können. Besonders ist dabei interessant ggf. verschiedene algorithmische Ansätze bezüglich ihrer Genauigkeit und Schnelligkeit miteinander zu vergleichen. Die Entwicklung dieser Klassenbibliothek soll ingenieursmäßig unter Zuhilfenahme von Softwareengineeringwerkzeugen erfolgen. Infolgedessen entsteht das finale Softwareprodukt im Rahmen des klassischen Softwarelebenszyklus und umfasst die Analyse der Anforderungen, einen Softwareentwurf und die Implementierung und Testung der Software. \cite{balzert_lehrbuch_2009,balzert_lehrbuch_2011}
+Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Implementierung bzw. Nutzung dieser Kennzahlen stattfinden. Mithilfe einer selbst erstellten Klassenbibliothek soll aufgezeigt werden, wie die vorgestellten Metriken konkret umgesetzt werden können. Die Entwicklung dieser Klassenbibliothek soll ingenieursmäßig unter Zuhilfenahme von Softwareengineeringwerkzeugen erfolgen. Infolgedessen entsteht das finale Softwareprodukt im Rahmen des klassischen Softwarelebenszyklus und umfasst die Analyse der Anforderungen, einen Softwareentwurf und die Implementierung und Testung der Software. Bei der Anforderungsanalyse sollen sowohl funktionale und nicht funktionale Aspekte beleuchtet werden. \cite{balzert_lehrbuch_2009,balzert_lehrbuch_2011}
 
-Auf Basis der Implementierung ist es zudem Ziel der Arbeit den Aspekt der Ähnlichkeit zwischen Graphen zu beleuchten. Ziel ist es zwei Graphen miteinander vergleichbar zu machen. Unter Zuhilfenahme der implementierten Metriken soll ein Art Ähnlichkeitsmaß erarbeitet werden, das es möglich macht zwei Graphen gegenüberzustellen. Dieses Ähnlichkeitsmaß wird daraufhin beispielhaft angewendet und bewertet.
+Neben der Entwicklung einer Klassenbibliothek zur Berechnung der Graphmetrik ist zudem Ziel der Arbeit zu erarbeiten, wie es möglich wäre die Metriken-Berechnung weiter zu abstrahieren. Hierbei soll ein grobes Konzept erarbeitet werden, wie die Berechnung der Graphkennzahlen potenziell weiter verallgemeinert werden kann, in dem Sinne, dass die eigentliche Berechnungslogik frei wählbar ist. So könnte die Berechnung durch die implementierte Klassenbibliothek erfolgen oder durch ein Graphdatenbanksystem.
 
-In einem weiteren Teil ist außerdem noch darauf einzugehen, welche Anwendung die gezeigten Metriken haben, um den praktischen Nutzen der Thematik aufzuzeigen. Es soll gezeigt werden, wie die angesprochenen Thematiken an realen Problemen Anwendung finden. Hierbei sollen Beispiele aus dem ersten Teil der Arbeit weiter ausgeführt oder neue Anwendungsszenarien aufgeführt werden.
+Auf Basis der Implementierung ist es zudem Ziel der Arbeit den Aspekt der Ähnlichkeit zwischen Graphen zu beleuchten. Ziel ist es zwei Graphen miteinander vergleichbar zu machen. Unter Zuhilfenahme der implementierten Metriken soll ein Ähnlichkeitsmaß erarbeitet werden, das es möglich macht zwei Graphen gegenüberzustellen. Dieses Ähnlichkeitsmaß wird daraufhin beispielhaft angewendet und bewertet.
 }
 \section{Fragestellungen}
 {
@@ -249,29 +249,33 @@ Hierzu gehört, wie bereits erwähnt die Vorstellung der einzelnen Metriken, abe
 
 Bei dieser Frage soll es vor allem darum gehen, die vorgestellten Metriken dahingehend zu bewerten, wie "`schwer"' es ist, sie zu ermitteln. Außerdem wird bei der Bewertung auch auf die Verbreitung eingegangen. Speziell soll erwähnt werden, ob die jeweilige Metrik in bekannten Mathematikbibliotheken vertreten ist oder nicht.
 
-\singleenum{2}{Wie können die vorgestellten Metriken im Rahmen einer Klassenbibliothek implementiert werden?}
+\singleenum{2}{Welche Anforderungen müssen an eine Klassenbibliothek zur Implementierung der vorgestellten Metriken gestellt werden?}
 
-Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden. Hierbei soll die Entwicklung der Bibliothek mithilfe von Softwareengineeringwerkzeugen erfolgen und sich am Softwarelebenszyklus orientiert werden.
+Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden. Hierbei ist es zunächst wichtig die jeweiligen Anforderungen an die zu erstellende Software zu ermitteln. Zu diesen Anforderungen gehören sowohl funktionale als auch nicht funktionale Eigenschaften. 
 
-\singleenum{3}{Wie sind bestimmte Implementierungen von Graphkennzahlen zu bewerten, wenn mehrere Umsetzungen möglich sind?}
+\singleenum{3}{Wie können die Anforderungen der Klassenbibliothek umgesetzt und getestet werden?}
 
-Im Rahmen der Implementierung und Recherche zur algorithmischen Umsetzung der Graph-Metriken kann es dazu kommen, dass für einzelne einschlägige Kennzahlen mehrere Implementierungen denkbar sind. Ist dies der Fall, ist es Aufgabe der Studienarbeit die angebotenen Implementierungen miteinander zu vergleichen. 
+Auf Basis der Anforderungen muss anschließend ein Entwurf zur Implementierung der Klassenbibliothek geliefert werden. Anhand des Entwurfs soll klar werden, wie die jeweiligen Anforderungen an die Software umgesetzt wurden. Es sollen sowohl statische als auch dynamische Aspekte des Entwurfes betrachtet werden. Zur Umsetzung ist es zudem notwendig Literatur zu konsultieren, um die richtigen Entwurfs- und Implementierungsentscheidungen zu treffen.
 
-\singleenum{4}{Wie könnte ein Ähnlichkeitsmaß zum Vergleich zweier Graphen konzeptioniert sein?}
+\singleenum{4}{Wie wurden die konkreten Algorithmen zur Berechnung der Graphmetriken implementiert?}
+
+Die Kernaufgabe der Bibliothek ist es, für einen vorgegebenen Graphen diverse Metriken zu berechnen. Hierfür ist eine Reihe von verschiedenen Algorithmen notwendig. Aufgrund dessen ist es notwenig, dass diese und ihr Zusammenspiel im Rahmen der Entwicklung erläutert werden.
+
+\singleenum{5}{Wie kann die Berechnung der Graphmetriken weiter abstrahiert werden?}
+
+Anstatt die Berechnung der Kennzahlen nur über die entworfene Bibliothek zu ermöglichen, wäre es auch möglich die Berechnung weiter zu abstrahieren und eine Software zu entwerfen, die je nach Wunsch eine andere Metriken-Logik nutzt. Infolgedessen soll untersucht werden, wie eine solche Abstraktion entwickelt werden könnte.
+
+\singleenum{5}{Wie könnte ein Ähnlichkeitsmaß zum Vergleich zweier Graphen konzeptioniert sein?}
 
 Um feststellen zu können, ob zwei Graphen zueinander ähnlich sind, ist es zunächst nötig ein Ähnlichkeitsmaß zu definieren, das es ermöglicht über einen Zahlenwert die Ähnlichkeit zweier Graphen festzustellen. Aufgrunddessen soll im Rahmen der Arbeit ein solches Maß konzeptioniert werden, das mithilfe der erarbeiteten Metriken arbeitet.
 
-\singleenum{5}{Wie lässt sich das erarbeitete Ähnlichkeitsmaß implementieren und umsetzen?}
+\singleenum{6}{Wie lässt sich das erarbeitete Ähnlichkeitsmaß implementieren und umsetzen?}
 
 Neben der Konzeption stellt sich wie bei den Metriken die Frage, wie das erarbeitete Wissen parktisch umgesetzt werden kann. Das erarbeitete Ähnlichkeitsmaß soll deshalb auch innerhalb der Klassenbibliothek umgesetzt werden.
 
-\singleenum{6}{Wie ist das implementierte Ähnlichkeitsmaß zum Vergleich zweier Graphen im Hinblick auf seine Genauigkeit zu bewerten?}
+\singleenum{7}{Wie ist das implementierte Ähnlichkeitsmaß zum Vergleich zweier Graphen im Hinblick auf seine Genauigkeit zu bewerten?}
 
-Anschließend ist es wichtig festzuhalten, wie hoch die Qualität des erstellten Ähnlichkeitsmaßes ist. Hierfür soll die Arbeit unter Einbezug von Beispielen erproben, wie gut die Ähnlichkeit zwischen zwei Graphen erkannt wird.
-
-\singleenum{7}{Welche realen Anwendungen gibt es für Graph-Metriken?}
-
-Als letztes soll sich die Studienarbeit mit praktischen Beispielen beschäftigen. Es ist dabei wichtig zu verstehen, welchen konkreten Nutzen die gezeigten Kennzahlen für Graphen in modernen Anwendungsszenarien haben.
+Anschließend ist es wichtig festzuhalten, wie hoch die Qualität des erstellten Ähnlich-keitsmaßes ist. Hierfür soll die Arbeit unter Einbezug von Beispielen erproben, wie gut die Ähnlichkeit zwischen zwei Graphen erkannt wird.
 }
 \chapter{Graph-Metriken}
 {
@@ -871,6 +875,8 @@ Aufgrund der guten Speicherverbrauchseigenschaften und der relativen Einfachheit
 
 \section{Überprüfung der nicht funktionalen Anforderungen}
 
+\chapter{Abstraktion der Graphmetrik-Berechnung}
+
 \chapter{Die Ähnlichkeit von Graphen}
 
 \section{Definition von Ähnlichkeitsmaßen}
@@ -878,8 +884,6 @@ Aufgrund der guten Speicherverbrauchseigenschaften und der relativen Einfachheit
 \section{Beispielhafte Anwendung der Ähnlichkeitsmaße}
 
 \section{Bewertung des Ähnlichkeitsmaßes}
-
-\chapter{Graphmetriken in Anwendung}
 
 \chapter{Fazit und Zusammenfassung}
 

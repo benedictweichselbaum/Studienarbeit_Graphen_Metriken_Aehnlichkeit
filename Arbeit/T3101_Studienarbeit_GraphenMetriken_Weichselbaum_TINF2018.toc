@@ -16,78 +16,78 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Fragestellungen}{2}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Graph-Metriken}{4}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Graph-Metriken}{5}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Grundlegende Metriken}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Grundlegende Metriken}{6}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Distanzmetriken}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Distanzmetriken}{8}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Kreis-basierte Metriken}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Kreis-basierte Metriken}{10}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Zusammenhangsmetriken (Connectivity)}{11}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{14}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Zentralitätsmetriken}{15}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Chromatische Zahl und chromatischer Index}{19}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Chromatische Zahl und chromatischer Index}{20}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Arborizität}{23}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Arborizität}{24}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Weitere Metriken}{24}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Weitere Metriken}{25}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{26}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{27}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Implementierung und Umsetzung der Graph-Metriken}{31}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Implementierung und Umsetzung der Graph-Metriken}{32}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Anforderungsanalyse}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Anforderungsanalyse}{32}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Ziele der Graphmetriken-Implementierung}{31}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.1}Ziele der Graphmetriken-Implementierung}{32}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Rahmenbedingungen}{32}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Rahmenbedingungen}{33}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Anforderungen an die Graphdatenstruktur}{33}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}Anforderungen an die Graphdatenstruktur}{34}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Anforderungen an die Metriken-Berechnung}{35}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.4}Anforderungen an die Metriken-Berechnung}{36}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Nicht funktionale Anforderungen}{36}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.5}Nicht funktionale Anforderungen}{37}{subsection.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.6}Nutzbarkeit als Klassenbibliothek}{38}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.6}Nutzbarkeit als Klassenbibliothek}{39}{subsection.3.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.7}Use Cases der Klassenbibliothek}{38}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.7}Use Cases der Klassenbibliothek}{39}{subsection.3.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analyse zur Implementierung der Graphdatenstruktur}{44}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Analyse zur Implementierung der Graphdatenstruktur}{45}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Entwurf der Klassenbibliothek}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Entwurf der Klassenbibliothek}{47}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Entwurfsumgebung}{46}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Entwurfsumgebung}{47}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Statischer Entwurf}{46}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Statischer Entwurf}{47}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Dynamische Aspekte}{46}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Dynamische Aspekte}{47}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Algorithmik und Implementierung der Graph-Metriken}{46}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Algorithmik und Implementierung der Graph-Metriken}{47}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Testung der Klassenbibliothek}{46}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Testung der Klassenbibliothek}{47}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Überprüfung der nicht funktionalen Anforderungen}{46}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Überprüfung der nicht funktionalen Anforderungen}{47}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Die Ähnlichkeit von Graphen}{47}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Abstraktion der Graphmetrik-Berechnung}{48}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Definition von Ähnlichkeitsmaßen}{47}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Die Ähnlichkeit von Graphen}{49}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{47}{section.4.2}%
+\contentsline {section}{\numberline {5.1}Definition von Ähnlichkeitsmaßen}{49}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Bewertung des Ähnlichkeitsmaßes}{47}{section.4.3}%
+\contentsline {section}{\numberline {5.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{49}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Graphmetriken in Anwendung}{48}{chapter.5}%
+\contentsline {section}{\numberline {5.3}Bewertung des Ähnlichkeitsmaßes}{49}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{49}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{50}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{49}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{50}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{49}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Fazit}{50}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{50}{chapter*.42}%
+\contentsline {chapter}{Glossar}{51}{chapter*.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{51}{chapter*.43}%
+\contentsline {chapter}{\nonumberline Literatur}{52}{chapter*.43}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

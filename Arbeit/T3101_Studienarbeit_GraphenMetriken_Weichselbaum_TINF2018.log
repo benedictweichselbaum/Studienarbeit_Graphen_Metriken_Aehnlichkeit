@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  23 MAR 2021 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  13 APR 2021 23:42
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1393,21 +1393,21 @@ l.235
 <to be read again> 
                    \relax 
 l.255 
-       [2]
-Overfull \hbox (46.86798pt too wide) in paragraph at lines 270--271
-[]\OT1/phv/m/n/12 (-20) Anschlieend ist es wich-tig fest-zu-hal-ten, wie hoch 
-die Qua-lit[]at des er-stell-ten []Ahnlichkeitsmaes
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
+       [2]pdfTeX warning (ext4): destination with the same identifier (name{pag
+e.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.276 \chapter
-              {Graph-Metriken} [3]
+l.276 ...blick auf seine Genauigkeit zu bewerten?}
+                                                   [3]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.4}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.280 \chapter
+              {Graph-Metriken} [4]
 chapter 2.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-80.
+84.
 (/root/.miktex/texmfs/install/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -1415,114 +1415,109 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.295 \section
-              {Grundlegende Metriken} [4
+l.299 \section
+              {Grundlegende Metriken} [5
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.305 \subsubsection
-                    *{Der Grad eines Knotens} [5] [6]
+] [6] [7]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7] [8] [9]
-Overfull \hbox (10.0886pt too wide) in paragraph at lines 363--364
+ [8] [9] [10]
+Overfull \hbox (10.0886pt too wide) in paragraph at lines 367--368
 []\OT1/phv/m/n/12 (-20) Um die Tail-len-wei-te und den Um-fang ei-nes Gra-phen 
 her-aus-zu-fin-den, ist es grunds[]atzlich
  []
 
-[10] [11] [12] [13] [14] [15]
-Overfull \hbox (12.76358pt too wide) in paragraph at lines 450--451
+[11] [12] [13] [14] [15] [16]
+Overfull \hbox (12.76358pt too wide) in paragraph at lines 454--455
 []\OT1/phv/m/n/12 (-20) Die Be-rech-nung die-ser Me-trik l[]asst sich in po-ly-
 no-mia-ler Zeit un-ter-neh-men. Grunds[]atzlich
  []
 
-[16]
-<Abbildungen/eigenvektor_centrality_example.png, id=384, 1368.11125pt x 880.288
+[17]
+<Abbildungen/eigenvektor_centrality_example.png, id=390, 1368.11125pt x 880.288
 76pt>
 File: Abbildungen/eigenvektor_centrality_example.png Graphic file (type png)
 <use Abbildungen/eigenvektor_centrality_example.png>
 Package pdftex.def Info: Abbildungen/eigenvektor_centrality_example.png  used o
-n input line 475.
+n input line 479.
 (pdftex.def)             Requested size: 437.80455pt x 281.69815pt.
- [17] [18 <./Abbildungen/eigenvektor_centrality_example.png>] [19] [20]
-[21] [22] [23] [24]
-<Abbildungen/graph_book.png, id=504, 1009.7725pt x 421.575pt>
+ [18] [19 <./Abbildungen/eigenvektor_centrality_example.png>] [20] [21]
+[22] [23] [24] [25]
+<Abbildungen/graph_book.png, id=509, 1009.7725pt x 421.575pt>
 File: Abbildungen/graph_book.png Graphic file (type png)
 <use Abbildungen/graph_book.png>
-Package pdftex.def Info: Abbildungen/graph_book.png  used on input line 568.
+Package pdftex.def Info: Abbildungen/graph_book.png  used on input line 572.
 (pdftex.def)             Requested size: 403.90184pt x 168.627pt.
- [25] [26 <./Abbildungen/graph_book.png>] [27] [28] [29]
-Overfull \hbox (3.02188pt too wide) in paragraph at lines 632--632
+ [26] [27 <./Abbildungen/graph_book.png>] [28] [29] [30]
+Overfull \hbox (3.02188pt too wide) in paragraph at lines 636--636
 []\OT1/phv/m/n/12 (-20) Ein Graph kann in ein Buch ein-ge-bet-tet wer-den, wo-b
 ei die Kno-ten auf dem Buchr[]ucken
  []
 
-[30]
+[31]
 chapter 3.
-[31
+[32
 
 ]
-Overfull \hbox (4.54128pt too wide) in paragraph at lines 646--646
+Overfull \hbox (4.54128pt too wide) in paragraph at lines 650--650
 []\OT1/phv/m/n/12 (-20) Die Klas-sen-bi-blio-thek soll ei-ne Rei-he von Klas-se
 n be-reits-stel-len, die es erm[]oglichen
  []
 
-[32] [33] [34] [35]
-Overfull \hbox (10.52441pt too wide) in paragraph at lines 713--714
+[33] [34] [35] [36]
+Overfull \hbox (10.52441pt too wide) in paragraph at lines 717--718
 []\OT1/phv/m/n/12 (-20) Wie an-fangs be-schrie-ben, sol-len im Rah-men die-ser 
 Be-trach-tung die Zen-tra-lit[]atsmetriken
  []
 
-[36] [37] [38]
-<Abbildungen/UML/library_use_case_diagram.png, id=599, 1115.16624pt x 845.1575p
+[37] [38] [39]
+<Abbildungen/UML/library_use_case_diagram.png, id=604, 1115.16624pt x 845.1575p
 t>
 File: Abbildungen/UML/library_use_case_diagram.png Graphic file (type png)
 <use Abbildungen/UML/library_use_case_diagram.png>
 Package pdftex.def Info: Abbildungen/UML/library_use_case_diagram.png  used on 
-input line 758.
+input line 762.
 (pdftex.def)             Requested size: 446.0586pt x 338.057pt.
- [39] [40 <./Abbildungen/UML/library_use_case_diagram.png>]
-[41] [42] [43] [44] [45] [46]
+ [40] [41 <./Abbildungen/UML/library_use_case_diagram.png>]
+[42] [43] [44] [45] [46] [47]
 chapter 4.
-[47
-
-]
-chapter 5.
 [48
 
 ]
-chapter 6.
+chapter 5.
 [49
 
-] [50
+]
+chapter 6.
+[50
+
+] [51
 
 ]
 chapter without number
 
-Overfull \hbox (24.75166pt too wide) in paragraph at lines 895--895
+Overfull \hbox (24.75166pt too wide) in paragraph at lines 899--899
 []\OT1/phv/m/n/12 (-20) Helmut Bal-zert. \OT1/phv/m/sl/12 (-20) Lehr-buch der S
 oft-wa-re-tech-nik: Ba-sis-kon-zep-te und Requirements-
  []
 
-[51
+[52
 
-] [52] [53] [54] [55]
-Overfull \hbox (3.28954pt too wide) in paragraph at lines 895--895
+] [53] [54] [55] [56]
+Overfull \hbox (3.28954pt too wide) in paragraph at lines 899--899
 \OT1/phv/m/n/12 (-20) ver-lag, 1. Jan. 2004. \OT1/phv/m/sc/12 (-20) isbn\OT1/ph
 v/m/n/12 (-20) : 978-3-486-59377-8. \OT1/phv/m/sc/12 (-20) doi\OT1/phv/m/n/12 (
 -20) : [][]$\OT1/cmtt/m/n/12 10 . 1524 / 9783486593778$[][]\OT1/phv/m/n/12 (-20
 ) .
  []
 
-[56] [57] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
+[57] [58] (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
 Package rerunfilecheck Info: File `T3101_Studienarbeit_GraphenMetriken_Weichsel
 baum_TINF2018.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1534,12 +1529,12 @@ eichselbaum_TINF2018.run.xml'.
  )
 (\end occurred inside a group at level 2)
 
-### simple group (level 2) entered at line 643 ({)
-### simple group (level 1) entered at line 549 ({)
+### simple group (level 2) entered at line 647 ({)
+### simple group (level 1) entered at line 553 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27539 strings out of 480232
- 504161 string characters out of 2887634
+ 27541 strings out of 480232
+ 504175 string characters out of 2887634
  1540699 words of memory out of 3000000
  43065 multiletter control sequences out of 15000+200000
  570619 words of font info for 262 fonts, out of 3000000 for 9000
@@ -1561,9 +1556,9 @@ local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (65 pages, 1072022 bytes).
+ (66 pages, 1073603 bytes).
 PDF statistics:
- 1031 PDF objects out of 1200 (max. 8388607)
- 253 named destinations out of 1000 (max. 500000)
+ 1036 PDF objects out of 1200 (max. 8388607)
+ 255 named destinations out of 1000 (max. 500000)
  22905 words of extra memory for PDF output out of 24883 (max. 10000000)
 

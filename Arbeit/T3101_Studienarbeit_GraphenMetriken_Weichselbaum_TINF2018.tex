@@ -687,10 +687,13 @@ Neben dem Graphen selbst ist die Ermittlung diverser Metriken einer der Hauptzie
 	\item Herausgabe aller Kanten des Graphen.
 	\item Auffinden eines Knotens über ein gleichwertiges Knoten-Objekt (nicht die gleiche Referenz)
 	\item Auffinden aller Nachbarn eines Knotens
+	\item Rückgabe einer Repräsentation des Graphen als Adjazenzmatrix.
 \end{myitemize}
 Die Eigenschaft, die diese Anforderung dem Softwareprodukt verleiht, ist schlussendlich die Bereitstellung sämtlicher nötigen Informationen, die für die Berechung der Metriken von Bedeutung sind.
 
-Die vorerst letzte funktionale Anforderung an die Graphdatenstruktur hat mit der bereits beschriebenen Eigenschaft zu tun, dass die jeweiligen Graph-Objekte über eine einheitliche Schnittstelle erreichbar sind. Die Klassenbibliothek muss es nämlich explizit ermöglichen, dass der Programmierer oder die Programmiererin verschiedenartige Graphen mit der Bibliothek verwenden kann. D.h. die jeweilige Implementierung der Datenstruktur muss frei sein, während der Zugriff genormt ist. Infolgedessen ist es möglich verschiedene Implementierungsarten für den Graphen umzusetzten und zu nutzen. Die Bibliothek muss dabei selbst mindestens eine Implementierung bereitstellten. Sie sollte, wenn das möglich ist, mehrere Graphimplementierungen zur Verfügung stellen. 
+Die nächste funktionale Anforderung an die Graphdatenstruktur hat mit der bereits beschriebenen Eigenschaft zu tun, dass die jeweiligen Graph-Objekte über eine einheitliche Schnittstelle erreichbar sind. Die Klassenbibliothek muss es nämlich explizit ermöglichen, dass der Programmierer oder die Programmiererin verschiedenartige Graphen mit der Bibliothek verwenden kann. D.h. die jeweilige Implementierung der Datenstruktur muss frei sein, während der Zugriff genormt ist. Infolgedessen ist es möglich verschiedene Implementierungsarten für den Graphen umzusetzten und zu nutzen. Die Bibliothek muss dabei selbst mindestens eine Implementierung bereitstellten. Sie sollte, wenn das möglich ist, mehrere Graphimplementierungen zur Verfügung stellen.
+
+Die bisherigen Anforderungen beschrieben vor allem welche Funktionen der Graph selbst haben muss. Bei der Arbeit mit Graphen und den korrespondierenden Problemen ist es allerdings meist erforderlich oder erwünscht, dass es möglich ist einen Graphen zu persistieren und umgekehrt in das Programm und den Hauptspeicher zu laden. Deshalb muss die Klassenbibliothek auch ermöglichen einen beliebigen definierten Graphen in eine Datei eines bestimmten Formates zu speichern. Gleichermaßen müssen solche Dateien auch eingelesen werden können.
 }
 \subsection{Anforderungen an die Metriken-Berechnung}
 {
@@ -719,10 +722,13 @@ Wie anfangs beschrieben, sollen im Rahmen dieser Betrachtung die Zentralitätsme
 	\item Degree Centrality
 	\item Betweenness Centrality
 	\item Closeness Centrality
+	\item Eigenvector Centrality
 	\item Page Rank
 \end{myitemize}
 
 Praktische Anwendung findet auch die Kennzahl der chromatischen Zahl. Darüber hinaus genießt das Färbeproblem Prominenz in der Informatik. Deshalb muss die Bibliothek die Berechung der chromatischen Zahl zur Verfügug stellen. Zudem soll es auch möglich sein den chromatischen Index zu ermitteln. In Kapitel 2.6 wurde auch gezeigt, dass es für die chromatische Zahl einen approximierenden Algrotihmus gibt, der effizienter arbeitet als der klassiche Algorithmus. Auch dieser Algrotihmus muss im Rahmen der Klassenbibliothek umgesetzt werden, damit der dem Entnutzer der der Endnutzerin zur Verfügug gestellt werden kann.
+
+Um auch eine Metrik zur Verfügung zu haben, die Aussagen dazu trifft, wie stark der Graph zusammenhängt, muss die Klassenbibliothek auch eine Kennzahl dieser Kategorie berechnen können. Infolgedessen soll hierfür die "`Dichte"' eines Graphen berechenbar sein. 
 }
 \subsection{Nicht funktionale Anforderungen}
 {
@@ -734,7 +740,7 @@ Auch die Eigenschaft, dass das Produkt die gewünschten Funktionalitäten bereit
 
 Nicht nur müssen Funktionalität genau und angemessen bereitgestellt werden, sie müssen auch effizient ausgeführt werden. Besonders zwei Punkte sind dabei bei Computerprogrammen interessant. Das Zeitverhalten und das Verbrauchsverhalten. Beim Verbrauchsverhalten ist u.a. die Auslastung der Ressource Arbeitsspeicher gemeint. Im Rahmen der Studienarbeit soll die Klassenbibliothek möglichst zeit- und ressourcenschonend sein. Allerdings geniesen beide Eigenschaften nicht höchste Priorität. Vor allem bei der Berechnung einiger Metriken kann es bei großen Graphen zu längeren Antwortzeiten kommen. Vor allem bei NP-vollständigen Problemen ist die Berechnung unvermeidbar langsam.
 
-Darüber hinaus ist auch die Wartbarkeit einen Systems äußerst wichtig, damit Änderungen und Fehlersuche- und Behebung erleichtert werden. Im Zuge der Wartbarkeit soll besonders die Eigenschaft der Testbarkeit hervorgehoben werden. Die Bibliothek muss eine hohe Testbarkeit aufweisen. D.h. speziell, dass besonders Methoden so konzipiert werden müssen, dass sie testbar sind. Nur so kann die Korrektheit der Algorithmen, die in der Klassenbibliothek Verwendung finden sichergestellt werden. Eine Testabdeckung von 80 Prozent ist dabei verpflichtend. Wünschenswert wäre eine Testabdeckung von 100 Prozent.
+Darüber hinaus ist auch die Wartbarkeit einen Systems äußerst wichtig, damit Änderungen und Fehlersuche- und Behebung erleichtert werden. Im Zuge der Wartbarkeit soll besonders die Eigenschaft der Testbarkeit hervorgehoben werden. Die Bibliothek muss eine hohe Testbarkeit aufweisen. D.h. speziell, dass besonders Methoden so konzipiert werden müssen, dass sie testbar sind. Nur so kann die Korrektheit der Algorithmen, die in der Klassenbibliothek Verwendung finden sichergestellt werden, der relevanten Programmzeilen.
 
 Eine weitere nicht funktionale Eigenschaft, die die Bibliothek mitbringen soll, ist die der Anpassbarkeit und Installierbarkeit. Beide Eigenschaften fallen unter den Oberbegriff der Portabilität. Darunter ist zu verstehen, dass die Software anpassbar und variabel in dem Sinne sein muss, als das sich das System gut an verschiedene Umgebungen und Anwendungsszenarien anpassen kann, damit die verwendende Person die Funktionen des Softwareprodukt vielfältig einsetzen kann. Eine gute Installierbarkeit wiederum beschreibt, dass im Rahmen der dokumentierten technischen Voraussetzungen die Software leicht installiert und verwendet werden können muss. Ist die Installierbarkeit nämlich nicht ausreichend gut, ist die Hürde zur Verwendung der Bibliothek zu hoch. 
 }
@@ -861,8 +867,26 @@ Neben den manipulierenden Operationen auf die Datenstrukturen sind auch analysie
 
 Aufgrund der guten Speicherverbrauchseigenschaften und der relativen Einfachheit der Manipulation soll für die Klassenbibliothek der Graph mittels Adjazenzlisten implementiert werden. Zudem sind die Adjazenzlisten günstig, da sie sich leicht auswerten lassen. Besonders bei Nachbarschaftsbeziehungen ist dies der Fall. Bedenkt man, dass für die Berechnung der Metriken besonders die Auswertung des Graphen wichtig ist, wird die Wahl noch einmal untermauert. 
 }
-\section{Entwurf der Klassenbibliothek}
 
+\section{Analyse zur Persistierung des Graphs}
+{
+Um einen Graphen innerhalb einer Datei zu persistieren, gibt es eine weite Reihe an Möglichkeiten und Formaten. Es soll deshalb diskutiert werden, welche Persistierungsform für die zu umsetzende Klassenbibliothek gewählt werden soll.
+
+Die Darstellung von Graphen in Textform wurde bereits von vielen Datenformaten unternommen. Dabei werden eigene Textformate verwendet oder auf bewährte Formate wie XML, CSV und JSON zurückgegriffen. Vertreter dieser bereits existenten Formate sind z.B. das \textit{"`Graph Exchange XML Format"'}, \textit{"`GDF"'} oder \textit{"`CSV"'}. \cite{gephi_supported_2017} Weiterhin ist das Feld der Graph-Textformate allerdings immer noch im Wandel und so gibt es weiterhin auch neue Ansätze. So wurde 2021 von Adreas Kollegger, einem Mitarbeiter von Neo4j Inc., ein weiteres Format namens "`gram"' vorgeschlagen. Dieses Format kombiniert Elemente des JSON-Formats und der Abfragesprache Cypher, die für Anfragen an die Graphdatenbank Neo4j genutzt wird. So können Knoten-Objekte über die JSON-Syntax definiert werden und Kanten zwischen diesen Knoten über eine Cypher-artige Syntax erstellt werden (z.B. \textit{(a: A)-[:Mark]->(b: B)}). \cite{kollegger_gram_2021}
+
+Für die Persistierung innerhalb der Klassenbibliothek soll sich nun auch an diesem "`gram"'-Format orientiert werden. Hierfür wird zunächst in der Datei angegeben, ob es sich um einen gerichteten oder um einen ungerichteten Graphen handelt. Anschließend werden wie in "`gram"' die Graphobjekte (Knoten \textbf{und} Kanten) über JSON definiert und bekommen einen Identifier. Zum Schluss des Dokuments werden die einzelnen Beziehungen, wie bereits gezeigt, einzeln aufgeführt. Mithilfe der erweiterten Backus–Naur Form, können die Ableitungsregeln der definierten Grammatik der Format-Sprache folgendermaßen dargestellt werden. Hierbei werden bestimmte Ableitungen abgekürzt. So beschreibt das Nicht-Terminal "`JSON"' die normale JSON-Sytax. Das Startsymbol ist "`graph"':
+\begin{verbatim}
+	graph = ('directed' | 'undirected'), '\n', {object}, {connection};
+	object = '(', IDENTIFIER, JSON, ')', '\n';
+	connection = '(', IDENTIFIER, ')', '-[', IDENTIFIER, ']->', 
+		'(', IDENTIFIER, ')', '\n';
+\end{verbatim}
+Das definierte Format bietet nicht nur den Vorteil, dass beliebige Graphen intuitiv gespeichert werden können, sondern kann auch einfach Implementiert werden, da die Erstellung von JSON-Strings durch Bibliotheken wie "`Jackson"' übernommen werden kann.
+}
+\section{Entwurf der Klassenbibliothek}
+{
+Auf Basis der der Anforderungen und der angefertigten Analysen wird nun ein Entwurf erarbeitet, der die geforderten Anforderungen umsetzt. Dabei wird vor allem auf die Struktur und Dynamik der Klassenbibliothek eingegangen. Es soll hervorgehen, wie die Bibliothek konzipiert ist und auch wie sie effektiv genutzt werden kann. Anschließend wird als Teil des detailierten Entwurfs auch auf die konkrete Algorithmik der Graphmetriken eingegangen. \cite{balzert_lehrbuch_2011}
+}
 \subsection{Entwurfsumgebung}
 
 \subsection{Statischer Entwurf}

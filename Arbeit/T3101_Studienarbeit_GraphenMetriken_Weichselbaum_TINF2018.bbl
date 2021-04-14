@@ -975,6 +975,40 @@
       \verb http://www.sciencedirect.com/science/article/pii/0378873378900217
       \endverb
     \endentry
+    \entry{gephi_supported_2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=198e1746eaaf235d823038597e3c6de1}{%
+           family={Gephi},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{198e1746eaaf235d823038597e3c6de1}
+      \strng{fullhash}{198e1746eaaf235d823038597e3c6de1}
+      \strng{bibnamehash}{198e1746eaaf235d823038597e3c6de1}
+      \strng{authorbibnamehash}{198e1746eaaf235d823038597e3c6de1}
+      \strng{authornamehash}{198e1746eaaf235d823038597e3c6de1}
+      \strng{authorfullhash}{198e1746eaaf235d823038597e3c6de1}
+      \field{labelalpha}{Gep17}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Supported Graph Formats}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Supported Graph Formats:/home/benedict/snap/zotero-snap/common/Zotero/storage/IPPBGC9N/supported-graph-formats.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://gephi.org/users/supported-graph-formats/
+      \endverb
+      \verb{url}
+      \verb https://gephi.org/users/supported-graph-formats/
+      \endverb
+    \endentry
     \entry{gitta_durchmesser_2014}{online}{}
       \name{author}{1}{}{%
         {{hash=c8e6d48b98ca3a1f76bb4925315ac648}{%
@@ -1277,6 +1311,46 @@
       \field{title}{Algorithmen und Datenstrukturen: Grundlagen und probabilistische Methoden für den Entwurf und die Analyse}
       \field{year}{2019}
       \field{dateera}{ce}
+    \endentry
+    \entry{kollegger_gram_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e4810d2d290d2869604cfaccdb554907}{%
+           family={Kollegger},
+           familyi={K\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4810d2d290d2869604cfaccdb554907}
+      \strng{fullhash}{e4810d2d290d2869604cfaccdb554907}
+      \strng{bibnamehash}{e4810d2d290d2869604cfaccdb554907}
+      \strng{authorbibnamehash}{e4810d2d290d2869604cfaccdb554907}
+      \strng{authornamehash}{e4810d2d290d2869604cfaccdb554907}
+      \strng{authorfullhash}{e4810d2d290d2869604cfaccdb554907}
+      \field{labelalpha}{Kol21}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Gram is a textual format for data. We have {CSV} for tables, {JSON} for documents, and gram for data grap...}
+      \field{langid}{english}
+      \field{shorttitle}{Gram}
+      \field{title}{Gram: a data graph format}
+      \field{titleaddon}{{DEV} Community}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/EE8P8TMH/gram-a-data-graph-format-3mi2.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://dev.to/neo4j/gram-a-data-graph-format-3mi2
+      \endverb
+      \verb{url}
+      \verb https://dev.to/neo4j/gram-a-data-graph-format-3mi2
+      \endverb
     \endentry
     \entry{lovasz_large_2012}{book}{}
       \name{author}{1}{}{%

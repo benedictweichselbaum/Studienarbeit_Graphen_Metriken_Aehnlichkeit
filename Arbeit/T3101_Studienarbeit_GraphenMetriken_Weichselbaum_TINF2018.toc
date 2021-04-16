@@ -60,36 +60,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Entwurf der Klassenbibliothek}{48}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Entwurfsumgebung}{48}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Statischer Entwurf}{48}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Statischer Entwurf}{48}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Dynamische Aspekte}{51}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Dynamische Aspekte}{48}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Algorithmik und Implementierung der Graph-Metriken}{51}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Algorithmik und Implementierung der Graph-Metriken}{48}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Testung der Klassenbibliothek}{51}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Testung der Klassenbibliothek}{48}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Überprüfung der nicht funktionalen Anforderungen}{51}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Überprüfung der nicht funktionalen Anforderungen}{48}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Abstraktion der Graphmetrik-Berechnung}{52}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Abstraktion der Graphmetrik-Berechnung}{49}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Die Ähnlichkeit von Graphen}{53}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Die Ähnlichkeit von Graphen}{50}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definition von Ähnlichkeitsmaßen}{53}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Definition von Ähnlichkeitsmaßen}{50}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{53}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{50}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Bewertung des Ähnlichkeitsmaßes}{53}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Bewertung des Ähnlichkeitsmaßes}{50}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{54}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{51}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{54}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{51}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Fazit}{54}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{51}{section.6.2}%
+\contentsline {chapter}{Glossar}{55}{chapter*.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{52}{chapter*.42}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{53}{chapter*.43}%
+\contentsline {chapter}{\nonumberline Literatur}{56}{chapter*.45}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

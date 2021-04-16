@@ -1841,6 +1841,7 @@
       \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
       \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
       \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{extraname}{1}
       \field{labelalpha}{Ora17}
       \field{sortinit}{O}
       \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
@@ -1862,6 +1863,41 @@
       \endverb
       \verb{url}
       \verb https://docs.oracle.com/cd/E56133_01/2.4.0/reference/algorithms/pagerank.html
+      \endverb
+    \endentry
+    \entry{oracle_java_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=30162ed78b6c10f731411f2fc440c24f}{%
+           family={Oracle},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{fullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{bibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorbibnamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authornamehash}{30162ed78b6c10f731411f2fc440c24f}
+      \strng{authorfullhash}{30162ed78b6c10f731411f2fc440c24f}
+      \field{extraname}{2}
+      \field{labelalpha}{Ora21}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Java Platform, Standrad Edition 8 {API} Specification}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Overview (Java Platform SE 8 ):/home/benedict/snap/zotero-snap/common/Zotero/storage/FTFKY2CI/api.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.oracle.com/javase/8/docs/api/
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/javase/8/docs/api/
       \endverb
     \endentry
     \entry{peroche_np-completeness_1984}{article}{}

@@ -2510,6 +2510,7 @@
     <bcf:citekey order="109">gephi_supported_2017</bcf:citekey>
     <bcf:citekey order="110">kollegger_gram_2021</bcf:citekey>
     <bcf:citekey order="111">balzert_lehrbuch_2011</bcf:citekey>
+    <bcf:citekey order="112">oracle_java_2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

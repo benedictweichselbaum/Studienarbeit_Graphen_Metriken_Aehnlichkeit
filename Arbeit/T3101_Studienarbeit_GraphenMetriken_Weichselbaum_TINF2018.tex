@@ -29,6 +29,7 @@
 \usepackage{hyperref}
 \usepackage{svg}
 \usepackage{mathtools}
+\usepackage{lscape}
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -704,7 +705,7 @@ Die erste funktionale Anforderung besteht darin, dass die Klassenbibliothek eine
 Mit Hilfe eines Mechanismus zur Berechnung der Graphmetriken muss definiert werden, welche Metriken die Klassenbibliothek berechnen können soll. Hierbei sind zunächst die grundlegenden Metriken wichtig (siehe Abschnitt 2.1). Die Metriken sind fundamentale Kennzahlen zur Beschreibung eines Graphen. Daher muss es die Bibliothek ermöglichen für einen Graphen diese grundlegenden Metriken zu berechnen. Dazu zählen die folgenden Kennzahlen:
 \begin{myitemize}
 	\item Ordnung (Order) eines Graphen
-	\item Größre (Size) eines Graphen
+	\item Größe (Size) eines Graphen
 	\item Knotengrad und zugehörig Minimal-, Maximal- und Durchschnittsgrad.
 	\item Anzahl der Zusammenhangskomponenten 
 \end{myitemize}
@@ -905,7 +906,7 @@ Weiterhin muss es ermöglicht werden, dass die zu erstellenden Graphen markiert 
 
 Da Kanten nicht wie Knoten ausschließlich über ihre Markierung beschreiben werden können, ist es notwendig eine eiegne Kantenklasse zu definieren. Diese ist ein einfaches Java-Objekt ("`Plain Old Java Object"') bestehend aus dem Ausgangsknoten, dem Eingangsknoten und der Markierung.
 
-Auf Basis von Kapitel 3.2 wurde klar, welche Grapharten implementiert werden sollen. Umgesetzt werden zwei simple Adjazenzlistengraphen. Einer davon ist gerichtet, der andere nicht. Da sich beide Implementierungen bis auf die Handhabung mit Kanten gleichen, ist es sinnvoll eine Abstraktionsebene in die Umsetzung einzubauen. So implementiert eine abstrakte Klasse \textit{AdjacencyListGraph} das Graph-Interface und definiert alle Methoden bis auf das Einfügen, Löschen und Existenzabfragen von Kanten. Durch die abstrakte Klasse ist es möglich Codewiederholungen zu vermeiden, da Code für die jeweiligen Grapharten wiederverwendet werden kann. Zur eigentlichen umsetzung der Adjazenzlisten nutzt \textit{AdjacencyListGraph} eine Java-Map, wobei als Instantzobjekt eine Hash-Map verwendet wird. Die Map hat den Typen \textit{Map<N, List<Edge<N, E>>>}, wobei \textit{N \& E} die generischen Typparameter für den Knoten und die Kantenmarkierung sind. Wie zu erkennen ist, wird ein Knoten auf seine jeweilige Adjazenzliste abgebildet. Die Map ist einer geschachtelten Liste überlegen, da die Suche nach der jeweiligen Adjazenzliste in konstanter Zeit möglich ist, anstatt eine ganze Liste zu durchsuchen. Zudem ist die Zuordung des Knoten zu seiner Liste bereits in der Datenstruktur integriert.
+Auf Basis von Kapitel 3.2 wurde klar, welche Grapharten implementiert werden sollen. Umgesetzt werden zwei simple Adjazenzlistengraphen. Einer davon ist gerichtet, der andere nicht. Da sich beide Implementierungen bis auf die Handhabung mit Kanten gleichen, ist es sinnvoll eine Abstraktionsebene in die Umsetzung einzubauen. So implementiert eine abstrakte Klasse \textit{AdjacencyListGraph} das Graph-Interface und definiert alle Methoden bis auf das Einfügen, Löschen und Existenzabfragen von Kanten. Durch die abstrakte Klasse ist es möglich Codewiederholungen zu vermeiden, da Code für die jeweiligen Grapharten wiederverwendet werden kann. Zur eigentlichen umsetzung der Adjazenzlisten nutzt \textit{AdjacencyListGraph} eine Java-Map, wobei als Instantzobjekt eine Hash-Map verwendet wird. Die Map hat den Typen \textit{Map\textless N, List\textless Edge\textless N, E\textgreater\textgreater\textgreater}, wobei \textit{N \& E} die generischen Typparameter für den Knoten und die Kantenmarkierung sind. Wie zu erkennen ist, wird ein Knoten auf seine jeweilige Adjazenzliste abgebildet. Die Map ist einer geschachtelten Liste überlegen, da die Suche nach der jeweiligen Adjazenzliste in konstanter Zeit möglich ist, anstatt eine ganze Liste zu durchsuchen. Zudem ist die Zuordung des Knoten zu seiner Liste bereits in der Datenstruktur integriert.
 
 Für manche Graphmetriken ist es relevant welche Graphart vorliegt. So ist z.B., wie in Kapitel 2 gezeigt, die Berechnung der Dichte abghängig davon, ob ein gerichteter oder ein ungerichteter Graph vorliegt. Um bei der Metrikenberechnung eine Unterscheidung zwischen den Arten treffen zu können, ist es nötig diese zu markieren. Hierfür wird sich sogenannter "`Marker-Interfaces"' bedient. Diese beinhalten keine Methoden und können so beliebig von Klassen "`implementiert"' werden. Im Falle der Klassenbibliothek gibt es die vier Marker-Interfaces \textit{SimpleGraph}, \textit{NonSimpleGraph}, \textit{DirectedGraph} und \textit{UndirectedGraph}. Die beiden Graphimplementierungen "`implementieren"' dann ihre jeweiligen Schnittstellen. Innerhalb von Java kann dann mit einer \textit{instanceof}-Abfrage erfragt werden, um welche Art von Graph es sich handelt.
 
@@ -919,13 +920,71 @@ Schlussendlich ist es im Rahmen der Implementierung noch wichtig sich, um mögli
 
 Durch die oben angegebene Menge an Klassen und Methoden können nun alle funktionalen Anforderungen aus 3.1.3 umgesetzt werden. Es wird eine markierbare Graphdatenstruktur als Schnittstelle vorgegeben und zwei Implementierungen für diese bereitgestellt. Durch die Schnittstelle wird aber einem fremden Entwickler bzw. einer fremden Entwicklerin die Freiheit gelassen, eine eigene Implementierung zu nutzen. Weiterhin ist die Persistierung und das Laden von Graphen mittels Textdateien möglich.
 
-Die beschriebenen Klassen und Methoden zur Graphdatenstruktur können übersichtlich mittels dieses Klassendiagramms zusammengefasst werden:
-
+Die beschriebenen Klassen und Methoden zur Graphdatenstruktur können übersicht-lich mittels des Klassendiagramms in Abbildung 3.2 zusammengefasst werden.
+\begin{landscape}
+	\begin{figure}[p]
+		\centering
+		\includegraphics[scale=0.33]{Abbildungen/UML/graph_class_diagram.png}
+		\caption[Klassendiagramm: Graphdatenstruktur]{Klassendiagramm: Graphdatenstruktur}
+	\end{figure}
+\end{landscape}
 }
 \subsubsection*{Metriken-Berechnung}
+{
+Durch die Bereitstellung einer Graph-Datenstruktur ist es nun möglich, eine Struktur bereitzustellen, die es ermögllicht alle gewünschten Metriken zu berechnen. Um die Berechung zu nutzen soll ein Mechanismus zur Verfügung gestellt werden, der den Zugriff auf die Kalkulation homogenisiert. D.h. es wird eine Schnittstellen-Klasse erzeugt, die sämtliche Berechnungsanfragen annimmt und an die Business-Logik weitergibt.
 
+Zur Umsetzung dieses Mechanismus wird auf ein vereinfachtes Schichten-Muster zurückgegriffen \cite{balzert_lehrbuch_2011}. Die Klasse \textit{MetricsCalculation} stellt als eine Art Schnittstelle ("`bondary"') statische Methoden zur Berechung aller Metriken zur Verfügung. Es wird dabei zwischen drei Verschiedenen Metrik-Arten unterschieden.
+\begin{myitemize}
+	\item Graph-umfassende Metriken
+	\item Knoten-beschreibende Metriken
+	\item Metriken zur Beschreibung der Beziehung zwischen zwei Knoten
+\end{myitemize}
+Die jeweiligen Methoden nehmen den zu analysierenden Graphen und ggf. die zu untersuchenden Knoten entgegen. Zudem wird eine Instanz einer \textit{GraphMetric}, \textit{NodeMetric} oder \textit{NodeToNodeMetric} übergeben, die die zu berechnende Metrik identifiziert. Die aufgeführten "`Klassen"' sind Enumerationen, die jeweils die unterstützten Kennzahlen enthalten. Die Schnittstelltenfunktionen liefern dem Aufrufer schlussendlich eine Java-\textit{Number}, die sowohl Ganzzahlen als auch Gleitkommazahlen darstellen kann.
+
+Nachdem die "`boundary"' die initiale Anfrage entgegennimmt, muss diese weiter verteilt werden. Genauer heißt das, dass die Anfrage an die jeweiligen Klassen weitergegeben wird, die die Berechung der eigentlichen Metrik übernehmen. Für diese Verteilung wird in der zweiten Schnicht ("`control"') die Klasse \textit{GraphMetricCalculationDistribution} genutzt, die je nach der gewählten Metrik, die korrekte Berechnungsklasse aufruft.
+
+Die jeweiligen Berechnungsklassen enthalten ausschließlich statische Methoden, die eine Metrik für den Graphen berechnen und dabei logischerweise eine Zahl zurückgeben (Integer, Long oder Double). Diese Klassen sind dabei einmal nach den drei bereits bekannten Kategorien in Pakete sortiert und enthalten dann noch mal nur Metriken jeweils passend zu einer der in Kapitel 2 formulierten Kategorien. Da Metriken teilweise aufeinander aufbauen interagieren diese Klassen auch untereinander. Die jeweiligen Klassen heißen und berechnen:
+\begin{myitemize}
+	\item \textbf{BasicGraphMetricCalculation}: Berechnung grundlegender Graph-Metriken (Ordnung, Größe etc.)
+	\item \textbf{DistanceGraphMetricCalculation}: Berechnung distanzbasierter Metriken (Radius und Durchmesser)
+	\item \textbf{ChromaticNumberMetricCalculation}: Berechnung der chromatischen Zahl (exakt und mit Greedy-Algorithmus)
+	\item \textbf{ChromaticIndexMetricCalculation}: Berechnung des chromatischen Indexes (exakt und mit Greedy-Algorithmus)
+	\item \textbf{DensityMetricCalculation}: Berechnung der Graph-Dichte
+	\item \textbf{BasicNodeMetricCalculation}: Berechnung grundlegender Metriken für einen Knoten (z.B. Grad)
+	\item \textbf{DistanceNodeMetricCalculation}: Berechnung der Extrenzität eines Knoten
+	\item \textbf{CentralityMetricCalculation}: Berechnung der aufgeführten Zentralitätsmetriken
+	\item \textbf{NodeToNodeDistanceMetricCalculation}: Berechnung der Distanz zwischen zwei Knoten innerhalb eines Graphen
+\end{myitemize}
+Weiterhin benötigen einige Metriken bestimmte Hilfsobjekte und -algorithmen, damit sie berechnet werden können. Hierzu zählen ein generisches Tupel-Objekt und Algorithmen zur Berechnung des Binomialkoeffizienten und der Breiten- und Tiefensuche. Zudem werden weitere Hilfsmethoden zur Verfügung gestellt zum Füllen und klonen von Java-Maps und zum invertierten von Graphen. Beim invertieren werden werden alle Kanten zu Knoten und die neuen Knoten sind adjazent zueinander, wenn die ursprünglichen Kanten inzident zueinander waren. Dies ist wichtig zur Berechnung des chromatischen Index.
+
+Aus statischer Sicht sind keine weiteren Klassen notwendig, um die Berechung der Graphmetriken zu gewährleisten. Einzig gibt es noch zwei weitere Exceptions, die hinzugefügt werden. Die \textit{MetricChoiceException} wird geworfen, falls die Berechnung einer Metrik stattfindet, die nicht implementiert ist. Die \textit{MetricCalculationException} wird dann verwendet, falls bei der Berechnung einer Metrik ein Fehler auftritt. Beispielsweise ist das der Fall, falls ein für einen Graph die Größte berechnet werden soll, der aber nicht als gerichtet oder ungerichtet markiert wurde.
+
+Wie an der Beschreibung gesehen werden konnte, sind die Methoden für die Metrikenberechnung alle ausschließlich statisch. Das entspricht zwar nicht dem Paradigma der Objektorientierung, ist allerdings vorteilhaft, da so nicht unnötigerweise attributlose Berechnungsobjekte erstellt werden müssen. Außerdem drückt dies auch den funktionalen Charakter der Bibliothek aus. Die jeweiligen Methoden zur Berechnungen der Kennzahlen lösen keine Seiteneffekte aus und liefern so bei gleichem Input den gleichen Output. Dies ähnelt dem funkionalen Programmierparadigma, was die statischen Methoden imitieren. \cite{chiusano_functional_2015}
+
+Die beschriebenen Klassen können nun auch wieder in einem Klassendiagramm aufgezeigt werden, dass in Abbildung 3.3 zu sehen ist.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[scale=.38]{Abbildungen/UML/metrics_class_diagram.png}
+	\caption[Klassendiagramm: Metriken-Berechnung]{Klassendiagramm: Metriken-Berechnung}
+\end{figure}
+}
 \subsection{Dynamische Aspekte}
+{
+Dadurch, dass die Statik der Klassenbibliothek nun feststeht und durch diese die formulierten funktionalen Anforderungen gedeckt sind, soll noch auf den dynamischen Entwurfsaspekt der Bibliothek eingegangen werden. Konkret soll erläutert werden, wie eine Metriken-Berechnung von Statten geht.
 
+Zur Beschreibung soll als Beispiel die Berechnung der Closeness Centrality herhalten. Die Berechnung der anderen Metriken erfolgt analog, bzw. ähnlich. Bevor aber eine Metrik berechnet werden kann, ist es nötig einen Graphen zu erstellen und zu manipulierten bzw. zu füllen. Im Rahmen des Beispiels soll ein simpler, ungerichteter Adjazenzlistengraph erstellt werden, der als Knoten und Kantenmarkierung Ganzzahlen entgegennimmt. Hierfür lässt sich einer der bereits implementierten Graphen der Bibliothek verwenden. Der Graph selbst wird in einer Variable gespeichert, die den Typ \textit{Graph} hat. Damit ist der Graph nur über die definierte Schnittstelle zu manipulieren und kann für die Metrikenberechnung genutzt werden. Anschließend an die Erstellung können Knoten und Kanten eingefügt werden. Im Beispiel sollen die zwei Knoten 1 und 2 hinzugefügt werden. Zudem wird eine Kante zwischen beiden erstellt, die mit 1 markiert ist. Wie das im Rahmen eines Sequenzdiagramms aussieht, zeigt Abbildung 3.4.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=.38]{Abbildungen/UML/sequence_graph_creation.png}
+	\caption[Sequenzdiagramm: Grapherstellung und- manipulation]{Sequenzdiagramm: Grapherstellung und- manipulation}
+\end{figure}
+Nachdem der Graph erstellt wurde, können auf ihm alle Metriken berechnet werden. In diesem Fall übergibt der Entwickler den Graph mit den sonstigen Argumenten der \textit{MetricCalculation}, die wiederum die Anfrage an die weiter unten liegende Schicht weitergibt. Hier verteilt die \textit{GraphMetricCalculationDistribution} die Anfrage an die korrekte Berechnungsklasse. Im Fall der Closeness Centrality ist das die Klasse \textit{CentralityMetricCalculation}. Diese kann die Metrik allerdings nicht alleine berechnen und benötigt die Hilfe eines Suchalgorithmus (Breitensuche). Infolgedessen ruft die Klasse die \textit{SearchAlgorithms}-Klasse auf und kann mit deren Ergebnis die Metrik berechnen und schlussendlich den höheren Schichten zurückgeben. Abbildung 3.5 zeigt die dynamische Folge der Metriken-Berechnung für die Closeness Centrality in einem Sequenzdiagramm.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=.22]{Abbildungen/UML/sequence_metric_calc.png}
+	\caption[Sequenzdiagramm: Metriken-Berechnung (Closeness Centrality)]{Sequenzdiagramm: Metriken-Berechnung (Closeness Centrality)}
+\end{figure}
+}
 \section{Algorithmik und Implementierung der Graph-Metriken}
 
 \section{Testung der Klassenbibliothek}

@@ -543,6 +543,44 @@
       \verb http://www.tandfonline.com/doi/abs/10.1080/0022250X.2001.9990249
       \endverb
     \endentry
+    \entry{chiusano_functional_2015}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2e35c2560277b7bac7976fbd994360c9}{%
+           family={Chiusano},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4c468e412537e48961beb73dfc2883bb}{%
+           family={Bjarnason},
+           familyi={B\bibinitperiod},
+           given={Rúnar},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Shelter Island, {NY}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications}%
+      }
+      \strng{namehash}{6e7e33a46a220c008939b8582faf3e56}
+      \strng{fullhash}{6e7e33a46a220c008939b8582faf3e56}
+      \strng{bibnamehash}{6e7e33a46a220c008939b8582faf3e56}
+      \strng{authorbibnamehash}{6e7e33a46a220c008939b8582faf3e56}
+      \strng{authornamehash}{6e7e33a46a220c008939b8582faf3e56}
+      \strng{authorfullhash}{6e7e33a46a220c008939b8582faf3e56}
+      \field{labelalpha}{CB15}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-61729-065-7}
+      \field{note}{{OCLC}: ocn823712614}
+      \field{pagetotal}{300}
+      \field{title}{Functional programming in Scala}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \keyw{Scala (Computer program language),Functional programming (Computer science)}
+    \endentry
     \entry{chvatal_tough_2006}{article}{}
       \name{author}{1}{}{%
         {{hash=ce0039288011d6fb178612b0a6f7b47e}{%

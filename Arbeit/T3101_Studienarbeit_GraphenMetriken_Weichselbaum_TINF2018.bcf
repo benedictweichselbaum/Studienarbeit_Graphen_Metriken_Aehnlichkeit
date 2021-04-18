@@ -2513,6 +2513,7 @@
     <bcf:citekey order="112">oracle_java_2021</bcf:citekey>
     <bcf:citekey order="113">balzert_lehrbuch_2011</bcf:citekey>
     <bcf:citekey order="114">chiusano_functional_2015</bcf:citekey>
+    <bcf:citekey order="115">ullenboom_java_2014</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

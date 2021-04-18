@@ -579,7 +579,7 @@
       \field{title}{Functional programming in Scala}
       \field{year}{2015}
       \field{dateera}{ce}
-      \keyw{Scala (Computer program language),Functional programming (Computer science)}
+      \keyw{Functional programming (Computer science),Scala (Computer program language)}
     \endentry
     \entry{chvatal_tough_2006}{article}{}
       \name{author}{1}{}{%
@@ -2389,6 +2389,43 @@
       \verb https://www.degruyter.com/view/title/310250
       \endverb
     \endentry
+    \entry{ullenboom_java_2014}{book}{}
+      \name{author}{1}{}{%
+        {{hash=961b512517a6b772a15931f9be557e95}{%
+           family={Ullenboom},
+           familyi={U\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bonn}%
+      }
+      \list{publisher}{1}{%
+        {Galileo Press}%
+      }
+      \strng{namehash}{961b512517a6b772a15931f9be557e95}
+      \strng{fullhash}{961b512517a6b772a15931f9be557e95}
+      \strng{bibnamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authorbibnamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authornamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authorfullhash}{961b512517a6b772a15931f9be557e95}
+      \field{extraname}{1}
+      \field{labelalpha}{Ull14}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Der Autor beschäftigt sich intensiv mit den umfangreichen Bibliotheken von Java 8 - also eine Fortsetzung des 1. Werkes, dessen 1. Auflage hier jedoch nicht besprochen wurde (Java 7 ...; mehr als eine Insel : das Handbuch zu den Java {SE}-Bibliotheken", 2012). Die ersten Kapitel beschreiben noch einmal die Neuerungen und Änderungen von Java 7 und 8. Das ist vertiefend insbesondere dann wichtig, wenn es um die Kapitel "Raum und Zeit", dem als Swing-Nachfolger gehandeltem Java {FX} und die eingehend behandelte Stringverarbeitung oder "Threads und Collections" geht. Weiterhin wichtige Aspekte von Java wie "Annotationen", das Thema "Logging und Monitoring" oder Datensicherheit werden behandelt. Der Link zum E-Book ist nur einmalig zu benutzen. Neben Ullenboom: "Java ist auch eine Insel" (hier zuletzt {ID}-G 31/14) für sehr gut ausgebaute Bestände. (3)}
+      \field{edition}{2., aktualisierte und erw. Aufl}
+      \field{isbn}{978-3-8362-2874-9}
+      \field{note}{{OCLC}: 882980507}
+      \field{pagetotal}{1448}
+      \field{series}{Galileo Computing}
+      \field{shorttitle}{Java {SE} 8 Standard-Bibliothek}
+      \field{title}{Java {SE} 8 Standard-Bibliothek: das Handbuch für Java-Entwickler}
+      \field{year}{2014}
+      \field{dateera}{ce}
+    \endentry
     \entry{ullenboom_java_2016}{book}{}
       \name{author}{1}{}{%
         {{hash=961b512517a6b772a15931f9be557e95}{%
@@ -2409,6 +2446,7 @@
       \strng{authorbibnamehash}{961b512517a6b772a15931f9be557e95}
       \strng{authornamehash}{961b512517a6b772a15931f9be557e95}
       \strng{authorfullhash}{961b512517a6b772a15931f9be557e95}
+      \field{extraname}{2}
       \field{labelalpha}{Ull16}
       \field{sortinit}{U}
       \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}

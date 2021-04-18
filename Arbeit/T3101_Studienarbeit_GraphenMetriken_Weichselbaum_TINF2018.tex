@@ -793,6 +793,7 @@ Für die mit dem Entwickler assoziierten Use Cases sollen noch Use Case-Schablon
 {Über einen Zugriff auf das Graphobjekt wird\\ein Element identifiziert und gelöscht.}
 {-}
 
+\pagebreak
 \usecase{Element in Graph einfügen}
 {Ein Element wurde in ein Graphobjekt ein-\\gefügt.}
 {Das zu löschende Element ist noch nicht im\\Graphen vorhanden.}
@@ -803,7 +804,6 @@ Für die mit dem Entwickler assoziierten Use Cases sollen noch Use Case-Schablon
 {Über einen Zugriff auf das Graphobjekt wird\\ein neues Knotenobjekt eingefügt.}
 {-}
 
-\pagebreak
 \usecase{Bestimmte Graphelemente zurückgeben}
 {Der Nutzer oder die Nutzerin konnte bestimmte\\Knoten und Kanten aus dem Graphen ex-\\trahieren.}
 {-}
@@ -814,6 +814,7 @@ Für die mit dem Entwickler assoziierten Use Cases sollen noch Use Case-Schablon
 {Um den Graph zu analysieren muss man auf seine\\Elemente über eine Schnittstelle zugreifen\\können. Hierzu zählt das Ausgeben aller Knoten,\\aller Kanten und eines bestimmten Knotens.}
 {-}
 
+\pagebreak
 \usecase{Existenz eines Graphelements erfragen}
 {Der Nuter oder die Nutzerin weiß, ob ein be-\\stimmter Knoten oder eine Kante im Graph\\existiert.}
 {-}
@@ -824,7 +825,6 @@ Für die mit dem Entwickler assoziierten Use Cases sollen noch Use Case-Schablon
 {Über die Graphschnittstelle ist es möglich\\zu erfragen, ob der Graph einen be-\\stimmten Knoten oder eine bestimmte Kante enthält.}
 {-}
 
-\pagebreak
 \usecase{Metrik für Graph berechnen}
 {Der Nutzer oder die Nutzerin konnte sich vom\\Programm eine Metrik für einen\\bestimmten Graphen berechnen lassen.}
 {-}
@@ -835,6 +835,7 @@ Für die mit dem Entwickler assoziierten Use Cases sollen noch Use Case-Schablon
 {Über die Berechnungslogik wird für einen\\Graphen eine vorgegebene Metrik berechnet.\\Das Ergebnis wird dem/der Entwickler/in\\zurückgemeldet.}
 {-}
 
+\pagebreak
 \usecase{Bibliothek in Software einbinden}
 {Der Entwickler bzw. die Entwicklerin, die\\die Bibliothek in eine Software einbin-\\den will, kann dies erfolgreich durchführen.}
 {-}
@@ -986,6 +987,29 @@ Nachdem der Graph erstellt wurde, können auf ihm alle Metriken berechnet werden
 \end{figure}
 }
 \section{Algorithmik und Implementierung der Graph-Metriken}
+{
+Nachdem die Beschaffenheit und grundsätzliche Funktionsweise der Klassenbibliothek erläutert wurde, soll nun noch darauf eingegangen werden, wie die jeweiligen Metriken berechnet werden. Vor allem ist es interessant die Algorithmik einzelner Metirken zu beleuchten. Es werden dabei alle implementierten Metriken betrachtet. Zuerst werden die Graph-übergreifenden, dann die Knoten-beschreibenden und abschließend die Distanz zwischen zwei Knoten beschrieben.
+}
+\subsubsection*{Graph-umfassende Metriken}
+{
+Zu den Graph-umfassenden Metriken gehören zunächst die vorgestellten grundlegenden Metriken (siehe. 2.1), die für einen ganzen Graph gehören. Diese sind meist auch recht einfach zu berechnen. Für die Ordnung eines Graphen wird abgefragt, wie groß die Menge der Knoten ist. Die Knotenmenge kann dabei mit dem Aufruf \textit{graph.nodes()} erfragt werden, der im Graph-Interface definiert ist. Ähnlich verhält es sich auch bei der Größe des Graphen, wobei hier die Kantenmenge abgerufen wird (\textit{graph.edges()}). Eine Besonderheit besteht hierbei noch in der Unterscheidung zwischen gerichteten und ungerichteten Graphen. Ist der Graph nämlich ungerichtet so wird seine Größe durch Zwei geteilt. Dies wird durch den \textit{instanceof}-Aufruf von Java und die Marker-Interfaces erreicht.
+
+Zur Berechnung von Minimal-, Maximal- und Durchschnittsgrad bedient sich die Bibliothek der Stream-API von Java. Diese API ermöglicht es u.a. mithilfe von Lambda-Ausdrücken Datenmengen in Java zu filtern, abzubilden, zu reduzieren und zu sammeln. \cite{ullenboom_java_2014} Zur Berechnung werden die Knoten des Graphen in einem Stream verarbeitet und auf ihren jeweiligen Grad abgebildet. Hierfür wird die Grad-Metrik der Bibliothek genutzt. Auf den anschließenden Ganzzahl-Stream kann eine \textit{min()-, max()-} oder \textit{average()}-Anfrage aufgeführt werden. Da die API hierbei einen Java \textit{Optional} zurückgibt, muss dieser noch aufgelöst werden, indem bei Nichtvorhandensein eines Ergebnisses eine \textit{MetricCalculationException} geworfen wird. Dies ist beispielsweise der Fall, wenn der Graph leer ist. Der gesamte Aufruf zur Berechnung der Metrik sieht dann folgendermaßen aus (Beispiel für Maximalgrad):
+\begin{verbatim}
+	return graph.nodes().stream().mapToInt(node ->
+				BasicNodeMetricCalculation.degree(graph, node)).max()
+				.orElseThrow(() -> new MetricCalculationException(MESSAGE));
+\end{verbatim}
+Für die Berechnung der Anzahl der Zusammenhangskomponenten wird sich dem Algorithmus bedient, der bereits in 2.1 beschreiben wurde. D.h. wird eine Tiefensuche für alle Knoten initiiert, falls diese nicht bereits von einer anderen Tiefensuche besucht wurden. Hierfür gibt der Tiefensuche-Algorithmus immer die Menge an Besuchten Knoten zurück. Die Tiefensuche selbst ist Teil der Helfermethoden und bedient sich eines Stapels zur Koordinierung der Suche. Zu Beginn der Algrotihmus wird eine List für die besuchten Knoten und ein Stapel initialisiert. Der Start-Knoten wird in beide Kollektionen eingefügt. Anschließend wird solange ein Knoten vom Stapel genommen und seine nicht besuchten Nachbarn in die Kollektionen gelegt, bis der Stapel final leer ist. Danach wird Liste der besuchten Knoten zurückgegeben.
+
+Nach grundlegenden, graph-übergreifenden Metriken soll erklärt werden, wie das einzige Dichtemaß des Bibliothek berechnet wird. Die Dichte eines Graphen wurde in 2.4 beschrieben und kann genauso berechet werden, wie die Formel im Kapitel es vorschreibt. So wird einfach die Größe des Graphen durch den Binomialkoeffizienten \(|V|\) über \(2\) geteilt und das Ergebnis zurückgegeben. Hervorzuheben ist, dass beim Berechnen sowohl geprüft wird, ob ein simpler Graph vorliegt und ob der Graph gerichtet ist oder nicht. Der Graph muss simpel sein, da die Berechnung nur möglich ist, wenn keine Schlingen und Doppelkanten im Graph möglich sind. Weiterhin ist es relevant ob der Graph gerichtet ist oder nicht, da bei einem nicht gerichteten Graph der Binomialkoeffizienten verdoppelt werden muss, da der Graph ja potenziell doppelt so viele Kanten tragen kann. Zur Berechnung des Binomialkoeffizienten wird sich eines effizienten iterativen Algorithmus bedient, der die Produktformel für den Binomialkoeffizienten implementiert, die folgendermaßen lautet:
+\[
+	\binom{n}{k}=\prod_{i=1}^{k}\frac{n+1-i}{i}
+\]
+}
+\subsubsection*{Knoten-beschreibende Metriken}
+
+\subsubsection*{Distanzberechnung}
 
 \section{Testung der Klassenbibliothek}
 

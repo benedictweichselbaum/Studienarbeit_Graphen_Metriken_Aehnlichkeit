@@ -995,22 +995,59 @@ Nachdem die Beschaffenheit und grundsätzliche Funktionsweise der Klassenbibliot
 Zu den Graph-umfassenden Metriken gehören zunächst die vorgestellten grundlegenden Metriken (siehe. 2.1), die für einen ganzen Graph gehören. Diese sind meist auch recht einfach zu berechnen. Für die Ordnung eines Graphen wird abgefragt, wie groß die Menge der Knoten ist. Die Knotenmenge kann dabei mit dem Aufruf \textit{graph.nodes()} erfragt werden, der im Graph-Interface definiert ist. Ähnlich verhält es sich auch bei der Größe des Graphen, wobei hier die Kantenmenge abgerufen wird (\textit{graph.edges()}). Eine Besonderheit besteht hierbei noch in der Unterscheidung zwischen gerichteten und ungerichteten Graphen. Ist der Graph nämlich ungerichtet so wird seine Größe durch Zwei geteilt. Dies wird durch den \textit{instanceof}-Aufruf von Java und die Marker-Interfaces erreicht.
 
 Zur Berechnung von Minimal-, Maximal- und Durchschnittsgrad bedient sich die Bibliothek der Stream-API von Java. Diese API ermöglicht es u.a. mithilfe von Lambda-Ausdrücken Datenmengen in Java zu filtern, abzubilden, zu reduzieren und zu sammeln. \cite{ullenboom_java_2014} Zur Berechnung werden die Knoten des Graphen in einem Stream verarbeitet und auf ihren jeweiligen Grad abgebildet. Hierfür wird die Grad-Metrik der Bibliothek genutzt. Auf den anschließenden Ganzzahl-Stream kann eine \textit{min()-, max()-} oder \textit{average()}-Anfrage aufgeführt werden. Da die API hierbei einen Java \textit{Optional} zurückgibt, muss dieser noch aufgelöst werden, indem bei Nichtvorhandensein eines Ergebnisses eine \textit{MetricCalculationException} geworfen wird. Dies ist beispielsweise der Fall, wenn der Graph leer ist. Der gesamte Aufruf zur Berechnung der Metrik sieht dann folgendermaßen aus (Beispiel für Maximalgrad):
-\begin{verbatim}
+\begin{lstlisting}
 	return graph.nodes().stream().mapToInt(node ->
 				BasicNodeMetricCalculation.degree(graph, node)).max()
 				.orElseThrow(() -> new MetricCalculationException(MESSAGE));
-\end{verbatim}
+\end{lstlisting}
 Für die Berechnung der Anzahl der Zusammenhangskomponenten wird sich dem Algorithmus bedient, der bereits in 2.1 beschreiben wurde. D.h. wird eine Tiefensuche für alle Knoten initiiert, falls diese nicht bereits von einer anderen Tiefensuche besucht wurden. Hierfür gibt der Tiefensuche-Algorithmus immer die Menge an Besuchten Knoten zurück. Die Tiefensuche selbst ist Teil der Helfermethoden und bedient sich eines Stapels zur Koordinierung der Suche. Zu Beginn der Algrotihmus wird eine List für die besuchten Knoten und ein Stapel initialisiert. Der Start-Knoten wird in beide Kollektionen eingefügt. Anschließend wird solange ein Knoten vom Stapel genommen und seine nicht besuchten Nachbarn in die Kollektionen gelegt, bis der Stapel final leer ist. Danach wird Liste der besuchten Knoten zurückgegeben.
 
 Nach grundlegenden, graph-übergreifenden Metriken soll erklärt werden, wie das einzige Dichtemaß des Bibliothek berechnet wird. Die Dichte eines Graphen wurde in 2.4 beschrieben und kann genauso berechet werden, wie die Formel im Kapitel es vorschreibt. So wird einfach die Größe des Graphen durch den Binomialkoeffizienten \(|V|\) über \(2\) geteilt und das Ergebnis zurückgegeben. Hervorzuheben ist, dass beim Berechnen sowohl geprüft wird, ob ein simpler Graph vorliegt und ob der Graph gerichtet ist oder nicht. Der Graph muss simpel sein, da die Berechnung nur möglich ist, wenn keine Schlingen und Doppelkanten im Graph möglich sind. Weiterhin ist es relevant ob der Graph gerichtet ist oder nicht, da bei einem nicht gerichteten Graph der Binomialkoeffizienten verdoppelt werden muss, da der Graph ja potenziell doppelt so viele Kanten tragen kann. Zur Berechnung des Binomialkoeffizienten wird sich eines effizienten iterativen Algorithmus bedient, der die Produktformel für den Binomialkoeffizienten implementiert, die folgendermaßen lautet:
 \[
 	\binom{n}{k}=\prod_{i=1}^{k}\frac{n+1-i}{i}
 \]
+Die Implementierung dieser Produktformel, kann innerhalb von Java folgendermaßen aussehen. Hierbei wird zuerst abgefangen, falls \(k\) Null ist. Ist dies der Fall, ist das Ergebnis immer 0. Ist wiederum \(2 * k\) größer als \(n\), so wird \(k\) zu \(n - k\). Dies ist möglich, da das Pascal'sche Dreieck, in dem die Werte des Binomialkoeffizienten stehen, symmetrisch ist und \(k\) die Spalten in diesem Dreieck rerpäsentiert. Zudem verkürzt das verkleinerte \(k\) die Zählschleife und somit dem Algrotihmus.
+\begin{lstlisting}
+	if (k == 0) return 1L;
+	if (2 * k > n) k = n - k;
+	long solution = 1L;
+	for (int i = 1; i <= k; i++) {
+		solution = solution * (n + 1 - i) / i;
+	}
+return solution;
+\end{lstlisting}
+Für die distanzbasierten, graph-übergreifenden Metriken wird sich wieder der Java Stream-API bedient. Sowohl für den Radius als auch für den Durchmesser wird die Extrenzität aller Knoten benötigt. Ähnlich wie beim Maximal- oder Minimalgrad werden alle Knotens des Graphen auf eine Granzzahl abgebildet. In diesem Fall auf die Extrenzität. Dann kann wieder über die \textit{max()} (Durchmesser) und \textit{min()} (Radius) die jeweilige Metrik extrahiert werden. Auch hier gilt, dass bei einem leeren Graphen über die \textit{Optional}-Logik eine \textit{MetricCalculationException} geworfen wird.
+
+Die letzten graph-übergreifenden Metriken, die umgesetzt wurden, sind die chromatische Zahl und der chromatische Index. Zur Berechnung der chromatischen Zahl wurden zwei Algorithmen implementiert. Eine exakte Berechnung des NP-vollständigen Problems und die bereits vorgestellte Greedy-Variante. Die Greedy-Variante konnte so umgesetzt werden, wie sie in 2.6 beschreiben wurde. Um für den Algorithmus die jeweilige niedrigst mögliche Farbe zu wählen, werden jeweils die zum Knoten adjazenten Knotenfarben in eine Liste geladen und anschließend, beginnend mit der niedrigsten Farbe, durch die Farben iteriert und geprüft, ob die Farbe in der Liste ist. Ist sie das nicht, kann sie als Farbe für den Knoten verwendet werden. Die Ermittlung der exakten chromatischen Zahl erwies sich als schwieriger. Um über alle möglichen Färbungen zu iterieren, wie das bei der exakten Berechnung nötig ist, müssen jeweils \(n\) Zählschleifen ineinander geschachtelt werden, die jeweils bis zur maximal höchsten Färbung zählen und dies ihrem korrespondierenden Knoten zuweisen. Sowohl \(n\) als auch die höchst mögliche Farbe entspricht der Ordnung des Graphen. Um diese beliebige Schachtelung der Zählschleifen zu erreichen, muss ein rekursiver Algorithmus entworfen werden. Um den rekursiven Abstieg zu koordinieren, wird eine Level-Variable eingefügt, die anfangs so groß ist, wie die Ordnung des Graphen. Bei jedem Abstieg wird diese um eins reduziert und sie markiert, welcher Knoten bei welchem Aufruf zu Färben ist. Ist das Level gleich 0, tritt der Basis-Fall der Rekursion ein und es wird geprüft, ob die jeweilige aktuelle Färbung legal ist. Fall diese das ist, wird geprüft, wie viele verschiedene Farben genutzt wurden und in ein einheitliches Lösungsobjekt die aktuell kleiste legale Färbungszahl geschrieben. Das Lösungsobjekt, das dem Algorithmus übergeben wird, kann anschließend ausgelesen werden. Um zu prüfen, ob eine Färbung legal, wird über alle Knoten iteriert und geprüft, ob einer der Nachbarn jeweils die gleiche Farbe hat wie der aktuelle Knoten. Ist dies nur einmal der Fall, so ist die Färung nicht legal. Im Pseudocode ausformuliert, sieht der Algorithmus folgendermaßen aus:
+\begin{lstlisting}
+	chromaticNumberExact(graph, nodeColorings: List<[Node, Integer]>, level, maxColor, solution) {
+		if (level == 0) { // Basisfall
+			if (isLegalColoring(graph, nodeColorings)) {
+				solution = Math.min(solution, colorNumber(nodeColorings));
+			}
+		} else { // Rekursionsfall
+			for (int i = 1; i <= maxColor; i++) {
+				nodeColorings.get(level).setColor(i);
+				chromaticNumberExact(graph, nodeColorings, level - 1, maxColor,
+				solution);
+			}
+		}
+	}
+\end{lstlisting}
+Bereits beim statischen Entwurf der Bibliothek wurde gezeigt, wie die Berechnung des chromatischen Index erfolgt. Hierfür wird der Code der chromatischen Zahl einfach wiederverwandt. Auch beim chromatischen Index wird eine exakte und eine Greedy-Variante bereitgestellt. Grundsätzlich wird der Graph zur Berechnung also invertiert und anschließend die schon beschriebenen Algorithmen angewandt. Bei der Invertierung wird jede Kante in einen Knoten umgewandelt und anschließend dort Kanten eingefügt, falls beim ursprünglichen Graph zwei Kanten inzident zueinander waren.
 }
 \subsubsection*{Knoten-beschreibende Metriken}
+{
+Auch bei den Knoten-beschreibenden Metriken gibt es bestimmte grundlegende Metriken. Der Ausgangsgrad eines Knotens wird dabei berechnet, indem die Größe der Menge seiner adjazenten Knoten (\textit{graph.adjacentNodes(node)}) zurückgegeben wird. Zur Berechnung des Eingangsgrads wird die Liste aller Kanten (\textit{edges()}) gefiltert und dabei geschaut, ob der Knoten, zu der die Kante zeigt, gleich dem zu untersuchenden Knotens ist. Für den Eingangsgrad kann dann diese gefilterte Liste gezählt werden. Bei der Berechnung des allgemeinen Knotengrades muss wieder unterschieden werden, ob ein gerichteter Graph vorhanden ist. Ist er ungerichtet so kann als Graph einfach der Ausgangsgrad genutzt werden. Ist er gerichtet, müssen sowohl ein- als auch ausgehende Kanten einzeln gezählt werden. Dies wird erreicht durch die Addition des Ausgangs- und Eingangsgrads.
 
-\subsubsection*{Distanzberechnung}
+Um die Extrenzität, die auch für den Durchmesser und den Radius gebraucht wird, eines Knoten zu berechnen, werden wieder alle Knoten des Graphen auf eine Granzzahl abgebildet. Die entstehenden Ganzzahlen sind die Distanzen zwischen dem zu Untersuchenden Knoten und allen anderen Knoten. Aus der so entstanden Distanzliste kann dann die höchste Zahl entnommen werden, die wiederum die Extrenzität des Knotens darstellt.
 
+
+}
+\subsubsection*{Metriken zwischen zwei Knoten}
+{
+Die erste Metrik, die die Klassenbibliothek zwischen zwei Knoten definiert, ist die kürzeste Distanz zwischen diesen. Zur Berechung dieser haben sich einige Algorithmen verausgebildet. So können z.B. eine Breitensuche, der Djikstra-Algorithmus oder der A*-Algortihmus das Problem korrekt lösen. Bei der Breitensuche muss allerdings die Distanz zwischen zwei Knoten immer 1 sein und der A*-Algorithmus benötigt eine Heuristik, um effizient zu arbeiten. Im Rahmen dieser Bibliothek wurde zur Berechnung der Distanz die "`Uniform Cost Search"' gewählt, wie sie im Buch "`Artificial Intelligence - A modern approach"' von Stuart Russell und Peter Norvig beschrieben ist. Zu Beginn des Algrithmus wird zunächst eine Vorrangwarteschlange initialisiert, die immer den Knoten an vorderste Stelle stellt, der die niedrigste Distanz zum Ausgangsknoten hat. Zudem wird eine Liste der besuchten Knoten angelegt. Anfangs wird in diese Warteschlange der Ausgangsknoten mit Distanz 0 gelegt. Anschließend wird das erste Element aus der Warteschlange genommen und geprüft, ob dies der Zielknoten ist. Wenn ja, kann seine hinterlegte Distanz zurückgegeben werden. Falls nicht, wird der Knoten in die Liste der besuchten Knoten hinzugefügt und in die Vorrangwarteschlange werden alle seine noch nicht besuchten Nachbarknoten gelegt. Diese bekommen die Distanzmarkierung \textit{Markierung aktueller Knoten + Distanz zu jeweiligen Nachbar}. Dieser Vorgang wird solange wiederholt, bis die Warteschlange leer ist. Falls dies eintrifft und somit kein Weg zwischen den Knoten gefunden wurde, gibt der Algorithmus den maximalen Ganzahlwert des Typs \textit{Integer} zurück, um die Distanz \(\infty\) zu repräsentieren. Der implementierte Algorithmus kann sowohl mit Kantenmarkierungen für die Distanz arbeiten oder für jede Kante die Distanz 1 annehmen. Falls die Kantenmarkierung berücksichtig werden soll, muss dies bei Aufruf angegeben werden und die Kantenmarkierung muss zu einer Zahl castbar sein. \cite{russell_artificial_2016}
+}
 \section{Testung der Klassenbibliothek}
 
 \section{Überprüfung der nicht funktionalen Anforderungen}

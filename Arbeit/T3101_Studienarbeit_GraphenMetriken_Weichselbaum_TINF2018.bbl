@@ -2063,6 +2063,48 @@
       \verb https://reference.wolfram.com/language/ref/FindClique.html
       \endverb
     \endentry
+    \entry{russell_artificial_2016}{book}{}
+      \name{author}{2}{}{%
+        {{hash=18ee0a7bfc995f40254c9d425c977a49}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Stuart\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5de798d5fa3c0236c0478134cd23f52a}{%
+           family={Norvig},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston Columbus Indianapolis New York San Francisco Upper Saddle River Amsterdam, Cape Town Dubai London Madrid Milan Munich Paris Montreal Toronto Delhi Mexico City Sao Paulo Sydney Hong Kong Seoul Singapore Taipei Tokyo}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{fullhash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{bibnamehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{authorbibnamehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{authornamehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{authorfullhash}{a4f50258a14156905c8d2b1b4704be30}
+      \field{labelalpha}{RN16}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{Third edition, Global edition}
+      \field{isbn}{978-1-292-15396-4}
+      \field{pagetotal}{1132}
+      \field{series}{Prentice Hall series in artificial intelligence}
+      \field{shorttitle}{Artificial intelligence}
+      \field{title}{Artificial intelligence: a modern approach}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/benedict/snap/zotero-snap/common/Zotero/storage/9ITDVEPE/Russell et al. - 2016 - Artificial intelligence a modern approach.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{sagemath_generic_nodate}{online}{}
       \name{author}{1}{}{%
         {{hash=fe35b7fe7ae5c4d992398b8159d20c54}{%

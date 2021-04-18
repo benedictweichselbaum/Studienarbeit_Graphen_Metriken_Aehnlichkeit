@@ -66,28 +66,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Algorithmik und Implementierung der Graph-Metriken}{57}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Testung der Klassenbibliothek}{59}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Testung der Klassenbibliothek}{61}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Überprüfung der nicht funktionalen Anforderungen}{59}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Überprüfung der nicht funktionalen Anforderungen}{61}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Abstraktion der Graphmetrik-Berechnung}{60}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Abstraktion der Graphmetrik-Berechnung}{62}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Die Ähnlichkeit von Graphen}{61}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Die Ähnlichkeit von Graphen}{63}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Definition von Ähnlichkeitsmaßen}{61}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Definition von Ähnlichkeitsmaßen}{63}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{61}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Beispielhafte Anwendung der Ähnlichkeitsmaße}{63}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Bewertung des Ähnlichkeitsmaßes}{61}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Bewertung des Ähnlichkeitsmaßes}{63}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{62}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Fazit und Zusammenfassung}{64}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{62}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{64}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Fazit}{62}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Fazit}{64}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{63}{chapter*.51}%
+\contentsline {chapter}{Glossar}{65}{chapter*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{64}{chapter*.52}%
+\contentsline {chapter}{\nonumberline Literatur}{66}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

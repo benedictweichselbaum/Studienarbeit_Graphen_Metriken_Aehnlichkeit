@@ -148,7 +148,7 @@
 \AfterTOCHead{\thispagestyle{empty}}
 
 \begin{document}
-\title{\Large{Untersuchung und Implementierung von Graph-Metriken und die Erkennung von Graph-Ähnlichkeit
+\title{\Large{Untersuchung und Umsetzung von Graph-Metriken
 }}
 \author{Benedict Martin Weichselbaum}
 \date{\today}
@@ -162,7 +162,7 @@
 	
 	\vspace{5mm}	
 	{\fontsize{26}{40}\selectfont
-	Untersuchung und Implementierung von Graph-Metriken und die Erkennung von Graph-Ähnlichkeit
+	Untersuchung und Umsetzung von Graph-Metriken
 	}
 	\\
 	\vspace{2cm}
@@ -1042,11 +1042,83 @@ Auch bei den Knoten-beschreibenden Metriken gibt es bestimmte grundlegende Metri
 
 Um die Extrenzität, die auch für den Durchmesser und den Radius gebraucht wird, eines Knoten zu berechnen, werden wieder alle Knoten des Graphen auf eine Granzzahl abgebildet. Die entstehenden Ganzzahlen sind die Distanzen zwischen dem zu Untersuchenden Knoten und allen anderen Knoten. Aus der so entstanden Distanzliste kann dann die höchste Zahl entnommen werden, die wiederum die Extrenzität des Knotens darstellt.
 
+Die Metrikenklasse mit den meisten Implementierungen bei den Knoten-beschreibenden Metriken sind die Zentralitätsmetriken. Die erste Zentralitätsmetrik ist die Degree Centrality. Diese ist äußerst einfach zu berechnen, da sie deckungsgleich zum Grad des Knotens ist. D.h. die Aufgabe wird einfach an die Grad-Berechnung deligiert, damit kein doppelter Code geschrieben werden muss.
 
+Die erste komplexere Centrality-Berechnung ist die der Closeness Centrality. Für diese Metrik muss man wissen, wie weiter der zu untersuchende Knoten von allen anderen Knoten entfernt ist. Um diese Distanzen herauszufinden, wird sich einer Breitensuche bedient, die eine Map zurückliefert, die die anderen Knoten auf ihre Distanz vom Ausgangsknoten abbildet. Die Breitensuche wird genauer in einem weiteren Abschnitt beschrieben. Sind zunächt die Distanzen vorhanden, können diese einfach aufsummiert werden, um anschließend, die Formel für die Closeness Centrality anzuwenden. Ist die aufsummierte Distanz, wird als Ergebnis die höchstmögliche Ganzzahl zurückgegeben, um \(\infty\) zu repräsentieren.
+
+Um die Betweenness Centrality zu berechnen, ist es nötig die Funktionen \(\sigma_{st}(v)\) und \(\sigma_{st}\) zu implementieren. Da die Funktion \(\sigma_{st}(v)\) auf \(\sigma_{st}\) basiert, muss voralledem die zweitere algorithmisch umgesetzt werden. Auch hierbei hilft die Breitensuche. Da \(\sigma_{st}\) die Anzahl der kürzesten Wege zwischen zwei Knoten darstellt und damit eine Metrik für sich ist, wird diese später noch genauer beschrieben. Ist \(\sigma_{st}\) umgesetzt, kann \(\sigma_{st}(v)\) einfach so im Programm umgesetzt werden, wie in Kapitel 2.5 beschrieben. Hierbei wird für die Berechnung der Distanzen zwischen zwei Knoten auf die korrespondierende Implementierte Metrik zugegriffen, die noch genauer erläutert wird. Mit den beiden implementierten Funktionen kann die Betweenness Centrality einfach über zwei Zählschleifen umgesetzt werden. Die jeweiligen Schleifen iterieren über alle Knoten des Graphen. Falls die beiden betrachteten aktuellen Knoten \(s\) und \(t\) nicht dem zu untersuchenden Knoten entsprechen und \(s\) und \(t\) nicht gleich sind, kann zur Betweenness Centrality des Knotens ein Summand addiert werden. Hierbei ist der Summand einfach die Anzahl \(\sigma_{st}(v)\) durch \(\sigma_{st}\) geteilt, wie es die Formel auch vorgibt. Ist die Iteration vorbei kann das Ergebnis der Betweenness Centrality zurückgegeben werden.
+
+Eine weitere Zentralitätsmetrik ist die Eigenvector Centrality. Diese wird in der Klassenbibliothek mittels des vorgestellten Power Iteration-Algorithmus berechnet. Da dieser Algoritmus mittels Matrixmultiplikation verläuft benötigt es zwei Dinge. Zuerst muss für den Graph eine Repräsentation mittels einer Adjazenzmatrix bereitgestellt werden. Zweitens muss eine Funktion zur Matrixmultiplikation vorhanden sein. Für ersteres dient die Methode \textit{adjacencyMatrix()} des \textit{Graph}-Interfaces. Die im \textit{AdjacencyMatrix}-Objekt enthaltene Matrix wird anschließend so umgewandelt, dass statt der Kantenmarkierung eine 1 oder 0 in den Matrixpositionen steht. Eine 1 steht im Eintrag, falls dort vorher auch eine Kante eingetragen war. Ansonsten wird eine 0 eingetragen. Für die Matrixmultiplikation wird mittels Maven die "`Apache Commons"'-Bibliothek eingebunden, da diese eine effiziente Implementierung für die Matrixmultiplikation bietet. Neben der Adjazenzmatrix muss für die Poweriteration auch der Startvektor erstellt werden, der so viele Zeilen wie die Adjazenzmatrix hat und eine Spalte hat, wobei jeder Eintrag 1 ist. Die Power Iteration selbst ist ein rekursiver Algorithmus. In diesem wird zunächst ein neuer Ergebnisvektor berechnet, indem die Adjazenzmatrix mit dem aktuellen Eigenvector Centrality-Vector multipliziert wird. Zu Anfang ist das der erstellte Startvektor. Der so entstehende neue Vektor wird normalisiert und der Normalisierungswert wird zusätzlich gespeichert. Der Basisfall der Rekursion tritt nun auf, wenn die Berechnung konvergiert. Dies ist der Fall, wenn der aktuelle Normalisierungswert fast gleich dem alten Normalisierungswert ist (maximale Differenz 0,001). Dann kann der Ergebnisvektor mit den Eigenvector Centralities zurückgegeben werden und der Wert für den zu untersuchenden Knoten herausgenommen werden. Konvergiert die Berechung nicht, tritt der Rekursionsfall ein. Hierbei wird einfach die Power Iteration mit dem neuen Eigenvector Centrality-Vektor erneut aufgerufen. Zudem wird der vorher berechnete Normalisierungswert mitgegeben, um zu prüfen, ob die Berechnung konvergiert. Als Pseudocode kann der Algorithmus folgendermaßen zusammengefasst werden:
+\begin{lstlisting}
+	double[][] powerIteration(adjacencyMatrix, vector, normalizedValue) {
+		newVector = adjacencyMatrix * vector;
+		newNormalizedValue = calcNormalizedValue(newVector);
+		normalizeVector(newVector, newNormalizedValue);
+		if (powerIterationConverged(normalizedValue, newNormalizedValue)) {
+			return newVector;
+		} else {
+			return powerIteration(adjacencyMatrix, newVector,
+				newNormalizedValue);
+		}
+	}
+\end{lstlisting}
+Die letzte Zentralitätsmetrik, die umgesetzt wurde, ist der Page Rank. Auch hier wird ein Rekursiver Algoritmus zur Berechnung genutzt. Zu Beginn bekommt jeder Knoten innerhalb einer Java-Map den Page Rank \(1/|V|\) zugewiesen. Anschließend kann der eigentliche Algorithmus gestartet werden. Da dieser auch terminiert, wenn die Werte in der Map gegen einen bestimmten Wert konvergieren, wird im ersten Schritt die Map kopiert. Schlussendlich kann die in 2.5 vorgestellte Formel für den Page Rank angewandt werden. Hierfür wird über alle Knoten des Graphen iteriert und die Formel angewandt und anschließend der neue Wert in der Map für den Knoten gespeichert. Sind alle Werte sehr ähnlich zur Map aus vorigen Funktionsaufruf (Differenz < 0.001), so tritt der Basisfall ein und der Algorithmus terminiert und aus der Map kann der Page Rank aller Knoten abgelesen werden. Ansonsten tritt der Rekursionsfall ein und der Page Rank-Algrotihmus wird erneut mit der neuen Map aufgerufen. Im Pseudocode sieht das folgendermaßen aus. Der der Dämpfungsfaktor, der für den Algorithmus gewählt werden muss, steht als Konstante in der Klasse zur Verfügung und beträgt 0,85.
+\begin{lstlisting}
+	Map<Node, Double> pageRank(graph, previousMap, pageRankMap) {
+		newPageRankMap = clone(pageRankMap);
+		for (node : graph.nodes()) {
+			newPageRank = 1 - MODERATION_FACTOR;
+			pageRankAddend = 0;
+			for (adjacentNode: graph.adjacentNodes(node)) {
+				pageRankAddend += previousMap.get(adjacentNode) /
+					outDegree(graph, adjacentNode);
+			}
+			pageRankAddend *= MODERATION_FACTOR;
+			newPageRankMap.put(node, newPageRank + pageRankAddend);
+		}
+		if (pageRankConverges(previousMap, newPageRankMap)) {
+			return newPageRankMap;
+		} else {
+			return pageRank(graph, pageRankMap, newPageRankMap);
+		}
+	}
+\end{lstlisting}
 }
 \subsubsection*{Metriken zwischen zwei Knoten}
 {
 Die erste Metrik, die die Klassenbibliothek zwischen zwei Knoten definiert, ist die kürzeste Distanz zwischen diesen. Zur Berechung dieser haben sich einige Algorithmen verausgebildet. So können z.B. eine Breitensuche, der Djikstra-Algorithmus oder der A*-Algortihmus das Problem korrekt lösen. Bei der Breitensuche muss allerdings die Distanz zwischen zwei Knoten immer 1 sein und der A*-Algorithmus benötigt eine Heuristik, um effizient zu arbeiten. Im Rahmen dieser Bibliothek wurde zur Berechnung der Distanz die "`Uniform Cost Search"' gewählt, wie sie im Buch "`Artificial Intelligence - A modern approach"' von Stuart Russell und Peter Norvig beschrieben ist. Zu Beginn des Algrithmus wird zunächst eine Vorrangwarteschlange initialisiert, die immer den Knoten an vorderste Stelle stellt, der die niedrigste Distanz zum Ausgangsknoten hat. Zudem wird eine Liste der besuchten Knoten angelegt. Anfangs wird in diese Warteschlange der Ausgangsknoten mit Distanz 0 gelegt. Anschließend wird das erste Element aus der Warteschlange genommen und geprüft, ob dies der Zielknoten ist. Wenn ja, kann seine hinterlegte Distanz zurückgegeben werden. Falls nicht, wird der Knoten in die Liste der besuchten Knoten hinzugefügt und in die Vorrangwarteschlange werden alle seine noch nicht besuchten Nachbarknoten gelegt. Diese bekommen die Distanzmarkierung \textit{Markierung aktueller Knoten + Distanz zu jeweiligen Nachbar}. Dieser Vorgang wird solange wiederholt, bis die Warteschlange leer ist. Falls dies eintrifft und somit kein Weg zwischen den Knoten gefunden wurde, gibt der Algorithmus den maximalen Ganzahlwert des Typs \textit{Integer} zurück, um die Distanz \(\infty\) zu repräsentieren. Der implementierte Algorithmus kann sowohl mit Kantenmarkierungen für die Distanz arbeiten oder für jede Kante die Distanz 1 annehmen. Falls die Kantenmarkierung berücksichtig werden soll, muss dies bei Aufruf angegeben werden und die Kantenmarkierung muss zu einer Zahl castbar sein. \cite{russell_artificial_2016}
+
+Die letzte Metrik deren Implementierung beschreiben wird, ist eine spezielle Metrik, die deswegen implementiert wurde, da sie für die Betweenness Centrality gebraucht wird. Damit die Anzahl der kürzesten Wege zwischen zwei Knoten berechnet werden kann, wird sich wie beschrieben einer speziellen Breitensuche bedient. Die gleiche Breitensuche wird auch für die Distanzen bei der Closeness Centrality genutzt. Für beide Nutzungsszenarien liefert die implementierte Breitensuche ein Ergebnis vom Typ \textit{Tuple\textless Map\textless N, Integer\textgreater , Map\textless N, Integer\textgreater\textgreater}. In der ersten Map werden alle erreichbaren Knoten gelistet und auf ihre Distanz vom Ausgangsknoten abgebildet. In der zweiten Map sind die gleichen Knoten verzeichet und werden auf die Anzahl der kürzesten Wege vom Ausgangsknoten aus abgebildet. Somit kann das Ergebnis für die Berechnung der Anzahl der kürzesten Wege zwischen zwei Knoten einfach aus der zweiten Map gelesen werden. Die verwendete spezialisierte Breitensuche wurde von Said Sryheni in seinem Artikel "`Number of Shortest Paths in a Graph"' beschrieben \cite{sryheni_number_2020}. Die Suche verfolgt dabei grundsätzlich das gleiche Prinzip wie die beschriebene Tiefensuche, nur dass anstatt eines Stapels eine Warteschlange als Hilfsstruktur gewählt wird. Aus der Warteschlange wird zunächst der erste Knoten entnommen und dann über all seine Nachbarn iteriert. Ist ein Nachbar noch nicht besucht, wird er in die Warteschlange eingereit und als besucht markiert. Zusätzlich wird nun geprüft, ob die akutelle Distanz zum jeweiligen adjazenten Knoten kleiner ist, als die eingetragene. Ist dies der Fall wird die nun kleinere gefundene Distanz eingetragen. Zudem kann die Anzahl der gefunden kürzesten Wege zum Knoten auf die Anzahl der kürzesten Wege gesetzt werden, die der aktuell betrachtete Knoten hat. Ist dies nicht der Fall wird geprüft, ob die neu gefundene Distanz gleich zu der bereits eingetragenen ist. Fall dies zutrifft, kann gesagt werden, dass ein neuer kürzester Weg zum jeweiligen Knoten gefunden wurde. In diesem Fall wird die Anzahl der kürzesten Wege für diesen Knoten um so viel erhöht, wie es kürzeste Wege zum gerade betrachteten Knoten gibt. Der beschriebene Vorgang wird solange wiederholt, bis die Warteschlange leer ist. Anschließend werden beide Maps zurückgeben. Um den Algorithmus verständlicher zu machen, ist folgender Pseudocode gegeben.
+\begin{lstlisting}
+	Tuple<Map<N, Integer>, Map<N, Integer>> bfs(graph, node) {
+		distanceMap = mapWithDefaultValues(graph.nodes(), Int.MAX_VALUE);
+		pathsMap = mapWithDefaultValues(graph.nodes(), 0);
+		distanceMap.replace(node, 0);
+		pathsMap.replace(node, 1);
+		queue = new List();
+		queue.add(node);
+		vistedNodes = new List();
+
+		while (!queue.isEmpty()) {
+			actNode = queue.poll();
+			for (child : graph.adjacentNodes(actNode)) {
+				if (!visitedNodes.contains(child)) {
+					queue.add(child);
+					visitedNodes.add(child);
+				}
+				if (distanceMap.get(child) > distanceMap.get(actNode) + 1) {
+					distanceMap.replace(child, distanceMap.get(actNode) + 1);
+					pathsMap.replace(child, pathsMap.get(actNode));
+				} else if (distanceMap.get(child) == distanceMap.get(actNode) 
+					+ 1)) {
+					pathsMap.replace(child, pathsMap.get(child) + pathsMap
+						.get(actNode));
+				}
+			}
+		}
+		return new Tuple(distanceMap, pathsMap);
+	}
+\end{lstlisting}
 }
 \section{Testung der Klassenbibliothek}
 

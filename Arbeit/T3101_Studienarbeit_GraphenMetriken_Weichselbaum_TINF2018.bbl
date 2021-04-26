@@ -1082,6 +1082,55 @@
       \verb https://www.gitta.info/Accessibiliti/de/html/StructPropNetw_learningObject2.html
       \endverb
     \endentry
+    \entry{gulati_java_2017}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7bd11540c6d96ee137c7bc8d6aa59220}{%
+           family={Gulati},
+           familyi={G\bibinitperiod},
+           given={Shekhar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f5c184ac68798ea801914f18e49d22bd}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, {CA}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{4e225b7e437580d0e71efb79886b15a1}
+      \strng{fullhash}{4e225b7e437580d0e71efb79886b15a1}
+      \strng{bibnamehash}{4e225b7e437580d0e71efb79886b15a1}
+      \strng{authorbibnamehash}{4e225b7e437580d0e71efb79886b15a1}
+      \strng{authornamehash}{4e225b7e437580d0e71efb79886b15a1}
+      \strng{authorfullhash}{4e225b7e437580d0e71efb79886b15a1}
+      \field{labelalpha}{GS17}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4842-3014-5 978-1-4842-3015-2}
+      \field{langid}{english}
+      \field{title}{Java Unit Testing with {JUnit} 5}
+      \field{urlday}{20}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-1-4842-3015-2
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-1-4842-3015-2
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-1-4842-3015-2
+      \endverb
+    \endentry
     \entry{gabow_forests_1992}{article}{}
       \name{author}{2}{}{%
         {{hash=e4b8e86ad817fe889b7e8969f83da863}{%

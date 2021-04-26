@@ -190,7 +190,7 @@
 
 \section*{Erklärung}
 \thispagestyle{empty}
-Ich versichere hiermit, dass ich meine Studienarbeit mit dem Thema \textit{Graphen: Metriken und Ähnlichkeit} selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.
+Ich versichere hiermit, dass ich meine Studienarbeit mit dem Thema \textit{Untersuchung und Umsetzung von Graph-Metriken} selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.
 \newline
 Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruckten Fassung übereinstimmt.\vspace{1.6cm}\newline
 {Nürnberg, \today\vspace{1.2cm}\par\vspace{1.5cm}}
@@ -198,7 +198,7 @@ Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruc
 
 \selectlanguage{english}
 \begin{abstract}
-	
+
 \end{abstract}
 
 \selectlanguage{ngerman}
@@ -211,19 +211,26 @@ Ich versichere zudem, dass die eingereichte elektronische Fassung mit der gedruc
 \pagenumbering{Roman}
 \setcounter{page}{1}
 
-\listoftables\thispagestyle{plain}
-
 \chapter*{Abkürzungsverzeichnis}
 \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 \begin{acronym}
-
+	\acro{CSV}{Comma Separated Values}
+	\acro{IEC}{International Electrotechnical Commission}
+	\acro{IEEE}{Institute of Electrical and Electronics Engineers}
+	\acro{ISO}{International Standard Organisatizon}
+	\acro{JSON}{Java Script Object Notation}
+	\acro{JVM}{Java Virtual Machine}
+	\acro{NP}{nicht-deterministisch polynomiell}
+	\acro{POJO}{Plain Old Java Object}
+	\acro{UML}{Unified Modelling Language}
+	\acro{XML}{Extensible Markup Language}
 \end{acronym}
 
 
 \chapter{Einleitung}
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\section{Motivation für die Studienarbeit}{
+\section{Motivation und Ziel der Studienarbeit}{
 Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Warum kann man das sagen? In seinem Buch "`Algorithmische Graphentheorie"' nennt Volker Turau, Professor an der Universität Hamburg-Harburg, den Grund dafür: 
 \zitat{Graphen sind die in der Informatik am häufigsten verwendete Abstraktion. Jedes System, welches aus diskreten Zuständen oder Objekten und Beziehungen zwischen diesen besteht, kann als Graph modelliert werden.}{turau_algorithmische_2004}
 Diese netzartigen Strukturen können dabei die verschiedensten Konstrukte repräsentieren. Dazu zählen Straßennetze, Computernetzwerke, elektrische Schaltungen aber auch zum Beispiel chemische Moleküle. \cite{tittmann_graphentheorie_2019}
@@ -235,8 +242,6 @@ Diese Studienarbeit soll nun diese Metriken genauer untersuchen. Hierbei ist es 
 Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Implementierung bzw. Nutzung dieser Kennzahlen stattfinden. Mithilfe einer selbst erstellten Klassenbibliothek soll aufgezeigt werden, wie die vorgestellten Metriken konkret umgesetzt werden können. Die Entwicklung dieser Klassenbibliothek soll ingenieursmäßig unter Zuhilfenahme von Softwareengineeringwerkzeugen erfolgen. Infolgedessen entsteht das finale Softwareprodukt im Rahmen des klassischen Softwarelebenszyklus und umfasst die Analyse der Anforderungen, einen Softwareentwurf und die Implementierung und Testung der Software. Bei der Anforderungsanalyse sollen sowohl funktionale und nicht funktionale Aspekte beleuchtet werden. \cite{balzert_lehrbuch_2009,balzert_lehrbuch_2011}
 
 Neben der Entwicklung einer Klassenbibliothek zur Berechnung der Graphmetrik ist zudem Ziel der Arbeit zu erarbeiten, wie es möglich wäre die Metriken-Berechnung weiter zu abstrahieren. Hierbei soll ein grobes Konzept erarbeitet werden, wie die Berechnung der Graphkennzahlen potenziell weiter verallgemeinert werden kann, in dem Sinne, dass die eigentliche Berechnungslogik frei wählbar ist. So könnte die Berechnung durch die implementierte Klassenbibliothek erfolgen oder durch ein Graphdatenbanksystem.
-
-Auf Basis der Implementierung ist es zudem Ziel der Arbeit den Aspekt der Ähnlichkeit zwischen Graphen zu beleuchten. Ziel ist es zwei Graphen miteinander vergleichbar zu machen. Unter Zuhilfenahme der implementierten Metriken soll ein Ähnlichkeitsmaß erarbeitet werden, das es möglich macht zwei Graphen gegenüberzustellen. Dieses Ähnlichkeitsmaß wird daraufhin beispielhaft angewendet und bewertet.
 }
 \section{Fragestellungen}
 {
@@ -250,11 +255,11 @@ Hierzu gehört, wie bereits erwähnt die Vorstellung der einzelnen Metriken, abe
 
 Bei dieser Frage soll es vor allem darum gehen, die vorgestellten Metriken dahingehend zu bewerten, wie "`schwer"' es ist, sie zu ermitteln. Außerdem wird bei der Bewertung auch auf die Verbreitung eingegangen. Speziell soll erwähnt werden, ob die jeweilige Metrik in bekannten Mathematikbibliotheken vertreten ist oder nicht.
 
-\singleenum{2}{Welche Anforderungen müssen an eine Klassenbibliothek zur Implementierung der vorgestellten Metriken gestellt werden?}
+\singleenum{2}{Welche Anforderungen müssen an eine Klassenbibliothek zur Umsetzung der vorgestellten Metriken gestellt werden?}
 
 Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden. Hierbei ist es zunächst wichtig die jeweiligen Anforderungen an die zu erstellende Software zu ermitteln. Zu diesen Anforderungen gehören sowohl funktionale als auch nicht funktionale Eigenschaften. 
 
-\singleenum{3}{Wie können die Anforderungen der Klassenbibliothek umgesetzt und getestet werden?}
+\singleenum{3}{Wie können die Anforderungen der Klassenbibliothek umgesetzt werden?}
 
 Auf Basis der Anforderungen muss anschließend ein Entwurf zur Implementierung der Klassenbibliothek geliefert werden. Anhand des Entwurfs soll klar werden, wie die jeweiligen Anforderungen an die Software umgesetzt wurden. Es sollen sowohl statische als auch dynamische Aspekte des Entwurfes betrachtet werden. Zur Umsetzung ist es zudem notwendig Literatur zu konsultieren, um die richtigen Entwurfs- und Implementierungsentscheidungen zu treffen.
 
@@ -262,21 +267,13 @@ Auf Basis der Anforderungen muss anschließend ein Entwurf zur Implementierung d
 
 Die Kernaufgabe der Bibliothek ist es, für einen vorgegebenen Graphen diverse Metriken zu berechnen. Hierfür ist eine Reihe von verschiedenen Algorithmen notwendig. Aufgrund dessen ist es notwenig, dass diese und ihr Zusammenspiel im Rahmen der Entwicklung erläutert werden.
 
+\singleenum{5}{Wie wurde sichergestellt, dass die erstellte Klassenbibliothek korrekt funktioniert und die jeweiligen nicht funktionalen Anforderungen eingehalten wurden?}
+
+Neben dem Entwurf und der Implementierung ist es unabdingbar, dass geprüft werden muss, ob die definierten Anforderungen auch korrekt von der erstellten Software erfüllt werden. Hierfür sollen vor allem Tests dienen, die jeweiligen Methoden der Bibliothek testen. Des Weiteren wird überprüft, ob die jeweilig definierten nicht funktionalen Anforderungen eingehalten wurden. Dabei ist es wichtig zu erläutern, ob und wie diese erfüllt wurden. Beziehungsweise wird auch erklärt, warum sie nicht erfüllt sind oder es nicht verifiziert werden kann, ob sie erfüllt sind.
+
 \singleenum{5}{Wie kann die Berechnung der Graphmetriken weiter abstrahiert werden?}
 
 Anstatt die Berechnung der Kennzahlen nur über die entworfene Bibliothek zu ermöglichen, wäre es auch möglich die Berechnung weiter zu abstrahieren und eine Software zu entwerfen, die je nach Wunsch eine andere Metriken-Logik nutzt. Infolgedessen soll untersucht werden, wie eine solche Abstraktion entwickelt werden könnte.
-
-\singleenum{5}{Wie könnte ein Ähnlichkeitsmaß zum Vergleich zweier Graphen konzeptioniert sein?}
-
-Um feststellen zu können, ob zwei Graphen zueinander ähnlich sind, ist es zunächst nötig ein Ähnlichkeitsmaß zu definieren, das es ermöglicht über einen Zahlenwert die Ähnlichkeit zweier Graphen festzustellen. Aufgrunddessen soll im Rahmen der Arbeit ein solches Maß konzeptioniert werden, das mithilfe der erarbeiteten Metriken arbeitet.
-
-\singleenum{6}{Wie lässt sich das erarbeitete Ähnlichkeitsmaß implementieren und umsetzen?}
-
-Neben der Konzeption stellt sich wie bei den Metriken die Frage, wie das erarbeitete Wissen parktisch umgesetzt werden kann. Das erarbeitete Ähnlichkeitsmaß soll deshalb auch innerhalb der Klassenbibliothek umgesetzt werden.
-
-\singleenum{7}{Wie ist das implementierte Ähnlichkeitsmaß zum Vergleich zweier Graphen im Hinblick auf seine Genauigkeit zu bewerten?}
-
-Anschließend ist es wichtig festzuhalten, wie hoch die Qualität des erstellten Ähnlich-keitsmaßes ist. Hierfür soll die Arbeit unter Einbezug von Beispielen erproben, wie gut die Ähnlichkeit zwischen zwei Graphen erkannt wird.
 }
 \chapter{Graph-Metriken}
 {
@@ -555,7 +552,7 @@ Auch für die Berechnung dieser Metrik können Spezialfälle ausgemacht werden. 
 Nachdem nun eine weite Reihe an Metriken vorgestellt wurde und diese jeweils in eine Kategorie eingeordnet wurden, sollen in diesem letzten Teil Graph-Kennzahlen vorgestellt werden, die nicht in eine der Kategorien passen aber dennoch Erwähnung finden sollen.
 \subsubsection*{Unabhängigkeitszahl}
 {
-Bei der Betrachtung von Graphen ist es möglich sogenannte "`unabhängige"' Knotenmengen zu finden. Eine "`unabhängige"' Knotenmenge ist eine Untermenge \(S\) der Knoten \(V(G)\) (\(S\subseteq V(G)\)), sodass keiner der Knoten in \(S\) adjazent zu einem anderen adjazent ist. Betrachtet man beispielsweise einen bipartiten Graphen, so ist ja dessen Definiton so gestaltet, dass der Graph in zwei "`unabhängige"' Knotenmengen gegliedert werden kann. Um nun die sogenannte "`Unabhängigkeitszahl' \(\alpha(G)\) für einen Graphen \(G\) zu ermitteln, muss man die größtmögliche "`unabhängige"' Knotenmenge für \(G\) finden. Die Mächtigkeit dieser Menge ist dann die "`Unabhängigkeitszahl"' von \(G\) \cite{diestel_graphentheorie_2000,weisstein_maximum_nodate,weisstein_maximum_nodate} Unterstützung für diese Metrik lässt sich SageMath und Wolfram direkt oder indirekt (Ausgabe der größten "`unabhängigen"' Knotenmenge) finden. \cite{sagemath_graph_2020,weisstein_independence_nodate}
+Bei der Betrachtung von Graphen ist es möglich sogenannte "`unabhängige"' Knotenmengen zu finden. Eine "`unabhängige"' Knotenmenge ist eine Untermenge \(S\) der Knoten \(V(G)\) (\(S\subseteq V(G)\)), sodass keiner der Knoten in \(S\) adjazent zu einem anderen adjazent ist. Betrachtet man beispielsweise einen bipartiten Graphen, so ist ja dessen Definiton so gestaltet, dass der Graph in zwei "`unabhängige"' Knotenmengen gegliedert werden kann. Um nun die sogenannte "`Unabhängigkeitszahl"' \(\alpha(G)\) für einen Graphen \(G\) zu ermitteln, muss man die größtmögliche "`unabhängige"' Knotenmenge für \(G\) finden. Die Mächtigkeit dieser Menge ist dann die "`Unabhängigkeitszahl"' von \(G\) \cite{diestel_graphentheorie_2000,weisstein_maximum_nodate,weisstein_maximum_nodate} Unterstützung für diese Metrik lässt sich SageMath und Wolfram direkt oder indirekt (Ausgabe der größten "`unabhängigen"' Knotenmenge) finden. \cite{sagemath_graph_2020,weisstein_independence_nodate}
 
 Die Berechnung der "`Unabhängigkeitszahl"' erfolgt durch das finden der größten "`unabhängigen"' Knotenmenge. Dieses Problem ist NP-schwer und lässt sich durch einen navien Brute-Force-Algorithmus lösen. Dieser iteriert über jedes mögliche Subset von \(G\) und prüft, ob das Subset unabhängig ist. Ist über alle Untermengen iteriert worden, kann die Mächtigkeit der größten, unabhängigen Untermenge ermittelten werden. Die Zahl der zu untersuchenden Untermengen steigt exponentiell mit jedem weiteren Knoten. Durch Optimierungen und intelligente Algrotihmen kann das Problem mittlerweile in einer Zeitkomplexität von \(O(1,1996^n)\) gelöst werden. Darüber hinaus gibt es neben exakten Algorithmen zur Ermittlung auch approximierende Algorithmen, die schneller sind. \cite{xiao_exact_2017}
 }
@@ -905,7 +902,7 @@ Um die Graphdatenstrukur zur Verfügung zu stellen, sind zwei Dinge notwendig. Z
 
 Weiterhin muss es ermöglicht werden, dass die zu erstellenden Graphen markiert werden müssen. Hierbei muss eine Markierung am Knoten und an den Kanten möglich sein. Damit die Markierung vollkommen frei wählbar ist, wird für den Graphen parametrisierte Polymorphie angewandt. D.h. im speziellen, dass das definierte Interface für den Graphen generifiziert wird über zwei Typvariablen. Die erste Typvariable gibt dabei den Typen der Knotenmarkierung an, die zweite den Typen der Kantenmarkierung. Da es laut den Anforderungen verpflichtend ist, dass ein Knoten im Graphen über seine Markierung identifiziert wird, ist es zudem notwendig, den Typparameter für die Knotenmarkierung einzugrenzen. Speziell ist es notwendig, dass Knotenmarkierungen vergleichbar sind. Um dies zu gewährleisten wird festgelegt, dass alle Knotenmarkierungstypen das Interface \textit{Comparable} implementieren. Dieses Interface ist dabei schon Teil der Java Standard-Bibliothek \cite{oracle_java_2021}. Durch diese Einschränkgung wird es möglich, dass Knoten untereinander vergleichbar werden, da über die Methode \textit{compareTo} ein Abgleich stattfinden kann.
 
-Da Kanten nicht wie Knoten ausschließlich über ihre Markierung beschreiben werden können, ist es notwendig eine eiegne Kantenklasse zu definieren. Diese ist ein einfaches Java-Objekt ("`Plain Old Java Object"') bestehend aus dem Ausgangsknoten, dem Eingangsknoten und der Markierung.
+Da Kanten nicht wie Knoten ausschließlich über ihre Markierung beschreiben werden können, ist es notwendig eine eiegne Kantenklasse zu definieren. Diese ist ein einfaches Java-Objekt (POJO) bestehend aus dem Ausgangsknoten, dem Eingangsknoten und der Markierung.
 
 Auf Basis von Kapitel 3.2 wurde klar, welche Grapharten implementiert werden sollen. Umgesetzt werden zwei simple Adjazenzlistengraphen. Einer davon ist gerichtet, der andere nicht. Da sich beide Implementierungen bis auf die Handhabung mit Kanten gleichen, ist es sinnvoll eine Abstraktionsebene in die Umsetzung einzubauen. So implementiert eine abstrakte Klasse \textit{AdjacencyListGraph} das Graph-Interface und definiert alle Methoden bis auf das Einfügen, Löschen und Existenzabfragen von Kanten. Durch die abstrakte Klasse ist es möglich Codewiederholungen zu vermeiden, da Code für die jeweiligen Grapharten wiederverwendet werden kann. Zur eigentlichen umsetzung der Adjazenzlisten nutzt \textit{AdjacencyListGraph} eine Java-Map, wobei als Instantzobjekt eine Hash-Map verwendet wird. Die Map hat den Typen \textit{Map\textless N, List\textless Edge\textless N, E\textgreater\textgreater\textgreater}, wobei \textit{N \& E} die generischen Typparameter für den Knoten und die Kantenmarkierung sind. Wie zu erkennen ist, wird ein Knoten auf seine jeweilige Adjazenzliste abgebildet. Die Map ist einer geschachtelten Liste überlegen, da die Suche nach der jeweiligen Adjazenzliste in konstanter Zeit möglich ist, anstatt eine ganze Liste zu durchsuchen. Zudem ist die Zuordung des Knoten zu seiner Liste bereits in der Datenstruktur integriert.
 
@@ -1126,19 +1123,36 @@ Nachdem nun beschreiben wurde, wie die Klassenbibliothek statisch und dynamisch 
 
 Das Testen von Software ist aus vielen Gesichtspunkten heraus wichtig. So stellen Tests die korrekte Ausführung des Codes sicher und machen infolgedessen auf fehlerhafte Änderungen während des Entwicklungsprozesses aufmerksam, bzw. zeigen sehr schnell auf, ob der geschriebene Code korrekt ist. Weiterhin können Tests auch als Documentationskomponente dienen, da sie zeigen, welche Ausgabe eine Softwarekomponente für eine bestimmte Eingabe erbringen soll. Schlussendlich sind Test aber auch deshalb wichtig, da sie das Design der Software verbessern, da sie einen Entwickler oder eine Entwicklerin zwingen Methoden und Komponenten so zu schreiben, dass sie testbar sind. Beispielsweise fällt schneller auf, dass Code aus einer Klasse ausgelagert werden sollte, der in privaten Methoden steht. Diese können nämlich nicht getestet werden, obwohl es vielleicht erwünscht ist. \cite{gulati_java_2017}
 
+Das primäre Ziel der Klassenbibliothek ist es die Metriken für beliebige Graphen zu berechnen. Aufgrund dessen ist es auch vorrangiges Ziel der Tests, zu prüfen, ob die jeweiligen Metriken korrekt berechnet werden. Um die Tests zu schreiben, werden jeweils Graphen erstellt, für die das Ergebnis der zu testenden Metrik bekannte ist. Beispielsweise ist die chromatische Zahl eines vollständigen Graphens gleich seiner Ordnung. Für jede Metrik innerhalb der Bibliothek wurde folgendermaßen ein Test mit dieser Struktur geschrieben. Bei Bedarf wurden mehrere solche Testgeschrieben, um Randfälle der Metriken abzudecken. So wurde z.B. getestet, ob die Distanzmetrik für zwei Knoten zwischen denen es keinen Weg gibt, auch den Wert \textit{Integer.MAX\_VALUE} zurückgibt. Weitere wichtige Randfälle sind wiederum der leere Graph oder ein Graph mit nur einem Knoten, bzw. keinen Kanten.
+\begin{lstlisting}
+	testMetric() {
+		graph = bekannterGraph();
+		assertEquals(bekanntesErgebnis, MetricCalculation.metric(graph));
+	}
+\end{lstlisting}
+Neben den Metriken selbst wurden auch die anderen Komponenten der Bibliothek getestet. Beispielsweise wurde geprüft, ob die Hilfsmethoden wie der Binomialkoeffizient richtig arbeiten oder ob die Erstellung der Standardgraphen korrekt verläuft.
 
+Eine weiterer wichtiger Teil der Bibliothek ist die Graphdatenstruktur selbst. Auch die Methoden des implementierten Graphen selbst wurden getestet. Hierbei wird vor allem darauf geachtet, dass die jeweiligen Modifikationen effektiv sind und die analysierenden Methoden die richtigen Antworten liefern.
 }
 \section{Überprüfung der nicht funktionalen Anforderungen}
+{
+Durch die Testung der Klassenbibliothek und den Programmentwurf selbst konnte gezeigt werden, wie und ob die erstellte Klassenbibliothek ihre funktionalen Anforderungen erfüllt. Neben den funktionalen Anforderungen wurden allerdings zusätzlich nicht funktionale Anforderungen definiert. Diese sollen auch überprüft werden.
 
+Die erste nicht funktionale Anforderung, die an die Bibliothek gestellt wurde ist die Erfüllung gewisser Usability-Merkmale. Besonders wichtig war dabei eine einfache Bedienung und die Fehlerfreiheit der Bibliothek. Letzteres konnte erreicht werden, indem die Software ausführlich getestet wurde. Durch die erstellten Unit-Tests und die zugehörige Überprüfung von Standard- und Randfällen konnte programmatisch festgestellt werden, dass die Berechung der Graphmetriken und die zugehörigen Helfer-Klassen korrekt funktionieren. Aus den Rahmenbedingungen der Bibliothek (3.1.2) kann darüber hinaus entnommen werden, dass das Abhängigkeitsmanagementtools "`Maven"' genutzt wird. Wird mit "`Maven"' die Bibliothek gebaut, werden automatisch auch alle geschriebenen Tests mit ausgeführt. Dieser Mechanismus sorgt dafür, dass kein Softwareartefakt ausgeliefert werden kann, dass fehlerbehaftet ist. Dies ist wichtig, da ansonsten die Usability nicht gewährleistet werden kann. Weiterhin wurde definiert, dass die Software leicht zu bedienen sein soll. Da solche nicht funktionalen Anfroderungen schwer zu überprüfen sind, wurde bereits während der Anforderungsformulierung eingeschränkt, dass sich dieser Aspekt auf die Bennennung von Methoden und Klassen weitesgehend beschränkt. Anderenfalls müsste mittels Anwenderlaboren und anderen Überprüfungsmethoden aufwendig die Usability der Bibliothek evaluiert werden. Dies ist allerdings nicht der Fokus dieser Studienarbeit. So kann nur ausgesagt werden, dass beim Entwurf der Klassenbibliothek darauf geachtet wurde, dass sich diese möglichst intuitiv bedienen lässt. So gibt es bei der Metrikenberechnung einen einheitlichen Einstiegspunkt. Hierbei wird über die Mitgabe eines Enumerationsparameters bestimmt, welche Metrik berechnet wird. Der Rest der Berechnung bleibt dem Anwender vollständig verborgen und ist auch unwichtig für ihn. Bei der Graphdatenstruktur wurde beachtet, dass ein Graph verschiedenste Sachverhalte repräsentieren kann. Hierfür ist die gesamte Klassenbibliothek generisch desiged und es wird infolgedessen häufig von parametrisierter Polymorphie Gebrauch gemacht. Dadruch wird der Graph beliebig einsetzbar. Der spätere Einsatz des Graphen ist durch die Schnittstelle klar vorgegeben und alle Methodennamen sagen klar aus, welche Funktion ausgeführt wird. Dadurch dass die Bibliothek zwei Implementierungen zur Verfügung stellt, wird der Einstieg in die Nutzung der Bibliothek einfacher.
+
+Eine weitere geforderte nicht funkionale Anforderung ist die der Angemessenheit und der Genauigkeit. Beide stehen im direkten Zusammenhang mit den normalen funktionalen Eigenschaften der Software. Da die funktionalen Anforderungen der Software erfüllt sind und diese durch die Testung auch genau erfüllt wurden, kann gesagt werden, dass die Bibliothek sowohl angemessen als auch genau ist.
+
+Weiterhin war die Wartbarkeit des Systems eine wichtige Eigenschaft die erreicht werden sollte. Besonders wichtig war hierbei die Testbarkeit. Diese konnte dadurch nachgewiesen werden, dass beinahe alle Methoden der Bibliothek direkt oder indirekt getestet wurden. Allein bei der Berechnung der Graphmetirken konnte eine Testabdeckung von über 95 \% erreicht werden.
+
+Neben der Wartbarkeit war zudem die Portabilität eine nicht funkionale Eigenschaft, die von der Bibliothek erfüllt werden musste. Im Rahmen der Portabilität sollte speziell eine hohe Anpassbarkeit und Installierbarkeit erreicht werden. Beide Punkte können vollständig durch die gesetzten Rahmenbedingungen der Software abgedeckt werden. Da die Software mit Java geschrieben wurde und mithilfe von Maven gebaut wird, ist sie auch automatisch in sämtliche Maven/Java-Projekte inbindbar. Wie bereits in 3.1.2 erwähnt ist Java äußerst weit verbreitet und kann auf vielen Maschinen ausgeführt werden, bzw. teils in andere JVM-Sprachen wie Scala integiert werden. \cite{ullenboom_java_2016} Auch dies erhöht die Portabilität noch einmal. Die beschriebene Portabilität des Software schließt zudem die in 3.1.6 gewünschte Nutzbarkeit als Klassenbibliothek mit ein, da durch Maven die Software überall als Bibliothek mit eingebunden werden kann.
+
+Die letzte nicht funkionale Anforderung die überprüft werden soll, ist die Effizienz. Diese Anforderung hatte keine hohe Priorität und wurde deshalb auch nicht konsequent umgesetzt. Zwar wurde darauf geachtet, dass die genutzen Algroithmen keine unnötig lange Laufzeit haben, allerdings waren manche Berechnungen gar nicht effizient zu berechnen. So sind die chomarische Zahl und der chormatische Index NP-vollständige Probleme, für die es vermutlich keine effiziente Lösung gibt. Bei der Implementierung der Graphdatenstruktur wurde wiederum darauf geachtet eine Implementierung zu wählen, die möglichst günstig ist (siehe. 3.2). So wurde beispielsweise zur Darstellung der Adjazenzlisten eine Java-Hashmap genutzt, da hier z.B. die Suche nach der richtigen Liste zu einem Knoten in konstanter Zeit verläuft. Im Falle einer klassischen Implementierung mit einer Liste von Listen wäre dies nur in linearer Zeit möglich. Vor allem bei einem großen Graphen kann dies einen Zeitvorteil verschaffen. Zusammenfassend kann also gesagt werden, dass bei der Erstellung der Software darauf geachtet wurde nicht unperformant zu programmieren, allerdings kein Fokus darauf lag, eine besonders hohe und quantitaiv messbare Effizienz zu erreichen.
+}
 \chapter{Abstraktion der Graphmetrik-Berechnung}
 
-\chapter{Die Ähnlichkeit von Graphen}
+\section{Problemstellung der Abstraktion}
 
-\section{Definition von Ähnlichkeitsmaßen}
-
-\section{Beispielhafte Anwendung der Ähnlichkeitsmaße}
-
-\section{Bewertung des Ähnlichkeitsmaßes}
+\section{Lösungsansatz zur Abstraktion der Graphmetrik-Berechnung}
 
 \chapter{Fazit und Zusammenfassung}
 

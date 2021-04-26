@@ -2516,6 +2516,8 @@
     <bcf:citekey order="115">ullenboom_java_2014</bcf:citekey>
     <bcf:citekey order="116">russell_artificial_2016</bcf:citekey>
     <bcf:citekey order="117">sryheni_number_2020</bcf:citekey>
+    <bcf:citekey order="118">gulati_java_2017</bcf:citekey>
+    <bcf:citekey order="119">ullenboom_java_2016</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

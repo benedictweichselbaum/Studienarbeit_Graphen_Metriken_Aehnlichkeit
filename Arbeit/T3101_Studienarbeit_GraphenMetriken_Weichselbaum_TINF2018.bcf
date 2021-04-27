@@ -2518,6 +2518,10 @@
     <bcf:citekey order="117">sryheni_number_2020</bcf:citekey>
     <bcf:citekey order="118">gulati_java_2017</bcf:citekey>
     <bcf:citekey order="119">ullenboom_java_2016</bcf:citekey>
+    <bcf:citekey order="120">balzert_lehrbuch_2011</bcf:citekey>
+    <bcf:citekey order="121">balzert_lehrbuch_2011</bcf:citekey>
+    <bcf:citekey order="122">balzert_lehrbuch_2011</bcf:citekey>
+    <bcf:citekey order="123">curry_message-oriented_2005</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

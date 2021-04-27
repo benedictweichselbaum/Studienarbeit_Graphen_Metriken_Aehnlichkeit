@@ -72,16 +72,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Problemstellung der Abstraktion}{68}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Lösungsansatz zur Abstraktion der Graphmetrik-Berechnung}{68}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Lösungsansätze zur Abstraktion der Graphmetrik-Berechnung}{69}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Fazit und Zusammenfassung}{69}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Fazit und Ausblick}{72}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Zusammenfassung der Ergebnisse}{69}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Fazit zu den Ergebnissen der Studienarbeit}{72}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Fazit}{69}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Ausblick}{72}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{70}{chapter*.50}%
+\contentsline {chapter}{Glossar}{73}{chapter*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{71}{chapter*.51}%
+\contentsline {chapter}{\nonumberline Literatur}{74}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

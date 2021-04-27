@@ -863,6 +863,36 @@
       \verb https://doi.org/10.1145/3828.3829
       \endverb
     \endentry
+    \entry{curry_message-oriented_2005}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=979b59e5a8896c7415444f052a100583}{%
+           family={Curry},
+           familyi={C\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{979b59e5a8896c7415444f052a100583}
+      \strng{fullhash}{979b59e5a8896c7415444f052a100583}
+      \strng{bibnamehash}{979b59e5a8896c7415444f052a100583}
+      \strng{authorbibnamehash}{979b59e5a8896c7415444f052a100583}
+      \strng{authornamehash}{979b59e5a8896c7415444f052a100583}
+      \strng{authorfullhash}{979b59e5a8896c7415444f052a100583}
+      \field{labelalpha}{Cur05}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Middleware for Communications}
+      \field{isbn}{978-0-470-86206-3}
+      \field{title}{Message-Oriented Middleware}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 28}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1002/0470862084.ch1
+      \endverb
+    \endentry
     \entry{diestel_graphentheorie_2000}{book}{}
       \name{author}{1}{}{%
         {{hash=d7750765c1eb004bdcdce07ed2272ba7}{%

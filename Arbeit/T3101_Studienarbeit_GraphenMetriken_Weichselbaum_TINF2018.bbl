@@ -893,6 +893,55 @@
       \verb 10.1002/0470862084.ch1
       \endverb
     \endentry
+    \entry{dehmer_computational_2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=05330ee0b485bcd55ec422c84ed865ed}{%
+           family={Dehmer},
+           familyi={D\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c366d0d37b00e25cc0c52232b4966ca9}{%
+           family={Emmert-Streib},
+           familyi={E\bibinithyphendelim S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bb75b215b3ff6840c9588aec4a321690}{%
+           family={Grabner},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8bf6014bb1a119e65870ce300331429b}
+      \strng{fullhash}{8bf6014bb1a119e65870ce300331429b}
+      \strng{bibnamehash}{8bf6014bb1a119e65870ce300331429b}
+      \strng{authorbibnamehash}{8bf6014bb1a119e65870ce300331429b}
+      \strng{authornamehash}{8bf6014bb1a119e65870ce300331429b}
+      \strng{authorfullhash}{8bf6014bb1a119e65870ce300331429b}
+      \field{labelalpha}{DEG14}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present a computational approach for finding complete graph invariants. Specifically, we generate exhaustive sets of connected, non-isomorphic graphs with 9 and 10 vertices and demonstrate that a 97-dimensional multivariate graph invariant is capable to distinguish each of the non-isomorphic graphs. Furthermore, in order to tame the computational complexity of the problem caused by the vast number of graphs, e.g., involving over 10 million networks with 10 vertices, we suggest a low-dimensional, iterative procedure that is based on highly discriminative individual graph invariants. We show that also this computational approach leads to a perfect discrimination. Overall, our numerical results prove the existence of such graph invariants for networks with 9 and 10 vertices. Furthermore, we show that our iterative approach has a polynomial time complexity.}
+      \field{issn}{0020-0255}
+      \field{journaltitle}{Information Sciences}
+      \field{title}{A computational approach to construct a multivariate complete graph invariant}
+      \field{volume}{260}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{200\bibrangedash 208}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ins.2013.11.008
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0020025513007950
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0020025513007950
+      \endverb
+      \keyw{Information inequality,Quantitative graph theory,Random network model,Statistics}
+    \endentry
     \entry{diestel_graphentheorie_2000}{book}{}
       \name{author}{1}{}{%
         {{hash=d7750765c1eb004bdcdce07ed2272ba7}{%
@@ -3055,6 +3104,51 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0890540117300950
       \endverb
       \keyw{Amortized analysis,Branch-and-reduce,Exact algorithm,Graph,Independent set,Measure-and-conquer,Polynomial-space}
+    \endentry
+    \entry{zager_graph_2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=08a3814830f438138a5bc3993705d74b}{%
+           family={Zager},
+           familyi={Z\bibinitperiod},
+           given={Laura\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=854c64c2cfd55127f9116d0fed13050b}{%
+           family={Verghese},
+           familyi={V\bibinitperiod},
+           given={George\bibnamedelima C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4e54db2971dfeae961ac4637917a94b}
+      \strng{fullhash}{d4e54db2971dfeae961ac4637917a94b}
+      \strng{bibnamehash}{d4e54db2971dfeae961ac4637917a94b}
+      \strng{authorbibnamehash}{d4e54db2971dfeae961ac4637917a94b}
+      \strng{authornamehash}{d4e54db2971dfeae961ac4637917a94b}
+      \strng{authorfullhash}{d4e54db2971dfeae961ac4637917a94b}
+      \field{labelalpha}{ZV08}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We outline a class of graph similarity measures that uses the structural similarity of local neighborhoods to derive pairwise similarity scores for the nodes of two different graphs, and present a related similarity measure that uses a linear update to generate both node and edge similarity scores. This measure is then applied to the task of graph matching.}
+      \field{issn}{0893-9659}
+      \field{journaltitle}{Applied Mathematics Letters}
+      \field{number}{1}
+      \field{title}{Graph similarity scoring and matching}
+      \field{volume}{21}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{86\bibrangedash 94}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.aml.2007.01.006
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893965907001012
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893965907001012
+      \endverb
+      \keyw{Graph algorithms,Graph alignment,Graph matching,Graphs and networks,Similarity measures}
     \endentry
   \enddatalist
 \endrefsection

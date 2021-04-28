@@ -76,12 +76,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Fazit und Ausblick}{72}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Fazit zu den Ergebnissen der Studienarbeit}{72}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Fazit und Zusammenfassung der Studienarbeit}{72}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ausblick}{72}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Ausblick}{74}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{73}{chapter*.51}%
+\contentsline {chapter}{Glossar}{76}{chapter*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{74}{chapter*.52}%
+\contentsline {chapter}{\nonumberline Literatur}{77}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

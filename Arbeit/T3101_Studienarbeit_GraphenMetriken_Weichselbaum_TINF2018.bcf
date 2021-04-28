@@ -2522,6 +2522,9 @@
     <bcf:citekey order="121">balzert_lehrbuch_2011</bcf:citekey>
     <bcf:citekey order="122">balzert_lehrbuch_2011</bcf:citekey>
     <bcf:citekey order="123">curry_message-oriented_2005</bcf:citekey>
+    <bcf:citekey order="124">balzert_lehrbuch_2009</bcf:citekey>
+    <bcf:citekey order="125">dehmer_computational_2014</bcf:citekey>
+    <bcf:citekey order="125">zager_graph_2008</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

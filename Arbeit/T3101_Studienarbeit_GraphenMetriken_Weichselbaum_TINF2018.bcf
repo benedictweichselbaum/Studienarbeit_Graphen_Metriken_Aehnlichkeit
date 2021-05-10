@@ -2525,6 +2525,7 @@
     <bcf:citekey order="124">balzert_lehrbuch_2009</bcf:citekey>
     <bcf:citekey order="125">dehmer_computational_2014</bcf:citekey>
     <bcf:citekey order="125">zager_graph_2008</bcf:citekey>
+    <bcf:citekey order="126">diestel_graphentheorie_2000</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

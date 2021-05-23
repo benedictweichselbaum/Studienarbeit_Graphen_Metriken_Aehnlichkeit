@@ -8,25 +8,25 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Eigenvektor Centrality: Power-iteration Method \cite {meghanathan_use_2015}}}{18}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Eigenvektor Centrality: Power-iteration Method \cite {meghanathan_use_2015}}}{19}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Einbettung \(K_5\) in Buch \cite {blankenship_book_2003}}}{26}{figure.caption.32}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case-Diagramm: Graphmetriken-Klassenbibliothek}}{40}{figure.caption.33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Klassendiagramm: Graphdatenstruktur}}{51}{figure.caption.42}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Klassendiagramm: Metriken-Berechnung}}{54}{figure.caption.44}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Sequenzdiagramm: Grapherstellung und- manipulation}}{55}{figure.caption.45}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequenzdiagramm: Metriken-Berechnung (Closeness Centrality)}}{56}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Einbettung \(K_5\) in Buch \cite {blankenship_book_2003}}}{27}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Komponentendiagramm: Konzeption zur Abstraktion der Graphmetrik-Berechnung}}{70}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case-Diagramm: Graphmetriken-Klassenbibliothek}}{41}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Klassendiagramm: Graphdatenstruktur}}{52}{figure.caption.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Klassendiagramm: Metriken-Berechnung}}{55}{figure.caption.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sequenzdiagramm: Grapherstellung und- manipulation}}{56}{figure.caption.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sequenzdiagramm: Metriken-Berechnung (Closeness Centrality)}}{57}{figure.caption.46}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Komponentendiagramm: Konzeption zur Abstraktion der Graphmetrik-Berechnung}}{71}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

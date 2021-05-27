@@ -1210,6 +1210,57 @@
       \verb http://link.springer.com/10.1007/978-1-4842-3015-2
       \endverb
     \endentry
+    \entry{gudgin_soap_2007}{online}{}
+      \name{author}{4}{}{%
+        {{hash=3f6f74834a7ac6856fc19236fa38cd5f}{%
+           family={Gudgin},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2aa7a2ab695d9d7a480c265c6d350783}{%
+           family={Hadley},
+           familyi={H\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0c60d8b2b0e72e3f09e760db85df237d}{%
+           family={Mendelsohn},
+           familyi={M\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3ab5575c7a7215d0a3736289ee185e16}{%
+           family={Moreau},
+           familyi={M\bibinitperiod},
+           given={Jean-Jacques},
+           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{fullhash}{f26937157d4ada524e72936493add79c}
+      \strng{bibnamehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{authorbibnamehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{authornamehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{authorfullhash}{f26937157d4ada524e72936493add79c}
+      \field{labelalpha}{Gud+07}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{SOAP} Version 1.2 Part 1: Messaging Framework (Second Edition)}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb SOAP Version 1.2 Part 1\: Messaging Framework (Second Edition):/home/benedict/snap/zotero-snap/common/Zotero/storage/8IU2YG24/soap12.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/soap12/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/soap12/
+      \endverb
+    \endentry
     \entry{gabow_forests_1992}{article}{}
       \name{author}{2}{}{%
         {{hash=e4b8e86ad817fe889b7e8969f83da863}{%
@@ -2065,6 +2116,32 @@
       \verb{url}
       \verb https://docs.oracle.com/javase/8/docs/api/
       \endverb
+    \endentry
+    \entry{ottlik_besuch_2018}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3227fcdc84be60801a530ef6cad03904}{%
+           family={Ottlik},
+           familyi={O\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3227fcdc84be60801a530ef6cad03904}
+      \strng{fullhash}{3227fcdc84be60801a530ef6cad03904}
+      \strng{bibnamehash}{3227fcdc84be60801a530ef6cad03904}
+      \strng{authorbibnamehash}{3227fcdc84be60801a530ef6cad03904}
+      \strng{authornamehash}{3227fcdc84be60801a530ef6cad03904}
+      \strng{authorfullhash}{3227fcdc84be60801a530ef6cad03904}
+      \field{labelalpha}{Ott18}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{c't}
+      \field{title}{Besuch im {RESTaurant}: Webdienste per {REST}-Schnittstelleanzapfen}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{178\bibrangedash 181}
+      \range{pages}{4}
     \endentry
     \entry{peroche_np-completeness_1984}{article}{}
       \name{author}{1}{}{%
@@ -3059,6 +3136,38 @@
       \endverb
       \verb{url}
       \verb https://reference.wolfram.com/language/
+      \endverb
+    \endentry
+    \entry{xml-rpc_what_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3551b3d25c7f5d6d5aecdaa09c75067d}{%
+           family={{XML}-{RPC}},
+           familyi={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{3551b3d25c7f5d6d5aecdaa09c75067d}
+      \strng{fullhash}{3551b3d25c7f5d6d5aecdaa09c75067d}
+      \strng{bibnamehash}{3551b3d25c7f5d6d5aecdaa09c75067d}
+      \strng{authorbibnamehash}{3551b3d25c7f5d6d5aecdaa09c75067d}
+      \strng{authornamehash}{3551b3d25c7f5d6d5aecdaa09c75067d}
+      \strng{authorfullhash}{3551b3d25c7f5d6d5aecdaa09c75067d}
+      \field{labelalpha}{XML}
+      \field{sortinit}{X}
+      \field{sortinithash}{e90038f30fa4b9ce59606fc8347e3cc7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is {XML}-{RPC}?}
+      \field{urlday}{27}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb What is XML-RPC?:/home/benedict/snap/zotero-snap/common/Zotero/storage/YZ4WXELF/xmlrpc.com.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://xmlrpc.com/
+      \endverb
+      \verb{url}
+      \verb http://xmlrpc.com/
       \endverb
     \endentry
     \entry{xiao_exact_2017}{article}{}

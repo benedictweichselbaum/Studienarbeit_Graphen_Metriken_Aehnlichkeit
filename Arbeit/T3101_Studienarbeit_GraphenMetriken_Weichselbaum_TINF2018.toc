@@ -82,6 +82,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Glossar}{78}{chapter*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{79}{chapter*.52}%
+\contentsline {chapter}{\nonumberline Literatur}{80}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

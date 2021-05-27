@@ -214,15 +214,20 @@ Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sie bilden ei
 \begin{acronym}
 	\acro{API}{Application Programming Interface}
 	\acro{CSV}{Comma Separated Values}
+	\acro{HTTP}{Hyper Text Transfer Protocol}
 	\acro{IEC}{International Electrotechnical Commission}
 	\acro{IEEE}{Institute of Electrical and Electronics Engineers}
 	\acro{ISO}{International Standard Organisatizon}
 	\acro{JSON}{Java Script Object Notation}
 	\acro{JVM}{Java Virtual Machine}
+	\acro{MOM}{Message Oriented Middleware}
 	\acro{NP}{nicht-deterministisch polynomiell}
 	\acro{POJO}{Plain Old Java Object}
+	\acro{SOAP}{Simple Object Access Protocol}
+	\acro{REST}{Representational State Transfer}
 	\acro{UML}{Unified Modelling Language}
 	\acro{XML}{Extensible Markup Language}
+	\acro{XML-RPC}{Extensible Markup Language-Remone Procedure Call}
 \end{acronym}
 
 
@@ -1184,7 +1189,7 @@ Die aufgezeigten Komponenten zeigen einzig und allein eine mögliche Konzeption 
 
 Möchte man den gegebenen Grobentwurf umsetzten, lassen sich verschiedene Konzepte verfolgen. Die offensichtlichste Umsetzung erfolgt mittels eines normalen Programms, dass alle Komponenten in sich vereint. In diesem Sinne ähnelt die Klassenbibliothek aus Kapitel 3 der gezeigten Abstraktion. Denn auch in der erstellten Bibliothek wurde die Metriken-Berechnung über eine Schnittstelle abstrahiert, sodass die Implementierung für den Anwender oder die Anwenderin irrelevant ist. Setzt man die Abstraktion der Graphmetrik-Berechnung allerdings als ein zusammenhängendes Programm um, ergeben sich Probleme die adressiert werden müssen. Zunächst können nur Berechnungskomponenten in das Programm z.B. als Bibliothek eingebunden werden, wenn diese mit der Technologie kompatibel sind, in der das Programm geschrieben ist. So kann es sein, dass eine C++-Bibliothek zur Berechnung von Graphmetriken nicht Teil eines Java-Programms sein kann. Des Weiteren muss noch ein Mechanismus zur Verfügung gestellt werden, der eine einheitliche und transformierbare Graphdatenstruktur zur Verfügung stellt, die für die "`Benutzer-API"' verwendet werden kann.
 
-Eine weitere Möglichkeit zur Umsetzung des Grobentwurfes wäre es, die jeweiligen Komponenten als eigenständige Programme wahrzunehmen. Dies bietet unter anderem den Vorteil, dass man technisch nicht eingeschränkt ist, solange die Schnittstellen für jeden Teil des Systems klar definiert und ansprechbar sind. So können z.B. Berechnungs-Logiken verschiedenster Sprachen verwendet werden, ohne dass dabei Kompatiblitätsprobleme entstehen. Allerdings würde sich die Komplexität des gesamten Systems deutlich erhöhen. Jede einzelne Komponente benötigt eine eigenständige API, die in der Lage ist, nach außen zu kommunizieren. Infolgedessen müssen vor allem die angebunden Klassenbibliothek erweitert werden, sodass sie als eigenständiger Service angesprochen werden können. Die Kommunikation zwischen den einzelnen Komponenten kann sehr divers sein, solange die Kommunikationswege und die Schnittstellen klar sind. Möglich wäre eine Kommunikation über REST oder SOAP, wobei jeweils das HTTP-Protokoll verwendet wird. Ansonsten sind auch sämtliche andere Arten der Netzwerkkommunikation möglich wie Sokets oder XML-RPC. \cite{balzert_lehrbuch_2011} Alternativ kann auch auf eine Message Oriented Middleware (MOM) zurückgegriffen werden. Dies ist eine Software, die speziell dafür designed ist Nachrichten zwischen Applikationen zu verschicken \cite{curry_message-oriented_2005}. MOM und Netzwerkkommunikation können auch beliebig miteinander kombiniert werden. Auch bei der Umsetzung mittels eigenständiger Programme kommt aber noch das Problem auf, dass eine zusätzliche einheitliche Graphdatenstruktur braucht, die in die jeweiligen Strukturen der Datenbanken und Graph-Bibliotheken tranformiert werden kann. Zusätzlich muss bei der Kommunikation über die Schnittstellen ein Format gefunden werden, über das kommuniziert wird.
+Eine weitere Möglichkeit zur Umsetzung des Grobentwurfes wäre es, die jeweiligen Komponenten als eigenständige Programme wahrzunehmen. Dies bietet unter anderem den Vorteil, dass man technisch nicht eingeschränkt ist, solange die Schnittstellen für jeden Teil des Systems klar definiert und ansprechbar sind. So können z.B. Berechnungs-Logiken verschiedenster Sprachen verwendet werden, ohne dass dabei Kompatiblitätsprobleme entstehen. Allerdings würde sich die Komplexität des gesamten Systems deutlich erhöhen. Jede einzelne Komponente benötigt eine eigenständige API, die in der Lage ist, nach außen zu kommunizieren. Infolgedessen müssen vor allem die angebunden Klassenbibliothek erweitert werden, sodass sie als eigenständiger Service angesprochen werden können. Die Kommunikation zwischen den einzelnen Komponenten kann sehr divers sein, solange die Kommunikationswege und die Schnittstellen klar sind. Möglich wäre eine Kommunikation über REST oder SOAP, wobei jeweils das HTTP-Protokoll verwendet wird. Ansonsten sind auch sämtliche andere Arten der Netzwerkkommunikation möglich wie Sokets oder XML-RPC. \cite{balzert_lehrbuch_2011} Alternativ kann auch auf eine Message Oriented Middleware (MOM) zurückgegriffen werden. Dies ist eine Software, die speziell dafür designed ist, Nachrichten zwischen Applikationen zu verschicken \cite{curry_message-oriented_2005}. MOM und Netzwerkkommunikation können auch beliebig miteinander kombiniert werden. Auch bei der Umsetzung mittels eigenständiger Programme kommt aber noch das Problem auf, dass eine zusätzliche einheitliche Graphdatenstruktur braucht, die in die jeweiligen Strukturen der Datenbanken und Graph-Bibliotheken tranformiert werden kann. Zusätzlich muss bei der Kommunikation über die Schnittstellen ein Format gefunden werden, über das kommuniziert wird.
 }
 \chapter{Fazit und Ausblick}
 {
@@ -1228,9 +1233,21 @@ Eine weitere Methode Graphmetriken anzuwenden, könnte darin bestehen mit ihnen 
 \chapter*{Glossar}
 \addcontentsline{toc}{chapter}{Glossar}
 {
-\geintrag{Graph}{Ein Paar bestehend auf Knoten V und Kanten E. \(G=(V,E), \text{wobei }E\subseteq V\times V\))}
+\geintrag{Akteur}{Rollen von Menschen oder Systeme, die als externe Beteiligte mit einem Softwaresystem kommunizieren. \cite{balzert_lehrbuch_2009}}
+\geintrag{Baum}{Zusammenhangskomponente eines Waldes \cite{diestel_graphentheorie_2000}}
+\geintrag{Graph}{Ein Paar bestehend auf Knoten V und Kanten E. \(G=(V,E), \text{wobei }E\subseteq V\times V\)}
 \geintrag{Graph-Invariante}{Eine Funktion, die einen Graphen auf eine Zahl abbildet. Sind zwei Graphen isomorph so wird ihnen der gleiche Wert zugewiesen. \cite{diestel_graphentheorie_2000}}
 \geintrag{Graph-Metrik}{siehe \textit{Graph-Invariante}}
+\geintrag{Java}{Objektorientierte Programmiersprache, die auf der Java Virutal Machine ausgeführt wird. \cite{ullenboom_java_2016}}
+\geintrag{Java Virtual Maschine}{Laufzeitumgebung (Virtuelle Maschine) zur Ausführung von Java-Programmen \cite{ullenboom_java_2016}}
+\geintrag{Message Oriented Middleware}{Soft-ware, die speziell dafur designed ist, Nachrichten zwischen Applikationen zu verschicken. \cite{curry_message-oriented_2005}}
+\geintrag{Requirements}{Eigenschaften, die von einem Softwaresystem erwartet werden. \cite{balzert_lehrbuch_2009}}
+\geintrag{Representational State Transfer}{Architekturparadigma für Schnittstellen im Web, bei denen Informationen über Objekte übermittelt werden. Der Informationsaustausch erfolgt dabei über ein statusloses Protokoll. \cite{ottlik_besuch_2018}}
+\geintrag{Simple Object Access Protocoll}{Anwendungsprotokoll für ein "`Remote Procedure Call"' mittels XML über das HTML-Protokoll. \cite{gudgin_soap_2007}}}
+\geintrag{Use Case}{Repräsentation einer Sequenz von Aktionen, die ein Akteur in Interaktion mit einem Softwaresystem ausführen kann. \cite{balzert_lehrbuch_2009}}
+\geintrag{Wald}{Azyklischer Graph \cite{diestel_graphentheorie_2000}}
+\geintrag{Weg}{Graph, der Knoten in einer Reihe hintereinander verbindet. Meist als Subgraph eines anderen Graphen gemeint. \cite{diestel_graphentheorie_2000}}
+\geintrag{XML-RPC}{Eine Spezifikation, die beschreibt, wie man Software bedient, die auf einem anderen System ausgeführt wird. Zum Transport der Anfrage wird das HTTP-Protokoll und XML verwendet. \cite{xml-rpc_what_nodate}}
 }
 \printbibliography
 \end{document}

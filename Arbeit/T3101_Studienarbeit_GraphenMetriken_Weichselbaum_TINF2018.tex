@@ -181,7 +181,7 @@
 	\begin{table}[ht]
 		\hspace{1,5cm}
 		\begin{tabular}{p{7cm}p{7cm}}
-			\textbf{Bearbeitungszeitraum} & 28.09.2020 - 31.05.2021\\
+			\textbf{Bearbeitungszeitraum} & 28.09.2020 - 30.05.2021\\
 			\textbf{Matrikelnummer, Kurs} & 6275457, TINF2018\\
 			\textbf{Betreuer \& Gutachter} & Prof. Dr. ing. Olaf Herden\\
 		\end{tabular}
@@ -196,7 +196,7 @@ Ich versichere hiermit, dass ich meine Studienarbeit mit dem Thema \textit{Unter
 
 \selectlanguage{english}
 \begin{abstract}
-Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sie bilden eine häufige Abstraktionen für Realweltprobleme, bei denen diskrete Zustände oder Objekte zueinander in Beziehungen stehen. Dazu zählen z.B. Navigationssysteme oder chemische Moleküle. Um Graphen zu charakterisieren, haben sich viele Graphmetriken (oder Graphinvarianten) herausgearbeitet, die einen Graph über einen Zahlenwert beschreiben. Ziel dieser Studienarbeit ist es eine Reihe dieser Graphmetriken zu recherchieren, zu bewerten und zu kategorisieren. Hierfür wurde eine intensive Literaturrecherche betrieben. Im Anschluss an diese Recherche stellt sich die Frage, wie es möglich ist, die Kennzahlen im Rahmen einer Java-Klassenbibliothek programmatisch umzusetzen. Unter Zuhilfenahme des Softwarelebenszyklus wird in der Arbeit beschrieben, welche Anforderungen eine solche Bibliothek hat und wie sie schlussendlich entwurfstechnisch umgesetzt werden kann. Zusätzliche werden sämtliche implementierte Metriken-Algorithmen erläutert. Abschließend beschäftigt sich die Arbeit damit, wie es möglich wäre die implementierte Graphmetrik-Berechnung weiter zu abstrahieren, indem die Berechnungslogik der Invarianten beliebig austauschbar wäre.
+Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sie bilden eine häufige Abstraktionen für Realweltprobleme, bei denen diskrete Zustände oder Objekte zueinander in Beziehungen stehen. Dazu zählen z.B. Navigationssysteme oder chemische Moleküle. Um Graphen zu charakterisieren, haben sich viele Graphmetriken (oder Graphinvarianten) herausgearbeitet, die einen Graph über einen Zahlenwert beschreiben. Ziel dieser Studienarbeit ist es eine Menge dieser Graphmetriken zu recherchieren, zu bewerten und zu kategorisieren. Hierfür wurde eine intensive Literaturrecherche betrieben. Im Anschluss an diese Recherche stellte sich die Frage, wie es möglich ist, die Kennzahlen im Rahmen einer Java-Klassenbibliothek umzusetzen. Unter Zuhilfenahme des Softwarelebenszyklus wird in der Arbeit beschrieben, welche Anforderungen eine solche Bibliothek hat und wie sie schlussendlich entwurfstechnisch umgesetzt werden kann. Zusätzliche werden sämtliche implementierte Metriken-Algorithmen erläutert. Abschließend beschäftigt sich die Arbeit damit, wie es möglich wäre die implementierte Graphmetrik-Berechnung weiter zu abstrahieren, indem die Berechnungslogik der Invarianten beliebig austauschbar wäre.
 \end{abstract}
 
 \selectlanguage{ngerman}
@@ -227,7 +227,7 @@ Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sie bilden ei
 	\acro{REST}{Representational State Transfer}
 	\acro{UML}{Unified Modelling Language}
 	\acro{XML}{Extensible Markup Language}
-	\acro{XML-RPC}{Extensible Markup Language-Remone Procedure Call}
+	\acro{XML-RPC}{Extensible Markup Language-Remote Procedure Call}
 \end{acronym}
 
 
@@ -237,11 +237,11 @@ Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sie bilden ei
 \section{Motivation und Ziel der Studienarbeit}{
 Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Warum kann man das sagen? In seinem Buch "`Algorithmische Graphentheorie"' nennt Volker Turau, Professor an der Universität Hamburg-Harburg, den Grund dafür:
 \zitat{Graphen sind die in der Informatik am häufigsten verwendete Abstraktion. Jedes System, welches aus diskreten Zuständen oder Objekten und Beziehungen zwischen diesen besteht, kann als Graph modelliert werden.}{turau_algorithmische_2004}
-Diese netzartigen Strukturen können dabei die verschiedensten Konstrukte repräsentieren. Dazu zählen Straßennetze, Computernetzwerke, elektrische Schaltungen aber auch zum Beispiel chemische Moleküle. \cite{tittmann_graphentheorie_2019}
+Diese netzartigen Strukturen können dabei die verschiedensten Konstrukte repräsentier-en. Dazu zählen Straßennetze, Computernetzwerke, elektrische Schaltungen aber auch zum Beispiel chemische Moleküle. \cite{tittmann_graphentheorie_2019}
 
 Um Graphen zu beschreiben und zu charakterisieren, haben sich über die Zeit zahlreiche Metriken, bzw. Eigenschaften für diese herausgebildet ("`graph properties"' \cite{lovasz_large_2012}). Das heißt, einem Graphen bzw. auch seinen einzelnen Komponenten können gewisse Kennzahlen zugeordnet werden, die ihn auszeichnen. Auch diese Metriken sind, wie die Graphen selbst, oft praktisch anwendbar. Dies ist zum Beispiel in der Untersuchung von Netzwerken der Fall \cite{ellens_graph_2013}.
 
-Diese Studienarbeit soll diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedensten Metriken vorzustellen und zu erläutern. Dabei ist es auch relevant herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen im Bezug auf ihre Berechenbarkeit zu bewerten sind. Es soll ein umfassender Überblick über Graphmetriken ermöglicht werden und vor allem klar werden, was eine Metrik ausdrückt und ggf. erläutert werden, welchen Nutzen eine Kennzahl haben kann.
+Diese Studienarbeit soll diese Metriken genauer untersuchen. Hierbei ist es zunächst wichtig die verschiedensten Metriken vorzustellen und zu erläutern. Dabei ist es auch relevant herauszufinden, wie verbreitet diese Metriken sind und inwieweit die jeweiligen Kennzahlen im Bezug auf ihre Berechenbarkeit zu bewerten sind. Es soll ein umfassender Überblick über Graphmetriken ermöglicht werden und klar werden, was eine Metrik ausdrückt und ggf. erläutert werden, welchen Nutzen eine Kennzahl haben kann.
 
 Neben einer theoretischen Betrachtung der Graphmetriken soll auch eine Umsetzung bzw. Implementierung dieser Kennzahlen stattfinden. Mithilfe einer selbst erstellten Klassenbibliothek soll aufgezeigt werden, wie die vorgestellten Metriken konkret umgesetzt werden können. Die Entwicklung dieser Klassenbibliothek soll ingenieursmäßig und unter Zuhilfenahme von Softwareengineeringwerkzeugen erfolgen. Infolgedessen entsteht das finale Softwareprodukt im Rahmen des klassischen Softwarelebenszyklus und umfasst die Analyse der Anforderungen, einen Softwareentwurf und die Implementierung und Testung der Software. Bei der Anforderungsanalyse sollen sowohl funktionale als auch nicht funktionale Aspekte beleuchtet werden. \cite{balzert_lehrbuch_2009,balzert_lehrbuch_2011}
 
@@ -257,19 +257,19 @@ Die erste Fragestellung beschäftigt sich mit der allgemeinen Untersuchung der G
 
 \singleenum{1}{Wie sind die vorgestellten Metriken zu bewerten?}
 
-Im Rahmen dieser Fragestellung soll behandelt werden, wie die vorgestellten Metriken in Bezug zu ihrem Ermittlungsaufwand zu bewerten sind. Hier ist es vorranging von Relevanz wie der Aufwand zeitlich einzuordnen ist. Der Fokus bei der Beantwortung dieser Fragestellung liegt dabei zu ermitteln, ob eine Metrik effizient oder nicht effizient berechnet werden kann. Bei der Beantwortung dieser Frage soll außerdem auch darauf eingegangen werden, inwieweit die beschriebene Metrik in bestimmten Mathematikbibliotheken wie "`Sage Math"' oder "`Wolfram"' vorkommen, um bewerten zu können welche Relevanz und Verbreitung diese findet.
+Im Rahmen dieser Fragestellung soll behandelt werden, wie die vorgestellten Metriken in Bezug zu ihrem Ermittlungsaufwand zu bewerten sind. Hier ist es vorranging von Relevanz wie der Aufwand zeitlich einzuordnen ist. Der Fokus bei der Beantwortung dieser Fragestellung liegt darin, zu ermitteln, ob eine Metrik effizient oder nicht effizient berechnet werden kann. Auch soll, falls ermittelbar, die Zeitkomplexität zur Berechnung einer Metrik angegeben werden. Bei der Beantwortung dieser Frage wird außerdem auch darauf eingegangen, inwieweit die beschriebene Metrik in bestimmten Mathematikbibliotheken wie "`Sage Math"' oder "`Wolfram"' vorkommen, um bewerten zu können welche Relevanz und Verbreitung diese findet.
 
 \singleenum{2}{Welche Anforderungen müssen an eine Klassenbibliothek zur Umsetzung der vorgestellten Metriken gestellt werden?}
 
-Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden. Hierbei ist es zunächst wichtig die jeweiligen Anforderungen an die zu erstellende Software zu ermitteln. Zu diesen Anforderungen gehören sowohl funktionale als auch nicht funktionale Eigenschaften. Zur Beantwortung dieser Fragestellung gehören die Definition der Software-Ziele und -Anforderungen, die Analyse und Festlegung der Rahmenbedingungen und anderweitige Recherchen, die nötig sind, um einen Entwurf für die Software zu designen.
+Im darauffolgenden parktischen Teil der Arbeit sollen die recherchierten Metriken im Rahmen einer Klassenbibliothek implementiert werden. Ziel ist es, das erlangte theoretische Wissen praktisch anzuwenden. Hierbei ist es zunächst wichtig, die jeweiligen Anforderungen an die zu erstellende Software zu ermitteln. Zu diesen Anforderungen gehören sowohl funktionale als auch nicht funktionale Eigenschaften. Zur Beantwortung dieser Fragestellung gehören die Definition der Software-Ziele und -Anforderungen, die Analyse und Festlegung der Rahmenbedingungen und zugehörige Recherchen, die nötig sind, um einen Entwurf für die Software zu designen.
 
 \singleenum{3}{Wie können die Anforderungen der Klassenbibliothek umgesetzt werden?}
 
-Auf Basis der Anforderungen muss anschließend ein Entwurf zur Implementierung der Klassenbibliothek erarbeitet werden. Anhand des Entwurfs soll klar werden, wie die jeweiligen Anforderungen an die Software umgesetzt wurden. Hierbei werden sowohl statische als auch dynamische Aspekte des Entwurfes betrachtet. Für die Umsetzung ist es zudem notwendig Literatur zu konsultieren, um die richtigen Entwurfs- und Implementierungsentscheidungen zu treffen.
+Auf Basis der Anforderungen muss anschließend ein Entwurf zur Implementierung der Klassenbibliothek erarbeitet werden. Anhand des Entwurfs soll klar werden, wie die jeweiligen Anforderungen an die Software umgesetzt wurden. Hierbei werden sowohl statische als auch dynamische Aspekte des Entwurfes betrachtet.
 
 \singleenum{4}{Wie funktionieren die umgesetzten Algorithmen der Klassenbibliothek, bzw. wie sind die Algorithmen der Bibliothek implementiert worden?}
 
-Die Kernaufgabe der Bibliothek ist es, für einen vorgegebenen Graphen diverse Metriken zu berechnen. Hierfür ist eine Reihe von verschiedenen Algorithmen notwendig. Aufgrund dessen ist es notwenig, dass diese und ihr Zusammenspiel im Rahmen der Entwicklung erläutert werden. Im Rahmen der Beantwortung dieser Fragestellung soll ausführlich klar werden, wie die verwendeten Algorithmen beschaffen sind. Hierfür wird
+Die Kernaufgabe der Bibliothek ist es, für einen vorgegebenen Graphen diverse Metriken zu berechnen. Dafür ist eine Reihe von verschiedenen Algorithmen notwendig. Aufgrund dessen ist es notwenig, dass diese und ihr Zusammenspiel im Rahmen der Entwicklung erläutert werden. Im Kontext der Beantwortung dieser Fragestellung soll ausführlich klar werden, wie die verwendeten Algorithmen funktionieren und implementiert sind.
 
 \singleenum{5}{Wie wurde sichergestellt, dass die erstellte Klassenbibliothek korrekt funktioniert und wurden die definierten nicht funktionalen Anforderungen eingehalten?}
 
@@ -277,23 +277,23 @@ Neben dem Entwurf und der Implementierung ist es unabdingbar, dass geprüft werd
 
 \singleenum{6}{Wie kann die Berechnung der Graphmetriken weiter abstrahiert werden?}
 
-Anstatt die Berechnung der Kennzahlen nur über die entworfene Bibliothek zu ermöglichen, wäre es auch möglich, die Berechnung weiter zu abstrahieren und eine Software zu entwerfen, die je nach Wunsch eine andere Metriken-Logik nutzt. Die letzte Fragestellung der Studienarbeit beschäftigt sich deshalb mit dem skizzenhaften Entwurf einer solchen abstrahierten Software. Es soll vor allem eine initiale Idee für ein solches Softwareprojekt gegeben werden, an das potenziell angeknüpft werden kann.
+Anstatt die Berechnung der Kennzahlen nur über die entworfene Bibliothek zu ermöglichen, wäre es auch möglich, die Berechnung weiter zu abstrahieren und eine Software zu entwerfen, die je nach Wunsch eine andere Metriken-Berechnungslogik nutzt. Die letzte Fragestellung der Studienarbeit beschäftigt sich deshalb mit dem skizzenhaften Entwurf einer solchen abstrahierten Software. Es soll vor allem eine initiale Idee für ein solches Softwareprojekt gegeben werden, an das potenziell angeknüpft werden kann.
 }
 \chapter{Graph-Metriken}
 {
-Der erste Teil der Arbeit wird sich ausführlich mit einer weiten Reihe an Graph-Metriken beschäftigen. Hierbei sollen die ersten zwei Fragestellungen der Arbeit genau beantwortet werden. Um dies zu bewerkstelligen, werden die jeweiligen recherchierten Metriken unter verschieden Gesichtspunkten beleuchtet. Zur jeweiligen Vorstellung einer Graph-Metrik sollen dabei die folgengen Punkte erläutert werden:
+Der erste Teil der Arbeit wird sich ausführlich mit einer umfassenden Menge an Graph-Metriken beschäftigen. Hierbei sollen die ersten zwei Fragestellungen der Arbeit genau beantwortet werden. Um dies zu bewerkstelligen, werden die jeweiligen recherchierten Metriken unter verschieden Gesichtspunkten beleuchtet. Zur jeweiligen Vorstellung einer Graph-Metrik sollen dabei die folgengen Punkte erläutert werden:
 \begin{myitemize}
 	\item Was drückt die Metrik aus (Definition)?
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
 	\item Inwieweit ist die Metrik in einschlägigen Mathematikbibliotheken vertreten (Wolfram, SageMath, MatLab)?
 	\item Was ist eine konkrete Motivation bzw. Anwendung für die Metrik, falls diese auszumachen ist?
 \end{myitemize}
-Es ist zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in ihre Kategorien eingeteilt sind. Als Synonym für Metrik werden innerhalb dieser Arbeit die Begriffe "`Kennzahl"' und "`Invariante"' gebraucht. Eine Invariante ist dabei speziell eine Funktion, die zwei isomorphen Graphen den gleichen Wert zuordnet. Dies ist gleichwertig mit dem Begriff Metrik, da eine Metrik auch einen Graphen auf eine Zahl bzw. einen Wert abbildet und dabei zwei isomorphen Graphen den gleichen Wert zuordnet. \cite{diestel_graphentheorie_2000} Neben Kennzahlen, die nur auf einen ganzen Graphen angewendet werden, werden auch Metriken vorgestellt, die sich auf einzelne Knoten eines Graphen beziehen.
+Es ist zu erwähnen, dass alle im folgenden vorgestellten Metriken über die einzelnen Sektionen der Arbeit in ihre Kategorien eingeteilt sind. Als Synonym für Metrik werden innerhalb dieser Arbeit die Begriffe "`Kennzahl"' und "`Invariante"' gebraucht. Eine Invariante ist eine Funktion, die zwei isomorphen Graphen den gleichen Wert zuordnet. Dies ist im Kontext dieser Studienarbeit gleichwertig mit dem Begriff Metrik, da eine Metrik auch einen Graphen auf eine Zahl bzw. einen Wert abbildet und dabei zwei isomorphen Graphen den gleichen Wert zuordnet. \cite{diestel_graphentheorie_2000} Neben Kennzahlen, die nur auf einen ganzen Graphen angewendet werden, werden auch Metriken vorgestellt, die sich auf einzelne Knoten eines Graphen beziehen.
 
-Darüber hinaus ist die grundsätzliche Notationen, die während der Arbeit für Graphen verwendet wird, zu erläutert: Ein \textbf{Graph G} ist ein Paar bestehend aus \textbf{Knoten V} und \textbf{Kanten E}.
-\begin{align*}
-	G = (V, E),\ \text{wobei}\ E \subseteq V \times V
-\end{align*}
+Darüber hinaus ist die grundsätzliche Notationen, die während der Arbeit für Graphen verwendet wird, zu erläutern: Ein \textbf{Graph G} ist ein Paar bestehend aus \textbf{Knoten V} und \textbf{Kanten E}.
+\[
+G = (V, E),\ \text{wobei}\ E \subseteq V \times V	
+\]
 Für V kann man auch V(G) schreiben, für E auch E(G). \cite{diestel_graphentheorie_2000} V kommt dabei aus dem Englischen und bedeutet "`Vertices"', E steht für "`Edges"'. Wenn es um die Datenstrukturen von Graphen geht, kommen im Rahmen dieser Arbeit hauptsächlich Adjazenzmatrizen und Adjazenzlisten zum Einsatz. Allerdings können bei Bedarf auch Inzidenzen (Beziehung zwischen Knoten und Kanten) im Graphen eine Rolle spielen, die bei Inzidenzmatrizen und Inzidenzlisten eine Rolle spielen. \cite{knebl_algorithmen_2019,diestel_graphentheorie_2000} Zudem wird bei der Betrachtung meist auf ungerichtete, simple Graphen Bezug genommen.
 
 Es sei noch zu erwähnen, dass die nachfolgenden Metriken auf Basis einer umfangreichen Recherche zusammengetragen worden sind. Die vorgestellten Kennzahlen stellen aber bei weitem keine vollständige Liste dar. Beim Zusammentragen der Informationen und der Wahl der Metriken wurden vor allem Metriken betrachtet, die entweder grundlegend sind oder im Rahmen der Recherche herausstachen und häufiger auftauchten. Außerdem war ein Kriterium bei der Literaturrecherche die Ergiebigkeit der Informationen über die jeweilige Metrik. Infolgedessen sind selten erwähnte oder exotische Graphmetriken in dieser Auflistung nicht zu finden.

@@ -1812,6 +1812,44 @@
       \verb 10.5121/csit.2015.51501
       \endverb
     \endentry
+    \entry{mozilla_websockets_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=502f1bd97b0e7d80b88e1f45ae1bfdb8}{%
+           family={Mozilla},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{fullhash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{bibnamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authorbibnamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authornamehash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \strng{authorfullhash}{502f1bd97b0e7d80b88e1f45ae1bfdb8}
+      \field{labelalpha}{Moz21}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{{WebSocket} is a protocol that allows for a persistent {TCP} connection between server and client so they can exchange data at any time.}
+      \field{langid}{american}
+      \field{shorttitle}{{WebSockets}}
+      \field{title}{{WebSockets}}
+      \field{titleaddon}{{WebSockets}}
+      \field{urlday}{30}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/benedict/snap/zotero-snap/common/Zotero/storage/N93S9TTN/WebSockets.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://developer.mozilla.org/en-US/docs/Glossary/WebSockets
+      \endverb
+      \verb{url}
+      \verb https://developer.mozilla.org/en-US/docs/Glossary/WebSockets
+      \endverb
+    \endentry
     \entry{muller_vorkurs_2017}{book}{}
       \name{author}{2}{}{%
         {{hash=7602049fa35d804c9616e9bc6c27c671}{%

@@ -1,12 +1,12 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
-\babel@toc {english}{}
+\babel@toc {ngerman}{}
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{I}{chapter*.5}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{I}{chapter*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abkürzungsverzeichnis}{II}{chapter*.6}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{II}{chapter*.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -34,7 +34,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{28}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Implementierung und Umsetzung der Graph-Metriken}{33}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Umsetzung und Implementierung der Graph-Metriken}{33}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Anforderungsanalyse}{33}{section.3.1}%
 \defcounter {refsection}{0}\relax 
@@ -80,8 +80,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Ausblick}{76}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Glossar}{78}{chapter*.51}%
+\contentsline {chapter}{Glossar}{78}{chapter*.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{80}{chapter*.52}%
+\contentsline {chapter}{\nonumberline Literatur}{80}{chapter*.61}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

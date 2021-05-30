@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  28 MAY 2021 00:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  30 MAY 2021 18:39
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1127,7 +1127,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
-50.
+61.
 
 (/root/.miktex/texmfs/install/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
@@ -1135,25 +1135,25 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux)
 \openout1 = `T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-Package scrbase Info: activating english \contentsname on input line 150.
-Package scrbase Info: activating english \listfigurename on input line 150.
-Package scrbase Info: activating english \listtablename on input line 150.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+Package scrbase Info: activating english \contentsname on input line 161.
+Package scrbase Info: activating english \listfigurename on input line 161.
+Package scrbase Info: activating english \listtablename on input line 161.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1197,14 +1197,14 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 150.
+LaTeX Info: Redefining \microtypecontext on input line 161.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 150.
+LaTeX Info: Redefining \showhyphens on input line 161.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1239,8 +1239,8 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 )
 \c@lstlisting=\count474
-Package scrhack Info: undefining \float@addtolists on input line 150.
-Package hyperref Info: Link coloring ON on input line 150.
+Package scrhack Info: undefining \float@addtolists on input line 161.
+Package hyperref Info: Link coloring ON on input line 161.
 
 (/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1253,9 +1253,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count475
 )
-LaTeX Info: Redefining \ref on input line 150.
-LaTeX Info: Redefining \pageref on input line 150.
-LaTeX Info: Redefining \nameref on input line 150.
+LaTeX Info: Redefining \ref on input line 161.
+LaTeX Info: Redefining \pageref on input line 161.
+LaTeX Info: Redefining \nameref on input line 161.
 
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.out)
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.out)
@@ -1269,7 +1269,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 150.
+(scrreprt)           before \begin{document} on input line 161.
 
 (/root/.miktex/texmfs/install/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -1314,19 +1314,19 @@ Package biblatex Info: ... file 'T3101_Studienarbeit_GraphenMetriken_Weichselba
 um_TINF2018.bbl' found.
 
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.bbl)
-Package biblatex Info: Reference section=0 on input line 150.
-Package biblatex Info: Reference segment=0 on input line 150.
+Package biblatex Info: Reference section=0 on input line 161.
+Package biblatex Info: Reference segment=0 on input line 161.
 <./Abbildungen/dhbwlogo.png, id=6, 192.72pt x 98.2872pt>
 File: ./Abbildungen/dhbwlogo.png Graphic file (type png)
 <use ./Abbildungen/dhbwlogo.png>
-Package pdftex.def Info: ./Abbildungen/dhbwlogo.png  used on input line 160.
+Package pdftex.def Info: ./Abbildungen/dhbwlogo.png  used on input line 171.
 (pdftex.def)             Requested size: 250.53595pt x 127.77332pt.
 
 (/root/.miktex/texmfs/install/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Overfull \hbox (12.31757pt too wide) in paragraph at lines 182--188
+Overfull \hbox (12.31757pt too wide) in paragraph at lines 193--199
 []  [] 
  []
 
@@ -1337,195 +1337,190 @@ Overfull \hbox (12.31757pt too wide) in paragraph at lines 182--188
 {/root/.miktex/texmfs/data/pdftex/config/pdftex.map} <./Abbildungen/dhbwlogo.pn
 g>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 193.
- [2] [3
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 204.
+ [2] [3] [4
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 20
-5.
- (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.toc
-[4
+Package tocbasic Info: character protrusion at toc deactivated on input line 22
+0.
+
+(T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.toc [5
 
 ])
 \tf@toc=\write6
 \openout6 = `T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.toc'.
 
- [5]
-Package tocbasic Info: character protrusion at lof deactivated on input line 20
-8.
- (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.lof)
+ [6]
+Package tocbasic Info: character protrusion at lof deactivated on input line 22
+3.
+
+(T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.lof)
 \tf@lof=\write7
 \openout7 = `T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.lof'.
 
-
-[1
+ [1
 
 ]
 
-LaTeX Warning: Hyper reference `acro:API' on page II undefined on input line 21
-5.
-
-
-LaTeX Warning: Hyper reference `acro:API' on page II undefined on input line 21
-5.
-
-
-LaTeX Warning: Hyper reference `acro:CSV' on page II undefined on input line 21
-6.
-
-
-LaTeX Warning: Hyper reference `acro:CSV' on page II undefined on input line 21
-6.
-
-
-LaTeX Warning: Hyper reference `acro:HTTP' on page II undefined on input line 2
-17.
-
-
-LaTeX Warning: Hyper reference `acro:HTTP' on page II undefined on input line 2
-17.
-
-
-LaTeX Warning: Hyper reference `acro:IEC' on page II undefined on input line 21
-8.
-
-
-LaTeX Warning: Hyper reference `acro:IEC' on page II undefined on input line 21
-8.
-
-
-LaTeX Warning: Hyper reference `acro:IEEE' on page II undefined on input line 2
-19.
-
-
-LaTeX Warning: Hyper reference `acro:IEEE' on page II undefined on input line 2
-19.
-
-
-LaTeX Warning: Hyper reference `acro:ISO' on page II undefined on input line 22
+LaTeX Warning: Hyper reference `acro:API' on page II undefined on input line 23
 0.
 
 
-LaTeX Warning: Hyper reference `acro:ISO' on page II undefined on input line 22
+LaTeX Warning: Hyper reference `acro:API' on page II undefined on input line 23
 0.
 
 
-LaTeX Warning: Hyper reference `acro:JSON' on page II undefined on input line 2
-21.
+LaTeX Warning: Hyper reference `acro:CSV' on page II undefined on input line 23
+1.
 
 
-LaTeX Warning: Hyper reference `acro:JSON' on page II undefined on input line 2
-21.
+LaTeX Warning: Hyper reference `acro:CSV' on page II undefined on input line 23
+1.
 
 
-LaTeX Warning: Hyper reference `acro:JVM' on page II undefined on input line 22
-2.
+LaTeX Warning: Hyper reference `acro:HTTP' on page II undefined on input line 2
+32.
 
 
-LaTeX Warning: Hyper reference `acro:JVM' on page II undefined on input line 22
-2.
+LaTeX Warning: Hyper reference `acro:HTTP' on page II undefined on input line 2
+32.
 
 
-LaTeX Warning: Hyper reference `acro:MOM' on page II undefined on input line 22
+LaTeX Warning: Hyper reference `acro:IEC' on page II undefined on input line 23
 3.
 
 
-LaTeX Warning: Hyper reference `acro:MOM' on page II undefined on input line 22
+LaTeX Warning: Hyper reference `acro:IEC' on page II undefined on input line 23
 3.
 
 
-LaTeX Warning: Hyper reference `acro:NP' on page II undefined on input line 224
+LaTeX Warning: Hyper reference `acro:IEEE' on page II undefined on input line 2
+34.
+
+
+LaTeX Warning: Hyper reference `acro:IEEE' on page II undefined on input line 2
+34.
+
+
+LaTeX Warning: Hyper reference `acro:ISO' on page II undefined on input line 23
+5.
+
+
+LaTeX Warning: Hyper reference `acro:ISO' on page II undefined on input line 23
+5.
+
+
+LaTeX Warning: Hyper reference `acro:JSON' on page II undefined on input line 2
+36.
+
+
+LaTeX Warning: Hyper reference `acro:JSON' on page II undefined on input line 2
+36.
+
+
+LaTeX Warning: Hyper reference `acro:JVM' on page II undefined on input line 23
+7.
+
+
+LaTeX Warning: Hyper reference `acro:JVM' on page II undefined on input line 23
+7.
+
+
+LaTeX Warning: Hyper reference `acro:MOM' on page II undefined on input line 23
+8.
+
+
+LaTeX Warning: Hyper reference `acro:MOM' on page II undefined on input line 23
+8.
+
+
+LaTeX Warning: Hyper reference `acro:NP' on page II undefined on input line 239
 .
 
 
-LaTeX Warning: Hyper reference `acro:NP' on page II undefined on input line 224
+LaTeX Warning: Hyper reference `acro:NP' on page II undefined on input line 239
 .
 
 
 LaTeX Warning: Hyper reference `acro:POJO' on page II undefined on input line 2
-25.
+40.
 
 
 LaTeX Warning: Hyper reference `acro:POJO' on page II undefined on input line 2
-25.
+40.
 
 
 LaTeX Warning: Hyper reference `acro:SOAP' on page II undefined on input line 2
-26.
+41.
 
 
 LaTeX Warning: Hyper reference `acro:SOAP' on page II undefined on input line 2
-26.
+41.
 
 
 LaTeX Warning: Hyper reference `acro:REST' on page II undefined on input line 2
-27.
+42.
 
 
 LaTeX Warning: Hyper reference `acro:REST' on page II undefined on input line 2
-27.
+42.
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page II undefined on input line 22
-8.
+LaTeX Warning: Hyper reference `acro:UML' on page II undefined on input line 24
+3.
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page II undefined on input line 22
-8.
+LaTeX Warning: Hyper reference `acro:UML' on page II undefined on input line 24
+3.
 
 
-LaTeX Warning: Hyper reference `acro:XML' on page II undefined on input line 22
-9.
+LaTeX Warning: Hyper reference `acro:XML' on page II undefined on input line 24
+4.
 
 
-LaTeX Warning: Hyper reference `acro:XML' on page II undefined on input line 22
-9.
-
-
-LaTeX Warning: Hyper reference `acro:XML-RPC' on page II undefined on input lin
-e 230.
+LaTeX Warning: Hyper reference `acro:XML' on page II undefined on input line 24
+4.
 
 
 LaTeX Warning: Hyper reference `acro:XML-RPC' on page II undefined on input lin
-e 230.
+e 245.
+
+
+LaTeX Warning: Hyper reference `acro:XML-RPC' on page II undefined on input lin
+e 245.
 
 [2
 
 ]
 chapter 1.
-
-Overfull \hbox (9.25545pt too wide) in paragraph at lines 240--241
-\OT1/phv/m/n/12 (-20) Diese netz-ar-ti-gen Struk-tu-ren k[]onnen da-bei die ver
--schie-dens-ten Kon-struk-te re-pr[]asentieren.
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.247 
-       [1
+l.263 N
+       eben der Entwicklung einer Klassenbibliothek zur Berechnung der Graph...
+[1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.265 
+l.280 
        [2]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.282 \chapter
+l.297 \chapter
               {Graph-Metriken} [3]pdfTeX warning (ext4): destination with the s
 ame identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.282 \chapter
+l.297 \chapter
               {Graph-Metriken} [4]
 chapter 2.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-86.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+01.
 (/root/.miktex/texmfs/install/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
@@ -1537,52 +1532,37 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.300 
+l.315 
        [5
 
-]
-Overfull \hbox (36.6142pt too wide) in paragraph at lines 311--313
-\OT1/phv/m/n/12 (-20) te in der Men-ge E. Man schreibt ana-log zur Gr[]oe des 
-Gra-phen: $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 E\OMS/cmsy/m/n/12 j [] j\OML/cmm/
-m/it/12 E\OT1/cmr/m/n/12 (-20) (\OML/cmm/m/it/12 G\OT1/cmr/m/n/12 (-20) )\OMS/c
-msy/m/n/12 j [] jj\OML/cmm/m/it/12 G\OMS/cmsy/m/n/12 jj$\OT1/phv/m/n/12 (-20) .
-
- []
-
-[6] [7]
+]pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 \subsubsection
+                    *{Der Grad eines Knotens} [6] [7]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [8] [9] [10]
-Overfull \hbox (10.0886pt too wide) in paragraph at lines 379--380
-[]\OT1/phv/m/n/12 (-20) Um die Tail-len-wei-te und den Um-fang ei-nes Gra-phen 
-her-aus-zu-fin-den, ist es grunds[]atzlich
- []
-
-[11] [12] [13] [14] [15] [16] [17]
-Overfull \hbox (12.76358pt too wide) in paragraph at lines 466--467
-[]\OT1/phv/m/n/12 (-20) Die Be-rech-nung die-ser Me-trik l[]asst sich in po-ly-
-no-mia-ler Zeit un-ter-neh-men. Grunds[]atzlich
- []
-
-[18]
-<Abbildungen/eigenvektor_centrality_example.png, id=415, 1368.11125pt x 880.288
+ [8] [9] [10] [11]
+[12] [13] [14] [15] [16] [17] [18]
+<Abbildungen/eigenvektor_centrality_example.png, id=419, 1368.11125pt x 880.288
 76pt>
 File: Abbildungen/eigenvektor_centrality_example.png Graphic file (type png)
 <use Abbildungen/eigenvektor_centrality_example.png>
 Package pdftex.def Info: Abbildungen/eigenvektor_centrality_example.png  used o
-n input line 491.
+n input line 508.
 (pdftex.def)             Requested size: 437.80455pt x 281.69815pt.
- [19] [20 <./Abbildungen/eigenvektor_centrality_example.png>] [21] [22]
-[23] [24] [25]
-<Abbildungen/graph_book.png, id=524, 1009.7725pt x 421.575pt>
+ [19] [20 <./Abbildungen/eigenvektor_centrality_example.png>] [21] [22] [23] [2
+4] [25]
+<Abbildungen/graph_book.png, id=528, 1009.7725pt x 421.575pt>
 File: Abbildungen/graph_book.png Graphic file (type png)
 <use Abbildungen/graph_book.png>
-Package pdftex.def Info: Abbildungen/graph_book.png  used on input line 583.
+Package pdftex.def Info: Abbildungen/graph_book.png  used on input line 600.
 (pdftex.def)             Requested size: 403.90184pt x 168.627pt.
  [26] [27 <./Abbildungen/graph_book.png>] [28] [29] [30] [31]
-Overfull \hbox (3.02188pt too wide) in paragraph at lines 647--647
+Overfull \hbox (3.02188pt too wide) in paragraph at lines 672--672
 []\OT1/phv/m/n/12 (-20) Ein Graph kann in ein Buch ein-ge-bet-tet wer-den, wo-b
 ei die Kno-ten auf dem Buchr[]ucken
  []
@@ -1591,102 +1571,90 @@ ei die Kno-ten auf dem Buchr[]ucken
 chapter 3.
 [33
 
-] [34] [35] [36] [37]
-Overfull \hbox (10.52441pt too wide) in paragraph at lines 731--732
-[]\OT1/phv/m/n/12 (-20) Wie an-fangs be-schrie-ben, sol-len im Rah-men die-ser 
-Be-trach-tung die Zen-tra-lit[]atsmetriken
- []
-
-[38] [39] [40]
-<Abbildungen/UML/library_use_case_diagram.png, id=629, 1115.16624pt x 845.1575p
+] [34] [35] [36] [37] [38] [39] [40]
+<Abbildungen/UML/library_use_case_diagram.png, id=641, 1115.16624pt x 845.1575p
 t>
 File: Abbildungen/UML/library_use_case_diagram.png Graphic file (type png)
 <use Abbildungen/UML/library_use_case_diagram.png>
 Package pdftex.def Info: Abbildungen/UML/library_use_case_diagram.png  used on 
-input line 780.
+input line 805.
 (pdftex.def)             Requested size: 446.0586pt x 338.057pt.
- [41] [42 <./Abbildungen/UML/library_use_case_diagram.png>]
-[43] [44] [45] [46] [47] [48] [49] [50]
+ [41] [42 <./Abbildungen/UML/library_use_case_diagram.png>] [43] [44] [45] [46]
+ [47] [48] [49] [50]
 LaTeX Font Info:    Trying to load font information for OML+phv on input line 9
-21.
+46.
 
 (/root/.miktex/texmfs/install/tex/latex/psnfss/omlphv.fd
 File: omlphv.fd 
 )
 LaTeX Font Info:    Font shape `OML/phv/m/it' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 921.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 946.
  [51] [52]
-<Abbildungen/UML/graph_class_diagram.png, id=701, 1906.12125pt x 1241.63875pt>
+<Abbildungen/UML/graph_class_diagram.png, id=714, 1906.12125pt x 1241.63875pt>
 File: Abbildungen/UML/graph_class_diagram.png Graphic file (type png)
 <use Abbildungen/UML/graph_class_diagram.png>
 Package pdftex.def Info: Abbildungen/UML/graph_class_diagram.png  used on input
- line 939.
+ line 968.
 (pdftex.def)             Requested size: 629.02197pt x 409.74205pt.
  [53 <./Abbildungen/UML/graph_class_diagram.png>]
-Overfull \hbox (1.0765pt too wide) in paragraph at lines 960--961
+Overfull \hbox (1.0765pt too wide) in paragraph at lines 985--986
 []\OT1/phv/b/n/12 BasicGraphMetricCalculation\OT1/phv/m/n/12 (-20) : Be-rech-nu
 ng grund-le-gen-der Graph-Metriken (Ord-
+ []
+
+
+Overfull \hbox (5.10646pt too wide) in paragraph at lines 993--994
+[]\OT1/phv/b/n/12 NodeToNodeDistanceMetricCalculation\OT1/phv/m/n/12 (-20) : Be
+-rech-nung der Di-stanz zwi-schen zwei
  []
 
 [54
 
 
 ]
-Overfull \hbox (5.10646pt too wide) in paragraph at lines 968--969
-[]\OT1/phv/b/n/12 NodeToNodeDistanceMetricCalculation\OT1/phv/m/n/12 (-20) : Be
--rech-nung der Di-stanz zwi-schen zwei
- []
-
-<Abbildungen/UML/metrics_class_diagram.png, id=715, 1255.69125pt x 1388.18625pt
+<Abbildungen/UML/metrics_class_diagram.png, id=727, 1255.69125pt x 1388.18625pt
 >
 File: Abbildungen/UML/metrics_class_diagram.png Graphic file (type png)
 <use Abbildungen/UML/metrics_class_diagram.png>
 Package pdftex.def Info: Abbildungen/UML/metrics_class_diagram.png  used on inp
-ut line 979.
+ut line 1004.
 (pdftex.def)             Requested size: 477.16763pt x 527.51627pt.
 
-Overfull \hbox (21.92352pt too wide) in paragraph at lines 979--980
+Overfull \hbox (21.92352pt too wide) in paragraph at lines 1004--1005
  [][] 
  []
 
-[55] [56 <./Abbildungen/UML/metrics_class_diagram.png>]
-<Abbildungen/UML/sequence_graph_creation.png, id=726, 1024.82875pt x 861.2175pt
+<Abbildungen/UML/sequence_graph_creation.png, id=728, 1024.82875pt x 861.2175pt
 >
 File: Abbildungen/UML/sequence_graph_creation.png Graphic file (type png)
 <use Abbildungen/UML/sequence_graph_creation.png>
 Package pdftex.def Info: Abbildungen/UML/sequence_graph_creation.png  used on i
-nput line 990.
+nput line 1015.
 (pdftex.def)             Requested size: 389.43896pt x 327.26605pt.
-<Abbildungen/UML/sequence_metric_calc.png, id=727, 2057.6875pt x 640.3925pt>
+[55] [56 <./Abbildungen/UML/metrics_class_diagram.png>]
+<Abbildungen/UML/sequence_metric_calc.png, id=739, 2057.6875pt x 640.3925pt>
 File: Abbildungen/UML/sequence_metric_calc.png Graphic file (type png)
 <use Abbildungen/UML/sequence_metric_calc.png>
 Package pdftex.def Info: Abbildungen/UML/sequence_metric_calc.png  used on inpu
-t line 997.
+t line 1022.
 (pdftex.def)             Requested size: 452.69266pt x 140.88678pt.
  [57 <./Abbildungen/UML/sequence_graph_creation.png>] [58 <./Abbildungen/UML/se
-quence_metric_calc.png>] [59] [60] [61]
-Overfull \hbox (10.55528pt too wide) in paragraph at lines 1057--1058
-[]\OT1/phv/m/n/12 (-20) Die Me-tri-ken-klas-se mit den meis-ten Im-ple-men-tie-
-run-gen bei den Knoten-beschreibenden
- []
+quence_metric_calc.png>] [59] [60] [61] [62]
+LaTeX Font Info:    Font shape `OML/phv/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1102.
 
-[62] [63] [64] [65] [66] [67] [68] [69]
+ [63] [64] [65] [66] [67] [68] [69]
 chapter 4.
 [70
 
 ]
-Overfull \hbox (12.99762pt too wide) in paragraph at lines 1180--1181
-[][]\OT1/phv/m/n/12 (-20) Ahnlich wie beim Ent-wurf f[]ur die Klas-sen-bi-blio-
-thek muss die Ab-strak-ti-on der Graphmetrik-
- []
-
-<Abbildungen/UML/component_abstraction.png, id=893, 1152.305pt x 1061.9675pt>
+<Abbildungen/UML/component_abstraction.png, id=905, 1152.305pt x 1061.9675pt>
 File: Abbildungen/UML/component_abstraction.png Graphic file (type png)
 <use Abbildungen/UML/component_abstraction.png>
 Package pdftex.def Info: Abbildungen/UML/component_abstraction.png  used on inp
-ut line 1185.
+ut line 1210.
 (pdftex.def)             Requested size: 437.88045pt x 403.55183pt.
-[71] [72 <./Abbildungen/UML/component_abstraction.png>] [73]
+ [71] [72 <./Abbildungen/UML/component_abstraction.png>] [73]
 chapter 5.
 [74
 
@@ -1695,7 +1663,7 @@ chapter 5.
 ] [79]
 chapter without number
 
-Overfull \hbox (25.42358pt too wide) in paragraph at lines 1253--1253
+Overfull \hbox (25.42358pt too wide) in paragraph at lines 1283--1283
 []\OT1/phv/m/n/12 (-20) Helmut Bal-zert. \OT1/phv/m/sl/12 (-20) Lehr-buch der S
 oft-wa-re-tech-nik: Ba-sis-kon-zep-te und Requirements-
  []
@@ -1703,13 +1671,13 @@ oft-wa-re-tech-nik: Ba-sis-kon-zep-te und Requirements-
 [80
 
 ] [81] [82] [83] [84]
-Overfull \hbox (44.74588pt too wide) in paragraph at lines 1253--1253
+Overfull \hbox (44.74588pt too wide) in paragraph at lines 1283--1283
 []\OT1/phv/m/n/12 (-20) Manuel Ott-lik. \  Be-such im RE-STau-rant: Web-diens-t
 e per REST-Schnittstelleanzapfen".
  []
 
 [85]
-Overfull \hbox (3.96146pt too wide) in paragraph at lines 1253--1253
+Overfull \hbox (3.96146pt too wide) in paragraph at lines 1283--1283
 \OT1/phv/m/n/12 (-20) ver-lag, 1. Jan. 2004. \OT1/phv/m/sc/12 (-20) isbn\OT1/ph
 v/m/n/12 (-20) : 978-3-486-59377-8. \OT1/phv/m/sc/12 (-20) doi\OT1/phv/m/n/12 (
 -20) : [][]$\OT1/cmtt/m/n/12 10 . 1524 / 9783486593778$[][]\OT1/phv/m/n/12 (-20
@@ -1730,16 +1698,17 @@ eichselbaum_TINF2018.run.xml'.
 .
 
  )
-(\end occurred inside a group at level 1)
+(\end occurred inside a group at level 2)
 
-### simple group (level 1) entered at line 564 ({)
+### simple group (level 2) entered at line 683 ({)
+### simple group (level 1) entered at line 581 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27865 strings out of 480232
- 510083 string characters out of 2887634
- 1632460 words of memory out of 3000000
- 43168 multiletter control sequences out of 15000+200000
- 574310 words of font info for 303 fonts, out of 3000000 for 9000
+ 27869 strings out of 480232
+ 510328 string characters out of 2887634
+ 1599595 words of memory out of 3000000
+ 43171 multiletter control sequences out of 15000+200000
+ 573924 words of font info for 298 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  94i,16n,99p,10654b,3197s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc}</us
@@ -1758,9 +1727,9 @@ local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (94 pages, 1966995 bytes).
+ (95 pages, 1971860 bytes).
 PDF statistics:
- 1372 PDF objects out of 1440 (max. 8388607)
- 412 named destinations out of 1000 (max. 500000)
+ 1392 PDF objects out of 1440 (max. 8388607)
+ 422 named destinations out of 1000 (max. 500000)
  22906 words of extra memory for PDF output out of 24883 (max. 10000000)
 

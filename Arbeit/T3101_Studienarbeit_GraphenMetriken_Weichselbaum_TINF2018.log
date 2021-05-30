@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  30 MAY 2021 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  30 MAY 2021 23:53
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1706,7 +1706,7 @@ eichselbaum_TINF2018.run.xml'.
 Here is how much of TeX's memory you used:
  27869 strings out of 480232
  510328 string characters out of 2887634
- 1599595 words of memory out of 3000000
+ 1598595 words of memory out of 3000000
  43171 multiletter control sequences out of 15000+200000
  573924 words of font info for 298 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1727,7 +1727,7 @@ local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (95 pages, 1971860 bytes).
+ (95 pages, 1971865 bytes).
 PDF statistics:
  1392 PDF objects out of 1440 (max. 8388607)
  422 named destinations out of 1000 (max. 500000)

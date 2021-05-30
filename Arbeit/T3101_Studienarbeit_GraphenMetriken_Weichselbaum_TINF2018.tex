@@ -159,7 +159,7 @@
 \AfterTOCHead{\thispagestyle{empty}}
 
 \begin{document}
-\title{\Large{Untersuchung und Umsetzung von Graph-Metriken
+\title{\Large{Untersuchung und Umsetzung von Graphmetriken
 }}
 \author{Benedict Martin Weichselbaum}
 \date{\today}
@@ -173,7 +173,7 @@
 	
 	\vspace{5mm}	
 	{\fontsize{26}{40}\selectfont
-	Untersuchung und Umsetzung von Graph-Metriken
+	Untersuchung und Umsetzung von Graphmetriken
 	}
 	\\
 	\vspace{2cm}
@@ -192,7 +192,7 @@
 	\begin{table}[ht]
 		\hspace{1,5cm}
 		\begin{tabular}{p{7cm}p{7cm}}
-			\textbf{Bearbeitungszeitraum} & 28.09.2020 - 30.05.2021\\
+			\textbf{Bearbeitungszeitraum} & 28.09.2020 - 31.05.2021\\
 			\textbf{Matrikelnummer, Kurs} & 6275457, TINF2018\\
 			\textbf{Betreuer \& Gutachter} & Prof. Dr. ing. Olaf Herden\\
 		\end{tabular}
@@ -201,7 +201,7 @@
 
 \section*{Erklärung}
 \thispagestyle{empty}
-Ich versichere hiermit, dass ich meine Studienarbeit mit dem Thema \textit{Untersuchung und Umsetzung von Graph-Metriken} selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. \vspace{1.6cm}\newline
+Ich versichere hiermit, dass ich meine Studienarbeit mit dem Thema \textit{Untersuchung und Umsetzung von Graphmetriken} selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe. \vspace{1.6cm}\newline
 {Horb am Neckar, \today\vspace{1.2cm}\par\vspace{1.5cm}}
 {\noindent\rule{6cm}{.4pt}\newline Benedict Martin Weichselbaum}
 \pagebreak
@@ -211,7 +211,7 @@ Innerhalb dieser Studienarbeit wurden teilweise Personenbezeichnungen oder perso
 
 \selectlanguage{ngerman}
 \begin{abstract}
-Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sie bilden eine häufige Abstraktionen für Realweltprobleme, bei denen diskrete Zustände oder Objekte zueinander in Beziehungen stehen. Dazu zählen z.B. Navigationssysteme oder chemische Moleküle. Um Graphen zu charakterisieren, haben sich viele Graphmetriken (oder Graphinvarianten) herausgearbeitet, die einen Graph über einen Zahlenwert beschreiben. Ziel dieser Studienarbeit ist es eine Menge dieser Graphmetriken zu recherchieren, zu bewerten und zu kategorisieren. Hierfür wurde eine intensive Literaturrecherche betrieben. Im Anschluss an diese Recherche stellte sich die Frage, wie es möglich ist, die Kennzahlen im Rahmen einer Java-Klassenbibliothek umzusetzen. Unter Zuhilfenahme des Softwarelebenszyklus wird in der Arbeit beschrieben, welche Anforderungen eine solche Bibliothek hat und wie sie schlussendlich entwurfstechnisch umgesetzt werden kann. Zusätzliche werden sämtliche implementierte Metriken-Algorithmen erläutert. Abschließend beschäftigt sich die Arbeit damit, wie es möglich wäre die implementierte Graphmetrik-Berechnung weiter zu abstrahieren, indem die Berechnungslogik der Invarianten beliebig austauschbar wäre.
+Graphen sind einer der wichtigsten Datenstrukturen der Informatik. Sie bilden eine häufige Abstraktionen für Realweltprobleme, bei denen diskrete Zustände oder Objekte zueinander in Beziehungen stehen. Dazu zählen z.B. Navigationssysteme oder chemische Moleküle. Um Graphen zu charakterisieren, haben sich viele Graphmetriken (oder Graphinvarianten) herausgearbeitet, die einen Graph über einen Zahlenwert beschreiben. Ziel dieser Studienarbeit ist es eine Menge dieser Graphmetriken zu recherchieren, zu bewerten und zu kategorisieren. Hierfür wurde eine intensive Literaturrecherche betrieben. Im Anschluss an diese Recherche stellte sich die Frage, wie es möglich ist, die Kennzahlen im Rahmen einer Java-Klassenbibliothek umzusetzen. Unter Zuhilfenahme des Softwarelebenszyklus wird in der Arbeit beschrieben, welche Anforderungen eine solche Bibliothek hat und wie sie schlussendlich entwurfstechnisch umgesetzt werden kann. Zusätzlich werden sämtliche implementierte Metrik-Algorithmen erläutert. Abschließend beschäftigt sich die Arbeit damit, wie es möglich wäre die implementierte Graphmetrik-Berechnung weiter zu abstrahieren, indem die Berechnungslogik der Invarianten beliebig austauschbar wäre.
 \end{abstract}
 
 \selectlanguage{ngerman}
@@ -266,7 +266,7 @@ Neben der Entwicklung einer Klassenbibliothek zur Berechnung der Graphmetrik ist
 {
 Auf Basis der Motivation können nun auch die konkreten Fragestellungen formuliert werden, die diese Arbeit betrachten soll. The Insgesamt sollen sieben wissenschaftliche Fragen beantwortet werden.
 
-\singleenum{0}{Welche Graph-Metriken gibt es und wie sind diese definiert, zu berechnen und zu kategorisieren?}
+\singleenum{0}{Welche Graphmetriken gibt es und wie sind diese definiert, zu berechnen und zu kategorisieren?}
 
 Die erste Fragestellung beschäftigt sich mit der allgemeinen Untersuchung der Graphmetriken. Hierzu gehört die Vorstellung der einzelnen Metriken, aber auch eine Kategorisierung in Rubriken, um die Metriken besser voneinander abzugrenzen, da diverse Kennzahlen höchst unterschiedliche Aussagen über einen Graphen treffen. Es ist dabei auch ein definiertes Ziel, bereits aufzuzeigen welche Anwendung die jeweiligen Metriken finden, bzw. welche Motivation hinter ihnen steht, falls eine Aussage darüber getroffen werden kann. Neben der Definition und Kategorisierung der Metriken beantwortet die Antwort auf die Fragestellung ggf. auch, wie die vorgestellte Metrik berechnet werden kann.
 
@@ -294,9 +294,9 @@ Neben dem Entwurf und der Implementierung ist es unabdingbar, dass geprüft werd
 
 Anstatt die Berechnung der Kennzahlen nur über die entworfene Bibliothek zu ermöglichen, wäre es auch möglich, die Berechnung weiter zu abstrahieren und eine Software zu entwerfen, die je nach Wunsch eine andere Metriken-Berechnungslogik nutzt. Die letzte Fragestellung der Studienarbeit beschäftigt sich deshalb mit dem skizzenhaften Entwurf einer solchen abstrahierten Software. Es soll vor allem eine initiale Idee für ein solches Softwareprojekt gegeben werden, an das potenziell angeknüpft werden kann.
 }
-\chapter{Graph-Metriken}
+\chapter{Graphmetriken}
 {
-Der erste Teil der Arbeit wird sich ausführlich mit einer umfassenden Menge an Graph-Metriken beschäftigen. Hierbei sollen die ersten zwei Fragestellungen der Arbeit genau beantwortet werden. Um dies zu bewerkstelligen, werden die jeweiligen recherchierten Metriken unter verschieden Gesichtspunkten beleuchtet. Zur jeweiligen Vorstellung einer Graph-Metrik sollen dabei die folgengen Punkte erläutert werden:
+Der erste Teil der Arbeit wird sich ausführlich mit einer umfassenden Menge an Graphmetriken beschäftigen. Hierbei sollen die ersten zwei Fragestellungen der Arbeit genau beantwortet werden. Um dies zu bewerkstelligen, werden die jeweiligen recherchierten Metriken unter verschieden Gesichtspunkten beleuchtet. Zur jeweiligen Vorstellung einer Graphmetrik sollen dabei die folgengen Punkte erläutert werden:
 \begin{myitemize}
 	\item Was drückt die Metrik aus (Definition)?
 	\item Wie ist die Metrik im Bezug auf den Rechenaufwand zu bewerten?
@@ -385,7 +385,7 @@ Parallel zum Durchmesser eines Graphen kann man auch dessen \textbf{"`Radius"'} 
 }
 \section{Kreis-basierte Metriken}
 {
-Ausgehend von einem Weg innerhalb eines Graphen können wir auch den Begriff des Kreises definieren. Ein Kreis ist ein Weg, der eine zyklische Knotenfolge hat. Sei \(x_i\) ein Knoten, so hat ein Kreis folgende typische Eckenfolge: \(x_0...x_{k-1},\ x_0\). Ist ein solcher Kreis, wie beschrieben gegeben, kann unter anderen an diesem seine Länge abgelesen werden. Die Länge beschreibt dabei die Anzahl der Kanten, die ein Kreis enthält. Ist erst einmal ein Kreis gegeben, lässt sich die Länge leicht berechnen, denn die Länge eines Kreises ist gleich mit der Anzahl der Knoten innerhalb des Kreises. \cite{diestel_graphentheorie_2000} Auch auf Basis dieser Kreise und ihrer Länge lassen sich verschiedene Graph-Metriken definieren.
+Ausgehend von einem Weg innerhalb eines Graphen können wir auch den Begriff des Kreises definieren. Ein Kreis ist ein Weg, der eine zyklische Knotenfolge hat. Sei \(x_i\) ein Knoten, so hat ein Kreis folgende typische Eckenfolge: \(x_0...x_{k-1},\ x_0\). Ist ein solcher Kreis, wie beschrieben gegeben, kann unter anderen an diesem seine Länge abgelesen werden. Die Länge beschreibt dabei die Anzahl der Kanten, die ein Kreis enthält. Ist erst einmal ein Kreis gegeben, lässt sich die Länge leicht berechnen, denn die Länge eines Kreises ist gleich mit der Anzahl der Knoten innerhalb des Kreises. \cite{diestel_graphentheorie_2000} Auch auf Basis dieser Kreise und ihrer Länge lassen sich verschiedene Graphmetriken definieren.
 }
 \subsubsection*{Taillenweite und Umfang}
 {
@@ -606,7 +606,7 @@ Die "`Buchdicke"' und das Einbetten von Graphen in ein "`Buch"' hat mehrere Anwe
 }
 \section{Übersicht der vorgestellten Graphmetriken}
 {
-Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese mit Hilfe einer Aufzählung zusammengefasst werden. Aufgelistet werden jeweils der Name, bzw die Bezeichnung, der Metrik und ihre Definition. Zudem soll klar werden in welche der Kategorien die Metrik gehört Bei der Definition wird dabei eine mathematische oder eine wörtliche Beschreibung angegeben. Gegebenenfalls auch beides, falls es für das Verständnis förderlich ist.
+Nachdem nun eine weite Reihe an Graphmetriken vorgestellt wurden, sollen diese mit Hilfe einer Aufzählung zusammengefasst werden. Aufgelistet werden jeweils der Name, bzw die Bezeichnung, der Metrik und ihre Definition. Zudem soll klar werden in welche der Kategorien die Metrik gehört Bei der Definition wird dabei eine mathematische oder eine wörtliche Beschreibung angegeben. Gegebenenfalls auch beides, falls es für das Verständnis förderlich ist.
 \subsection*{Grundlegende Metriken}
 \metric{Ordnung \(|V(G)|\)}{Anzahl der Knoten eines Graphen}
 \metric{Größe \(|V(E)|\)}{Anzahl der Kanten eines Graphen}
@@ -671,7 +671,7 @@ Nachdem nun eine weite Reihe an Graph-Metriken vorgestellt wurden, sollen diese 
 \metric{Cliquenzahl \(\omega(G)\)}{Eine Clique ist eine Knoten-Untermenge von \(G\), die einen vollständigen Graphen ergebibt. Die Mächtigkeit der größtmöglichen Knoten-Untermenge von \(G\), die eine Clique ist, ist die Cliquenzahl \(\omega(G)\)}
 \metricnoline{Buchdicke/Seitenzahl \(bt(G)\)}{Ein Graph kann in ein Buch eingebettet werden, wobei die Knoten auf dem Buchrücken \(L\) angebracht sind und die Kanten über anliegende Seiten (Halbebenen) laufen und sich dabei nicht kreuzen dürfen. Die Buchdicke \(bt(G)\) gibt nun an, wie viele Seiten man für einen Graphen \(G\) braucht, um ihn in ein Buch einbetten zu können.}
 }
-\chapter{Umsetzung und Implementierung der Graph-Metriken}
+\chapter{Umsetzung und Implementierung der Graphmetriken}
 {
 Nachdem nun eine umfassende Anzahl an Graphmetriken besprochen wurde, ist es Ziel der Studienarbeit einen großen Teil dieser im Rahmen einer Klassenbibliothek umzusetzen. Die Entwicklung erfolgt dabei im Rahmen des klassischen Softwarelebenszyklus und besteht aus Anforderungsanalyse, Entwurf/Design, Implementierung und Testung/Überprüfung. \cite{balzert_lehrbuch_2009,balzert_lehrbuch_2011} Darüber hinaus soll auch die Algorithmik einzelner Metriken betrachtet werden und infolgedessen auf die Betrachtungen aus Kapitel 2 angeschlossen werden. Die implementierte Klassenbibliothek lässt sich auf \href{https://github.com/benedictweichselbaum/graph_metrics_class_library}{GitHub} finden und kann mittels der Versionierungssoftware "`Git"' kopiert werden. (URL: \url{https://github.com/benedictweichselbaum/graph_metrics_class_library})
 }
@@ -982,7 +982,7 @@ Nachdem die "`boundary"' die initiale Anfrage entgegennimmt, muss diese weiter v
 
 Die jeweiligen Berechnungsklassen enthalten ausschließlich statische Methoden, die eine Metrik für den Graphen berechnen und dabei logischerweise eine Zahl zurückgeben (Integer, Long oder Double). Diese Klassen sind dabei einmal nach den drei bereits bekannten Kategorien in Pakete sortiert und enthalten nur Metriken jeweils passend zu einer der in Kapitel 2 formulierten Kategorien. Da Metriken teilweise aufeinander aufbauen interagieren diese Klassen auch untereinander. Die jeweiligen Klassen heißen und berechnen:
 \begin{myitemize}
-	\item \textbf{BasicGraphMetricCalculation}: Berechnung grundlegender Graph-Metriken (Ordnung, Größe etc.)
+	\item \textbf{BasicGraphMetricCalculation}: Berechnung grundlegender Graphmetriken (Ordnung, Größe etc.)
 	\item \textbf{DistanceGraphMetricCalculation}: Berechnung distanzbasierter Metriken (Radius und Durchmesser)
 	\item \textbf{ChromaticNumberMetricCalculation}: Berechnung der chromatischen Zahl (exakt und mit Greedy-Algorithmus)
 	\item \textbf{ChromaticIndexMetricCalculation}: Berechnung des chromatischen Index (exakt und mit Greedy-Algorithmus)
@@ -1023,7 +1023,7 @@ Nachdem der Graph erstellt wurde, können auf ihm alle Metriken berechnet werden
 	\caption[Sequenzdiagramm: Metriken-Berechnung (Closeness Centrality)]{Sequenzdiagramm: Metriken-Berechnung (Closeness Centrality)}
 \end{figure}
 }
-\section{Algorithmik und Implementierung der Graph-Metriken}
+\section{Algorithmik und Implementierung der Graphmetriken}
 {
 Nachdem die Beschaffenheit und die grundsätzliche Funktionsweise der Klassenbibliothek erläutert wurde, soll noch darauf eingegangen werden, wie die jeweiligen Metriken berechnet werden. Vor allem ist es interessant die Algorithmik der einzelnen Metirken zu beleuchten. Es werden dabei alle implementierten Metriken betrachtet. Zuerst werden die Graph-übergreifenden, dann die Knoten-beschreibenden und abschließend die Distanz zwischen zwei Knoten beschrieben. Es ist hinzuzufügen, dass die Beschreibung der Algorithmen teils auf die Implementierung mit der Programmiersprache Java direkt Bezug nimmt.
 }
@@ -1263,8 +1263,8 @@ Eine weitere Methode Graphmetriken anzuwenden, könnte darin bestehen mit ihnen 
 \geintrag{Baum}{Zusammenhangskomponente eines Waldes \cite{diestel_graphentheorie_2000}}
 \geintrag{Cypher}{Abfragesprache für die neo4j-Graphdatenbank. \cite{kollegger_gram_2021}}
 \geintrag{Graph}{Ein Paar bestehend auf Knoten\(V\)und Kanten E. \(G=(V,E), \text{wobei }E\subseteq V\times V\)}
-\geintrag{Graph-Invariante}{Eine Funktion, die einen Graphen auf eine Zahl abbildet. Sind zwei Graphen isomorph so wird ihnen der gleiche Wert zugewiesen. \cite{diestel_graphentheorie_2000}}
-\geintrag{Graph-Metrik}{siehe \textit{Graph-Invariante}}
+\geintrag{Graphinvariante}{Eine Funktion, die einen Graphen auf eine Zahl abbildet. Sind zwei Graphen isomorph so wird ihnen der gleiche Wert zugewiesen. \cite{diestel_graphentheorie_2000}}
+\geintrag{Graphmetrik}{siehe \textit{Graphinvariante}}
 \geintrag{Java}{Objektorientierte Programmiersprache, die auf der Java Virutal Machine ausgeführt wird. \cite{ullenboom_java_2016}}
 \geintrag{Java Virtual Maschine}{Laufzeitumgebung (Virtuelle Maschine) zur Ausführung von Java-Programmen \cite{ullenboom_java_2016}}
 \geintrag{Message Oriented Middleware}{Soft-ware, die speziell dafur designed ist, Nachrichten zwischen Applikationen zu verschicken. \cite{curry_message-oriented_2005}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  30 MAY 2021 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2020.11.20)  31 MAY 2021 00:24
 entering extended mode
 **./T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
 (T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.tex
@@ -1512,12 +1512,12 @@ e.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.297 \chapter
-              {Graph-Metriken} [3]pdfTeX warning (ext4): destination with the s
-ame identifier (name{page.4}) has been already used, duplicate ignored
+              {Graphmetriken} [3]pdfTeX warning (ext4): destination with the sa
+me identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.297 \chapter
-              {Graph-Metriken} [4]
+              {Graphmetriken} [4]
 chapter 2.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
 01.
@@ -1597,12 +1597,6 @@ Package pdftex.def Info: Abbildungen/UML/graph_class_diagram.png  used on input
  line 968.
 (pdftex.def)             Requested size: 629.02197pt x 409.74205pt.
  [53 <./Abbildungen/UML/graph_class_diagram.png>]
-Overfull \hbox (1.0765pt too wide) in paragraph at lines 985--986
-[]\OT1/phv/b/n/12 BasicGraphMetricCalculation\OT1/phv/m/n/12 (-20) : Be-rech-nu
-ng grund-le-gen-der Graph-Metriken (Ord-
- []
-
-
 Overfull \hbox (5.10646pt too wide) in paragraph at lines 993--994
 []\OT1/phv/b/n/12 NodeToNodeDistanceMetricCalculation\OT1/phv/m/n/12 (-20) : Be
 -rech-nung der Di-stanz zwi-schen zwei
@@ -1727,7 +1721,7 @@ local/share/miktex-texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/share/
 miktex-texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/share/miktex-texmf
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
 Output written on T3101_Studienarbeit_GraphenMetriken_Weichselbaum_TINF2018.pdf
- (95 pages, 1971865 bytes).
+ (95 pages, 1971876 bytes).
 PDF statistics:
  1392 PDF objects out of 1440 (max. 8388607)
  422 named destinations out of 1000 (max. 500000)

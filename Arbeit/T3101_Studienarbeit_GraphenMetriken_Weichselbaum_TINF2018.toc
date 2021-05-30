@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Fragestellungen}{2}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Graph-Metriken}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Graphmetriken}{5}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Grundlegende Metriken}{6}{section.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -34,7 +34,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Übersicht der vorgestellten Graphmetriken}{28}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Umsetzung und Implementierung der Graph-Metriken}{33}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Umsetzung und Implementierung der Graphmetriken}{33}{chapter.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Anforderungsanalyse}{33}{section.3.1}%
 \defcounter {refsection}{0}\relax 
@@ -62,7 +62,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.2}Dynamische Aspekte}{55}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Algorithmik und Implementierung der Graph-Metriken}{58}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Algorithmik und Implementierung der Graphmetriken}{58}{section.3.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.6}Testung der Klassenbibliothek}{66}{section.3.6}%
 \defcounter {refsection}{0}\relax 
